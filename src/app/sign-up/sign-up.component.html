@@ -1,0 +1,35 @@
+<head>
+  <title>Animated Registration Form</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- <link rel="stylesheet" href="style.css" /> -->
+</head>
+<body>
+  <div class="container">
+      <div class="image">
+        <div class="form-box">
+          <div class="form">
+            <h2>Sign up</h2>
+            <div class="input-box">
+              <input type="text" required [(ngModel)]="user.userName" name="username"/>
+              <label for="">Username</label>
+            </div>
+            <div class="input-box">
+              <input type="text" required [(ngModel)]="user.email" name="email"/>
+              <label for="">Email</label>
+            </div>
+            <div class="input-box">
+              <input type="password" required [(ngModel)]="user.password" name="password"/>
+              <label for="">Password</label>
+            </div>
+            <div class="group">
+              <a routerLink="#">Forgot Password</a>
+              <a routerLink="/login">Log In</a>
+            </div>
+            <button (click)="onSubmit()">Sign up</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+</body>

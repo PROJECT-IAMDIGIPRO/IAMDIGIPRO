@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design and Development Card</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,1,0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/6cfb21434c.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../../styles.css">
+    <script src="blogspage.js" defer></script>
+    <script src="index.js" defer></script>
+</head>
+
+<body>
+
+    <!--front-page-->
+
+    <div class="blogs-frontpage-card">
+        <h1>Essential Insights on<br><span>Design</span> and <span>Development</span></h1>
+        <p>Unleashing Creativity and Innovation in the Digital World</p>
+    </div>
+
+    <!--blogs list-->
+
+    <div class="blog-100">
+        <div class="dflex-con">
+            <div class="container-blog">
+                <button class="featured-blog">Featured Blog Post</button>
+                <button class="featured">Development</button>
+                <button class="featured">Design</button>
+                <button class="featured">Digital Marketing</button>
+                <button class="featured">Web Development</button>
+                <button class="featured">Graphic Design</button>
+                <button class="featured">Consulting</button>
+                <button class="featured">Influencer Marketing</button>
+            </div>
+
+            <div class="blog-container1" id="blog" *ngIf="!isBlogCardOpen">
+                <div class="blog-header mt-5">
+                    <h1 style="font-size: 27px; font-weight: 600;">Featured Blog Post</h1>
+                    <hr />
+                </div>
+                <div class="blogs-cards-container">
+                    <div class="post-box" (click)="blogcardOpen(0)">
+                        <div class="post-image">
+                            <img src="../assets/images/blogs/image_blogPage1.jpg" alt="FeaturedBlogPostimage1">
+                        </div>
+                        <div class="post-content">
+                            <h2>How to Maximize Your Digital Marketing Efforts</h2>
+                            <div class="post-details">
+                                <span class="category"><b>Marketing</b></span>
+                                <span class="date">24 June 2024</span>
+                            </div>
+                            <p>Learn the top strategies for enhancing your digital presence and driving engagement...
+                            </p>
+                            <div class="card-button">
+                                <p>Read More</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="post-box" (click)="blogcardOpen(1)">
+                        <div class="post-image">
+                            <img src="../assets/images/blogs/image_blogPage2.jpg" alt="FeaturedBlogPostimage2">
+                        </div>
+                        <div class="post-content">
+                            <h2>Create a User-Centric Website with iamdigipro</h2>
+                            <div class="post-details">
+                                <span class="category"><b>Design</b></span>
+                                <span class="date">24 June 2024</span>
+                            </div>
+                            <p>Discover the best practices for designing websites that captivate and convert visitors...
+                            </p>
+                            <div class="card-button">
+                                <p>Read More</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="post-box" (click)="blogcardOpen(2)">
+                        <div class="post-image">
+                            <img src="../assets/images/blogs/image_blogPage3.jpg" alt="FeaturedBlogPostimage3">
+                        </div>
+                        <div class="post-content">
+                            <h2>Top Web Development Trends in 2024</h2>
+                            <div class="post-details">
+                                <span class="category"><b>Development</b></span>
+                                <span class="date">24 June 2024</span>
+                            </div>
+                            <p>Story ahead of the curve with the latest techniques and tools shaping the future of web
+                                development...</p>
+                            <div class="card-button">
+                                <p>Read More</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="post-box" (click)="blogcardOpen(3)">
+                        <div class="post-image">
+                            <img src="../assets/images/blogs/image_blogPage4.jpg" alt="FeaturedBlogPostimage4">
+                        </div>
+                        <div class="post-content">
+                            <h2>Enhancing User Experience with Intuitive UI</h2>
+                            <div class="post-details">
+                                <span class="category"><b>Design</b></span>
+                                <span class="date">24 June 2024</span>
+                            </div>
+                            <p>Explore design principles that make a difference in creating intuitive and engaging user
+                                interfaces...</p>
+                            <div class="card-button">
+                                <p>Read More</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="post-box" (click)="blogcardOpen(4)">
+                        <div class="post-image">
+                            <img src="../assets/images/blogs/image_blogPage5.jpg" alt="FeaturedBlogPostimage5">
+                        </div>
+                        <div class="post-content">
+                            <h2>How to Dominate Search Engines with Effective SEO Techniques</h2>
+                            <div class="post-details">
+                                <span class="category"><b>Marketing</b></span>
+                                <span class="date">24 June 2024</span>
+                            </div>
+                            <p>Learn the top strategies for enhancing your digital presence and driving engagement...
+                            </p>
+                            <div class="card-button">
+                                <p>Read More</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="post-box" (click)="blogcardOpen(5)">
+                        <div class="post-image">
+                            <img src="../assets/images/blogs/image_blogPage6.jpg" alt="FeaturedBlogPostimage6">
+                        </div>
+                        <div class="post-content">
+                            <h2>How to Measure and Improve Your Digital Marketing ROI</h2>
+                            <div class="post-details">
+                                <span class="category"><b>Marketing</b></span>
+                                <span class="date">24 June 2024</span>
+                            </div>
+                            <p>Learn the top strategies for enhancing your digital presence and driving engagement...
+                            </p>
+                            <div class="card-button">
+                                <p>Read More</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="blog-card1" *ngIf="isBlogCardOpen">
+                <div class="blog-header1 mt-5">
+                    <button (click)="blogcardClose()">
+                        <p style="color: #F66136; font-size: 24px;">Blogs <span
+                                style="font-size: 24px; font-weight: 600; color: black;"><span
+                                    style="font-weight: 300;">></span> <span
+                                    id="blog-title">{{selectedPost.title}}</span></span></p>
+                    </button>
+                </div>
+                <hr style="border-top: solid 1px gray; width: 100%;" />
+                <div class="blog1">
+                    <div class="blog-card">
+                        <div class="image-container">
+                            <img id="blog-image" [src]="selectedPost.image" alt="FeaturedBlogPostimage1">
+                            <div class="blog-card-content">
+                                <h2 id="blog-card-title">{{selectedPost.title}}</h2>
+                                <p id="blog-content">{{selectedPost.content}}</p>
+                                <div class="blogs-footer">
+                                    <span class="tag"><b id="blog-category">{{selectedPost.category}}</b></span>
+                                    <span class="date1" id="blog-date">{{selectedPost.date}}</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

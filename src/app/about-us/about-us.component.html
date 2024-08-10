@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="https://kit.fontawesome.com/a199c68c5e.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+<title>Combined Page</title>
+<link rel="stylesheet" href="../../styles.css">
+<!-- <script src="index.js" defer></script> -->
+</head>
+<body>
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-m">
+            <div class="modal-content">
+                <div class="modal-body" style="border-radius: 20px;">
+                    <div class="modal-login">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true"><i class="fa-solid fa-circle-xmark"></i></span>
+                        </button>
+                        <h1>Welcome back!</h1>
+                        <p>Enter your username and password to log in to your admin panel</p>
+                        <label>Email</label>
+                        <input type="email" name="uname" placeholder="example@gmail.com" required/>
+                        <label>Password</label>
+                        <input type="password" name="psw" placeholder="Your Password" required/>
+                        <label>
+                        <input type="checkbox" checked="checked" name="remember"> Remember me
+                        </label>
+                        <button id="btn-login">Log in</button>
+                        <button id="btn-g-login">Log in with Google</button>
+                        <p>Don't have an account yet? <a data-toggle="modal" data-hide="#exampleModal" data-target="#exampleModal1"><b>Sign Up</b></a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+      
+    <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-m"> 
+            <div class="modal-content">
+                <div class="modal-body" style="border-radius: 20px;">
+                    <div class="modal-login">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true"><i class="fa-solid fa-circle-xmark"></i></span>
+                        </button>
+                        <h1>Sign up</h1>
+                        <p>Register to log in to your admin panel</p>
+                        <label>Email</label>
+                        <input type="email" name="uname" placeholder="example@gmail.com" required/>
+                        <div class="signup-psw">
+                        <div class="signup-password">
+                            <label>Password</label>
+                            <input type="password" name="psw" placeholder="Your Password" required/>
+                            </div>
+                            <div class="signup-confirm-password">
+                                <label>Confirm Password</label>
+                                <input type="password" name="psw" placeholder="Confirm Password" required/>
+                            </div>
+                        </div>
+                            <label>
+                                <input type="checkbox" checked="checked" name="remember"> I have read and accept terms and conditions
+                            </label>
+                            <button id="btn-login">Sign Up</button>
+                            <button id="btn-g-login">Sign Up with Google</button>
+                            <p>Have an account? <a data-toggle="modal" data-target="#exampleModal"><b>Sign in</b></a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<div>
+            <div class="container-1">
+                <h1 class="head-1">Welcome to <span style="font-family: alifira;">IAM DIGIPRO</span></h1>
+                <h2 class="head-2">Meet Our <span style="font-family: alifira;">Team</span></h2>
+                <p class="para-1">Experts in Digital Marketing, Web Development,<br>
+                    Graphic Design and More!</p>
+            </div>
+            <div class="container-2">
+                <div class="logo">
+                    <header>
+                        <!-- <div class="arrow d-flex justify-content-left">
+                            <img src="../assets/images/hand icon.png"  class="arr-right"/>
+                            <h1 class="services-ser">Why choose us</h1>
+                       </div> -->
+                        <div style="display: ruby;">
+                            <img src="../assets/images/hand icon.png"  class="arr-right-about"/>
+                            <h1 class="services-ser-about">Why choose us</h1>
+                        </div>
+                    </header>
+                </div>
+            </div>
+            <div class="sub-container-2">
+                <p class="para-3"><span>we deliver a seamless combination</span>
+                    of creativity and proficiency in digital marketing, web development, graphic design, consulting, and influencer marketing.</p>
+                    <p class="paragraph-1">Our team is a diverse group of professionals specializing in digital marketing, web-development, graphic design,
+                        consulting and influencer marketing. With a commitment to excellence and innovation, we work collaboratively to deliver
+                        outstanding results for our clients. Meet the experts who drive our success and make your vision a reality.</p>
+            </div>
+                        
+            <div class="hover-container">
+                <div class="container">
+                  <div class="content">
+                    <!-- <div class="label-1">
+                      <div><i class="people-i fa-solid fa-arrow-right"></i><span>People</span></div>
+                    </div> -->
+                    <div class="h-wrapper">
+                      <h1>Our Diverse Team of Digital Mavericks:</h1>
+                      <h1>Crafting Creativity, Driving Success</h1>
+                    </div>
+                    <div class="background-circle"></div>
+                  </div>
+                </div>
+              </div>
+              
+              
+            
+              <div class="about-us-about-container">
+                <div>
+                    <div style="display: flex;">
+                        <img src="../assets/images/hand icon.png"  class="arr-right"/>
+                        <h1 class="services-ser">Values</h1>
+                    </div>
+                </div>
+                <div class="about-us-matter">
+                    <p class="about-us-values-para"><span style="padding-left: 9% ;">At Iam Digipro, we deliver creative digital</span>
+                    solutions to help businesses thrive. Our vision is to lead in <span style="font-family: alifira;">innovation, driving growth and success for </span>our clients.</p>
+                    <div class="about-us-slots">
+                        <div class="about-us-slot">
+                            <div class="about-us-slot-number">01</div>
+                            <div class="about-us-slot-content">
+                                <h3><b>Innovative Excellence</b></h3>
+                                <p>We strive for excellence by continuously embracing innovation, ensuring our solutions are always cutting-edge and impactful.</p>
+                            </div>
+                        </div>
+                        <div class="about-us-slot">
+                            <div class="about-us-slot-number">02</div>
+                            <div class="about-us-slot-content">
+                                <h3><b>Creative Synergy</b></h3>
+                                <p>Our team thrives on creativity and collaboration, working together to produce imaginative and effective results for our clients.</p>
+                            </div>
+                        </div>
+                        <div class="about-us-slot">
+                            <div class="about-us-slot-number">03</div>
+                            <div class="about-us-slot-content">
+                                <h3><b>Integrity-Driven Solutions</b></h3>
+                                <p>We uphold the highest standards of integrity, delivering honest, reliable, and ethical solutions to our clients.</p>
+                            </div>
+                        </div>
+                        <div class="about-us-slot">
+                            <div class="about-us-slot-number">04</div>
+                            <div class="about-us-slot-content">
+                                <h3><b>Client-Centric Collaboration</b></h3>
+                                <p>Our clients are at the heart of everything we do. We collaborate closely with them to understand their needs and achieve their goals.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="scrolling-ad-container" id="scrollingAdContainer">
+                <div class="scrolling-ad" id="scrollingAd">
+                    <span>IAM<br>DIGIPRO</span>
+                    <span>Digital<br>Marketing</span>
+                    <span>Web<br>Development</span>
+                    <span>Graphic<br>Design</span>
+                    <span>IAM<br>DIGIPRO</span>
+                    <span>Digital<br>Marketing</span>
+                    <span>Web<br>Development</span>
+                    <span>Graphic<br>Design</span>
+                    <!-- Duplicate content -->
+                    <span>IAM<br>DIGIPRO</span>
+                    <span>Digital<br>Marketing</span>
+                    <span>Web<br>Development</span>
+                    <span>Graphic<br>Design</span>
+                    <span>IAM<br>DIGIPRO</span>
+                    <span>Digital<br>Marketing</span>
+                    <span>Web<br>Development</span>
+                    <span>Graphic<br>Design</span>
+                </div>
+            </div>
+</div>            
+            
+            
+             
+            
+            
+        
+
+
+<!-- enquiry-form -->
+
+<div class="enquiry-container mt-5" style="margin-bottom: 12vw;">
+    <div class="enquiry-form">
+        <div style="display: flex;">
+            <img src="../assets/images/hand icon.png"  class="arr-right"/>
+            <h1 class="services-ser">Enquiry</h1>
+        </div>
+        <div class="left-side">
+            <p>Ready to elevate your <br> brand online? <br>
+            <span class="span">Get a Free Consultation<br> Today!</span></p>
+        </div>
+        <div class="enquiry-background-container">
+            <h1 class="enquiry-heading">Let's Collab <i class="fa-solid fa-arrow-right" style="color: white;"></i></h1>
+        </div>
+    </div>
+
+    <div class="container-cnt">
+        <form class="orange-form-cnt">
+          <div class="text-container-cnt">
+            <label for="message">What do you have to say to us?</label>
+            <textarea name="message" placeholder="Start typing..."></textarea>
+            <div class="rating-container-cnt">
+              <p class="rating-text"  class="label-cnt">Please select your interests:</p>
+              <div class="stars-cnt">
+                <input type="radio" id="star5" name="rating" value="5" />
+                <label for="star5" class="star" data-tooltip="Marketing">&#9733;</label>
+                <input type="radio" id="star4" name="rating" value="4" />
+                <label for="star4" class="star" data-tooltip="Web Development">&#9733;</label>
+                <input type="radio" id="star3" name="rating" value="3" />
+                <label for="star3" class="star" data-tooltip="Graphic Design">&#9733;</label>
+                <input type="radio" id="star2" name="rating" value="2" />
+                <label for="star2" class="star" data-tooltip="Consulting">&#9733;</label>
+                <input type="radio" id="star1" name="rating" value="1" />
+                <label for="star1" class="star" data-tooltip="Influencer Marketing">&#9733;</label>
+              </div>
+              <div class="rating-display">Selected: None</div>
+            </div>
+          </div>
+          <div class="input-container-cnt">
+            <div class="name-container-cnt">
+              <label class="label-cnt" for="name">Name*</label>
+              <input class="input-cnt" type="text" name="name" placeholder="Type your name..." required>
+            </div>
+            <div class="email-container-cnt">
+              <label class="label-cnt" for="email">Email*</label>
+              <input class="input-cnt" type="text" name="email" placeholder="Type your e-mail..." required>
+            </div>
+            <div class="phone-container-cnt">
+              <label class="label-cnt" for="phone">Phone</label>
+              <input class="input-cnt" type="text" name="phone" placeholder="(555) 555-5555">
+            </div>
+            <div class="button-container-cnt">
+              <button type="submit" name="submit" class="btn-cnt">SEND</button>
+            </div>
+          </div>
+        </form>
+      </div>
+</div>
+
+<div class="wtsapp-icons ">
+    <a aria-label="Chat on WhatsApp" href="https://wa.me/9381776396"> <i class="fa-brands fa-whatsapp"></i></a>
+</div>
+
+<button class="ct-button" id="openFormButton"><i class="fa-solid fa-circle fa-beat-fade blinking"></i>Let's talk</button>
+
+<div id="formContainer" class="modal-form-container">
+<form class="modal-form">
+    
+        <i class="fa-solid fa-circle-xmark cl-icon" onclick="closeForm()" style="float: right; color: white;" ></i>
+      
+    <h1 style="font-size: small; margin: 5px;">I am Interested in</h1>
+    <div class="interest-buttons">
+        <div>
+            <button type="button" style="font-size: x-small">Digital Marketing</button>
+            <button type="button" style="font-size: x-small">Web Development</button>
+        </div>
+        <div>
+            <button type="button" style="font-size: x-small">Graphic Design</button>
+            <button type="button" style="font-size: x-small">Consulting</button>
+            <button type="button" style="font-size: x-small">Influencer Marketing</button>
+        </div>
+    </div>
+    <label for="name">I am</label>
+    <input type="text" id="name" name="name" placeholder="John" required>
+    <label for="phone">Phone number</label>
+    <input type="tel" id="phone" name="phone" required>
+    <label for="email">Email <span style="color:rgb(109, 109, 108);">(Optional)</span></label>
+    <input type="email" id="email" name="email" placeholder="iam@gmail.com">
+    <button type="submit" class="enquiry-send-button" style="padding: 10px; margin-right: 15px;font-size: small">Send</button>
+</form>
+</div>
+
+</body>
+</html>
