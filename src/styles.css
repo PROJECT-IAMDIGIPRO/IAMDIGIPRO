@@ -1364,9 +1364,12 @@ textarea {
     transition: background-color 0.3s ease;
 }
 
-/* .careers-arrow-btn:hover {
-    
-} */
+
+.careers-arrow-btn:hover {
+    /* background-color: #e65021; */
+    padding: 0;
+}
+
 
 @media screen and (max-width: 902px) {
     .careers-card {
@@ -9038,4 +9041,19 @@ input[type="radio"]:checked + .star {
     z-index: 1000;
     bottom: 8px;
     right: 0%;
+}
+
+.card-text {
+    font-size: 20px;
+}
+
+.animated {
+    height: 600px;
+    width: 600px;
+}
+
+.animation-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
