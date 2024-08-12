@@ -60,17 +60,14 @@
                 <input type="radio" name="slider" id="close-btn" />
                 <ul class="nav-links">
                     <label for="close-btn" class="btn close-btn"><fa-icon [icon]="faTimes"></fa-icon></label>
-                    <li><a routerLink="/aboutus">About Us</a></li>
-                    <label for="close-btn" class="btn close-btn"><i class="fas fa-times"></i></label>
+                    
                     <li><a routerLink="/aboutus" (click)="closeMenu()">About Us</a></li>
                     <li>
                         <a routerLink="#" class="desktop-item">Careers</a>
                         <input type="checkbox" id="showDrop" />
                         <label for="showDrop" class="mobile-item">Careers</label>
                         <ul class="drop-menu">
-                            <li><a routerLink="/internship">Internship</a></li>
-                            <li><a routerLink="/training">Training</a></li>
-                            <li><a routerLink="/jobopportunity()">Job Opportunity</a></li>
+                
                             <li><a routerLink="/internship" (click)="closeMenu()">Internship</a></li>
                             <li><a routerLink="/training" (click)="closeMenu()">Training</a></li>
                             <li><a routerLink="/jobopportunity" (click)="closeMenu()">Job Opportunity</a></li>
