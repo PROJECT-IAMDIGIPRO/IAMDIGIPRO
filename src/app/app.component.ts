@@ -170,7 +170,6 @@ export class AppComponent implements OnInit {
   onInterestSelect(interest: string) {
     this.selectedInterest = interest;
   }
-}
   closeMenu() {
     const menuCheckbox = document.getElementById('menu-btn') as HTMLInputElement;
     if (menuCheckbox) {
