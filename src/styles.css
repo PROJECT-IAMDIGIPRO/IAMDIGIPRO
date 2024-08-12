@@ -9061,7 +9061,7 @@ input[type="radio"]:checked + .star {
     justify-content: center;
 }
 /* animated images responsive */
-@media (max-width: 765px){
+@media (max-width: 767px){
     .animated {
         height: 100%;
         width: 100%;
