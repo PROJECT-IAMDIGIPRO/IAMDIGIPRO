@@ -1367,9 +1367,12 @@ textarea {
     transition: background-color 0.3s ease;
 }
 
+
 .careers-arrow-btn:hover {
     /* background-color: #e65021; */
+    padding: 0;
 }
+
 
 @media screen and (max-width: 902px) {
     .careers-card {
@@ -2289,6 +2292,17 @@ textarea {
     .small-heading {
         font-size: 2vw;
     }
+    /* about-us main heading responsive */
+	.head-1 {
+		color: #de4c12;
+		font-size: 60px;
+		font-weight: 100;
+	}
+	
+	.head-2 {
+		color: #fff;
+		font-size: 25px;
+	}
 }
 
 @media (max-width: 568px) {
@@ -2312,6 +2326,17 @@ textarea {
     .small-heading {
         font-size: 3vw;
     }
+    /* about-us main heading responsive */
+	.head-1 {
+		color: #de4c12;
+		font-size: 40px;
+		font-weight: 100;
+	}
+	
+	.head-2 {
+		color: #fff;
+		font-size: 20px;
+	}
 }
 
 .hover-container {
@@ -5805,15 +5830,19 @@ body {
 }
 
 .right-section {
-    background-color: black;
-    color: white;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 40px;
-    width: 90%;
-    margin: 20px;
-    max-width: 600px; /* Adjust the max-width as needed */
-}
+    background: none;
+	border: 2px solid #FFFFFF;
+	box-sizing: border-box;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	border-radius: 17px;
+	/* END COLORS*/
+	margin: auto;
+	display: flex;
+	/* justify-content: flex-start; */
+	padding-top: 3rem;
+	padding-right: 3rem;
+	padding-bottom: 3rem;
+	padding-left: 3rem;}
 
 .modal-form {
     display: flex;
@@ -5911,7 +5940,12 @@ body {
     .left-section h2 {
         font-size: 4vw;
     }
-
+    .left-section h5 {
+        font-size: 6vw;
+    }
+    .left-section h4 {
+        font-size: 5vw;
+    }
     .left-section p,
     .right-section h3 {
         font-size: 3vw;
@@ -5937,6 +5971,24 @@ body {
     .form-group {
         margin-left: 0;
     }
+    .right-section {
+        background: none;
+        border: 2px solid #FFFFFF;
+        box-sizing: border-box;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 17px;
+        /* END COLORS*/
+        width: 100%;
+        max-width: 1000px;
+        margin-top: 10px;
+        display: flex;
+        justify-content: flex-start;
+        padding-top: 3rem;
+        padding-right: 1rem;
+        padding-bottom: 3rem;
+        padding-left: 1rem;
+    
+      }
 }
 
 #social-icons-list {
@@ -8640,18 +8692,41 @@ body {
     max-width: 1000px;
     margin: auto;
     position: absolute;
-    top: 20%;
+    top: 15%;
     left: 73%;
     transform: translateX(-50%);
     display: flex;
     justify-content: flex-start;
     padding-top: 3rem;
     padding-right: 3rem;
-    padding-bottom: 5rem;
+    padding-bottom: 3rem;
     padding-left: 3rem;
 }
-
-@media (max-width: 767px) {
+@media (min-width: 900px) and (max-width: 1100px){ 
+	.orange-form-cnt {
+		/* COLORS */
+		background: none;
+		border: 2px solid #FFFFFF;
+		box-sizing: border-box;
+		box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+		border-radius: 17px;
+		/* END COLORS*/
+		width: 43%;
+		max-width: 1000px;
+		margin: auto;
+		position: absolute;
+		top: 5%;
+		left: 73%;
+		transform: translateX(-50%);
+		display: flex;
+		justify-content: flex-start;
+		padding-top: 3rem;
+		padding-right: 3rem;
+		padding-bottom: 1rem;
+		padding-left: 3rem;
+	  }
+  }
+@media (max-width: 900px) {
     .orange-form-cnt {
         /* COLORS */
         background: none;
@@ -8681,6 +8756,18 @@ body {
         order: 1;
         min-width: 41%;
     }
+    /* consult-us contact form responsive */
+    .consult-us-textarea{
+		height: 100%;
+		width: 100%;
+		resize: none;
+		background: #FFFFFF;
+		border: 1px solid orangered;
+		box-shadow: 0px 4px 4px orangered;
+		border-radius: 10px;
+		margin-bottom: 10px;
+		padding: 10px;
+	  }
 }
 
 .label-cnt {
@@ -8709,7 +8796,7 @@ textarea {
     border: 1px solid orangered;
     box-shadow: 0px 4px 4px orangered;
     border-radius: 10px;
-    margin-bottom: 39px;
+    margin-bottom: 10px;
     padding: 10px;
 }
 
@@ -8766,24 +8853,27 @@ textarea:focus {
 /* INPUT DIVS */
 .name-container-cnt,
 .email-container-cnt,
-.phone-container-cnt {
+.phone-container-cnt,
+.company-container-cnt,
+.website-container-cnt {
     margin-bottom: 20px;
 }
 
 .rating-container-cnt {
-    margin-top: 20px;
+    margin-top: 5px;
     text-align: center;
 }
 
 .rating-text {
     font-size: 16px;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 }
 
 .stars-cnt {
     display: flex;
-    justify-content: center;
-    position: relative;
+  	flex-wrap: wrap;
+  	justify-content: center;
+  	gap: 10px; 
 }
 
 .star {
@@ -8806,29 +8896,38 @@ input[type="radio"]:checked + .star {
 .star:hover {
     color: orangered;
 }
-
-.star:hover::after {
-    content: attr(data-tooltip);
-    position: absolute;
-    bottom: -30px;
-    left: 10%;
-    margin-left: -30px;
-    transform: translateX(-50%);
-    background: black;
-    color: white;
-    padding: 5px;
-    border-radius: 5px;
-    font-size: 14px;
-    white-space: nowrap;
-    opacity: 1;
-    pointer-events: none;
-}
-
 .rating-display {
     margin-top: 10px;
     font-size: 16px;
 }
-
+ /* enquiry form buttons code style */
+ .star-button {
+	background: black;
+	color: white;
+	padding: 5px;
+	border-radius: 5px;
+	font-size: 14px;
+	flex: 1 1 calc(50% - 10px); 
+    box-sizing: border-box;
+	
+  }
+  
+  .star-button.selected {
+	background-color: orangered;
+	color: white;
+  }
+   /* consult-us contact form responsive */
+   .consult-us-textarea{
+    height: 100%;
+    width: 100%;
+    resize: none;
+    background: #FFFFFF;
+    border: 1px solid orangered;
+    box-shadow: 0px 4px 4px orangered;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+  }
 /* ----------  CONTACT US TOGGLE ---------- */
 @keyframes shine {
     0% {
@@ -8945,4 +9044,19 @@ input[type="radio"]:checked + .star {
     z-index: 1000;
     bottom: 8px;
     right: 0%;
+}
+
+.card-text {
+    font-size: 20px;
+}
+
+.animated {
+    height: 600px;
+    width: 600px;
+}
+
+.animation-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
