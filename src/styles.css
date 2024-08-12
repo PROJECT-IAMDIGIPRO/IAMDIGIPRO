@@ -264,6 +264,9 @@ nav .wrapper {
     .content .row {
         font-size: 19px;
     }
+    .nav-links .desktop-item {
+		display: none !important;	
+	}
 }
 nav input {
     display: none;
