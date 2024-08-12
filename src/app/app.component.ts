@@ -156,4 +156,17 @@ export class AppComponent implements OnInit {
   toggleFaq(index: number) {
     this.faqs[index].isOpen = !this.faqs[index].isOpen;
   }
+  // enquiry form buttons function 
+  selectedInterest: string = 'None';
+  interests = [
+    { value: '5', label: 'Marketing' },
+    { value: '4', label: 'Web Development' },
+    { value: '3', label: 'Graphic Design' },
+    { value: '2', label: 'Consulting' },
+    { value: '1', label: 'Influencer Marketing' }
+  ];
+
+  onInterestSelect(interest: string) {
+    this.selectedInterest = interest;
+  }
 }
