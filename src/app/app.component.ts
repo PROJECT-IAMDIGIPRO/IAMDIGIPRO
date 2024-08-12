@@ -183,6 +183,14 @@ faStarHalfAlt = faStarHalfAlt;
   onInterestSelect(interest: string) {
     this.selectedInterest = interest;
   }
+<<<<<<< HEAD
+<<<<<<< HEAD
+
+=======
+>>>>>>> f0b45c56ac80d0321b7ea1d407a83a17773bccc7
+=======
+
+>>>>>>> 2a7c81a066c81176671eaca2ad800ef567489265
   closeMenu() {
     const menuCheckbox = document.getElementById('menu-btn') as HTMLInputElement;
     if (menuCheckbox) {

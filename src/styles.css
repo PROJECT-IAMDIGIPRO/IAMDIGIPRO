@@ -9046,12 +9046,46 @@ input[type="radio"]:checked + .star {
 }
 
 .card-text {
-    font-size: 20px;
+    font-size: 1.1vw;
+}
+
+.card-title-cdr {
+    font-size: 1.3vw;
+}
+
+@media screen and (min-width:992px) and (max-width:1200px) {
+    .card-text {
+        font-size: 1.3vw;
+    }
+    
+    .card-title-cdr {
+        font-size: 1.5vw;
+    }
+}
+
+@media screen and (min-width:768px) and (max-width:991px) {
+    .card-text {
+        font-size: 1.3vw;
+    }
+    
+    .card-title-cdr {
+        font-size: 1.6vw;
+    }
+}
+
+@media screen and (max-width:767px) {
+    .card-text {
+        font-size: 14px;
+    }
+    
+    .card-title-cdr {
+        font-size: 16px;
+    }
 }
 
 .animated {
-    height: 600px;
-    width: 600px;
+    height: 100%;
+    width: 100%;
 }
 
 .animation-content {
