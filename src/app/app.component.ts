@@ -156,6 +156,7 @@ export class AppComponent implements OnInit {
   toggleFaq(index: number) {
     this.faqs[index].isOpen = !this.faqs[index].isOpen;
   }
+
   // enquiry form buttons function 
   selectedInterest: string = 'None';
   interests = [
@@ -170,3 +171,11 @@ export class AppComponent implements OnInit {
     this.selectedInterest = interest;
   }
 }
+  closeMenu() {
+    const menuCheckbox = document.getElementById('menu-btn') as HTMLInputElement;
+    if (menuCheckbox) {
+      menuCheckbox.checked = false;
+    }
+  }
+}
+
