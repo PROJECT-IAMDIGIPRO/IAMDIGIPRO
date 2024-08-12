@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-training',
@@ -6,5 +7,5 @@ import { Component } from '@angular/core';
   styleUrl: './training.component.css'
 })
 export class TrainingComponent {
-
+  faArrowRight = faArrowRight;
 }
