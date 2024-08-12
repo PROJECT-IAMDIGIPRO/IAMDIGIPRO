@@ -60,15 +60,15 @@
                 <input type="radio" name="slider" id="close-btn" />
                 <ul class="nav-links">
                     <label for="close-btn" class="btn close-btn"><i class="fas fa-times"></i></label>
-                    <li><a routerLink="/aboutus">About Us</a></li>
+                    <li><a routerLink="/aboutus" (click)="closeMenu()">About Us</a></li>
                     <li>
                         <a routerLink="#" class="desktop-item">Careers</a>
                         <input type="checkbox" id="showDrop" />
                         <label for="showDrop" class="mobile-item">Careers</label>
                         <ul class="drop-menu">
-                            <li><a routerLink="/internship">Internship</a></li>
-                            <li><a routerLink="/training">Training</a></li>
-                            <li><a routerLink="/jobopportunity">Job Opportunity</a></li>
+                            <li><a routerLink="/internship" (click)="closeMenu()">Internship</a></li>
+                            <li><a routerLink="/training" (click)="closeMenu()">Training</a></li>
+                            <li><a routerLink="/jobopportunity" (click)="closeMenu()">Job Opportunity</a></li>
                         </ul>
                     </li>
                     <li>
@@ -82,35 +82,35 @@
                                 </div>
                                 <div class="row">
                                     <ul class="mega-links">
-                                        <li><a routerLink="/searchengineoptimization">Search Engine Optimization</a></li>
-                                        <li><a routerLink="/searchenginemarketing">Search Engine Marketing</a></li>
-                                        <li><a routerLink="/socialmediaoptimization">Social Media Optimization</a></li>
+                                        <li><a routerLink="/searchengineoptimization" (click)="closeMenu()">Search Engine Optimization</a></li>
+                                        <li><a routerLink="/searchenginemarketing" (click)="closeMenu()">Search Engine Marketing</a></li>
+                                        <li><a routerLink="/socialmediaoptimization" (click)="closeMenu()">Social Media Optimization</a></li>
                                     </ul>
                                 </div>
                                 <div class="row">
                                     <ul class="mega-links">
-                                        <li><a routerLink="/influencermarketing">Influencer Marketing</a></li>
-                                        <li><a routerLink="/webappdevelopment">Web/App Development</a></li>
-                                        <li><a routerLink="/contentdevelopmenmMarketing">Content Development & Marketing</a></li>
+                                        <li><a routerLink="/influencermarketing" (click)="closeMenu()">Influencer Marketing</a></li>
+                                        <li><a routerLink="/webappdevelopment" (click)="closeMenu()">Web/App Development</a></li>
+                                        <li><a routerLink="/contentdevelopmenmMarketing" (click)="closeMenu()">Content Development & Marketing</a></li>
                                     </ul>
                                 </div>
                                 <div class="row">
                                     <ul class="mega-links">
-                                        <li><a routerLink="/leadgeneration">Lead generation - B2B & B2C</a></li>
-                                        <li><a routerLink="/consulting">Consulting</a></li>
-                                        <li><a routerLink="/emailmarketing">Email Marketing</a></li>
+                                        <li><a routerLink="/leadgeneration" (click)="closeMenu()">Lead generation - B2B & B2C</a></li>
+                                        <li><a routerLink="/consulting" (click)="closeMenu()">Consulting</a></li>
+                                        <li><a routerLink="/emailmarketing" (click)="closeMenu()">Email Marketing</a></li>
                                     </ul>
                                 </div>
                             </div>
                         </div>
                     </li>
-                    <li><a routerLink="/portfolio">Portfolio</a></li>
-                    <li><a routerLink="/blogs">Blogs</a></li>
-                    <li><a routerLink="/consultus">Consult Us</a></li>
+                    <li><a routerLink="/portfolio" (click)="closeMenu()">Portfolio</a></li>
+                    <li><a routerLink="/blogs" (click)="closeMenu()">Blogs</a></li>
+                    <li><a routerLink="/consultus" (click)="closeMenu()">Consult Us</a></li>
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
-                    <li><a routerLink="/login" class="nav-lsbtn">Log In</a></li>
+                    <li><a routerLink="/login" (click)="closeMenu()" class="nav-lsbtn">Log In</a></li>
                     &nbsp;
-                    <li><a routerLink="/signup" class="nav-lsbtn">Sign Up</a></li>
+                    <li><a routerLink="/signup" (click)="closeMenu()" class="nav-lsbtn">Sign Up</a></li>
                 </ul>
                 <label for="menu-btn" class="btn menu-btn"><i class="fas fa-bars"></i></label>
             </div>
