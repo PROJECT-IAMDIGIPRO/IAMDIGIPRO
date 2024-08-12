@@ -59,7 +59,7 @@
                 <input type="radio" name="slider" id="menu-btn" />
                 <input type="radio" name="slider" id="close-btn" />
                 <ul class="nav-links">
-                    <label for="close-btn" class="btn close-btn"><i class="fas fa-times"></i></label>
+                    <label for="close-btn" class="btn close-btn"><fa-icon [icon]="faTimes"></fa-icon></label>
                     <li><a routerLink="/aboutus">About Us</a></li>
                     <li>
                         <a routerLink="#" class="desktop-item">Careers</a>
@@ -68,7 +68,7 @@
                         <ul class="drop-menu">
                             <li><a routerLink="/internship">Internship</a></li>
                             <li><a routerLink="/training">Training</a></li>
-                            <li><a routerLink="/jobopportunity">Job Opportunity</a></li>
+                            <li><a routerLink="/jobopportunity()">Job Opportunity</a></li>
                         </ul>
                     </li>
                     <li>
@@ -112,7 +112,7 @@
                     &nbsp;
                     <li><a routerLink="/signup" class="nav-lsbtn">Sign Up</a></li>
                 </ul>
-                <label for="menu-btn" class="btn menu-btn"><i class="fas fa-bars"></i></label>
+                <label for="menu-btn" class="btn menu-btn"><fa-icon [icon]="faBars"></fa-icon></label>
             </div>
         </nav>
         <div *ngIf="!isServiceRoute">
@@ -156,8 +156,8 @@
                 </div>
                 <div class="about-content-text">
                     <div class="text">
-                        <h1 class="about-heading">Transforming Visions into Reality</h1>
-                        <p class="about-description">Discover how IAM DIGIPRO empowers businesses with expert digital marketing and consulting, fostering growth and excellence.</p>
+                        <h1 class="about-heading">Navigate the Digital Marketing Landscape</h1>
+                        <p class="about-description">Discover the essence of digital marketing with IAM Digipro. Learn from industry veterans who emphasize practical strategies over theoretical concepts. Subscribe to our newsletter and chart your course to becoming a digital marketing expert.</p>
                         <div>
                             <a routerLink="/about-us">
                                 <button class="get-started-button"><img src="../assets/images/hand icon.png" class="arr-rightEj" />Explore our journey and meet our team!</button>
@@ -762,7 +762,7 @@
                     <h1 class="services-ser">Clients</h1>
                 </div>
                 <div class="clients-container">
-                    <h2 class="client-heading">Trusted Companies We Proudly Work With</h2>
+                    <h2 class="client-heading">Clients We Proudly Serve and Support</h2>
                     <div class="client-logos">
                         <img src="../assets/images/cmp1.jpg" alt="Align" />
                         <img src="../assets/images/cmp2.jpg" alt="Ceridian" />
@@ -787,13 +787,12 @@
                             Ready to elevate your <br />
                             brand online? <br />
                             <span class="span">
-                                Get a Free Consultation<br />
-                                Today!
+                                Partner with Us to Reach New Heights!
                             </span>
                         </p>
                     </div>
                     <div class="enquiry-background-container">
-                        <h1 class="enquiry-heading">Let's Collab <i class="fa-solid fa-arrow-right" style="color: white;"></i></h1>
+                        <h1 class="enquiry-heading">Let's Collab <fa-icon [icon]="faArrowRight"></fa-icon></h1>
                     </div>
                 </div>
                 <div class="container-cnt">
@@ -968,7 +967,7 @@
                         </div>
                     </button>
                 </div>
-                <a href="#" id="goTop" class="go-top"><i class="fa-solid fa-arrow-up-long"></i></a>
+                <a href="#" id="goTop" class="go-top"><fa-icon [icon]="faArrowUp"></fa-icon></a>
             </div>
             <div class="footer-bottom d-flex flex-row">
                 <div class="copyright">
@@ -981,11 +980,11 @@
                     <p><b>Email Us at:</b> info&#64;iamdigipro.com</p>
                 </div>
                 <div class="social-icons">
-                    <a href="https://www.instagram.com/iam_digipro?igsh=MzRlODBiNWFlZA==" target="_blank" class="social-icon instagram"><i class="fa-brands fa-instagram"></i></a>
-                    <a href="https://www.facebook.com/profile.php?id=61560868171435" target="_blank" class="social-icon facebook"><i class="fa-brands fa-facebook"></i></a>
-                    <a href="https://www.linkedin.com/in/iam-digipro-127123313/" target="_blank" class="social-icon linkedin"><i class="fa-brands fa-linkedin"></i></a>
-                    <a href="https://x.com/iamdigipro" target="_blank" class="social-icon linkedin"><i class="fa-brands fa-x-twitter"></i></a>
-                    <a href="https://www.youtube.com/@IamDigitalPro/featured" target="_blank" class="social-icon linkedin"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="https://www.instagram.com/iam_digipro?igsh=MzRlODBiNWFlZA==" target="_blank" class="social-icon instagram"><fa-icon [icon]="faInstagram"></fa-icon></a>
+                    <a href="https://www.facebook.com/profile.php?id=61560868171435" target="_blank" class="social-icon facebook"><fa-icon [icon]="faFacebook"></fa-icon></a>
+                    <a href="https://www.linkedin.com/in/iam-digipro-127123313/" target="_blank" class="social-icon linkedin"><fa-icon [icon]="faLinkedin"></fa-icon></a>
+                    <a href="https://x.com/iamdigipro" target="_blank" class="social-icon linkedin"><fa-icon [icon]="['fab', 'twitter']"></fa-icon></a>
+                    <a href="https://www.youtube.com/@IamDigitalPro/featured" target="_blank" class="social-icon linkedin"><fa-icon [icon]="faYoutube"></fa-icon></a>
                 </div>
             </div>
         </footer>
