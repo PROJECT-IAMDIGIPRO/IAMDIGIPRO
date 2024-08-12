@@ -1,6 +1,9 @@
 import { AfterViewInit, Component, OnDestroy, OnInit } from '@angular/core';
 import { NavigationEnd, Router } from '@angular/router';
 import { Meta, Title } from '@angular/platform-browser';
+import { faInstagram, faFacebook, faLinkedin, faYoutube } from '@fortawesome/free-brands-svg-icons';
+import { faArrowUp, faArrowRight , faBars , faTimes , faStar, faStarHalfAlt } from '@fortawesome/free-solid-svg-icons';
+
 
 @Component({
   selector: 'app-root',
@@ -37,23 +40,23 @@ export class AppComponent implements OnInit {
 
   faqs = [
     {
-      question: 'What is digital marketing and why is it important for my business?',
-      answer: 'Digital marketing encompasses all marketing efforts that use the internet or an electronic device. It is important because it allows businesses to reach a larger audience, target specific demographics, and measure the effectiveness of their campaigns in real time.',
+      question: "What digital marketing services do you offer at IAM Digipro?",
+      answer: "At IAM Digipro, we offer a wide range of digital marketing services, including search engine marketing (SEM), social media advertising, digital analytics, online reputation management, and affiliate marketing. Our goal is to boost your online presence and achieve tangible results.",
       isOpen: false
     },
     {
-      question: 'What is the process for developing a website with your company?',
-      answer: 'Digital marketing encompasses all marketing efforts that use the internet or an electronic device. It is important because it allows businesses to reach a larger audience, target specific demographics, and measure the effectiveness of their campaigns in real time.',
+      question: "How can IAM Digipro improve my website's performance?",
+      answer: "We can help enhance your website through responsive web design, custom web application development, website security enhancements, API integrations, and performance optimization. Whether you need a new site or updates to an existing one, we've got you covered.",
       isOpen: false
     },
     {
-      question: 'What graphic design services do you offer?',
-      answer: 'Digital marketing encompasses all marketing efforts that use the internet or an electronic device. It is important because it allows businesses to reach a larger audience, target specific demographics, and measure the effectiveness of their campaigns in real time.',
+      question: "What graphic design services are available at IAM Digipro? ",
+      answer: "Our graphic design services include packaging design, motion graphics, typography design, brand style guides, and digital illustration. We aim to make your brand visually appealing and memorable.",
       isOpen: false
     },
     {
-      question: 'What is influencer marketing and how can it benefit my business?',
-      answer: 'Digital marketing encompasses all marketing efforts that use the internet or an electronic device. It is important because it allows businesses to reach a larger audience, target specific demographics, and measure the effectiveness of their campaigns in real time.',
+      question: "What consulting services does IAM Digipro provide? ",
+      answer: "We offer strategic consulting in areas like strategic planning, customer experience (CX), data governance, risk management, and business continuity planning. We're here to help you develop effective strategies and improve your operations.",
       isOpen: false
     },
     {
@@ -62,6 +65,16 @@ export class AppComponent implements OnInit {
       isOpen: false
     }
   ];
+  faInstagram = faInstagram;
+faFacebook = faFacebook;
+faLinkedin = faLinkedin;
+faYoutube = faYoutube;
+faArrowUp = faArrowUp;
+faArrowRight = faArrowRight;
+faBars = faBars;
+faTimes = faTimes;
+faStar = faStar;
+faStarHalfAlt = faStarHalfAlt;
 
   constructor(private router: Router, private meta: Meta, private title: Title) {}
 
@@ -170,7 +183,10 @@ export class AppComponent implements OnInit {
   onInterestSelect(interest: string) {
     this.selectedInterest = interest;
   }
+<<<<<<< HEAD
 
+=======
+>>>>>>> f0b45c56ac80d0321b7ea1d407a83a17773bccc7
   closeMenu() {
     const menuCheckbox = document.getElementById('menu-btn') as HTMLInputElement;
     if (menuCheckbox) {
@@ -178,4 +194,3 @@ export class AppComponent implements OnInit {
     }
   }
 }
-
