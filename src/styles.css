@@ -264,6 +264,9 @@ nav .wrapper {
     .content .row {
         font-size: 19px;
     }
+    .nav-links .desktop-item {
+		display: none !important;	
+	}
 }
 nav input {
     display: none;
@@ -9056,4 +9059,11 @@ input[type="radio"]:checked + .star {
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+/* animated images responsive */
+@media (max-width: 765px){
+    .animated {
+        height: 100%;
+        width: 100%;
+    } 
 }
