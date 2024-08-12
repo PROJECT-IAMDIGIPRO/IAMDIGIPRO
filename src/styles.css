@@ -1367,12 +1367,9 @@ textarea {
     transition: background-color 0.3s ease;
 }
 
-
-.careers-arrow-btn:hover {
-    /* background-color: #e65021; */
-    padding: 0;
-}
-
+/* .careers-arrow-btn:hover {
+     background-color: #e65021; 
+} */
 
 @media screen and (max-width: 902px) {
     .careers-card {
@@ -6013,9 +6010,11 @@ body {
     transition: background 0.5s, transform 0.5s;
     text-align: center;
 }
-.values-list div i {
-    font-size: 50px;
-    margin-bottom: 30px;
+.values-list div img {
+	width: 35%;
+} 
+.values-list div img:hover {
+	filter: sepia(1) hue-rotate(180deg) saturate(1000%);
 }
 .values-list div h2 {
     font-size: 30px;
@@ -6046,7 +6045,7 @@ body {
     .values-list div {
         display: inline-block;
         flex: 0 0 auto;
-        min-width: 250px;
+        max-width: 250px;
         margin-right: 10px;
     }
 }
