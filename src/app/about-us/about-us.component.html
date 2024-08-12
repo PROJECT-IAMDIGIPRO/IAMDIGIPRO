@@ -216,30 +216,28 @@
             <label for="message">What do you have to say to us?</label>
             <textarea name="message" placeholder="Start typing..."></textarea>
             <div class="rating-container-cnt">
-              <p class="rating-text"  class="label-cnt">Please select your interests:</p>
+              <p class="rating-text">Please select your interests:</p>
               <div class="stars-cnt">
-                <input type="radio" id="star5" name="rating" value="5" />
-                <label for="star5" class="star" data-tooltip="Marketing">&#9733;</label>
-                <input type="radio" id="star4" name="rating" value="4" />
-                <label for="star4" class="star" data-tooltip="Web Development">&#9733;</label>
-                <input type="radio" id="star3" name="rating" value="3" />
-                <label for="star3" class="star" data-tooltip="Graphic Design">&#9733;</label>
-                <input type="radio" id="star2" name="rating" value="2" />
-                <label for="star2" class="star" data-tooltip="Consulting">&#9733;</label>
-                <input type="radio" id="star1" name="rating" value="1" />
-                <label for="star1" class="star" data-tooltip="Influencer Marketing">&#9733;</label>
+                <div *ngFor="let interest of interests">
+                  <button 
+                    class="star-button" 
+                    [ngClass]="{'selected': selectedInterest === interest.label}"
+                    (click)="onInterestSelect(interest.label)">
+                    {{ interest.label }}
+                  </button>
+                </div>
               </div>
-              <div class="rating-display">Selected: None</div>
+              <div class="rating-display">Selected: {{ selectedInterest }}</div>
             </div>
           </div>
           <div class="input-container-cnt">
             <div class="name-container-cnt">
-              <label class="label-cnt" for="name">Name*</label>
-              <input class="input-cnt" type="text" name="name" placeholder="Type your name..." required>
+                <label class="label-cnt" for="name">I am</label>
+                <input class="input-cnt" type="text" name="name" placeholder="Jhon" required />
             </div>
             <div class="email-container-cnt">
-              <label class="label-cnt" for="email">Email*</label>
-              <input class="input-cnt" type="text" name="email" placeholder="Type your e-mail..." required>
+                <label class="label-cnt" for="email">Email</label>
+                <input class="input-cnt" type="text" name="email" placeholder="Iam@gmail.com" required />
             </div>
             <div class="phone-container-cnt">
               <label class="label-cnt" for="phone">Phone</label>

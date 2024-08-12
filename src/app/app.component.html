@@ -61,6 +61,8 @@
                 <ul class="nav-links">
                     <label for="close-btn" class="btn close-btn"><fa-icon [icon]="faTimes"></fa-icon></label>
                     <li><a routerLink="/aboutus">About Us</a></li>
+                    <label for="close-btn" class="btn close-btn"><i class="fas fa-times"></i></label>
+                    <li><a routerLink="/aboutus" (click)="closeMenu()">About Us</a></li>
                     <li>
                         <a routerLink="#" class="desktop-item">Careers</a>
                         <input type="checkbox" id="showDrop" />
@@ -69,6 +71,9 @@
                             <li><a routerLink="/internship">Internship</a></li>
                             <li><a routerLink="/training">Training</a></li>
                             <li><a routerLink="/jobopportunity()">Job Opportunity</a></li>
+                            <li><a routerLink="/internship" (click)="closeMenu()">Internship</a></li>
+                            <li><a routerLink="/training" (click)="closeMenu()">Training</a></li>
+                            <li><a routerLink="/jobopportunity" (click)="closeMenu()">Job Opportunity</a></li>
                         </ul>
                     </li>
                     <li>
@@ -82,35 +87,35 @@
                                 </div>
                                 <div class="row">
                                     <ul class="mega-links">
-                                        <li><a routerLink="/searchengineoptimization">Search Engine Optimization</a></li>
-                                        <li><a routerLink="/searchenginemarketing">Search Engine Marketing</a></li>
-                                        <li><a routerLink="/socialmediaoptimization">Social Media Optimization</a></li>
+                                        <li><a routerLink="/searchengineoptimization" (click)="closeMenu()">Search Engine Optimization</a></li>
+                                        <li><a routerLink="/searchenginemarketing" (click)="closeMenu()">Search Engine Marketing</a></li>
+                                        <li><a routerLink="/socialmediaoptimization" (click)="closeMenu()">Social Media Optimization</a></li>
                                     </ul>
                                 </div>
                                 <div class="row">
                                     <ul class="mega-links">
-                                        <li><a routerLink="/influencermarketing">Influencer Marketing</a></li>
-                                        <li><a routerLink="/webappdevelopment">Web/App Development</a></li>
-                                        <li><a routerLink="/contentdevelopmenmMarketing">Content Development & Marketing</a></li>
+                                        <li><a routerLink="/influencermarketing" (click)="closeMenu()">Influencer Marketing</a></li>
+                                        <li><a routerLink="/webappdevelopment" (click)="closeMenu()">Web/App Development</a></li>
+                                        <li><a routerLink="/contentdevelopmenmMarketing" (click)="closeMenu()">Content Development & Marketing</a></li>
                                     </ul>
                                 </div>
                                 <div class="row">
                                     <ul class="mega-links">
-                                        <li><a routerLink="/leadgeneration">Lead generation - B2B & B2C</a></li>
-                                        <li><a routerLink="/consulting">Consulting</a></li>
-                                        <li><a routerLink="/emailmarketing">Email Marketing</a></li>
+                                        <li><a routerLink="/leadgeneration" (click)="closeMenu()">Lead generation - B2B & B2C</a></li>
+                                        <li><a routerLink="/consulting" (click)="closeMenu()">Consulting</a></li>
+                                        <li><a routerLink="/emailmarketing" (click)="closeMenu()">Email Marketing</a></li>
                                     </ul>
                                 </div>
                             </div>
                         </div>
                     </li>
-                    <li><a routerLink="/portfolio">Portfolio</a></li>
-                    <li><a routerLink="/blogs">Blogs</a></li>
-                    <li><a routerLink="/consultus">Consult Us</a></li>
+                    <li><a routerLink="/portfolio" (click)="closeMenu()">Portfolio</a></li>
+                    <li><a routerLink="/blogs" (click)="closeMenu()">Blogs</a></li>
+                    <li><a routerLink="/consultus" (click)="closeMenu()">Consult Us</a></li>
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
-                    <li><a routerLink="/login" class="nav-lsbtn">Log In</a></li>
+                    <li><a routerLink="/login" (click)="closeMenu()" class="nav-lsbtn">Log In</a></li>
                     &nbsp;
-                    <li><a routerLink="/signup" class="nav-lsbtn">Sign Up</a></li>
+                    <li><a routerLink="/signup" (click)="closeMenu()" class="nav-lsbtn">Sign Up</a></li>
                 </ul>
                 <label for="menu-btn" class="btn menu-btn"><fa-icon [icon]="faBars"></fa-icon></label>
             </div>
@@ -477,18 +482,18 @@
                 <h1 class="services-ser">Reviews</h1>
             </div>
             <div class="testimonials-bg-container">
-                <!-- <h1 align="center">Over 100,000 Marketers Trust Our Programs</h1> -->
+                <h1 align="center" style="font-size: 30px; font-weight: 350;">Trusted by Over 2,400 Indian Marketers</h1>
                 <div class="testimonials-details-container">
                     <div class="testimonials-card-container">
                         <div class="client-image-container">
                             <h5>Priya R.</h5>
                             <h6>Small Business Owner</h6>
                             <div class="rev-star">
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
+                                <fa-icon [icon]="faStar"></fa-icon>
+                                <fa-icon [icon]="faStar"></fa-icon>
+                                <fa-icon [icon]="faStar"></fa-icon>
+                                <fa-icon [icon]="faStar"></fa-icon>
+                                <fa-icon [icon]="faStar"></fa-icon>
                             </div>
                             <hr />
                             <p>
@@ -500,11 +505,11 @@
                             <h5>Rohan S.</h5>
                             <h6>Marketing Manager</h6>
                             <div class="rev-star">
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
+                                <fa-icon [icon]="faStar"></fa-icon>
+                                <fa-icon [icon]="faStar"></fa-icon>
+                                <fa-icon [icon]="faStar"></fa-icon>
+                                <fa-icon [icon]="faStar"></fa-icon>
+                                <fa-icon [icon]="faStar"></fa-icon>
                             </div>
                             <hr />
                             <p>
@@ -516,11 +521,11 @@
                             <h5>Neha T.</h5>
                             <h6>Entrepreneur</h6>
                             <div class="rev-star">
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-regular fa-star"></i>
+                                <fa-icon [icon]="faStar"></fa-icon>
+                                <fa-icon [icon]="faStar"></fa-icon>
+                                <fa-icon [icon]="faStar"></fa-icon>
+                                <fa-icon [icon]="faStar"></fa-icon>
+                                <fa-icon [icon]="faStar"></fa-icon>
                             </div>
                             <hr />
                             <p>
@@ -532,11 +537,11 @@
                             <h5>Vijay K.</h5>
                             <h6>eCommerce Store Owner</h6>
                             <div class="rev-star">
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
+                                <fa-icon [icon]="faStar"></fa-icon>
+                                <fa-icon [icon]="faStar"></fa-icon>
+                                <fa-icon [icon]="faStar"></fa-icon>
+                                <fa-icon [icon]="faStar"></fa-icon>
+                                <fa-icon [icon]="faStar"></fa-icon>
                             </div>
                             <hr />
                             <p>
@@ -548,11 +553,11 @@
                             <h5>Anjali M.</h5>
                             <h6>CEO</h6>
                             <div class="rev-star">
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-regular fa-star-half-stroke"></i>
+                                <fa-icon [icon]="faStar"></fa-icon>
+                                <fa-icon [icon]="faStar"></fa-icon>
+                                <fa-icon [icon]="faStar"></fa-icon>
+                                <fa-icon [icon]="faStar"></fa-icon>
+                                <fa-icon [icon]="faStar"></fa-icon>
                             </div>
                             <hr />
                             <p>
@@ -564,11 +569,11 @@
                             <h5>Arun B.</h5>
                             <h6>Founder</h6>
                             <div class="rev-star">
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
+                                <fa-icon [icon]="faStar"></fa-icon>
+                                <fa-icon [icon]="faStar"></fa-icon>
+                                <fa-icon [icon]="faStar"></fa-icon>
+                                <fa-icon [icon]="faStar"></fa-icon>
+                                <fa-icon [icon]="faStar"></fa-icon>
                             </div>
                             <hr />
                             <p>
@@ -580,11 +585,11 @@
                             <h5>Meena p.</h5>
                             <h6>Brand Manager</h6>
                             <div class="rev-star">
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
+                                <fa-icon [icon]="faStar"></fa-icon>
+                                <fa-icon [icon]="faStar"></fa-icon>
+                                <fa-icon [icon]="faStar"></fa-icon>
+                                <fa-icon [icon]="faStar"></fa-icon>
+                                <fa-icon [icon]="faStar"></fa-icon>
                             </div>
                             <hr />
                             <p>
@@ -596,11 +601,11 @@
                             <h5>Sanya G.</h5>
                             <h6>Freelance Consultant</h6>
                             <div class="rev-star">
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
+                                <fa-icon [icon]="faStar"></fa-icon>
+                                <fa-icon [icon]="faStar"></fa-icon>
+                                <fa-icon [icon]="faStar"></fa-icon>
+                                <fa-icon [icon]="faStar"></fa-icon>
+                                <fa-icon [icon]="faStar"></fa-icon>
                             </div>
                             <hr />
                             <p>
@@ -612,11 +617,11 @@
                             <h5>Megha D.</h5>
                             <h6>Marketing Director</h6>
                             <div class="rev-star">
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-regular fa-star-half-stroke"></i>
+                                <fa-icon [icon]="faStar"></fa-icon>
+                                <fa-icon [icon]="faStar"></fa-icon>
+                                <fa-icon [icon]="faStar"></fa-icon>
+                                <fa-icon [icon]="faStar"></fa-icon>
+                                <fa-icon [icon]="faStarHalfAlt"></fa-icon>
                             </div>
                             <hr />
                             <p>
@@ -628,11 +633,11 @@
                             <h5>Tanvi L.</h5>
                             <h6>Product Manager</h6>
                             <div class="rev-star">
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
+                                <fa-icon [icon]="faStar"></fa-icon>
+                                <fa-icon [icon]="faStar"></fa-icon>
+                                <fa-icon [icon]="faStar"></fa-icon>
+                                <fa-icon [icon]="faStar"></fa-icon>
+                                <fa-icon [icon]="faStar"></fa-icon>
                             </div>
                             <hr />
                             <p>
@@ -644,11 +649,11 @@
                             <h5>Rajesh P.</h5>
                             <h6>Owner of a Boutique</h6>
                             <div class="rev-star">
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
+                                <fa-icon [icon]="faStar"></fa-icon>
+                                <fa-icon [icon]="faStar"></fa-icon>
+                                <fa-icon [icon]="faStar"></fa-icon>
+                                <fa-icon [icon]="faStar"></fa-icon>
+                                <fa-icon [icon]="faStar"></fa-icon>
                             </div>
                             <hr />
                             <p>
@@ -660,11 +665,11 @@
                             <h5>Kavita S.</h5>
                             <h6>Software Developer</h6>
                             <div class="rev-star">
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
+                                <fa-icon [icon]="faStar"></fa-icon>
+                                <fa-icon [icon]="faStar"></fa-icon>
+                                <fa-icon [icon]="faStar"></fa-icon>
+                                <fa-icon [icon]="faStar"></fa-icon>
+                                <fa-icon [icon]="faStar"></fa-icon>
                             </div>
                             <hr />
                             <p>
@@ -676,11 +681,11 @@
                             <h5>Shyam V.</h5>
                             <h6>Event Planner</h6>
                             <div class="rev-star">
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
+                                <fa-icon [icon]="faStar"></fa-icon>
+                                <fa-icon [icon]="faStar"></fa-icon>
+                                <fa-icon [icon]="faStar"></fa-icon>
+                                <fa-icon [icon]="faStar"></fa-icon>
+                                <fa-icon [icon]="faStar"></fa-icon>
                             </div>
                             <hr />
                             <p>
@@ -692,11 +697,11 @@
                             <h5>Deepa K.</h5>
                             <h6>Restaurateur</h6>
                             <div class="rev-star">
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
+                                <fa-icon [icon]="faStar"></fa-icon>
+                                <fa-icon [icon]="faStar"></fa-icon>
+                                <fa-icon [icon]="faStar"></fa-icon>
+                                <fa-icon [icon]="faStar"></fa-icon>
+                                <fa-icon [icon]="faStar"></fa-icon>
                             </div>
                             <hr />
                             <p>
@@ -708,11 +713,11 @@
                             <h5>Anil J.</h5>
                             <h6>Fitness Coach</h6>
                             <div class="rev-star">
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
+                                <fa-icon [icon]="faStar"></fa-icon>
+                                <fa-icon [icon]="faStar"></fa-icon>
+                                <fa-icon [icon]="faStar"></fa-icon>
+                                <fa-icon [icon]="faStar"></fa-icon>
+                                <fa-icon [icon]="faStar"></fa-icon>
                             </div>
                             <hr />
                             <p>
@@ -724,11 +729,11 @@
                             <h5>Deepa K.</h5>
                             <h6>Restaurateur</h6>
                             <div class="rev-star">
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
+                                <fa-icon [icon]="faStar"></fa-icon>
+                                <fa-icon [icon]="faStar"></fa-icon>
+                                <fa-icon [icon]="faStar"></fa-icon>
+                                <fa-icon [icon]="faStar"></fa-icon>
+                                <fa-icon [icon]="faStar"></fa-icon>
                             </div>
                             <hr />
                             <p>
@@ -740,11 +745,11 @@
                             <h5>Anil J.</h5>
                             <h6>Fitness Coach</h6>
                             <div class="rev-star">
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
+                                <fa-icon [icon]="faStar"></fa-icon>
+                                <fa-icon [icon]="faStar"></fa-icon>
+                                <fa-icon [icon]="faStar"></fa-icon>
+                                <fa-icon [icon]="faStar"></fa-icon>
+                                <fa-icon [icon]="faStar"></fa-icon>
                             </div>
                             <hr />
                             <p>
@@ -797,45 +802,43 @@
                 </div>
                 <div class="container-cnt">
                     <form class="orange-form-cnt">
-                        <div class="text-container-cnt">
-                            <label for="message">What do you have to say to us?</label>
-                            <textarea name="message" placeholder="Start typing..."></textarea>
-                            <div class="rating-container-cnt">
-                                <p class="rating-text" class="label-cnt">Please select your interests:</p>
-                                <div class="stars-cnt">
-                                    <input type="radio" id="star5" name="rating" value="5" />
-                                    <label for="star5" class="star" data-tooltip="Marketing">&#9733;</label>
-                                    <input type="radio" id="star4" name="rating" value="4" />
-                                    <label for="star4" class="star" data-tooltip="Web Development">&#9733;</label>
-                                    <input type="radio" id="star3" name="rating" value="3" />
-                                    <label for="star3" class="star" data-tooltip="Graphic Design">&#9733;</label>
-                                    <input type="radio" id="star2" name="rating" value="2" />
-                                    <label for="star2" class="star" data-tooltip="Consulting">&#9733;</label>
-                                    <input type="radio" id="star1" name="rating" value="1" />
-                                    <label for="star1" class="star" data-tooltip="Influencer Marketing">&#9733;</label>
-                                </div>
-                                <div class="rating-display">Selected: None</div>
+                      <div class="text-container-cnt">
+                        <label for="message">What do you have to say to us?</label>
+                        <textarea name="message" placeholder="Start typing..."></textarea>
+                        <div class="rating-container-cnt">
+                          <p class="rating-text">Please select your interests:</p>
+                          <div class="stars-cnt">
+                            <div *ngFor="let interest of interests">
+                              <button 
+                                class="star-button" 
+                                [ngClass]="{'selected': selectedInterest === interest.label}"
+                                (click)="onInterestSelect(interest.label)">
+                                {{ interest.label }}
+                              </button>
                             </div>
+                          </div>
+                          <div class="rating-display">Selected: {{ selectedInterest }}</div>
                         </div>
-                        <div class="input-container-cnt">
-                            <div class="name-container-cnt">
-                                <label class="label-cnt" for="name">Name*</label>
-                                <input class="input-cnt" type="text" name="name" placeholder="Type your name..." required />
-                            </div>
-                            <div class="email-container-cnt">
-                                <label class="label-cnt" for="email">Email*</label>
-                                <input class="input-cnt" type="text" name="email" placeholder="Type your e-mail..." required />
-                            </div>
-                            <div class="phone-container-cnt">
-                                <label class="label-cnt" for="phone">Phone</label>
-                                <input class="input-cnt" type="text" name="phone" placeholder="(555) 555-5555" />
-                            </div>
-                            <div class="button-container-cnt">
-                                <button type="submit" name="submit" class="btn-cnt">SEND</button>
-                            </div>
+                      </div>
+                      <div class="input-container-cnt">
+                        <div class="name-container-cnt">
+                            <label class="label-cnt" for="name">I am</label>
+                            <input class="input-cnt" type="text" name="name" placeholder="Jhon" required />
                         </div>
+                        <div class="email-container-cnt">
+                            <label class="label-cnt" for="email">Email</label>
+                            <input class="input-cnt" type="text" name="email" placeholder="Iam@gmail.com" required />
+                        </div>
+                        <div class="phone-container-cnt">
+                          <label class="label-cnt" for="phone">Phone</label>
+                          <input class="input-cnt" type="text" name="phone" placeholder="(555) 555-5555">
+                        </div>
+                        <div class="button-container-cnt">
+                          <button type="submit" name="submit" class="btn-cnt">SEND</button>
+                        </div>
+                      </div>
                     </form>
-                </div>
+                  </div>
             </div>
             <!-- FAQs -->
             <div class="faq-container" style="margin-top: 100px;">

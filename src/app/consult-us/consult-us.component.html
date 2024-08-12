@@ -118,44 +118,50 @@
     </div>
     
     <div class="right-section">
-        <form class="modal-form">
-            <h2 style="margin-top: 1.5vw;">I am Interested in</h2>
-            <div class="interest-buttons-btn">
-                <div>
-                    <button type="button">Digital Marketing</button>
-                    <button type="button">Web Development</button>
-                </div>
-                <div>
-                    <button type="button">Graphic Design</button>
-                    <button type="button">Consulting</button>
-                    <button type="button">Influencer Marketing</button>
-                </div>
-            </div>
-            <label for="name">I am</label>
-            <input type="text" id="name" name="name" placeholder="John" required>
-            <div class="abcd">
-                <div class="matter" style="margin-left: 1%;">
-                    <div class="input-box">
-                        <label for="email">Email</label>
-                        <input type="email" id="email" name="email" placeholder="iam@gmail.com" required >
-                        <label for="phone">Phone Number</label>
-                        <input type="text" id="phone" name="phone">
+        <form style="display: flex;">
+            <div class="text-container-cnt">
+                <label  for="message">What do you have to say to us?</label>
+                <textarea class="consult-us-textarea" name="message" placeholder="Start typing..."></textarea>
+                <div class="rating-container-cnt">
+                  <p class="rating-text">Please select your interests:</p>
+                  <div class="stars-cnt">
+                    <div *ngFor="let interest of interests">
+                      <button 
+                        class="star-button" 
+                        [ngClass]="{'selected': selectedInterest === interest.label}"
+                        (click)="onInterestSelect(interest.label)">
+                        {{ interest.label }}
+                      </button>
                     </div>
-                    <div class="input-box">
-                        <label for="company">Company (optional)</label>
-                        <input type="text" id="company" name="company">
-                        <label for="website">Website (optional)</label>
-                        <input type="text" id="website" name="website" style="margin-top: 4%;">
-                    </div>
+                  </div>
+                  <div class="rating-display">Selected: {{ selectedInterest }}</div>
+                </div>
+              </div>
+            <div class="input-container-cnt">
+                <div class="name-container-cnt">
+                    <label class="label-cnt" for="name">I am</label>
+                    <input class="input-cnt" type="text" name="name" placeholder="Jhon" required />
+                </div>
+                <div class="email-container-cnt">
+                    <label class="label-cnt" for="email">Email</label>
+                    <input class="input-cnt" type="text" name="email" placeholder="Iam@gmail.com" required />
+                </div>
+                <div class="phone-container-cnt">
+                    <label class="label-cnt" for="phone">Phone</label>
+                    <input class="input-cnt" type="text" name="phone" placeholder="(555) 555-5555" />
+                </div>
+                <div class="company-container-cnt">
+                    <label class="label-cnt" for="company">Company(Optional)</label>
+                    <input class="input-cnt" type="text" name="company" placeholder="type your company name.." />
+                </div>
+                <div class="website-container-cnt">
+                    <label class="label-cnt" for="website">Website(Optional)</label>
+                    <input class="input-cnt" type="text" name="website" placeholder="type your website name.." />
+                </div>
+                <div class="button-container-cnt">
+                    <button type="submit" name="submit" class="btn-cnt">SEND</button>
                 </div>
             </div>
-            <label for="message">Message</label>
-            <textarea id="message" name="message" style="width: 100%; border-radius: 10px;"></textarea>
-            <div class="checkbox-container">
-                <input type="checkbox" checked="checked" name="remember">
-                <span>I have read and accepted the terms and conditions and Privacy Policy</span>
-            </div>
-            <button type="submit" class="send-button-btn" style="width: 95%;">Send</button>
         </form>
     </div>
     
@@ -198,7 +204,5 @@
         </div>
     </div>
 </div>
-  
-
 </body>
 </html>
