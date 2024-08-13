@@ -6262,17 +6262,17 @@ body {
     border-radius: 30px;
 }
 
-.services button {
-    background-color: white;
-    border: 1px #ddd;
-    padding: 19px;
-    margin: 4px;
-    width: 250px;
-    cursor: pointer;
-    transition: background-color 0.3s;
+.services div {
+    font-size: 18px;
+    font-weight: 500;
+    background-color: lightgrey;
     border-radius: 10px;
-    font-weight: 600;
-    font-size: 1rem;
+    margin: 30px 10px;
+    padding: 30px 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .about-main {
@@ -7377,7 +7377,7 @@ body {
     display: flex;
 }
 
-.services button {
+/* .services button {
     background-color: white;
     border: 1px #ddd;
     padding: 19px;
@@ -7388,7 +7388,7 @@ body {
     border-radius: 10px;
     font-weight: 600;
     font-size: 1rem;
-}
+} */
 
 /*footer*/
 
@@ -8122,7 +8122,7 @@ body {
 .commmon-seo-card {
     font-size: 18px;
     font-weight: 500;
-    background-color: white;
+    background-color: lightgrey;
     border-radius: 10px;
     margin: 30px 10px;
     padding: 30px 20px;
@@ -9048,11 +9048,12 @@ input[type="radio"]:checked + .star {
 /* animated images responsive */
 
 .card-text {
-    font-size: 1.1vw;
+    font-size: 1.2vw;
 }
 
 .card-title-cdr {
-    font-size: 1.3vw;
+    font-size: 1.4vw;
+    margin-bottom: 15px;
 }
 
 @media screen and (min-width:992px) and (max-width:1200px) {
@@ -9071,7 +9072,7 @@ input[type="radio"]:checked + .star {
     }
     
     .card-title-cdr {
-        font-size: 1.6vw;
+        font-size: 1.5vw;
     }
 }
 
@@ -9088,6 +9089,7 @@ input[type="radio"]:checked + .star {
 .animated {
     height: 100%;
     width: 100%;
+    max-height: 380px;
 }
 
 .animation-content {
