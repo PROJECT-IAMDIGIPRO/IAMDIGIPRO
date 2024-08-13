@@ -1959,8 +1959,8 @@ textarea {
     text-decoration: none;
     position: fixed;
     z-index: 1000;
-    bottom: 20px;
-    right: 95%;
+    bottom: 10px;
+    left: 20px;
 }
 
 .go-top1 {
@@ -1978,22 +1978,22 @@ textarea {
     right: 0%;
 }
 
-@media screen and (max-width: 767px) {
-    .go-top {
+@media screen and (max-width: 770px) {
+    /* .go-top {
         font-size: 29px;
         padding: 4px 14px;
         position: fixed;
         bottom: 20px;
         right: 310px;
-    }
+    } */
 
-    .go-top1 {
+    /* .go-top1 {
         font-size: 20px;
         padding: 4px 10px;
         position: fixed;
         bottom: 35px;
-        right: 20px;
-    }
+        right: 25px;
+    } */
 
     .cta .icons {
         display: none;
