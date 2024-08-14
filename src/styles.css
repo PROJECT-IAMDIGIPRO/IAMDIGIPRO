@@ -5737,7 +5737,7 @@ body {
     font-size: 20px;
     border: 1px solid black;
     margin: 2px;
-    background-color: white;
+    
 }
 
 @media (max-width: 768px) {
@@ -8233,12 +8233,12 @@ body {
     margin-top: 50px;
 }
 .tag {
-    background-color: #eee;
+    background-color: black;
     padding: 5px 10px;
-    border-radius: 20px;
+    
     font-size: 0.9em;
     font-weight: 500;
-    color: #0c0c0c;
+    color: white;
 }
 .date1 {
     font-size: 0.9em;
