@@ -8135,7 +8135,7 @@ body {
 @media screen and (max-width: 767px) {
     .commmon-seo-card {
         font-size: 10px;
-        margin: 5px;
+        margin: 0;
         padding: 5px;
     }
 }
@@ -9052,7 +9052,7 @@ input[type="radio"]:checked + .star {
 }
 
 .card-title-cdr {
-    font-size: 1.4vw;
+    font-size: 1.6vw;
     margin-bottom: 15px;
 }
 
