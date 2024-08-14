@@ -38,123 +38,123 @@
 
     <!--blogs list-->
 
-    <div class="blog-100">
-        <div class="dflex-con">
-            <div class="container-blog">
-                <button class="featured-blog">Featured Blog Post</button>
-                <button class="featured">Development</button>
-                <button class="featured">Design</button>
-                <button class="featured">Digital Marketing</button>
-                <button class="featured">Web Development</button>
-                <button class="featured">Graphic Design</button>
-                <button class="featured">Consulting</button>
-                <button class="featured">Influencer Marketing</button>
-            </div>
+    <div class="blogsPage-blog-100">
+        <div class="blogsPage-dflex-con">
+           <div class="blogsPage-container-blog">
+                <button class="featured-blog" routerLink="/influencermarketing">Featured Blog Post</button>
+                <button class="featured" routerLink="/influencermarketing">Development</button>
+                <button class="featured" routerLink="/influencermarketing">Design</button>
+                <button class="featured" routerLink="/digitalmarketing">Digital Marketing</button>
+                <button class="featured" routerLink="/webappdevelopment">Web Development</button>
+                <button class="featured" routerLink="/graphicuidesign">Graphic Design</button>
+                <button class="featured" routerLink="/consulting">Consulting</button>
+                <button class="featured" routerLink="/influencermarketing">Influencer Marketing</button>
+            </div>
 
             <div class="blog-container1" id="blog" *ngIf="!isBlogCardOpen">
-                <div class="blog-header mt-5">
+                <div class="blogPage-header mt-5">
                     <h1 style="font-size: 27px; font-weight: 600;">Featured Blog Post</h1>
                     <hr />
                 </div>
-                <div class="blogs-cards-container">
-                    <div class="post-box" (click)="blogcardOpen(0)">
-                        <div class="post-image">
+                <div class="blogsPage-cards-container">
+                    <div class="blogsPage-post-box" (click)="blogcardOpen(0)">
+                        <div class="blogsPage-post-image">
                             <img src="../assets/images/blogs/image_blogPage1.jpg" alt="FeaturedBlogPostimage1">
                         </div>
-                        <div class="post-content">
+                        <div class="blogsPage-post-content">
                             <h2>How to Maximize Your Digital Marketing Efforts</h2>
-                            <div class="post-details">
-                                <span class="category"><b>Marketing</b></span>
-                                <span class="date">24 June 2024</span>
+                            <div class="blogsPage-post-details">
+                                <span class="blogsPage-category"><b>Marketing</b></span>
+                                <span class="blocgsPage-date">24 June 2024</span>
                             </div>
                             <p>Learn the top strategies for enhancing your digital presence and driving engagement...
                             </p>
-                            <div class="card-button">
+                            <div class="blogsPage-card-button">
                                 <p>Read More</p>
                             </div>
                         </div>
                     </div>
-                    <div class="post-box" (click)="blogcardOpen(1)">
-                        <div class="post-image">
+                    <div class="blogsPage-post-box" (click)="blogcardOpen(1)">
+                        <div class="blogsPage-post-image">
                             <img src="../assets/images/blogs/image_blogPage2.jpg" alt="FeaturedBlogPostimage2">
                         </div>
-                        <div class="post-content">
+                        <div class="blogsPage-post-content">
                             <h2>Create a User-Centric Website with iamdigipro</h2>
-                            <div class="post-details">
-                                <span class="category"><b>Design</b></span>
-                                <span class="date">24 June 2024</span>
+                            <div class="blogsPage-post-details">
+                                <span class="blogsPage-category"><b>Design</b></span>
+                                <span class="blocgsPage-date">24 June 2024</span>
                             </div>
                             <p>Discover the best practices for designing websites that captivate and convert visitors...
                             </p>
-                            <div class="card-button">
+                            <div class="blogsPage-card-button">
                                 <p>Read More</p>
                             </div>
                         </div>
                     </div>
-                    <div class="post-box" (click)="blogcardOpen(2)">
-                        <div class="post-image">
+                    <div class="blogsPage-post-box" (click)="blogcardOpen(2)">
+                        <div class="blogsPage-post-image">
                             <img src="../assets/images/blogs/image_blogPage3.jpg" alt="FeaturedBlogPostimage3">
                         </div>
-                        <div class="post-content">
+                        <div class="blogsPage-post-content">
                             <h2>Top Web Development Trends in 2024</h2>
-                            <div class="post-details">
-                                <span class="category"><b>Development</b></span>
-                                <span class="date">24 June 2024</span>
+                            <div class="blogsPage-post-details">
+                                <span class="blogsPage-category"><b>Development</b></span>
+                                <span class="blogsPage-date">24 June 2024</span>
                             </div>
                             <p>Story ahead of the curve with the latest techniques and tools shaping the future of web
                                 development...</p>
-                            <div class="card-button">
+                            <div class="blogsPage-card-button">
                                 <p>Read More</p>
                             </div>
                         </div>
                     </div>
-                    <div class="post-box" (click)="blogcardOpen(3)">
-                        <div class="post-image">
+                    <div class="blogsPage-post-box" (click)="blogcardOpen(3)">
+                        <div class="blogsPage-post-image">
                             <img src="../assets/images/blogs/image_blogPage4.jpg" alt="FeaturedBlogPostimage4">
                         </div>
-                        <div class="post-content">
+                        <div class="blogsPage-post-content">
                             <h2>Enhancing User Experience with Intuitive UI</h2>
-                            <div class="post-details">
-                                <span class="category"><b>Design</b></span>
-                                <span class="date">24 June 2024</span>
+                            <div class="blogsPage-post-details">
+                                <span class="blogsPage-category"><b>Design</b></span>
+                                <span class="blogsPage-date">24 June 2024</span>
                             </div>
                             <p>Explore design principles that make a difference in creating intuitive and engaging user
                                 interfaces...</p>
-                            <div class="card-button">
+                            <div class="blogsPage-card-button">
                                 <p>Read More</p>
                             </div>
                         </div>
                     </div>
-                    <div class="post-box" (click)="blogcardOpen(4)">
-                        <div class="post-image">
+                    <div class="blogsPage-post-box" (click)="blogcardOpen(4)">
+                        <div class="blogsPage-post-image">
                             <img src="../assets/images/blogs/image_blogPage5.jpg" alt="FeaturedBlogPostimage5">
                         </div>
-                        <div class="post-content">
+                        <div class="blogsPage-post-content">
                             <h2>How to Dominate Search Engines with Effective SEO Techniques</h2>
-                            <div class="post-details">
-                                <span class="category"><b>Marketing</b></span>
-                                <span class="date">24 June 2024</span>
+                            <div class="blogsPage-post-details">
+                                <span class="blogsPage-category"><b>Marketing</b></span>
+                                <span class="blogsPage-date">24 June 2024</span>
                             </div>
                             <p>Learn the top strategies for enhancing your digital presence and driving engagement...
                             </p>
-                            <div class="card-button">
+                            <div class="blogsPage-card-button">
                                 <p>Read More</p>
                             </div>
                         </div>
                     </div>
-                    <div class="post-box" (click)="blogcardOpen(5)">
-                        <div class="post-image">
+                    <div class="blogsPage-post-box" (click)="blogcardOpen(5)">
+                        <div class="blogsPage-post-image">
                             <img src="../assets/images/blogs/image_blogPage6.jpg" alt="FeaturedBlogPostimage6">
                         </div>
-                        <div class="post-content">
+                        <div class="blogsPage-post-content">
                             <h2>How to Measure and Improve Your Digital Marketing ROI</h2>
-                            <div class="post-details">
-                                <span class="category"><b>Marketing</b></span>
-                                <span class="date">24 June 2024</span>
+                            <div class="blogsPage-post-details">
+                                <span class="blogsPage-category"><b>Marketing</b></span>
+                                <span class="blogsPage-date">24 June 2024</span>
                             </div>
                             <p>Learn the top strategies for enhancing your digital presence and driving engagement...
                             </p>
-                            <div class="card-button">
+                            <div class="blogsPage-card-button">
                                 <p>Read More</p>
                             </div>
                         </div>
@@ -162,8 +162,8 @@
                 </div>
             </div>
 
-            <div id="blog-card1" *ngIf="isBlogCardOpen">
-                <div class="blog-header1 mt-5">
+            <div id="blogsPage-card1" *ngIf="isBlogCardOpen">
+                <div class="blogsPage-header1 mt-5">
                     <button (click)="blogcardClose()">
                         <p style="color: #F66136; font-size: 24px;">Blogs <span
                                 style="font-size: 24px; font-weight: 600; color: black;"><span
@@ -172,16 +172,16 @@
                     </button>
                 </div>
                 <hr style="border-top: solid 1px gray; width: 100%;" />
-                <div class="blog1">
-                    <div class="blog-card">
-                        <div class="image-container">
+                <div class="blogsPage-blog1">
+                    <div class="blogsPage-blog-card">
+                        <div class="blogsPage-image-container">
                             <img id="blog-image" [src]="selectedPost.image" alt="FeaturedBlogPostimage1">
-                            <div class="blog-card-content">
+                            <div class="blogsPage-card-content">
                                 <h2 id="blog-card-title">{{selectedPost.title}}</h2>
                                 <p id="blog-content">{{selectedPost.content}}</p>
-                                <div class="blogs-footer">
-                                    <span class="tag"><b id="blog-category">{{selectedPost.category}}</b></span>
-                                    <span class="date1" id="blog-date">{{selectedPost.date}}</span>
+                                <div class="blogsPage-footer">
+                                    <span class="blogsPage-tag"><b id="blog-category">{{selectedPost.category}}</b></span>
+                                    <span class="blogsPage-date1" id="blog-date">{{selectedPost.date}}</span>
                                 </div>
                             </div>
                         </div>
