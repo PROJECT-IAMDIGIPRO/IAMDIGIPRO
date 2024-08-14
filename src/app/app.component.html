@@ -60,17 +60,14 @@
                 <input type="radio" name="slider" id="close-btn" />
                 <ul class="nav-links">
                     <label for="close-btn" class="btn close-btn"><fa-icon [icon]="faTimes"></fa-icon></label>
-                    <li><a routerLink="/aboutus">About Us</a></li>
-                    <label for="close-btn" class="btn close-btn"><i class="fas fa-times"></i></label>
+                    
                     <li><a routerLink="/aboutus" (click)="closeMenu()">About Us</a></li>
                     <li>
                         <a routerLink="#" class="desktop-item">Careers</a>
                         <input type="checkbox" id="showDrop" />
                         <label for="showDrop" class="mobile-item">Careers</label>
                         <ul class="drop-menu">
-                            <li><a routerLink="/internship">Internship</a></li>
-                            <li><a routerLink="/training">Training</a></li>
-                            <li><a routerLink="/jobopportunity()">Job Opportunity</a></li>
+                
                             <li><a routerLink="/internship" (click)="closeMenu()">Internship</a></li>
                             <li><a routerLink="/training" (click)="closeMenu()">Training</a></li>
                             <li><a routerLink="/jobopportunity" (click)="closeMenu()">Job Opportunity</a></li>
@@ -989,7 +986,9 @@
                 <div class="go-top1">
                     <button class="cta">
                         <div class="icons">
-                            <fa-icon [icon]="['fas', 'envelope']"></fa-icon>
+                            <a href="mailto:info@iamdigipro.com">
+                                <fa-icon [icon]="['fas', 'envelope']"></fa-icon>
+                              </a>                              
                             <a href="tel:+9381776396" style="color: white;">
                                 <fa-icon [icon]="['fas', 'phone']"></fa-icon>
                             </a>                            
@@ -1004,13 +1003,15 @@
             </div>
             <div class="footer-bottom d-flex flex-row">
                 <div class="copyright">
-                    <li><a>&#64;2024 IAM DIGIPRO</a></li>
+                    <li><a>&#169; 2024 IAM DIGIPRO</a></li>
                     <li><a routerLink="/privacypolicy">Privacy Policy</a></li>
                     <li><a routerLink="/cookiepolicy">Cookies Policy</a></li>
                     <li><a routerLink="/terms">Terms of use</a></li>
                 </div>
                 <div class="footer-email">
+                    <a href="mailto:info@iamdigipro.com">
                     <p><b>Email Us at:</b> info&#64;iamdigipro.com</p>
+                    </a>
                 </div>
                 <div class="social-icons">
                     <a href="https://www.instagram.com/iam_digipro?igsh=MzRlODBiNWFlZA==" target="_blank" class="social-icon instagram"><fa-icon [icon]="faInstagram"></fa-icon></a>
