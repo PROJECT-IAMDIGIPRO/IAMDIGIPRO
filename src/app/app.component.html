@@ -87,6 +87,7 @@
                                         <li><a routerLink="/searchengineoptimization" (click)="closeMenu()">Search Engine Optimization</a></li>
                                         <li><a routerLink="/searchenginemarketing" (click)="closeMenu()">Search Engine Marketing</a></li>
                                         <li><a routerLink="/socialmediaoptimization" (click)="closeMenu()">Social Media Optimization</a></li>
+                                        <li><a routerLink="/graphicuidesign" (click)="closeMenu()">graphic ui design</a></li>
                                     </ul>
                                 </div>
                                 <div class="row">
@@ -823,12 +824,12 @@
                             </span>
                         </p>
                     </div>
-                    <div class="enquiry-background-container ">
-                        <h1 class="enquiry-heading">Let's Collab <fa-icon [icon]="faArrowRight"></fa-icon></h1>
+                    <div class="enquiry-background-container">
+                        <h1 class="enquiry-heading d-flex justify-content-start">Let's Collab <fa-icon [icon]="faArrowRight"></fa-icon></h1>
                     </div>
                 </div>
-                <div class="container-cnt pt-5">
-                    <form class="orange-form-cnt">
+                <div class="container-cnt pt-8">
+                    <form class="orange-form-cnt pt-8">
                       <div class="text-container-cnt">
                         <label for="message">What do you have to say to us?</label>
                         <textarea name="message" placeholder="Start typing..."></textarea>
@@ -905,6 +906,9 @@
         <div *ngIf="isConsultingRoute">
             <router-outlet></router-outlet>
         </div>
+        <div *ngIf="isGraphicUIDesignRoute">
+            <router-outlet></router-outlet>
+        </div>
         <div *ngIf="isEMRoute">
             <router-outlet></router-outlet>
         </div>
@@ -975,9 +979,9 @@
                 <div class="column">
                     <h3>Careers</h3>
                     <ul>
-                        <li><a routerLink="/careers/training">Training</a></li>
-                        <li><a routerLink="careers/internship">Internship</a></li>
-                        <li><a routerLink="/careers/jobopportunity">Job Opportunities</a></li>
+                        <li><a routerLink="/training">Training</a></li>
+                        <li><a routerLink="/internship">Internship</a></li>
+                        <li><a routerLink="/jobopportunity">Job Opportunities</a></li>
                     </ul>
                 </div>
             </div>
