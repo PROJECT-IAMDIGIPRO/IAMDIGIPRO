@@ -406,10 +406,11 @@ fas :hover {
 
 .home-content video {
     position: relative;
-    width: 100%;
+    width: 102%;
     height: 100%;
     display: flex;
     z-index: 0;
+    margin-left: -2px;
 }
 
 .main-heading {
@@ -790,8 +791,8 @@ textarea {
 }
 
 .about-container .arrow {
-    margin-left: 40px;
-    padding-top: 0px;
+    margin-left: -80px;
+    /* padding-top: 0px; */
 }
 
 .about-content-text {
@@ -805,11 +806,11 @@ textarea {
 }
 
 .arrow {
-    display: flex;
+    /* display: flex;
     flex-direction: row;
-    justify-content: left;
+    justify-content: left; */
     margin-left: -100px;
-    margin-bottom: 20px;
+    /* margin-bottom: 10px; */
     margin-top: 50px;
     background-color: none;
 }
@@ -818,7 +819,8 @@ textarea {
     width: 70px;
     height: 40px;
     margin-top: -22px;
-    margin-left: 95px;
+    margin-left: 80px;
+    margin-right: 20px;
 }
 
 .arr-rightSer {
@@ -842,14 +844,17 @@ textarea {
     height: 25px;
 }
 
-.services-ser {
-    margin-top: -22px;
-    margin-left: 10px;
+.services-ser h1{
+    margin-top: -40px;
+    margin-left: 18px;
     font-weight: 500;
     font-size: 25px;
     font-family: Arial, Helvetica, sans-serif;
     /* font-family: sans-serif; */
     color: rgb(19, 19, 19);
+    display: flex;
+    justify-content: center;
+    /* display: -webkit-inline-box; */
 }
 .text {
     flex: 1 1 50%;
@@ -975,8 +980,8 @@ textarea {
     }
 
     .about-container .arrow {
-        margin-left: 50px;
-        padding-top: 10px;
+        margin-left: -55px;
+        /* padding-top: 10px; */
     }
 
     .text,
@@ -1959,8 +1964,8 @@ textarea {
     text-decoration: none;
     position: fixed;
     z-index: 1000;
-    bottom: 20px;
-    right: 95%;
+    bottom: 10px;
+    left: 20px;
 }
 
 .go-top1 {
@@ -1978,22 +1983,22 @@ textarea {
     right: 0%;
 }
 
-@media screen and (max-width: 767px) {
-    .go-top {
+@media screen and (max-width: 770px) {
+    /* .go-top {
         font-size: 29px;
         padding: 4px 14px;
         position: fixed;
         bottom: 20px;
         right: 310px;
-    }
+    } */
 
-    .go-top1 {
+    /* .go-top1 {
         font-size: 20px;
         padding: 4px 10px;
         position: fixed;
         bottom: 35px;
-        right: 20px;
-    }
+        right: 25px;
+    } */
 
     .cta .icons {
         display: none;
@@ -2396,6 +2401,7 @@ textarea {
 h1 {
     font-size: 24px;
     margin: 0;
+    text-align: center;
 }
 
 .hover-container:hover .people-i {
@@ -2577,6 +2583,9 @@ h1 {
 .enquiry-container {
     position: relative;
     z-index: 1;
+}
+.enquiry-form{
+margin: 0 10%;
 }
 
 .left-side {
@@ -2921,13 +2930,13 @@ textarea {
     color: #000;
 }
 
-.services-ser1 {
+/* .services-ser1 {
     margin-top: 25px !important;
     margin-left: 10px;
     font-weight: 500;
     font-size: 18px;
     color: rgb(99, 95, 95);
-}
+} */
 
 /*  aright arrow alignment */
 .fa-solid,
@@ -4520,7 +4529,7 @@ textarea {
     .left-side p {
         font-family: poppins;
         font-size: 5vw;
-        margin-left: 115px;
+        margin-left: 40px;
     }
 
     .span {
@@ -5255,9 +5264,9 @@ body {
         margin-left: 2%;
     }
     .arrow {
-        display: flex;
+        /* display: flex;
         flex-direction: row;
-        justify-content: left;
+        justify-content: left; */
         /* margin-left: -60px; */
         margin-top: 34px;
     }
@@ -5737,7 +5746,7 @@ body {
     font-size: 20px;
     border: 1px solid black;
     margin: 2px;
-    background-color: white;
+    
 }
 
 @media (max-width: 768px) {
@@ -6217,15 +6226,17 @@ body {
 }
 
 .job-assistance-container {
-    background-color: white;
+    /* background-color: white;
     display: flex;
-    justify-content: center;
+    justify-content: center; */
+    margin: 0 10%;
 }
 
 .inner-container {
-    text-align: center;
+    /* text-align: center;
     margin-top: -55px;
-    margin-bottom: -125px;
+    margin-bottom: -125px; */
+    margin: 0 10%;
 }
 
 .job-heading {
@@ -6262,17 +6273,17 @@ body {
     border-radius: 30px;
 }
 
-.services button {
-    background-color: white;
-    border: 1px #ddd;
-    padding: 19px;
-    margin: 4px;
-    width: 250px;
-    cursor: pointer;
-    transition: background-color 0.3s;
+.services div {
+    font-size: 18px;
+    font-weight: 500;
+    background-color: lightgrey;
     border-radius: 10px;
-    font-weight: 600;
-    font-size: 1rem;
+    margin: 30px 10px;
+    padding: 30px 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .about-main {
@@ -6460,13 +6471,13 @@ body {
     margin-bottom: 20px;
 }
 
-.services-ser1 {
+/* .services-ser1 {
     margin-top: 10px;
     margin-left: 10px;
     font-weight: 500;
     font-size: 18px;
     color: rgb(99, 95, 95);
-}
+} */
 
 .faculty-card-container {
     flex: 1 1 calc(40% - 20px);
@@ -6958,13 +6969,13 @@ body {
 
 /* certification and support section */
 
-.services-ser1 {
+/* .services-ser1 {
     margin-top: 10px;
     margin-left: 10px;
     font-weight: 500;
     font-size: 18px;
     color: rgb(99, 95, 95);
-}
+} */
 
 .certification-support-container {
     display: flex;
@@ -7052,8 +7063,10 @@ body {
 
     .services-ser {
         font-size: 1.5rem;
-        align-items: center;
-        text-align: center;
+        display: flex;
+        justify-content: center;
+        /* align-items: center;
+        text-align: center; */
     }
 
     .arr-rightSer {
@@ -7285,12 +7298,13 @@ body {
 }
 
 .intern {
-    display: flex;
+    /* display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding-left: 250px;
-    padding-right: 250px;
+    padding-right: 250px; */
+    margin: 0 10%;
 }
 
 .ship {
@@ -7377,7 +7391,7 @@ body {
     display: flex;
 }
 
-.services button {
+/* .services button {
     background-color: white;
     border: 1px #ddd;
     padding: 19px;
@@ -7388,7 +7402,7 @@ body {
     border-radius: 10px;
     font-weight: 600;
     font-size: 1rem;
-}
+} */
 
 /*footer*/
 
@@ -8122,7 +8136,7 @@ body {
 .commmon-seo-card {
     font-size: 18px;
     font-weight: 500;
-    background-color: white;
+    background-color: lightgrey;
     border-radius: 10px;
     margin: 30px 10px;
     padding: 30px 20px;
@@ -8233,12 +8247,12 @@ body {
     margin-top: 50px;
 }
 .tag {
-    background-color: #eee;
+    background-color: black;
     padding: 5px 10px;
-    border-radius: 20px;
+    
     font-size: 0.9em;
     font-weight: 500;
-    color: #0c0c0c;
+    color: white;
 }
 .date1 {
     font-size: 0.9em;
@@ -9045,19 +9059,58 @@ input[type="radio"]:checked + .star {
     right: 0%;
 }
 
+/* animated images responsive */
+
 .card-text {
-    font-size: 20px;
+    font-size: 1.2vw;
+}
+
+.card-title-cdr {
+    font-size: 1.4vw;
+    margin-bottom: 15px;
+}
+
+@media screen and (min-width:992px) and (max-width:1200px) {
+    .card-text {
+        font-size: 1.3vw;
+    }
+    
+    .card-title-cdr {
+        font-size: 1.5vw;
+    }
+}
+
+@media screen and (min-width:768px) and (max-width:991px) {
+    .card-text {
+        font-size: 1.3vw;
+    }
+    
+    .card-title-cdr {
+        font-size: 1.5vw;
+    }
+}
+
+@media screen and (max-width:767px) {
+    .card-text {
+        font-size: 15px;
+    }
+    
+    .card-title-cdr {
+        font-size: 17px;
+    }
 }
 
 .animated {
-    height: 600px;
-    width: 600px;
+    height: 100%;
+    width: 100%;
+    max-height: 380px;
 }
 
 .animation-content {
     display: flex;
     flex-direction: column;
     justify-content: center;
+
 }
 /* animated images responsive */
 @media (max-width: 767px){
@@ -9465,3 +9518,4 @@ input[type="radio"]:checked + .star {
         font-size: 4vw;
    }
 }
+
