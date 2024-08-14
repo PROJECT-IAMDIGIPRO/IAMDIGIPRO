@@ -18,6 +18,7 @@ export class AppComponent implements OnInit {
   isSMORoute = false;
   isIMRoute = false;
   isWADRoute = false;
+  isGraphicUIDesignRoute = false;
   isCDMRoute = false;
   isLGRoute = false;
   isConsultingRoute = false;
@@ -116,6 +117,7 @@ faStarHalfAlt = faStarHalfAlt;
     this.isSMORoute = url.startsWith('/socialmediaoptimization');
     this.isIMRoute = url.startsWith('/influencermarketing');
     this.isWADRoute = url.startsWith('/webappdevelopment');
+    this.isGraphicUIDesignRoute = url.startsWith('/graphicuidesign');
     this.isCDMRoute = url.startsWith('/contentdevelopmenmMarketing');
     this.isLGRoute = url.startsWith('/leadgeneration');
     this.isConsultingRoute = url.startsWith('/consulting');
@@ -135,7 +137,7 @@ faStarHalfAlt = faStarHalfAlt;
     this.isTOURoute = url.startsWith('/terms');
 
     this.isServiceRoute = this.isSEORoute || this.isSEMRoute ||
-      this.isSMORoute || this.isIMRoute || this.isWADRoute ||
+      this.isSMORoute ||this.isGraphicUIDesignRoute || this.isIMRoute || this.isWADRoute ||
       this.isCDMRoute || this.isLGRoute || this.isConsultingRoute ||
       this.isEMRoute || this.isAboutRoute || this.isTrainingRoute ||
       this.isInternshipRoute || this.isJORoute || this.isPortfolioRoute ||
