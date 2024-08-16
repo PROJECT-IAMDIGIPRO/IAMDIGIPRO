@@ -822,6 +822,20 @@ textarea {
     margin-top: -22px;
     margin-left: 80px;
     margin-right: 20px;
+    animation: bounceLeftRight 2s infinite;
+}
+
+/* FINGER BOUNCE ANIMARTION */
+@keyframes bounceLeftRight {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(16px);
+    }
+    100% {
+        transform: translateX(0);
+    }
 }
 
 .arr-rightSer {
