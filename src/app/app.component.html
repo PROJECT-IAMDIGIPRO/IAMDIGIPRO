@@ -87,6 +87,7 @@
                                         <li><a routerLink="/searchengineoptimization" (click)="closeMenu()">Search Engine Optimization</a></li>
                                         <li><a routerLink="/searchenginemarketing" (click)="closeMenu()">Search Engine Marketing</a></li>
                                         <li><a routerLink="/socialmediaoptimization" (click)="closeMenu()">Social Media Optimization</a></li>
+                                        <li><a routerLink="/graphicuidesign" (click)="closeMenu()">graphic ui design</a></li>
                                     </ul>
                                 </div>
                                 <div class="row">
@@ -165,7 +166,7 @@
                         <p class="about-description">Discover the essence of digital marketing with IAM Digipro. Learn from industry veterans who emphasize practical strategies over theoretical concepts. Subscribe to our newsletter and chart your course to becoming a digital marketing expert.</p>
                         <div>
                             <a routerLink="/about-us">
-                                <button class="get-started-button"><img src="../assets/images/hand icon.png" class="arr-rightEj" />Explore our journey and meet our team!</button>
+                                <button class="get-started-button"><img src="../assets/images/hand icon.png" class="arr-right" style="margin:3px 0px;"/>Explore our journey and meet our team!</button>
                             </a>
                         </div>
                     </div>
@@ -228,195 +229,38 @@
                 <h1>Services</h1>
             </div>
         </div>
-            <div class="content" style="padding-top: 4%;">
-                <div *ngIf="visibleSection === 1" (click)="toggleSection(1)">
-                    <div class="sercives-container">
-                        <div class="service-container1">
-                            <div class="service-container2">
-                                <h2 class="ser-hed">What we offer</h2>
-                            </div>
-                            <div class="card-ser-container">
-                                <div class="list-ser">
-                                    <p class="ser-para">01</p>
-                                    <h3 class="dig-head">Digital Marketing</h3>
-                                    <p class="ser-par">We enhance your online presence and drive engagement through advanced SEO, social media, content marketing, and paid advertising strategies.</p>
-                                    <div>
-                                        <a routerLink="/digitalmarketing/seo"><button class="btn-option">Search Engine Optimization</button></a>
-                                        <a routerLink="/digitalmarketing/ppc"><button class="btn-option">Pay-Per-Click</button></a>
-                                        <a routerLink="/digitalmarketing/smm"><button class="btn-option">Social Media Marketing</button></a>
-                                        <a routerLink="/digitalmarketing/contentmarketing"><button class="btn-option">Content Marketing</button></a>
-                                        <a routerLink="/digitalmarketing/emailmarketing"><button class="btn-option">Email Marketing</button></a>
-                                    </div>
-                                    <div class="btn-container">
-                                        <a routerLink="/digitalmarketing">
-                                            <button class="explore-button">
-                                                Explore <i class="fa-solid right"><img src="../assets/images/hand icon.png" class="arr-right-explore" /></i>
-                                            </button>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
+
+            <div class="wrapper-svrs">
+                <div class="container-srvs" id="app">
+                    <section>
+                      <div class="card-srvs" (click)="nextCard($event)">
+                        <div class="card-info">
+                          <h1 id="card-info-title">{{ currentCard.title }}</h1>
+                          <p id="card-info-desc">{{ currentCard.desc }}</p>
+                          <a [routerLink]="currentCard.link" (click)="navigateToCard()">
+                            <p>More details</p>
+                            <svg viewBox="0 0 20 10">
+                              <line x1="0" y1="5" x2="20" y2="5"></line>
+                              <line x1="15" y1="0" x2="20" y2="5"></line>
+                              <line x1="15" y1="10" x2="20" y2="5"></line>
+                            </svg>
+                          </a>
                         </div>
-                        <div class="explore-container">
-                            <div>
-                                <h2 class="ser-hed1">What you get</h2>
-                                <img src="../assets/images/digitalmarketingrevenue.png" alt="digitalmarketingrevenue" />
-                            </div>
+                        <div class="card-photo">
+                          <div id="mask-1" class="mask"></div>
+                          <div id="mask-2" class="mask"></div>
+                          <a href="#" (click)="nextCard($event)">
+                            <p>Next</p>
+                            <svg viewBox="0 0 20 10">
+                              <line x1="0" y1="5" x2="20" y2="5"></line>
+                              <line x1="15" y1="0" x2="20" y2="5"></line>
+                              <line x1="15" y1="10" x2="20" y2="5"></line>
+                            </svg>
+                          </a>
+                          <img [src]="currentCard.photo">
                         </div>
-                    </div>
-                </div>
-                <div *ngIf="visibleSection === 2" (click)="toggleSection(2)">
-                    <div class="sercives-container">
-                        <div class="service-container1">
-                            <div class="service-container2">
-                                <h2 class="ser-hed">What we offer</h2>
-                            </div>
-                            <div class="card-ser-container">
-                                <div class="list-ser">
-                                    <p class="ser-para">02</p>
-                                    <h3 class="dig-head">
-                                        Web/App <br />
-                                        Development
-                                    </h3>
-                                    <p class="ser-par">We create responsive, user-friendly websites using the latest technologies to ensure they are fast, secure, and scalable.</p>
-                                    <div>
-                                        <a routerLink="/webappdevelopment/frontend"><button class="btn-option">Frontend Developer</button></a>
-                                        <a routerLink="/webappdevelopment/backend"><button class="btn-option">Backend Developer</button></a>
-                                        <a routerLink="/webappdevelopment/fullstack"><button class="btn-option">Full-stack Developer</button></a>
-                                        <a routerLink="/webappdevelopment/appdev"><button class="btn-option">App Developer</button></a>
-                                    </div>
-                                    <div class="btn-container">
-                                        <a routerLink="/webappdevelopment">
-                                            <button class="explore-button">
-                                                Explore <i class="fa-solid right"><img src="../assets/images/hand icon.png" class="arr-right-explore" /></i>
-                                            </button>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="explore-container section2">
-                            <div>
-                                <h2 class="ser-hed1">What you get</h2>
-                                <img src="../assets/images/trendingservices.png" alt="trendingservices" />
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div *ngIf="visibleSection === 3" (click)="toggleSection(3)">
-                    <div class="sercives-container">
-                        <div class="service-container1">
-                            <div class="service-container2">
-                                <h2 class="ser-hed">What we offer</h2>
-                            </div>
-                            <div class="card-ser-container">
-                                <div class="list-ser">
-                                    <p class="ser-para">03</p>
-                                    <h3 class="dig-head">
-                                        Graphic / UI <br />
-                                        Design
-                                    </h3>
-                                    <p class="ser-par">Our graphic design services establish a strong brand identity with visually stunning, high-quality designs that captivate and engage your audience.</p>
-                                    <div>
-                                        <a routerLink="/graphicuidesign/branding"><button class="btn-option">Branding</button></a>
-                                        <a routerLink="/graphicuidesign/logo-design"><button class="btn-option">Logo Design</button></a>
-                                        <a routerLink="/graphicuidesign/uiux-design"><button class="btn-option">UI/UX Design</button></a>
-                                    </div>
-                                    <br />
-                                    <br />
-                                    <div class="btn-container">
-                                        <a routerLink="/graphicuidesign">
-                                            <button class="explore-button">
-                                                Explore <i class="fa-solid right"><img src="../assets/images/hand icon.png" class="arr-right-explore" /></i>
-                                            </button>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="explore-container section3">
-                            <div>
-                                <h2 class="ser-hed1">What you get</h2>
-                                <img src="../assets/images/percentagebreakdown.png" alt="percentagebreakdown" />
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div *ngIf="visibleSection === 4" (click)="toggleSection(4)">
-                    <div class="sercives-container">
-                        <div class="service-container1">
-                            <div class="service-container2">
-                                <h2 class="ser-hed">What we offer</h2>
-                            </div>
-                            <div class="card-ser-container">
-                                <div class="list-ser">
-                                    <p class="ser-para">04</p>
-                                    <h3 class="dig-head">Consulting</h3>
-                                    <p class="ser-par">Our consulting services offer expert advice and strategic insights to help with digital transformation, process optimization, and strategic planning.</p>
-                                    <div>
-                                        <a routerLink="/consulting/businessstrategy"><button class="btn-option">Business Strategy</button></a>
-                                        <a routerLink="/consulting/digitaltranformantion"><button class="btn-option">Digital Transformation</button></a>
-                                    </div>
-                                    <br />
-                                    <br />
-                                    <br />
-                                    <br />
-                                    <br />
-                                    <div class="btn-container">
-                                        <a routerLink="/consultus">
-                                            <button class="explore-button">
-                                                Explore <i class="fa-solid right"><img src="../assets/images/hand icon.png" class="arr-right-explore" /></i>
-                                            </button>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="explore-container section4">
-                            <div>
-                                <h2 class="ser-hed1">What you get</h2>
-                                <img src="../assets/images/percentagebreakdownprojects.png" alt="percentagebreakdownprojects" />
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div *ngIf="visibleSection === 5" (click)="toggleSection(5)">
-                    <div class="sercives-container">
-                        <div class="service-container1">
-                            <div class="service-container2">
-                                <h2 class="ser-hed">What we offer</h2>
-                            </div>
-                            <div class="card-ser-container">
-                                <div class="list-ser">
-                                    <p class="ser-para">05</p>
-                                    <h3 class="dig-head">
-                                        Influencer <br />
-                                        Marketing
-                                    </h3>
-                                    <p class="ser-par">We connect you with the right influencers to amplity your brand's message and reach a wider audience through data-driven, tailored strategies for maximum impact and ROl.</p>
-                                    <div>
-                                        <a routerLink="/influencermarketing/campaign-strategy"><button class="btn-option">Campaign Strategy</button></a>
-                                        <a routerLink="/influencermarketing/influencer-outreach"><button class="btn-option">Influencer Outreach</button></a>
-                                        <a routerLink="/influencermarketing/brand-partnership"><button class="btn-option">Brand Partnership</button></a>
-                                        <a routerLink="/influencermarketing/content-creation"><button class="btn-option">Content Creating</button></a>
-                                    </div>
-                                    <div class="btn-container">
-                                        <a routerLink="/influencermarketing">
-                                            <button class="explore-button">
-                                                Explore <i class="fa-solid right"><img src="../assets/images/hand icon.png" class="arr-right-explore" /></i>
-                                            </button>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="explore-container section5">
-                            <div>
-                                <h2 class="ser-hed1">What you get</h2>
-                                <img src="../assets/images/resultsfromclients.png" alt="resultsfromclients" />
-                            </div>
-                        </div>
-                    </div>
+                      </div>
+                    </section>
                 </div>
             </div>
             <!-- careers -->
@@ -805,7 +649,7 @@
                 </div>
             </div>
             <!--enquiry form-->
-            <div class="enquiry-container pt-3" style="margin-bottom: 12vw;">
+            <div class="enquiry-container pt-3">
                 <div class="enquiry-form">
                     <div class="arrow">
                         <img src="../assets/images/hand icon.png" class="arr-right" />
@@ -823,12 +667,12 @@
                             </span>
                         </p>
                     </div>
-                    <div class="enquiry-background-container ">
-                        <h1 class="enquiry-heading">Let's Collab <fa-icon [icon]="faArrowRight"></fa-icon></h1>
+                    <div class="enquiry-background-container">
+                        <h1 class="enquiry-heading d-flex justify-content-start">Let's Collab <fa-icon [icon]="faArrowRight"></fa-icon></h1>
                     </div>
                 </div>
-                <div class="container-cnt pt-5">
-                    <form class="orange-form-cnt">
+                <div class="container-cnt mt-8">
+                    <form class="orange-form-cnt pt-8">
                       <div class="text-container-cnt">
                         <label for="message">What do you have to say to us?</label>
                         <textarea name="message" placeholder="Start typing..."></textarea>
@@ -868,7 +712,7 @@
                   </div>
             </div>
             <!-- FAQs -->
-            <div class="faq-container" style="margin-top: 100px;">
+            <div class="faq-container mt-0 pt-0">
                 <h1>Frequently Asked Questions</h1>
                 <div *ngFor="let faq of faqs; let i = index" class="faq-item">
                     <div class="faq-question" (click)="toggleFaq(i)">
@@ -903,6 +747,9 @@
             <router-outlet></router-outlet>
         </div>
         <div *ngIf="isConsultingRoute">
+            <router-outlet></router-outlet>
+        </div>
+        <div *ngIf="isGraphicUIDesignRoute">
             <router-outlet></router-outlet>
         </div>
         <div *ngIf="isEMRoute">
@@ -958,7 +805,7 @@
                     <h3>About</h3>
                     <ul>
                         <li><a routerLink="/aboutus">About us</a></li>
-                        <li><a routerLink="/consultus">Contact us</a></li>
+                        <li><a routerLink="/consultus">Consult us</a></li>
                         <li><a routerLink="/blogs">Blog</a></li>
                     </ul>
                 </div>
@@ -975,9 +822,9 @@
                 <div class="column">
                     <h3>Careers</h3>
                     <ul>
-                        <li><a routerLink="/careers/training">Training</a></li>
-                        <li><a routerLink="careers/internship">Internship</a></li>
-                        <li><a routerLink="/careers/jobopportunity">Job Opportunities</a></li>
+                        <li><a routerLink="/training">Training</a></li>
+                        <li><a routerLink="/internship">Internship</a></li>
+                        <li><a routerLink="/jobopportunity">Job Opportunities</a></li>
                     </ul>
                 </div>
             </div>

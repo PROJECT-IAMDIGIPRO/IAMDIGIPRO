@@ -1,35 +1,89 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
 <head>
-  <title>Animated Registration Form</title>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <!-- <link rel="stylesheet" href="style.css" /> -->
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Liquid Drop Login Page</title>
+	 <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+</head>
+	
+<body>
+	
+	<div class="container">
+		<div class="drop">
+			<div class="content">
+				<h2 class='animate__heartBeat'>Log in</h2>
+				<form action="">
+					<div class="input-box">
+						<input type="email" name="Email" placeholder="Email">
+						</div>
+					<div class="input-box">
+						<input type="password" name="password" placeholder="Password">
+						</div>
+					<div class="input-box">
+						<input type="submit" value="Login" href='#'>
+						</div>
+				</form>
+		</div>	
+		</div>
+		<a href="#" class='btn'>Forgot Password</a>
+	<a routerLink="/signup" class='btn signup'>Signup</a>
+	</div>
+	
+</body>
+</html> -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page with Animation</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap" rel="stylesheet">
 </head>
 <body>
-  <div class="container">
-      <div class="image">
-        <div class="form-box">
-          <div class="form">
-            <h2>Sign up</h2>
-            <div class="input-box">
-              <input type="text" required [(ngModel)]="user.userName" name="username"/>
-              <label for="">Username</label>
-            </div>
-            <div class="input-box">
-              <input type="text" required [(ngModel)]="user.email" name="email"/>
-              <label for="">Email</label>
-            </div>
-            <div class="input-box">
-              <input type="password" required [(ngModel)]="user.password" name="password"/>
-              <label for="">Password</label>
-            </div>
-            <div class="group">
-              <a routerLink="#">Forgot Password</a>
-              <a routerLink="/login">Log In</a>
-            </div>
-            <button (click)="onSubmit()">Sign up</button>
-          </div>
+    <div class="animation-background">
+        <div class="waviy">
+            &nbsp;&nbsp;
+            <span style="--i:1">I</span>
+            <span style="--i:2">A</span>
+            <span style="--i:3">M</span>
+            &nbsp;
+            <span style="--i:4">D</span>
+            <span style="--i:5">I</span>
+            <span style="--i:6">G</span>
+            <span style="--i:7">I</span>
+            <span style="--i:8">P</span>
+            <span style="--i:9">R</span>
+            <span style="--i:10">O</span>
         </div>
-      </div>
     </div>
-    
+    <div class="container">
+        <div class="drop">
+            <div class="content">
+                <h2 class='animate__heartBeat'>Signup</h2>
+                <form action="">
+                    <div class="input-box">
+                        <input type="email" name="Email" placeholder="Email">
+                    </div>
+                    <div class="input-box">
+                        <input type="password" name="password" placeholder="Password">
+                    </div>
+                    <div class="input-box">
+                        <input type="submit" value="Signup">
+                    </div>
+                </form>
+            </div>    
+        </div>
+        <!-- <a href="#" class='btn'>Forgot Password</a> -->
+        <a href="/login" class='btn signup'>Login</a>
+    </div>
 </body>
+</html>
