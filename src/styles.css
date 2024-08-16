@@ -3,8 +3,8 @@
 
 /*  =====  NAV BAR ===== */
 * {
-    font-family: "Poppins", sans-serif !important;
-}
+    font-family: 'Droid Sans'  !important;
+  }
 * {
     margin: 0;
     padding: 0;
@@ -145,6 +145,25 @@ nav .wrapper {
     top: 10px;
 }
 
+@media screen and (min-width: 971px) and (max-width: 1200px){
+    .wrapper {
+        padding: 0px 30px; 
+        height: 80px;
+    }
+
+    .nav-links li a {
+        font-size: 13px; 
+        padding: 10px 15px;
+    }
+
+    .nav-lsbtn {
+        font-size: 16px;
+        padding: 8px 20px;
+    }
+
+}
+
+
 @media screen and (max-width: 970px) {
     .wrapper .btn {
         display: block;
@@ -266,8 +285,8 @@ nav .wrapper {
         font-size: 19px;
     }
     .nav-links .desktop-item {
-		display: none !important;	
-	}
+        display: none !important;
+    }
 }
 nav input {
     display: none;
@@ -276,7 +295,6 @@ nav input {
 .dropdownImg {
     color: red;
 }
-
 /* ================================= except nav bar ========================================= */
 body {
     background-color: #f5f2f4;
@@ -1376,6 +1394,20 @@ textarea {
 /* .careers-arrow-btn:hover {
      background-color: #e65021; 
 } */
+@media screen and (min-width: 375px) and (max-width: 768px) {
+    .careers-card {
+        width: calc(100% - 20px);
+        
+        margin-bottom: 10px;
+        
+    }
+
+    .to-whom-we-offer {
+        margin-top: 15px;
+        margin-bottom: 15px;
+        text-align: center;
+    }
+}
 
 @media screen and (max-width: 902px) {
     .careers-card {
@@ -1609,6 +1641,16 @@ textarea {
     max-height: 100px;
     /* Limit maximum height */
     margin: 10px 20px;
+}
+@media screen and (min-width: 375px) and (max-width: 768px) {
+    .clients-container {
+        margin: 15px 5px;  
+    }
+
+    .client-logos {
+        gap: 8px;
+        flex-wrap: wrap;    
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -8845,7 +8887,7 @@ textarea:focus {
 
 .container-cnt {
     display: flex;
-    margin-top: 76vw;
+    margin-top: 10vw;
 }
 
 .text-container-cnt {
