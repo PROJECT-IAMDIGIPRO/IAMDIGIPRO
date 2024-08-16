@@ -403,11 +403,12 @@ fas :hover {
     font-family: poppins;
     background-color: #000000;
     z-index: 1;
+    padding-top: 20px;
 }
 
 .home-content video {
     position: relative;
-    width: 102%;
+    width: 100%;
     height: 100%;
     display: flex;
     z-index: 0;
@@ -564,6 +565,38 @@ button:hover {
 
 .search-form-icon .search-submit {
     display: none;
+}
+@media screen and (min-width: 375px) and (max-width: 768px) {
+    .home-content h2 {
+        padding-top: 40px;
+        font-size: 10vw; 
+        color: #f66136;
+        font-family: poppins, sans-serif;
+        margin: 8px;
+    }
+
+    .span1 {
+        font-size: 3.5vw; 
+        font-weight: 600;
+        color: #ffffff;
+        font-family: poppins, sans-serif;
+        margin: 15px;
+    }
+
+    .home-content p {
+        font-size: 3vw; 
+        color: #ffffff;
+        font-weight: 400;
+        margin: 15px;
+    }
+
+    .form-control {
+        display: block; 
+        border-radius: 20px; 
+        background-color: #ffffff;
+        margin-top: 10px;
+        margin: 5px;
+    }
 }
 
 @media screen and (max-width: 990px) {
@@ -961,6 +994,86 @@ textarea {
 }
 
 /* Media Queries for responsiveness */
+@media (min-width: 375px) and (max-width: 768px) {
+    .about-content-text {
+        flex-direction: column;
+        align-items: center;
+        padding: 0 !important;
+    }
+
+    .about-description {
+        color: rgba(85, 77, 77, 0.945);
+        font-size: 4vw; 
+        margin: 8px 0; 
+        font-weight: 400;
+        font-family: poppins, sans-serif;
+    }
+
+    .about-container .arrow {
+        margin-left: -30px; 
+    }
+
+    .text,
+    .about-image-content {
+        flex: 1 1 100%;
+        max-width: 100%;
+        text-align: center;
+        padding: 5px;
+        margin-bottom: 10px; 
+    }
+
+    .about-image {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        border-radius: 15px; 
+        margin-left: 0;
+    }
+
+    .achievements {
+        text-align: center;
+        margin-top: 15px;
+        margin-bottom: 25px;
+        font-family: poppins, sans-serif;
+        font-size: 5vw; 
+    }
+
+    .about-heading {
+        font-size: 6vw;
+    }
+
+    .get-started-button {
+        font-size: 5vw; 
+    }
+
+    .projects {
+        display: flex;
+        justify-content: center;
+    }
+
+    .head6 {
+        font-family: poppins, sans-serif;
+        font-size: 4.5vw; 
+        font-weight: 100;
+        color: #252424;
+    }
+
+    .head5 {
+        color: #f66136;
+        font-weight: 500;
+        margin-bottom: 5px;
+        font-family: poppins, sans-serif;
+        font-size: 5vw; 
+    }
+
+    .pro-con {
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-top: 0;
+        margin-bottom: 10px; 
+    }
+}
+
 @media (max-width: 768px) {
     .about-content-text {
         flex-direction: column;
@@ -1214,6 +1327,57 @@ textarea {
     font-weight: 400;
     border: 0;
     border-radius: 40px;
+}
+@media (min-width: 375px) and (max-width: 768px) {
+    .service-heading {
+        font-size: 16px;
+    }
+
+    .dig-head {
+        font-size: 28px; 
+        margin-bottom: 5px;
+        margin-top: 5px;
+    }
+
+    .ser-par {
+        font-size: 14px; 
+        margin: 5px 0; 
+        padding: 0;
+    }
+
+    .ser-hed {
+        margin-left: 10%; 
+        font-size: 14px; 
+    }
+
+    .ser-hed1 {
+        margin-left: 10%; 
+        font-size: 14px;
+    }
+
+    .btn-option {
+        font-size: 13px; 
+    }
+
+    .explore-button {
+        padding: 10px; 
+        height: 45px; 
+        font-size: 14px; 
+    }
+
+    .right {
+        font-size: 9px; 
+    }
+
+    .btn-container {
+        margin-left: 50%; 
+        margin-right: 0;
+    }
+
+    .explore-container img {
+        width: 100%;
+        margin-top: 15px; 
+    }
 }
 
 @media (min-width: 901px) and (max-width: 1250px) {
@@ -1611,6 +1775,16 @@ textarea {
     margin: 10px 20px;
 }
 
+@media screen and (min-width: 375px) and (max-width: 768px) {
+    .clients-container {
+        margin: 15px 5px; /* Further reduced margins for a more compact layout on smaller screens */
+    }
+
+    .client-logos {
+        gap: 8px; /* Slightly reduced gap to optimize spacing on mobile devices */
+    }
+}
+
 @media screen and (max-width: 768px) {
     .clients-container {
         margin: 20px 10px;
@@ -1752,6 +1926,67 @@ textarea {
     width: auto;
     font-family: poppins;
     font-size: 1vw;
+}
+@media screen and (min-width: 375px) and (max-width: 768px) {
+    .enquiry-container {
+        width: 100%;
+    }
+
+    .enquiry-background-container {
+        width: 100%;
+    }
+    .enquiry-card-container {
+        float: none;
+        background-color: black;
+        border-radius: 15px; 
+        color: #ffffff;
+        padding: 20px; 
+        position: relative;
+        margin-top: 10px; 
+        width: 90%; 
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .left-side {
+        width: 100%;
+        margin-left: 0;
+        padding-left: 0;
+    }
+    .left-side p {
+        font-family: poppins, sans-serif;
+        font-size: 6vw; 
+        margin-left: 15px; 
+    }
+    .span {
+        font-family: poppins, sans-serif;
+        font-size: 6vw; 
+        padding-top: 10px;
+    }
+    .enquiry-heading {
+        font-family: poppins, sans-serif;
+        font-size: 12vw; 
+    }
+    .enquiry-card-container form h2 {
+        font-size: 4vw; 
+        font-family: poppins, sans-serif;
+    }
+    .interest-buttons span {
+        font-family: poppins, sans-serif;
+        font-size: 4vw; 
+    }
+    .enquiry-card-container label {
+        font-family: poppins, sans-serif;
+        font-size: 4vw; 
+    }
+    .enquiry-card-container input,
+    textarea {
+        font-family: poppins, sans-serif;
+        font-size: 4vw;
+    }
+    .enquiry-send-button span {
+        font-family: poppins, sans-serif;
+        font-size: 6vw; 
+    }
 }
 
 @media screen and (max-width: 900px) {
@@ -4440,7 +4675,7 @@ textarea {
     font-family: poppins;
     font-size: 5vw;
     font-weight: 100;
-    padding-left: 70px;
+    padding-left: 38px;
 }
 
 .enquiry-card-container form {
@@ -4504,6 +4739,7 @@ textarea {
 
     .enquiry-background-container {
         width: 100%;
+        margin-bottom: -210px;
     }
 
     .enquiry-card-container {
@@ -6264,7 +6500,7 @@ body {
     display: flex;
 }
 
-.app-btn {
+/* .app-btn {
     color: #ffffff;
     background-color: #f66136;
     font-size: 1.3rem;
@@ -6272,7 +6508,7 @@ body {
     padding: 1vw 1.5vw;
     border: none;
     border-radius: 30px;
-}
+} */
 
 .services div {
     font-size: 18px;
@@ -7336,6 +7572,9 @@ body {
     padding: 1vw 1.5vw;
     border: none;
     border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 @media (max-width: 800px) {
@@ -7354,6 +7593,9 @@ body {
         font-size: 1rem;
         padding: 10px 15px;
         border-radius: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 }
 
