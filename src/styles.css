@@ -16,6 +16,7 @@ nav {
     z-index: 1000;
     width: 100%;
     background: black;
+    border-top-left-radius: 0px !important;
 }
 nav .wrapper {
     position: relative;
@@ -8435,6 +8436,14 @@ body {
 }
 
 /* ANIMATION FOR CARDS heading example [ SEO ]  */
+@keyframes shining {
+    0% {
+        left: -100%;
+    }
+    100% {
+        left: 100%;
+    }
+}
 .shine {
     position: relative;
     display: inline-flex;
@@ -8458,7 +8467,7 @@ body {
     height: 100%;
     background: linear-gradient(120deg, rgba(255, 87, 34, 0) 0%, rgba(255, 87, 34, 0.4) 50%, rgba(255, 87, 34, 0) 100%);
     transform: skewX(-25deg);
-    animation: shine 2s infinite;
+    animation: shining 2s infinite;
 }
 
 .shine::before {
@@ -8470,18 +8479,8 @@ body {
     height: 100%;
     background: linear-gradient(120deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.4) 50%, rgba(255, 255, 255, 0) 100%);
     transform: skewX(-25deg);
-    animation: shine 2s infinite;
+    animation: shining 2s infinite;
 }
-
-@keyframes shine {
-    0% {
-        left: -100%;
-    }
-    100% {
-        left: 100%;
-    }
-}
-
 /* =======  ABOUT US ========= */
 .scrolling-ad-container {
     position: relative;
@@ -8846,6 +8845,7 @@ textarea:focus {
 
 .container-cnt {
     display: flex;
+    margin-top: 76vw;
 }
 
 .text-container-cnt {
@@ -8854,6 +8854,7 @@ textarea:focus {
     order: 2;
     margin-left: 30px;
     width: 80%;
+   
 }
 
 .input-container-cnt {
