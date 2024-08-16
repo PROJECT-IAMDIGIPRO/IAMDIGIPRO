@@ -144,7 +144,6 @@ nav .wrapper {
     right: 30px;
     top: 10px;
 }
-
 @media screen and (max-width: 970px) {
     .wrapper .btn {
         display: block;
@@ -407,7 +406,7 @@ fas :hover {
 
 .home-content video {
     position: relative;
-    width: 102%;
+    width: 100%;
     height: 100%;
     display: flex;
     z-index: 0;
@@ -2266,7 +2265,7 @@ textarea {
     }
 
     .paragraph-1 {
-        font-size: 1.42vw;
+        font-size: 2.42vw;
         margin-left: 5%;
         margin-top: 0;
     }
@@ -8704,7 +8703,7 @@ body {
     max-width: 1000px;
     margin: auto;
     position: absolute;
-    top: 15%;
+    top: 37%;
     left: 73%;
     transform: translateX(-50%);
     display: flex;
@@ -8845,7 +8844,7 @@ textarea:focus {
 
 .container-cnt {
     display: flex;
-    margin-top: 76vw;
+     margin: 5vw 0vw; 
 }
 
 .text-container-cnt {
@@ -9519,4 +9518,14 @@ input[type="radio"]:checked + .star {
         font-size: 4vw;
    }
 }
-
+/* General media query for iPad Mini, iPad Air, and iPad Pro */
+@media (max-width: 1200px) {
+    .container-cnt {
+        display: flex;
+        margin: 5vw 3vw;
+    }
+    .orange-form-cnt {
+       top: 10%;  
+    }
+  }
+  
