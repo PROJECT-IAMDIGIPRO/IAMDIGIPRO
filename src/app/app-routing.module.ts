@@ -20,6 +20,9 @@ import { ConsultUsComponent } from './consult-us/consult-us.component';
 import { TrainingComponent } from './training/training.component';
 import { JobOpportunityComponent } from './job-opportunity/job-opportunity.component';
 import { InternshipComponent } from './internship/internship.component';
+import { TermsComponent } from './terms/terms.component';
+import { PrivacyPolicyComponent } from './privacy-policy/privacy-policy.component';
+import { CookiesPolicyComponent } from './cookies-policy/cookies-policy.component';
 
 const routes: Routes = [
 
@@ -46,7 +49,11 @@ const routes: Routes = [
    {path:'training',component: TrainingComponent},
    {path:'jobopportunity',component: JobOpportunityComponent},
    {path:'internship',component: InternshipComponent},
-   
+
+  // COOKIES
+   {path:'terms',component: TermsComponent},
+   {path:'privacypolicy',component: PrivacyPolicyComponent},
+   {path:'cookies',component:CookiesPolicyComponent},  
 ];
 
 @NgModule({
