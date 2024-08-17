@@ -403,6 +403,7 @@ fas :hover {
     font-family: poppins;
     background-color: #000000;
     z-index: 1;
+    margin-top: 0;
 }
 
 .home-content video {
@@ -575,6 +576,10 @@ button:hover {
         margin: 10px;
     }
 
+    .home-content {
+        margin-top: 2vw;
+    }
+
     .span1 {
         font-size: 4vw;
         font-weight: 600;
@@ -606,6 +611,10 @@ button:hover {
         color: #f66136;
         font-family: poppins;
         margin: 10px;
+    }
+
+    .home-content {
+        margin-top: 4vw;
     }
 
     .span1 {
@@ -7953,7 +7962,7 @@ body {
 @media screen and (max-width: 767px) {
     .commmon-seo-card {
         font-size: 10px;
-        margin: 0;
+        margin: 5px;
         padding: 5px;
     }
 }
@@ -7961,7 +7970,7 @@ body {
 @media screen and (min-width: 768px) and (max-width: 992px) {
     .commmon-seo-card {
         font-size: 13px;
-        margin: 8px;
+        margin: 10px;
         padding: 8px;
     }
 }
