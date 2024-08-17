@@ -2197,6 +2197,7 @@
     "@types/qs" "*"
     "@types/serve-static" "*"
 
+
 "@types/gsap@^3.0.0":
   version "3.0.0"
   resolved "https://registry.npmjs.org/@types/gsap/-/gsap-3.0.0.tgz"

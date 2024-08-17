@@ -1,0 +1,737 @@
+body {
+    background-color:#F5F2F4;
+    font-family: poppins;
+    margin-top: 50px;
+    width: auto;
+  }
+  
+  @font-face{
+    font-family: poppins;
+      /* src: url(Poppins-Regular.ttf); */
+  }
+  @font-face{
+    font-family: alifira;
+    /* src: url(Alifira.ttf); */
+  }
+
+/*navigation bar*/
+ 
+.home-header{
+  width:auto;
+  height: 100%;
+  margin-left: 2px;
+  margin-right: 2px;
+  position: sticky;
+  border-radius: 10px;
+   background-color: #f4f4f4;
+  font-family: poppins;
+ }
+ /*navigation bar*/
+ 
+ .form-control{
+  border-radius: 30px;
+  background-color:#ffffff;
+  margin-top: 15px;
+  margin: 5px;
+  width: 55% !important;
+  height: 45px !important;
+}
+
+ .home-container{
+   height: 20%;
+   width: 100%;
+   margin-right: 20px;
+   justify-content: space-evenly;
+ }
+ .home-content i{
+   background-color: #F66136;
+   border-radius: 50%;
+   padding-bottom: 1px;
+   padding: 10px;
+ }
+ 
+ .spa{
+  color: #f4f4f4;
+  -webkit-text-stroke: 3px #F66136;
+}
+.logo{
+  margin-top: 5px;
+  display: flex;
+}
+.logo img{
+  width: 80px;
+  height: 50px;
+  margin: 0px 20px;
+}
+ .logo h3{
+   color:#000000;
+   padding: 0px;
+   font-size: 22px;
+   
+ }
+ 
+ .nav-link b{
+   color: #000000;
+   font-family: poppins;
+ } 
+ .nav-link b:hover{
+   color:#888383;
+   transition: 0.5s;
+ }
+ .navbar {
+  z-index: 1000; /* Ensure navbar is above other content */
+}
+ 
+ .nav-item{
+   margin-left: 5px;
+   margin-right: 5px;
+   font-size: 13px;
+ }
+ .form-control{
+   border-radius: 30px;
+   background-color:#ffffff;
+   margin-top: 15px;
+   margin: 5px;
+   
+ }
+ 
+ .search-form{
+   display: flex;
+ }
+ .login-btn{
+   width: auto;
+   border: none;
+   background: none;
+   border-style: none;
+   margin-top: 5px;
+   margin-left: 8px;
+   margin-right: 8px;
+  font-family: poppins;
+  font-size: 13px;
+ }
+ .login-btn:onclick{
+   
+   width: auto;
+   border: none;
+   text-decoration: none;
+ }
+ .signup-btn{
+   margin-top: 7px;
+   font-size: 13px;
+   background-color: black;
+   color: white;
+   border-radius: 20px;
+   width: 90px;
+   height: 40px;
+   font-family: poppins;
+ }
+ .dropdown-menu{
+  z-index: 1000; /* Ensure dropdown is above video */
+  position: absolute;
+  width: 200px;
+  background-color: #ffffff;
+  border-radius: 5px;
+ }
+  .dropdown-item{
+   font-size: 14px;
+   text-align: left;
+   padding: 5px;
+   margin: 2px;
+ }
+ .dropdown-item:hover{
+   background-color: #F66136;
+   border: 2px;
+   border-radius: 5px;
+   border: 2px;
+   color: #ffffff;
+   width: 190px;
+ }
+ fas :hover{
+   display: block;
+   display: flex;
+  }
+ 
+ .modal-content {
+   -webkit-border-radius: 0px !important;
+   -moz-border-radius: 0px !important;
+   border-radius: 30px !important;
+   }
+ .modal-body{
+ width:100%;   
+ }
+ .modal-login{
+ width:100%;
+ margin-top: 20px;
+ margin-bottom: 20px;
+ }
+ .modal-login h1{
+ font-size: 4vh;
+ font-weight: bold;
+ }
+ .signup-psw{
+ width: 100%;
+ }
+ input[type=email], input[type=password] {
+ width: 100%;
+ padding: 12px 20px;
+ margin: 8px 0;
+ display: inline-block;
+ border: 1px solid black;
+ border-radius:10px;
+ box-sizing: border-box;
+ }.signup-psw{
+ display: flex;
+ justify-content: space-evenly;
+ 
+ }
+ .signup-password{
+ width: 50%;
+ margin-right: 10px;;
+ 
+ }.signup-confirm-password{
+ width: 50%;
+ }
+ 
+ #btn-login{
+ background-color: #F66136;
+ color:white;
+ padding: 15px;
+ margin: 8px 0;
+ border: none;
+ cursor: pointer;
+ width: 100%;
+ border-radius: 10px;
+ }
+ #btn-g-login{
+ color:black;
+ background-color:white;
+ padding: 15px;
+ margin: 8px 0;
+ border: solid black 1px;
+ cursor: pointer;
+ width: 100%;
+ border-radius: 10px;
+ }
+ button:hover {
+ opacity: 0.8;
+ }
+ .container-search{
+  text-align:center;
+  margin-right: 5px;
+} 
+ .search-form-icon {
+   right: 200px;
+   top: 200px;
+ }
+ 
+  .search-field {
+   background-color: transparent;
+   background-image: url(https://wp-themes.com/wp-content/themes/twentythirteen/images/search-icon.png);
+   background-position: 5px  center;
+   background-repeat: no-repeat;
+   background-size: 24px 24px;
+   border: none;
+   cursor: pointer;
+   height: 40px;
+   margin: 3px 0;
+   padding: 0 0 0 34px;
+   position: relative;
+   -webkit-transition: width 400ms ease, background 400ms ease;
+   transition:         width 400ms ease, background 400ms ease;
+   width:0px;
+    cursor: pointer;
+ }
+ 
+ .search-field:focus {
+   background-color: white;
+   border: 1px solid rgb(101, 102, 103);
+   cursor: text;
+   outline: 0;
+   width: 200px;
+   color:black;
+   border-radius:15px;
+ }
+ .search-form-icon
+ .search-submit { 
+ display:none;
+ }
+ 
+@media screen and (max-width:990px) {
+
+
+.form-control{
+  display: none !important;
+  border-radius: 30px;
+  background-color:#ffffff;
+  margin-top: 15px;
+  margin: 5px;
+  
+}
+}
+
+
+@media screen and (min-width:990px) and (max-width:2000px) {
+
+
+.login-btn{
+  
+  width: 70px;
+}
+.signup-btn{
+  width: 70px;
+
+}
+.nav-item{
+  margin-left: 2px;
+  margin-right: 2px;
+}
+.form-control{
+  border-radius: 30px;
+  background-color:#ffffff;
+  margin-top: 15px;
+  margin: 5px;
+  width: 45% !important;
+  height: 45px !important;
+}
+.container-search{
+  display: none;
+} 
+}
+
+
+.black-cont{
+    background-color: black;
+    height: 200px;
+    color: orangered;
+    padding: 10px;
+    border-radius: 0px 0px 50px 50px;
+    text-align: center;
+    font-size: 30px;
+}
+.term-hed{
+    padding-top: 15px;
+    text-align: center;
+    margin-top: 50px;
+    font-size: 65px;
+}
+.term-card-cont{
+  padding: 20px;
+  font-size: 20px;
+  font-family: math;
+  line-height: 1.5;
+  padding-top: 10px;
+}
+.wel-par{
+  margin-top: 15px;
+  margin-bottom: 30px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+.hed-acc{
+  font-weight: 600;
+  font-size: 26px;
+  margin-top: 0px;
+}
+.spa-span1{
+  margin-right: 5px;
+}
+.h2-mail{
+  font-weight: 550;
+  font-size: 25px;
+}
+.marg-top{
+  margin-top: 0;
+  margin-left: 15px;
+}
+
+@media (min-width: 900px) and (max-width: 1000px) {
+  .term-hed {
+      font-size: 88px;
+  }
+  .h2-mail{
+      font-size: 20px;
+  }
+}
+
+
+@media (max-width: 767px) {
+  .term-hed {
+      font-size: 50px;
+  }
+  .hed-acc{
+      font-size: 15px;
+  }
+  .h2-mail{
+      font-size: 15px;
+  }
+  .wel-par{
+      font-size: 15px;
+  }
+}
+@media (min-width: 900px) and (max-width: 1000px) {
+  .term-hed {
+      font-size: 88px;
+  }
+  .h2-mail {
+      font-size: 20px;
+  }
+}
+
+/* Responsive for tablet devices (768px to 899px) */
+@media (min-width: 768px) and (max-width: 899px) {
+  .term-hed {
+      font-size: 60px;
+  }
+  .hed-acc {
+      font-size: 20px;
+  }
+  .h2-mail {
+      font-size: 18px;
+  }
+  .wel-par {
+      font-size: 18px;
+  }
+}
+
+/* Responsive for small devices (max-width: 767px) */
+@media (max-width: 767px) {
+  .term-hed {
+      font-size: 50px;
+  }
+  .hed-acc {
+      font-size: 15px;
+  }
+  .h2-mail {
+      font-size: 15px;
+  }
+  .wel-par {
+      font-size: 15px;
+  }
+}
+/*footer*/
+
+.go-top {
+  display: inline-block;
+  background-color: #F66136;
+  color: #fcfafa;
+  font-size: 24px;
+  padding: 10px 17px;
+  border-radius: 50%;
+  text-decoration: none;
+  position: fixed;
+  bottom: 100px;
+  right:95%;
+}
+
+@media  screen and (max-width:767px) {
+.go-top {
+  font-size: 20px;
+  padding: 4px 10px;
+  position: fixed;
+  bottom: 35px;
+  right:20px;
+}
+}
+
+.go-top:hover {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.social-icons {
+  display: flex;
+  flex-direction: row;
+  margin-right: 100px;
+}
+
+.social-icon {
+  display: block;
+  width: 100%;
+  height: 50px;
+  background-size: cover;
+  transition: transform 0.3s;
+  margin: 20px;
+}
+
+.social-icon.instagram {
+  color: #F66136;
+  margin: 5px 10px;
+  font-size: 25px;
+}
+
+.social-icon.facebook {
+  margin: 5px 10px;
+  color: #F66136;
+  font-size: 25px;
+}
+.social-icon.linkedin {
+  margin: 5px 10px;
+  color: #F66136;
+  font-size: 25px;
+}
+
+.social-icon:hover {
+  transform: scale(1.1);
+}
+
+
+.footer {
+  background-color: #000000;
+  color: white;
+  padding: 40px 40px;
+}
+
+.footer-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+@media  screen and (max-width:767px) {
+  .footer-section {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.footer .column {
+  flex: 1;
+  margin: 0 20px;
+}
+
+@media  screen and (max-width:767px) {
+  .footer .logo {
+    margin: 0;
+  }
+}
+
+.footer .column h3 {
+  margin-bottom: 20px;
+  font-size: 17px;
+  font-weight: bold;
+  font-family: 'Poppins';
+}
+
+.footer .column ul {
+  list-style-type: none;
+  padding: 0;
+  font-weight: 100;
+}
+
+.footer .column ul li {
+  margin-bottom: 10px;
+}
+
+.footer .column ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  transition: color 0.3s;
+  font-size: 16px;
+  font-family: 'Poppins';
+}
+
+.footer-bottom {
+  margin-top: 40px;
+  border-top: 1px solid #555;
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+
+.footer-bottom a {
+  color: #ffffff;
+  text-decoration: none;
+}
+.column img{
+  width: 120px;
+}
+.footer-email{
+  
+  margin: 10px;
+  margin-right: 100px;
+}
+
+.footer .logo {
+  color: white;
+  font-size: 45px;
+  font-weight: bold;
+  flex: 3;
+}
+
+.copyright {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  padding: 5px;
+  margin: 0;
+}
+
+@media screen and (max-width:767px) {
+  .copyright {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+  }
+}
+
+.copyright li {
+  margin-right: 40px;
+  margin-top: 5px;
+}
+
+@media screen and (max-width:767px) {
+  .copyright li {
+    margin-right: 0px;
+    margin-top: 5px;
+  }
+}
+/* whatsapp icon */
+
+.wtsapp-icons {
+  z-index: 1001;
+  position: fixed;
+  bottom: 80px;
+  right:20px;
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+}
+
+
+.wtsapp-icons{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.wtsapp-icons i{
+  font-size: 50px;
+  color: #25D366;
+  display: inline-block;
+  transition: transform 0.5s;
+}
+
+@media screen and (max-width:767px) {
+  .wtsapp-icons i{
+    font-size: 40px;
+  }
+
+  .wtsapp-icons {
+    bottom: 130px;
+    right:20px;
+  }
+}
+
+/* lets talk button */
+
+.ct-button { 
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color:grey;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 20px;
+  transition: background-color 0.3s ease;
+  z-index: 1000;
+}
+
+@media screen and (max-width:767px) {
+  .ct-button{
+    padding: 7px 10px;
+    font-size: 15px;
+    bottom: 85px;
+    right: 20px;
+  }
+}
+.blinking{
+  font-size: small;
+  padding-right:5px ;
+}
+
+
+/* let talk  contact form*/
+
+.modal-form-container {
+display: none; /* Initially hidden */
+position: fixed;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+background-color: black;
+color: white;
+padding: 20px;
+border: 1px solid #ccc;
+border-radius: 10px;
+z-index: 1000;
+width: 90%;
+max-width: 400px;
+}
+
+.modal-form {
+display: flex;
+flex-direction: column;
+}
+
+
+.modal-form label {
+margin-top: 10px;
+}
+
+.modal-form input {
+padding: 10px;
+margin-top: 5px;
+border: none;
+border-radius: 5px;
+width: calc(100% - 20px);
+}
+
+.modal-form input[type="text"],
+.modal-form input[type="tel"],
+.modal-form input[type="email"] {
+
+color: #000;
+}
+.cl-icon {
+position: absolute;
+top: 10px;
+right: 10px;
+cursor: pointer;
+}
+.interest-buttons button {
+  border: 1px solid #000;
+  background-color: black;
+  border-width: 1px;
+  border-color: white;
+  border-radius: 25px;
+  padding: 10px 15px;
+  margin-bottom: 15px;
+  cursor: pointer;
+  color: #fff; 
+  font-family: poppins;
+  font-size: 1vw;
+}
+.enquiry-send-button {
+  background-color: #f66136;
+  color: white;
+  border: none;
+  padding: 20px 0px;
+  cursor: pointer;
+  border-radius: 10px;
+  font-weight: bold;
+  margin-top: 10px;
+  width: auto;
+  font-family: poppins;
+  font-size: 1vw;
+}

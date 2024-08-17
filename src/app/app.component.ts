@@ -37,6 +37,9 @@ export class AppComponent implements OnInit {
   isPPRoute = false;
   isCPRoute = false;
   isTOURoute = false;
+  isPrivacyPolicyRoute = false;
+  isTermsRoute = false;
+  isCookiesRoute = false;
 
   visibleSection = 1;
 
@@ -136,7 +139,7 @@ faStarHalfAlt = faStarHalfAlt;
     this.isSignUpRoute = url.startsWith('/signup');
     this.isRegisterRoute = url.startsWith('/registration');
     this.isPPRoute = url.startsWith('/privacypolicy');
-    this.isCPRoute = url.startsWith('/cookiepolicy');
+    this.isCPRoute = url.startsWith('/cookies');
     this.isTOURoute = url.startsWith('/terms');
 
     this.isServiceRoute = this.isSEORoute || this.isSEMRoute ||
