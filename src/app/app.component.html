@@ -281,7 +281,7 @@
                                 Gain real-world experience in digital marketing, web development, graphic design, consulting, and influencer marketing. Work with industry experts, develop your skills, and contribute to impactful projects.
                                 Apply now to kickstart your career with us!
                             </p>
-                            <a routerLink="/careers/internship" class="careers-arrow-btn"><img src="../assets/images/hand icon.png" class="arr-right2" /></a>
+                            <a routerLink="/internship" class="careers-arrow-btn"><img src="../assets/images/hand icon.png" class="arr-right2" /></a>
                         </div>
                         <div class="careers-card">
                             <h2>Training Courses</h2>
@@ -289,7 +289,7 @@
                                 Gain real-world experience and comprehensive training in digital marketing, web development, graphic design, consulting, and influencer marketing. Work with industry experts, enhance your skills, and
                                 contribute to impactful projects. Apply now to kickstart your career with us!
                             </p>
-                            <a routerLink="/careers/training" class="careers-arrow-btn"><img src="../assets/images/hand icon.png" class="arr-right2" /></a>
+                            <a routerLink="/training" class="careers-arrow-btn"><img src="../assets/images/hand icon.png" class="arr-right2" /></a>
                         </div>
                         <div class="careers-card">
                             <h2>Job Opportunities</h2>
@@ -297,7 +297,7 @@
                                 Discover rewarding career paths in digital marketing, web development, graphic design, consulting, and influencer marketing. Join our dynamic team, collaborate with industry experts, and contribute to
                                 innovative projects. Take the next step in your career journey with us. Apply now!
                             </p>
-                            <a routerLink="/careers/jobopportunity" class="careers-arrow-btn"><img src="../assets/images/hand icon.png" class="arr-right2" /></a>
+                            <a routerLink="/jobopportunity" class="careers-arrow-btn"><img src="../assets/images/hand icon.png" class="arr-right2" /></a>
                         </div>
                     </div>
                 </div>
@@ -702,7 +702,7 @@
                         </div>
                         <div class="phone-container-cnt">
                           <label class="label-cnt" for="phone">Phone</label>
-                          <input class="input-cnt" type="text" name="phone" placeholder="(555) 555-5555">
+                          <input class="input-cnt" type="text" name="phone" placeholder="+91 9999900000">
                         </div>
                         <div class="button-container-cnt">
                           <button type="submit" name="submit" class="btn-cnt">SEND</button>
@@ -798,6 +798,10 @@
         <!-- Footer -->
         <footer class="footer">
             <div class="footer-section">
+
+                <!-- <div class="column1-logo">
+                    <img src="../assets/images/logo2.png" alt="iamdigipro logo" style="width: 255px; height: 150px;" /> -->
+
                 <div class="column logo">
                     <img src="../assets/images/logo2.png" alt="iamdigipro logo" style="width: 240px; height: 150px;" />
                 </div>
@@ -809,7 +813,9 @@
                         <li><a routerLink="/blogs">Blog</a></li>
                     </ul>
                 </div>
-                <div class="column">
+
+                 <div class="column-services">   
+                    <div class="column">
                     <h3>Services</h3>
                     <!-- <ul>
                         <li><a routerLink="/digitalmarketing">Digital Marketing</a></li>
@@ -818,25 +824,27 @@
                         <li><a routerLink="/consulting">Consulting</a></li>
                         <li><a routerLink="/influencermarketing">Influencer Marketing</a></li>
                     </ul> -->
-                    <ul class="mega-links">
+                   
+                    <div class="service-lists">
+                        
+                    <ul>
                         <li><a routerLink="/searchengineoptimization">Search Engine Optimization</a></li>
                         <li><a routerLink="/searchenginemarketing">Search Engine Marketing</a></li>
                         <li><a routerLink="/socialmediaoptimization">Social Media Optimization</a></li>
-                        <li><a routerLink="/graphicuidesign">graphic ui design</a></li>
+                        <li><a routerLink="/graphicuidesign">Graphic ui design</a></li>
                         <li><a routerLink="/influencermarketing">Influencer Marketing</a></li>
                     </ul>
-                </div>
-                    <div class="column">
-                        <h3></h3>
-                        <ul class="mega-links">
+                    <ul>                    
                         <li><a routerLink="/webappdevelopment">Web/App Development</a></li>
                         <li><a routerLink="/contentdevelopmenmMarketing">Content Development & Marketing</a></li>
                         <li><a routerLink="/leadgeneration">Lead generation - B2B & B2C</a></li>
                         <li><a routerLink="/consulting">Consulting</a></li>
                         <li><a routerLink="/emailmarketing">Email Marketing</a></li>
-                        </ul>
-                    </div> 
-                   
+                    </ul>
+                        </div>
+                </div> 
+            </div> 
+          
                   
                 <div class="column">
                     <h3>Careers</h3>
@@ -847,6 +855,7 @@
                     </ul>
                 </div>
             </div>
+        <!-- </div>  -->
             <!-- jump button -->
             <div class="footer-right d-flex justify-content-end">
                 <div class="go-top1">
