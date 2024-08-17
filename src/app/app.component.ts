@@ -194,6 +194,12 @@ faStarHalfAlt = faStarHalfAlt;
       menuCheckbox.checked = false;
     }
   }
+  scrollToTop(): void {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+}
 
   cards = [
     {
