@@ -9335,7 +9335,6 @@ input[type="radio"]:checked + .star {
         font-size: 4vw;
    }
 }
-<<<<<<< HEAD
 /* General media query for iPad Mini, iPad Air, and iPad Pro */
 @media (max-width: 1200px) {
     .container-cnt {
@@ -9347,7 +9346,5 @@ input[type="radio"]:checked + .star {
     }
   }
   
-=======
 
 
->>>>>>> fc4cb0a24e8c4098ff7cba433e8013c6331c8fc0
