@@ -8826,7 +8826,7 @@ body {
     transform: translateX(-50%);
     display: flex;
     justify-content: flex-start;
-    padding-top: 3rem;
+    padding-top: 12rem;
     padding-right: 3rem;
     padding-bottom: 3rem;
     padding-left: 3rem;
@@ -8963,9 +8963,13 @@ textarea:focus {
 .container-cnt {
     display: flex;
 
+    margin-top: 15vh;
+
+
     margin-top: 10vw;
 
      margin: 5vw 0vw; 
+
 
 }
 
