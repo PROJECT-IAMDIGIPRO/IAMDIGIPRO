@@ -29,6 +29,9 @@ import { NgParticlesModule } from 'ng-particles'
 import { FontAwesomeModule, FaIconLibrary } from '@fortawesome/angular-fontawesome';
 import { faEnvelope, faPhone } from '@fortawesome/free-solid-svg-icons';
 import { faTwitter, faWhatsapp  } from '@fortawesome/free-brands-svg-icons';
+import { TermsComponent } from './terms/terms.component';
+import { PrivacyPolicyComponent } from './privacy-policy/privacy-policy.component';
+import { CookiesPolicyComponent } from './cookies-policy/cookies-policy.component';
 
 @NgModule({
   declarations: [
@@ -53,6 +56,9 @@ import { faTwitter, faWhatsapp  } from '@fortawesome/free-brands-svg-icons';
     JobOpportunityComponent,
     InternshipComponent,
     BlogsComponent,
+    TermsComponent,
+    PrivacyPolicyComponent,
+    CookiesPolicyComponent,
     ],
   imports: [
     BrowserModule,
