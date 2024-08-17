@@ -3,6 +3,7 @@ import { NavigationEnd, Router } from '@angular/router';
 import { Meta, Title } from '@angular/platform-browser';
 import { faInstagram, faFacebook, faLinkedin, faYoutube } from '@fortawesome/free-brands-svg-icons';
 import { faArrowUp, faArrowRight , faBars , faTimes , faStar, faStarHalfAlt } from '@fortawesome/free-solid-svg-icons';
+import { gsap } from 'gsap';
 
 
 @Component({
@@ -18,6 +19,7 @@ export class AppComponent implements OnInit {
   isSMORoute = false;
   isIMRoute = false;
   isWADRoute = false;
+  isGraphicUIDesignRoute = false;
   isCDMRoute = false;
   isLGRoute = false;
   isConsultingRoute = false;
@@ -65,6 +67,7 @@ export class AppComponent implements OnInit {
       isOpen: false
     }
   ];
+  
   faInstagram = faInstagram;
 faFacebook = faFacebook;
 faLinkedin = faLinkedin;
@@ -110,12 +113,14 @@ faStarHalfAlt = faStarHalfAlt;
     ]);
   }
 
+
   updateRouteFlags(url: string): void {
     this.isSEORoute = url.startsWith('/searchengineoptimization');
     this.isSEMRoute = url.startsWith('/searchenginemarketing');
     this.isSMORoute = url.startsWith('/socialmediaoptimization');
     this.isIMRoute = url.startsWith('/influencermarketing');
     this.isWADRoute = url.startsWith('/webappdevelopment');
+    this.isGraphicUIDesignRoute = url.startsWith('/graphicuidesign');
     this.isCDMRoute = url.startsWith('/contentdevelopmenmMarketing');
     this.isLGRoute = url.startsWith('/leadgeneration');
     this.isConsultingRoute = url.startsWith('/consulting');
@@ -135,7 +140,7 @@ faStarHalfAlt = faStarHalfAlt;
     this.isTOURoute = url.startsWith('/terms');
 
     this.isServiceRoute = this.isSEORoute || this.isSEMRoute ||
-      this.isSMORoute || this.isIMRoute || this.isWADRoute ||
+      this.isSMORoute ||this.isGraphicUIDesignRoute || this.isIMRoute || this.isWADRoute ||
       this.isCDMRoute || this.isLGRoute || this.isConsultingRoute ||
       this.isEMRoute || this.isAboutRoute || this.isTrainingRoute ||
       this.isInternshipRoute || this.isJORoute || this.isPortfolioRoute ||
@@ -189,4 +194,134 @@ faStarHalfAlt = faStarHalfAlt;
       menuCheckbox.checked = false;
     }
   }
+  scrollToTop(): void {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
 }
+
+  cards = [
+    {
+      id: 1,
+      title: "Search Engine Optimization",
+      desc: "We enhance your online presence and drive engagement through advanced SEO, social media, content marketing, and paid advertising strategies.",
+      photo: "assets/images/homeContent/Search-Engine-Optimization.jpg",
+      link: "/searchengineoptimization"
+    },
+    {
+      id: 2,
+      title: "Search Engine Marketing",
+      desc: "We enhance your online presence and drive engagement through advanced SEO, social media, content marketing, and paid advertising strategies.",
+      photo: "assets/images/homeContent/Search-Engine-Marketing.jpg",
+      link: "/searchenginemarketing"
+    },
+    {
+      id: 3,
+      title: "Social Media Optimization",
+      desc: "We enhance your online presence and drive engagement through advanced SEO, social media, content marketing, and paid advertising strategies.",
+      photo: "assets/images/homeContent/Social-Media-Optimization.jpg",
+      link: "/socialmediaoptimization"
+    },
+    {
+      id: 4,
+      title: "Graphic UI & UX Design",
+      desc: "We enhance your online presence and drive engagement through advanced SEO, social media, content marketing, and paid advertising strategies.",
+      photo: "assets/images/homeContent/Graphic_UI-Design.jpg",
+      link: "/graphicuidesign"
+    },
+    {
+      id: 5,
+      title: "Influencer Marketing",
+      desc: "We enhance your online presence and drive engagement through advanced SEO, social media, content marketing, and paid advertising strategies.",
+      photo: "assets/images/homeContent/Influencer-Marketing.jpg",
+      link: "/influencermarketing"
+    },
+    {
+      id: 6,
+      title: "Web/App Development",
+      desc: "We enhance your online presence and drive engagement through advanced SEO, social media, content marketing, and paid advertising strategies.",
+      photo: "assets/images/homeContent/Web_App-Development.jpg",
+      link: "/webappdevelopment"
+    },
+    {
+      id: 7,
+      title: "Content Development",
+      desc: "We enhance your online presence and drive engagement through advanced SEO, social media, content marketing, and paid advertising strategies.",
+      photo: "assets/images/homeContent/Content-Development-&-Marketing.jpg",
+      link: "/contentdevelopmenmMarketing"
+    },
+    {
+      id: 8,
+      title: "Lead generation",
+      desc: "We enhance your online presence and drive engagement through advanced SEO, social media, content marketing, and paid advertising strategies.",
+      photo: "assets/images/homeContent/Lead-generation-B2B-&-B2C.jpg",
+      link: "/leadgeneration"
+    },
+    {
+      id: 9,
+      title: "Consulting",
+      desc: "We enhance your online presence and drive engagement through advanced SEO, social media, content marketing, and paid advertising strategies.",
+      photo: "assets/images/homeContent/Consulting.jpg",
+      link: "/consulting"
+    },
+    {
+      id: 10,
+      title: "Email Marketing",
+      desc: "We enhance your online presence and drive engagement through advanced SEO, social media, content marketing, and paid advertising strategies.",
+      photo: "assets/images/homeContent/Email-Marketing.jpg",
+      link: "/emailmarketing"
+    }
+  ];
+
+  currentNum = 0;
+
+  get currentCard() {
+    return this.cards[this.currentNum];
+  }
+
+  playForward() {
+    const tl = gsap.timeline({
+      defaults: { duration: 0.4, ease: "sine.out" },
+      onComplete: () => {
+        if (this.currentNum >= this.cards.length - 1) {
+          this.currentNum = 0;
+        } else {
+          this.currentNum++;
+        }
+        this.playReverse();
+      }
+    });
+
+    tl.to("#mask-1", { yPercent: 100, scaleY: 1.4 })
+    .to("#mask-2", { yPercent: -100, scaleY: 1.4 }, "<")
+    .to("#card-info-title", { clipPath: 'polygon(0 0, 100% 0, 100% 0%, 0% 0%)' }, "<0.4")
+    .to("#card-info-desc", { clipPath: 'polygon(0 0, 100% 0, 100% 0%, 0% 0%)' }, "<0.3");
+}
+
+    playReverse() {
+      const tl = gsap.timeline({
+        defaults: { duration: 0.7, ease: "sine.in" }
+      });
+
+      tl.to("#mask-1", { yPercent: -100, scaleY: 1.4 })
+      .to("#mask-2", { yPercent: 100, scaleY: 1.4 }, "<")
+      .to("#card-info-title", { clipPath: 'polygon(0 0, 100% 0, 100% 100%, 0% 100%)' }, "<0.2")
+      .to("#card-info-desc", { clipPath: 'polygon(0 0, 100% 0, 100% 100%, 0% 100%)' }, "<0.3");
+  }
+
+  nextCard(event: Event) {
+    event.preventDefault();  // Prevent default action of anchor tag
+    this.playForward();
+  }
+
+  navigateToCard() {
+    this.router.navigate([this.currentCard.link]);
+  }
+}
+
+
+function polygon(arg0: number, arg1: number, arg2: number, arg3: number, arg4: number): gsap.TweenValue | undefined {
+  throw new Error('Function not implemented.');
+}
+
