@@ -93,6 +93,7 @@ body {
     gap: 20px;
     justify-content: center;
     align-items: center;
+    min-height: 50vh;
     width: 100%;
 }
 
@@ -208,7 +209,7 @@ body {
     }
 
     .container .drop .content h2 {
-        font-size: 1.2em;
+        font-size: 2em;
     }
 
     .container .drop .content form .input-box {
@@ -237,7 +238,7 @@ body {
 
 @media (max-width: 480px) {
     .container .drop {
-        max-width: 300px;
+        max-width: 350px;
     }
 
     .container .drop .content {
@@ -245,7 +246,7 @@ body {
     }
 
     .container .drop .content h2 {
-        font-size: 1em;
+        font-size: 2em;
     }
 
     .container .drop .content form .input-box {
@@ -305,16 +306,21 @@ body {
 /* Media Queries for Responsiveness */
 @media (max-width: 1200px) {
     .waviy {
-      font-size: 100px;
-      margin-top: -510px;
+      font-size: 50px;
+      margin-top: -250px;
       margin-right: -900px;
-      padding-left: 35px;    }
+      padding-left: 35px;
+    }
+    
+    .container .drop .content h2 {
+        font-size: 2em;
+    }
 }
 
 @media (max-width: 992px) {
     .waviy {
       font-size: 80px;
-      margin-top: -400px;
+      margin-top: -550px;
       margin-right: -700px;
       padding-left: 30px;
     }
@@ -332,7 +338,7 @@ body {
 @media (max-width: 600px) {
   .waviy {
       font-size: 40px;
-      margin-top: -290px;
+      margin-top: -330px;
       margin-right: -365px;
       padding-left: 23px;
   }   
@@ -341,7 +347,7 @@ body {
 @media (max-width: 400px) {
     .waviy {
         font-size: 40px;
-        margin-top: -240px;
+        margin-top: -300px;
         margin-right: -371px;
         padding-left: 6px;
     }   
