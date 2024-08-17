@@ -157,6 +157,7 @@
                     <img src="../assets/images/hand icon.png" class="arr-right" />
                     
                 </div>
+            </div>    
                 <div class="services-ser">
                     <h1>About</h1>
                 </div>
@@ -213,7 +214,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            <!-- </div> -->
             <!-- Book -->
             <div class="section back-dark2" id="about">
                 <div class="offer-rapper-one position-relative pt-0 pb-0 md-pt-10 md-pb-10">
@@ -653,7 +654,6 @@
                 <div class="enquiry-form">
                     <div class="arrow">
                         <img src="../assets/images/hand icon.png" class="arr-right" />
-                        
                     </div>
                     <div class="services-ser">
                         <h1>Enquiry</h1>
@@ -675,7 +675,7 @@
                     <form class="orange-form-cnt pt-8">
                       <div class="text-container-cnt">
                         <label for="message">What do you have to say to us?</label>
-                        <textarea name="message" placeholder="Start typing..."></textarea>
+                        <textarea name="message" class="consult-us-textarea" placeholder="Start typing..."></textarea>
                         <div class="rating-container-cnt">
                           <p class="rating-text">Please select your interests:</p>
                           <div class="stars-cnt">
@@ -795,11 +795,15 @@
             <router-outlet></router-outlet>
         </div>
 
-        <!-- Footer -->
+        <!-- !-- Footer --> 
         <footer class="footer">
             <div class="footer-section">
+
+                <!-- <div class="column1-logo">
+                    <img src="../assets/images/logo2.png" alt="iamdigipro logo" style="width: 255px; height: 150px;" /> -->
+
                 <div class="column logo">
-                    <img src="../assets/images/logo2.png" alt="iamdigipro logo" style="width: 255px; height: 150px;" />
+                    <img src="../assets/images/logo2.png" alt="iamdigipro logo" style="width: 240px; height: 150px;" />
                 </div>
                 <div class="column">
                     <h3>About</h3>
@@ -811,14 +815,33 @@
                 </div>
                 <div class="column">
                     <h3>Services</h3>
-                    <ul>
+                    <!-- <ul>
                         <li><a routerLink="/digitalmarketing">Digital Marketing</a></li>
                         <li><a routerLink="/webappdevelopment">Web Development</a></li>
                         <li><a routerLink="/graphicuidesign">Graphic Design</a></li>
                         <li><a routerLink="/consulting">Consulting</a></li>
                         <li><a routerLink="/influencermarketing">Influencer Marketing</a></li>
+                    </ul> -->
+                    <ul class="mega-links">
+                        <li><a routerLink="/searchengineoptimization">Search Engine Optimization</a></li>
+                        <li><a routerLink="/searchenginemarketing">Search Engine Marketing</a></li>
+                        <li><a routerLink="/socialmediaoptimization">Social Media Optimization</a></li>
+                        <li><a routerLink="/graphicuidesign">graphic ui design</a></li>
+                        <li><a routerLink="/influencermarketing">Influencer Marketing</a></li>
                     </ul>
                 </div>
+                    <div class="column">
+                        <h3></h3>
+                        <ul class="mega-links">
+                        <li><a routerLink="/webappdevelopment">Web/App Development</a></li>
+                        <li><a routerLink="/contentdevelopmenmMarketing">Content Development & Marketing</a></li>
+                        <li><a routerLink="/leadgeneration">Lead generation - B2B & B2C</a></li>
+                        <li><a routerLink="/consulting">Consulting</a></li>
+                        <li><a routerLink="/emailmarketing">Email Marketing</a></li>
+                        </ul>
+                    </div> 
+                   
+                  
                 <div class="column">
                     <h3>Careers</h3>
                     <ul>
@@ -846,13 +869,13 @@
                         </div>
                     </button>
                 </div>
-                <a href="#" id="goTop" class="go-top"><fa-icon [icon]="faArrowUp"></fa-icon></a>
+                <a id="goTop" (click)="scrollToTop()" class="go-top"><fa-icon [icon]="faArrowUp"></fa-icon></a>
             </div>
             <div class="footer-bottom d-flex flex-row">
                 <div class="copyright">
                     <li><a>&#169; 2024 IAM DIGIPRO</a></li>
                     <li><a routerLink="/privacypolicy">Privacy Policy</a></li>
-                    <li><a routerLink="/cookiepolicy">Cookies Policy</a></li>
+                    <li><a routerLink="/cookies">Cookies Policy</a></li>
                     <li><a routerLink="/terms">Terms of use</a></li>
                 </div>
                 <div class="footer-email">

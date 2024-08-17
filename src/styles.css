@@ -3,8 +3,8 @@
 
 /*  =====  NAV BAR ===== */
 * {
-    font-family: "Poppins", sans-serif !important;
-}
+    font-family: 'Droid Sans'  !important;
+  }
 * {
     margin: 0;
     padding: 0;
@@ -145,6 +145,27 @@ nav .wrapper {
     top: 10px;
 }
 
+
+@media screen and (min-width: 971px) and (max-width: 1200px){
+    .wrapper {
+        padding: 0px 30px; 
+        height: 80px;
+    }
+
+    .nav-links li a {
+        font-size: 13px; 
+        padding: 10px 15px;
+    }
+
+    .nav-lsbtn {
+        font-size: 16px;
+        padding: 8px 20px;
+    }
+
+}
+
+
+
 @media screen and (max-width: 970px) {
     .wrapper .btn {
         display: block;
@@ -266,8 +287,8 @@ nav .wrapper {
         font-size: 19px;
     }
     .nav-links .desktop-item {
-		display: none !important;	
-	}
+        display: none !important;
+    }
 }
 nav input {
     display: none;
@@ -276,7 +297,6 @@ nav input {
 .dropdownImg {
     color: red;
 }
-
 /* ================================= except nav bar ========================================= */
 body {
     background-color: #f5f2f4;
@@ -855,6 +875,20 @@ textarea {
     margin-top: -22px;
     margin-left: 80px;
     margin-right: 20px;
+    animation: bounceLeftRight 2s infinite;
+}
+
+/* FINGER BOUNCE ANIMARTION */
+@keyframes bounceLeftRight {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(16px);
+    }
+    100% {
+        transform: translateX(0);
+    }
 }
 
 .arr-rightSer {
@@ -1774,6 +1808,20 @@ textarea {
 /* .careers-arrow-btn:hover {
      background-color: #e65021; 
 } */
+@media screen and (min-width: 375px) and (max-width: 768px) {
+    .careers-card {
+        width: calc(100% - 20px);
+        
+        margin-bottom: 10px;
+        
+    }
+
+    .to-whom-we-offer {
+        margin-top: 15px;
+        margin-bottom: 15px;
+        text-align: center;
+    }
+}
 
 @media screen and (max-width: 902px) {
     .careers-card {
@@ -2007,6 +2055,16 @@ textarea {
     max-height: 100px;
     /* Limit maximum height */
     margin: 10px 20px;
+}
+@media screen and (min-width: 375px) and (max-width: 768px) {
+    .clients-container {
+        margin: 15px 5px;  
+    }
+
+    .client-logos {
+        gap: 8px;
+        flex-wrap: wrap;    
+    }
 }
 
 @media screen and (min-width: 375px) and (max-width: 768px) {
@@ -2735,7 +2793,7 @@ textarea {
     }
 
     .paragraph-1 {
-        font-size: 1.42vw;
+        font-size: 2.42vw;
         margin-left: 5%;
         margin-top: 0;
     }
@@ -8763,12 +8821,12 @@ body {
     max-width: 1000px;
     margin: auto;
     position: absolute;
-    top: 15%;
+    top: 37%;
     left: 73%;
     transform: translateX(-50%);
     display: flex;
     justify-content: flex-start;
-    padding-top: 12rem;
+    padding-top: 1rem;
     padding-right: 3rem;
     padding-bottom: 3rem;
     padding-left: 3rem;
@@ -8815,6 +8873,7 @@ body {
         transform: translateX(-50%);
         display: flex;
         justify-content: flex-start;
+        margin-top: 205px;
         padding-top: 3rem;
         padding-right: 1rem;
         padding-bottom: 3rem;
@@ -8904,7 +8963,11 @@ textarea:focus {
 
 .container-cnt {
     display: flex;
-    margin-top: 15vh;
+
+    margin-top: 10vw;
+
+     margin: 5vw 0vw; 
+
 }
 
 .text-container-cnt {
@@ -9578,5 +9641,18 @@ input[type="radio"]:checked + .star {
         font-size: 4vw;
    }
 }
+/* General media query for iPad Mini, iPad Air, and iPad Pro */
+@media (max-width: 1200px) {
+    .container-cnt {
+        display: flex;
+        margin: 5vw 3vw;
+    }
+    .orange-form-cnt {
+       top: 10%;  
+    }
+  }
+  
+
+
 
 
