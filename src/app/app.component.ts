@@ -37,6 +37,9 @@ export class AppComponent implements OnInit {
   isPPRoute = false;
   isCPRoute = false;
   isTOURoute = false;
+  isPrivacyPolicyRoute = false;
+  isTermsRoute = false;
+  isCookiesRoute = false;
 
   visibleSection = 1;
 
@@ -91,7 +94,8 @@ faStarHalfAlt = faStarHalfAlt;
   }
 
   setMetaTags(): void {
-    this.title.setTitle('IamDigiPro:Innovative Digital Marketing & Branding for Your Business/Hyderabad');
+    this.title.setTitle('IAM Digipro');
+    // this.title.setTitle('IamDigiPro:Innovative Digital Marketing & Branding for Your Business/Hyderabad');
     this.meta.addTags([
       { name: 'description', content: 'IamDigiPro provides comprehensive digital marketing and branding solutions. We help boutiques,salons,dental clinics & All other Business stand out with creative designs and strategic promotions.' },
       { name: 'keywords', content: 'best digital marketing agency hyderabad,digital advertising company in hyderabad,advertising agency hyderabad,influence marketing,web development,social marketing digital,performance marketing optimization' },
@@ -136,7 +140,7 @@ faStarHalfAlt = faStarHalfAlt;
     this.isSignUpRoute = url.startsWith('/signup');
     this.isRegisterRoute = url.startsWith('/registration');
     this.isPPRoute = url.startsWith('/privacypolicy');
-    this.isCPRoute = url.startsWith('/cookiepolicy');
+    this.isCPRoute = url.startsWith('/cookies');
     this.isTOURoute = url.startsWith('/terms');
 
     this.isServiceRoute = this.isSEORoute || this.isSEMRoute ||

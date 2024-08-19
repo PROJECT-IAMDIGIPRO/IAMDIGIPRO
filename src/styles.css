@@ -6284,6 +6284,7 @@ body {
         flex: 0 0 auto;
         max-width: 250px;
         margin-right: 10px;
+        margin-top: 18px;
     }
 }
 
@@ -8853,6 +8854,7 @@ body {
 		padding-right: 3rem;
 		padding-bottom: 1rem;
 		padding-left: 3rem;
+        margin-top: 5rem;
 	  }
   }
 @media (max-width: 900px) {
@@ -8963,6 +8965,9 @@ textarea:focus {
 
 .container-cnt {
     display: flex;
+
+    margin-top: 15vh;
+
 
     margin-top: 10vw;
 

@@ -1,0 +1,30 @@
+body {
+    background-color: #F5F2F4;
+    font-family: poppins;
+    width: auto;
+    margin-top: 50px;
+  }
+  @font-face {
+    font-family: poppins;
+    /* src: url(Poppins-Regular.ttf); */
+  }
+  
+  @font-face {
+    font-family: alifira;
+    /* src: url(Alifira.ttf); */
+  }
+  .black-cont{
+    background-color: black;
+    height: 200px;
+    color: orangered;
+    padding: 10px;
+    border-radius: 0px 0px 50px 50px;
+    text-align: center;
+    font-size: 30px;
+}
+.term-hed{
+    padding-top: 15px;
+    text-align: center;
+    margin-top: 50px;
+    font-size: 50px;
+}
