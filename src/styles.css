@@ -1,5 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap");
+@import url(https://fonts.googleapis.com/css?family=Droid+Sans);
+
 
 /*  =====  NAV BAR ===== */
 * {
@@ -9,7 +9,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
+    font-family: 'Droid Sans'  !important;
 }
 nav {
     position: fixed;
@@ -300,7 +300,7 @@ nav input {
 /* ================================= except nav bar ========================================= */
 body {
     background-color: #f5f2f4;
-    font-family: poppins;
+    font-family: 'Droid Sans'  !important;
     width: auto;
     margin-top: 50px;
 }
@@ -367,7 +367,7 @@ body {
     margin-top: 5px;
     margin-left: 8px;
     margin-right: 8px;
-    font-family: poppins;
+    font-family: 'Droid Sans'  !important;
     font-size: 12px;
 }
 
@@ -379,7 +379,7 @@ body {
     border-radius: 20px;
     width: 90px;
     height: 40px;
-    font-family: poppins;
+    font-family: 'Droid Sans'  !important;
 }
 
 .dropdown-menu {
@@ -420,7 +420,7 @@ fas :hover {
     text-align: center;
     border-bottom-left-radius: 50px;
     border-bottom-right-radius: 50px;
-    font-family: poppins;
+    font-family: 'Droid Sans'  !important;
     background-color: #000000;
     z-index: 1;
     padding-top: 20px;
@@ -428,7 +428,7 @@ fas :hover {
 
 .home-content video {
     position: relative;
-    width: 100%;
+    width: 102%;
     height: 100%;
     display: flex;
     z-index: 0;
@@ -451,14 +451,14 @@ fas :hover {
     font-size: 12vw;
     color: #f66136;
     margin: 10px;
-    font-family: poppins;
+    font-family: 'Droid Sans'  !important;
 }
 
 .span1 {
     font-size: 2vw;
     font-weight: 600;
     color: #ffffff;
-    font-family: poppins;
+    font-family: 'Droid Sans'  !important;
     margin: 20px;
 }
 
@@ -482,7 +482,7 @@ fas :hover {
     padding: 8px 8px;
     margin-top: 10px;
     cursor: pointer;
-    font-family: poppins;
+    font-family: 'Droid Sans'  !important;
 }
 
 .home-content button:hover {
@@ -591,7 +591,7 @@ button:hover {
         padding-top: 40px;
         font-size: 10vw; 
         color: #f66136;
-        font-family: poppins, sans-serif;
+        font-family: 'Droid Sans'  !important;
         margin: 8px;
     }
 
@@ -599,7 +599,7 @@ button:hover {
         font-size: 3.5vw; 
         font-weight: 600;
         color: #ffffff;
-        font-family: poppins, sans-serif;
+        font-family: 'Droid Sans'  !important;
         margin: 15px;
     }
 
@@ -624,7 +624,7 @@ button:hover {
         padding-top: 60px;
         font-size: 15vw;
         color: #f66136;
-        font-family: poppins;
+        font-family: 'Droid Sans'  !important;
         margin: 10px;
     }
 
@@ -632,7 +632,7 @@ button:hover {
         font-size: 4vw;
         font-weight: 600;
         color: #ffffff;
-        font-family: poppins;
+        font-family: 'Droid Sans'  !important;
         margin: 20px;
     }
 
@@ -657,7 +657,7 @@ button:hover {
         padding-top: 60px;
         font-size: 13vw;
         color: #f66136;
-        font-family: poppins;
+        font-family: 'Droid Sans'  !important;
         margin: 10px;
     }
 
@@ -665,7 +665,7 @@ button:hover {
         font-size: 5vw;
         font-weight: 600;
         color: #ffffff;
-        font-family: poppins;
+        font-family: 'Droid Sans'  !important;
         margin: 20px;
     }
 
@@ -696,7 +696,7 @@ button:hover {
         padding: 0px 5px;
         margin-top: 0px;
         cursor: pointer;
-        font-family: poppins;
+        font-family: 'Droid Sans'  !important;
     }
     .arr-right-getIn {
         width: 30px !important;
@@ -913,10 +913,11 @@ textarea {
 }
 
 .services-ser h1{
+    
     margin-top: -40px;
     margin-left: 18px;
-    font-weight: 500;
-    font-size: 25px;
+    font-weight: 650;
+    font-size: 40px;
     font-family: Arial, Helvetica, sans-serif;
     /* font-family: sans-serif; */
     color: rgb(19, 19, 19);
@@ -944,20 +945,20 @@ textarea {
     margin: 10px 0;
     /* Decrease top and bottom margin */
     font-weight: 400;
-    font-family: poppins;
+    font-family: 'Droid Sans'  !important;
 }
 
 .get-started-button {
     background-color: black;
     color: white;
-    padding: 12px 24px;
+    padding: 12px 14px;
     /* Decrease padding */
     border-radius: 50px;
     margin-top: 10px;
     /* Decrease margin top */
     font-size: 1.3vw;
     /* Responsive font size */
-    font-family: poppins;
+    font-family: 'Droid Sans'  !important;
 }
 
 .get-started-button-arrow {
@@ -996,7 +997,7 @@ textarea {
     text-align: center;
     margin-top: 60px;
     margin-bottom: 30px;
-    font-family: poppins;
+    font-family: 'Droid Sans'  !important;
     font-size: 2.5vw;
 }
 
@@ -1006,7 +1007,7 @@ textarea {
 }
 
 .head6 {
-    font-family: poppins;
+    font-family: 'Droid Sans'  !important;
     font-size: 2vw;
     font-weight: 100;
     color: #252424;
@@ -1016,7 +1017,7 @@ textarea {
     color: #f66136;
     font-weight: 500;
     margin-bottom: 5px;
-    font-family: poppins;
+    font-family: 'Droid Sans'  !important;
     font-size: 2vw;
 }
 
@@ -1040,7 +1041,7 @@ textarea {
         font-size: 4vw; 
         margin: 8px 0; 
         font-weight: 400;
-        font-family: poppins, sans-serif;
+        font-family: 'Droid Sans'  !important;
     }
 
     .about-container .arrow {
@@ -1068,7 +1069,7 @@ textarea {
         text-align: center;
         margin-top: 15px;
         margin-bottom: 25px;
-        font-family: poppins, sans-serif;
+        font-family: 'Droid Sans'  !important;
         font-size: 5vw; 
     }
 
@@ -1086,7 +1087,7 @@ textarea {
     }
 
     .head6 {
-        font-family: poppins, sans-serif;
+        font-family: 'Droid Sans'  !important;
         font-size: 4.5vw; 
         font-weight: 100;
         color: #252424;
@@ -1096,7 +1097,7 @@ textarea {
         color: #f66136;
         font-weight: 500;
         margin-bottom: 5px;
-        font-family: poppins, sans-serif;
+        font-family: 'Droid Sans'  !important;
         font-size: 5vw; 
     }
 
@@ -1124,7 +1125,7 @@ textarea {
         margin: 10px 0;
         /* Decrease top and bottom margin */
         font-weight: 400;
-        font-family: poppins;
+        font-family: 'Droid Sans'  !important;
     }
 
     .about-container .arrow {
@@ -1159,7 +1160,7 @@ textarea {
         text-align: center;
         margin-top: 20px;
         margin-bottom: 30px;
-        font-family: poppins;
+        font-family: 'Droid Sans'  !important;
         font-size: 3vw;
     }
 
@@ -1189,7 +1190,7 @@ textarea {
     }
 
     .head6 {
-        font-family: poppins;
+        font-family: 'Droid Sans'  !important;
         font-size: 3.5vw;
         font-weight: 100;
         color: #252424;
@@ -1199,7 +1200,7 @@ textarea {
         color: #f66136;
         font-weight: 500;
         margin-bottom: 5px;
-        font-family: poppins;
+        font-family: 'Droid Sans'  !important;
         font-size: 4vw;
     }
 
@@ -1219,12 +1220,16 @@ textarea {
     align-items: center;
     min-height: 100vh;
     margin: 0;
+    margin-top: -145px;
+    margin-bottom: -150px;
   }
 
 .container-srvs {
     width: 100%;
-    max-width: 900px;
+    max-width: 1000px;
     cursor: pointer;
+    /* margin-top: -195px;
+    margin-bottom: -100px; */
   }
   
   section {
@@ -1250,24 +1255,32 @@ textarea {
       rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
       rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
   }
-  
+  .more-details {
+    margin-top: auto; /* Push the "More details" paragraph to the bottom */
+    padding-top: 10px;
+    text-align: right; /* Optional: Align the text to the right */
+    position: relative;
+    bottom: 0;
+    right: 0;
+    left: 0;
+  }
   .card-info {
     display: grid;
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 0fr);
     padding: 1em 2em;
   }
   
   .card-info h1 {
     font-family: "Allura", serif;
-    font-size: 3rem;
+    font-size: 1.6rem;
     color: var(--dark-green);
     align-self: center;
+    font-weight: 600;
+    margin-bottom: 10px;
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
   }
-  
   .card-info p {
     font-size: 0.9rem;
-    font-weight: bold;
     align-self: center;
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
     line-height: 22px;
@@ -1308,7 +1321,7 @@ textarea {
   
   .card-photo {
     width: 100%;
-    max-width: 450px;
+    max-width: 485px;
     object-fit: cover;
     position: relative;
     overflow: hidden;
@@ -1318,7 +1331,7 @@ textarea {
   .card-photo img {
     display: block;
     width: 100%;
-    aspect-ratio: 1/1;
+    aspect-ratio: 1/0;
   }
   
   .card-photo a {
@@ -1391,7 +1404,7 @@ textarea {
     }
   
     .card-photo {
-      max-width: 450px;
+      max-width: 485px;
     }
   }
   
@@ -1937,7 +1950,7 @@ textarea {
     margin-top: 0px;
     font-size: 40px;
     font-weight: 500;
-    font-family: poppins;
+    font-family: 'Droid Sans'  !important;
 }
 
 .testimonials-details-container {
@@ -2125,7 +2138,7 @@ textarea {
 }
 
 .span {
-    font-family: poppins;
+    font-family: 'Droid Sans'  !important;
     margin-top: 10px;
     color: black;
     font-weight: 700;
@@ -2136,7 +2149,7 @@ textarea {
 .enquiry-background-container {
     background-color: #f66136;
     color: #ffffff;
-    margin-top: 20px;
+    margin-top: 100px;
     height: 200px;
     display: flex;
     flex-direction: column;
@@ -2145,7 +2158,7 @@ textarea {
 }
 
 .enquiry-heading {
-    font-family: poppins;
+    font-family: 'Droid Sans'  !important;
     font-size: 5vw;
     font-weight: 100;
     padding-left: 70px;
@@ -2178,7 +2191,7 @@ textarea {
     margin-bottom: 10px;
     font-weight: 100;
     font-size: 1vw;
-    font-family: poppins;
+    font-family: 'Droid Sans'  !important;
 }
 
 .interest-buttons button {
@@ -2191,14 +2204,14 @@ textarea {
     margin-bottom: 15px;
     cursor: pointer;
     color: #fff;
-    font-family: poppins;
+    font-family: 'Droid Sans'  !important;
     font-size: 2vw;
 }
 
 .enquiry-card-container label {
     margin-top: 5px;
     margin-bottom: 5px;
-    font-family: poppins;
+    font-family: 'Droid Sans'  !important;
     font-size: 1vw;
 }
 
@@ -2209,14 +2222,14 @@ textarea {
     margin-bottom: 20px;
     border: 1px solid #ccc;
     border-radius: 4px;
-    font-family: poppins;
+    font-family: 'Droid Sans'  !important;
     font-size: 1vw;
 }
 
 .enquiry-card-container textarea {
     height: 100px;
     width: auto;
-    font-family: poppins;
+    font-family: 'Droid Sans'  !important;
     font-size: 1vw;
 }
 @media screen and (min-width: 375px) and (max-width: 768px) {
@@ -2245,38 +2258,38 @@ textarea {
         padding-left: 0;
     }
     .left-side p {
-        font-family: poppins, sans-serif;
+        font-family: 'Droid Sans'  !important;
         font-size: 6vw; 
         margin-left: 15px; 
     }
     .span {
-        font-family: poppins, sans-serif;
+        font-family: 'Droid Sans'  !important;
         font-size: 6vw; 
         padding-top: 10px;
     }
     .enquiry-heading {
-        font-family: poppins, sans-serif;
+        font-family: 'Droid Sans'  !important;
         font-size: 12vw; 
     }
     .enquiry-card-container form h2 {
         font-size: 4vw; 
-        font-family: poppins, sans-serif;
+        font-family: 'Droid Sans'  !important;
     }
     .interest-buttons span {
-        font-family: poppins, sans-serif;
+        font-family: 'Droid Sans'  !important;
         font-size: 4vw; 
     }
     .enquiry-card-container label {
-        font-family: poppins, sans-serif;
+        font-family: 'Droid Sans'  !important;
         font-size: 4vw; 
     }
     .enquiry-card-container input,
     textarea {
-        font-family: poppins, sans-serif;
+        font-family: 'Droid Sans'  !important;
         font-size: 4vw;
     }
     .enquiry-send-button span {
-        font-family: poppins, sans-serif;
+        font-family: 'Droid Sans'  !important;
         font-size: 6vw; 
     }
 }
@@ -2313,50 +2326,50 @@ textarea {
     }
 
     .left-side p {
-        font-family: poppins;
+        font-family: 'Droid Sans'  !important;
         font-size: 5vw;
         margin-left: 20px;
     }
 
     .span {
-        font-family: poppins;
+        font-family: 'Droid Sans'  !important;
         font-size: 5vw;
         padding-top: 10px;
     }
 
     .enquiry-heading {
-        font-family: poppins;
+        font-family: 'Droid Sans'  !important;
         font-size: 10vw;
     }
 
     .enquiry-card-container form h2 {
         font-size: 2.5vw;
-        font-family: poppins;
+        font-family: 'Droid Sans'  !important;
     }
 
     .interest-buttons span {
-        font-family: poppins;
+        font-family: 'Droid Sans'  !important;
         font-size: 2.5vw;
     }
 
     .enquiry-card-container label {
-        font-family: poppins;
+        font-family: 'Droid Sans'  !important;
         font-size: 2.5vw;
     }
 
     .enquiry-card-container input,
     textarea {
-        font-family: poppins;
+        font-family: 'Droid Sans'  !important;
         font-size: 2.5vw;
     }
 
     .enquiry-card-container textarea {
-        font-family: poppins;
+        font-family: 'Droid Sans'  !important;
         font-size: 2.5vw;
     }
 
     .enquiry-send-button span {
-        font-family: poppins;
+        font-family: 'Droid Sans'  !important;
         font-size: 5vw;
     }
 }
@@ -2364,27 +2377,27 @@ textarea {
 @media screen and (max-width: 405px) {
     .enquiry-card-container form h2 {
         font-size: 5vw;
-        font-family: poppins;
+        font-family: 'Droid Sans'  !important;
     }
 
     .enquiry-card-container label {
-        font-family: poppins;
+        font-family: 'Droid Sans'  !important;
         font-size: 5vw;
     }
 
     .enquiry-card-container input,
     textarea {
-        font-family: poppins;
+        font-family: 'Droid Sans'  !important;
         font-size: vw;
     }
 
     .enquiry-card-container textarea {
-        font-family: poppins;
+        font-family: 'Droid Sans'  !important;
         font-size: 5vw;
     }
 
     .enquiry-send-button span {
-        font-family: poppins;
+        font-family: 'Droid Sans'  !important;
         font-size: 10vw;
     }
 }
@@ -2617,7 +2630,8 @@ textarea {
 
 .footer-email {
     margin: 10px;
-    margin-right: 100px;
+    margin-right: 80px;
+    text-: white;
 }
 
 /* whatsapp icon */
@@ -2690,12 +2704,12 @@ textarea {
     position: sticky;
     border-radius: 10px;
     background-color: #f4f4f4;
-    font-family: poppins;
+    font-family: 'Droid Sans'  !important;
 }
 
 .nav-link b {
     color: black;
-    /* font-family: poppins; */
+    /* font-family: 'Droid Sans'  !important; */
     font-weight: 500;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 18px;
@@ -2703,7 +2717,7 @@ textarea {
 .container-1 {
     background-color: black;
     text-align: center;
-    height: 60vh;
+    height: 300px;
     padding: 40px;
     border-bottom-left-radius: 50px;
     border-bottom-right-radius: 50px;
@@ -2902,6 +2916,7 @@ textarea {
 .content {
     position: relative;
     z-index: 1;
+    
 }
 
 .content h1 {
@@ -3127,35 +3142,23 @@ margin: 0 10%;
 }
 
 .left-side p {
-    font-family: poppins;
+    font-family: 'Droid Sans'  !important;
     font-size: 3vw;
     color: #222222;
-    margin-left: -18px;
-    margin-bottom: 50px;
+    margin-left: -110px;
+    margin-bottom: 0px;
 }
 
 .span {
-    font-family: poppins;
+    font-family: 'Droid Sans'  !important;
     margin-top: 10px;
     color: black;
     font-weight: 700;
     font-size: 3vw;
     padding-top: 10px;
 }
-
-.enquiry-background-container {
-    background-color: #f66136;
-    color: #ffffff;
-    margin-top: 20px;
-    height: 200px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 100%;
-}
-
 .enquiry-heading {
-    font-family: poppins;
+    font-family: 'Droid Sans'  !important;
     font-size: 5vw;
     font-weight: 100;
     padding-left: 70px;
@@ -3172,7 +3175,7 @@ margin: 0 10%;
     margin-bottom: 10px;
     font-weight: 100;
     font-size: 1vw;
-    font-family: poppins;
+    font-family: 'Droid Sans'  !important;
 }
 
 .interest-buttons button {
@@ -3185,14 +3188,14 @@ margin: 0 10%;
     margin-bottom: 15px;
     cursor: pointer;
     color: #fff;
-    font-family: poppins;
+    font-family: 'Droid Sans'  !important;
     font-size: 2vw;
 }
 
 .enquiry-card-container label {
     margin-top: 5px;
     margin-bottom: 5px;
-    font-family: poppins;
+    font-family: 'Droid Sans'  !important;
     font-size: 1vw;
 }
 
@@ -3203,14 +3206,14 @@ textarea {
     margin-bottom: 20px;
     border: 1px solid #ccc;
     border-radius: 4px;
-    font-family: poppins;
+    font-family: 'Droid Sans'  !important;
     font-size: 1vw;
 }
 
 .enquiry-card-container textarea {
     height: 100px;
     width: auto;
-    font-family: poppins;
+    font-family: 'Droid Sans'  !important;
     font-size: 1vw;
 }
 
@@ -3246,50 +3249,50 @@ textarea {
     }
 
     .left-side p {
-        font-family: poppins;
+        font-family: 'Droid Sans'  !important;
         font-size: 5vw;
         margin-left: 20px;
     }
 
     .span {
-        font-family: poppins;
+        font-family: 'Droid Sans'  !important;
         font-size: 5vw;
         padding-top: 10px;
     }
 
     .enquiry-heading {
-        font-family: poppins;
+        font-family: 'Droid Sans'  !important;
         font-size: 10vw;
     }
 
     .enquiry-card-container form h2 {
         font-size: 2.5vw;
-        font-family: poppins;
+        font-family: 'Droid Sans'  !important;
     }
 
     .interest-buttons span {
-        font-family: poppins;
+        font-family: 'Droid Sans'  !important;
         font-size: 2.5vw;
     }
 
     .enquiry-card-container label {
-        font-family: poppins;
+        font-family: 'Droid Sans'  !important;
         font-size: 2.5vw;
     }
 
     .enquiry-card-container input,
     textarea {
-        font-family: poppins;
+        font-family: 'Droid Sans'  !important;
         font-size: 2.5vw;
     }
 
     .enquiry-card-container textarea {
-        font-family: poppins;
+        font-family: 'Droid Sans'  !important;
         font-size: 2.5vw;
     }
 
     .enquiry-send-button span {
-        font-family: poppins;
+        font-family: 'Droid Sans'  !important;
         font-size: 5vw;
     }
 }
@@ -3297,27 +3300,27 @@ textarea {
 @media screen and (max-width: 405px) {
     .enquiry-card-container form h2 {
         font-size: 5vw;
-        font-family: poppins;
+        font-family: 'Droid Sans'  !important;
     }
 
     .enquiry-card-container label {
-        font-family: poppins;
+        font-family: 'Droid Sans'  !important;
         font-size: 5vw;
     }
 
     .enquiry-card-container input,
     textarea {
-        font-family: poppins;
+        font-family: 'Droid Sans'  !important;
         font-size: vw;
     }
 
     .enquiry-card-container textarea {
-        font-family: poppins;
+        font-family: 'Droid Sans'  !important;
         font-size: 5vw;
     }
 
     .enquiry-send-button span {
-        font-family: poppins;
+        font-family: 'Droid Sans'  !important;
         font-size: 10vw;
     }
 }
@@ -3388,12 +3391,12 @@ textarea {
 }
 
 .footer-bottom a {
-    color: #f66136;
+    color: white;
     text-decoration: none;
 }
 
 .footer-bottom a:hover {
-    color: white;
+    color: #f66136;
     text-decoration: none;
 }
 
@@ -3495,7 +3498,7 @@ textarea {
     border-radius: 20px;
     width: 90px;
     height: 40px;
-    font-family: poppins;
+    font-family: 'Droid Sans'  !important;
 }
 
 .modal-body {
@@ -3610,6 +3613,8 @@ textarea {
     padding: 0px;
     margin-top: -10px;
     font-weight: 540;
+    justify-content: center;
+    padding-left: 55px;
 }
 
 @media screen and (max-width: 767px) {
@@ -3773,7 +3778,7 @@ expolore-arr .right {
 }
 
 .span {
-    font-family: poppins;
+    font-family: 'Droid Sans'  !important;
     margin-top: 10px;
     color: black;
     font-weight: 700;
@@ -3781,19 +3786,10 @@ expolore-arr .right {
     padding-top: 10px;
 }
 
-.enquiry-background-container {
-    background-color: #f66136;
-    color: #ffffff;
-    margin-top: 20px;
-    height: 200px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 100%;
-}
+
 
 .enquiry-heading {
-    font-family: poppins;
+    font-family: 'Droid Sans'  !important;
     font-size: 5vw;
     font-weight: 100;
     padding-left: 70px;
@@ -3810,7 +3806,7 @@ expolore-arr .right {
     margin-bottom: 10px;
     font-weight: 100;
     font-size: 1vw;
-    font-family: poppins;
+    font-family: 'Droid Sans'  !important;
 }
 
 .interest-buttons button {
@@ -3823,14 +3819,14 @@ expolore-arr .right {
     margin-bottom: 15px;
     cursor: pointer;
     color: #fff;
-    font-family: poppins;
+    font-family: 'Droid Sans'  !important;
     font-size: 2vw;
 }
 
 .enquiry-card-container label {
     margin-top: 5px;
     margin-bottom: 5px;
-    font-family: poppins;
+    font-family: 'Droid Sans'  !important;
     font-size: 1vw;
 }
 
@@ -3841,14 +3837,14 @@ textarea {
     margin-bottom: 20px;
     border: 1px solid #ccc;
     border-radius: 4px;
-    font-family: poppins;
+    font-family: 'Droid Sans'  !important;
     font-size: 1vw;
 }
 
 .enquiry-card-container textarea {
     height: 100px;
     width: auto;
-    font-family: poppins;
+    font-family: 'Droid Sans'  !important;
     font-size: 1vw;
 }
 
@@ -3884,50 +3880,50 @@ textarea {
     }
 
     .left-side p {
-        font-family: poppins;
+        font-family: 'Droid Sans'  !important;
         font-size: 5vw;
         margin-left: 20px;
     }
 
     .span {
-        font-family: poppins;
+        font-family: 'Droid Sans'  !important;
         font-size: 5vw;
         padding-top: 10px;
     }
 
     .enquiry-heading {
-        font-family: poppins;
+        font-family: 'Droid Sans'  !important;
         font-size: 10vw;
     }
 
     .enquiry-card-container form h2 {
         font-size: 2.5vw;
-        font-family: poppins;
+        font-family: 'Droid Sans'  !important;
     }
 
     .interest-buttons span {
-        font-family: poppins;
+        font-family: 'Droid Sans'  !important;
         font-size: 2.5vw;
     }
 
     .enquiry-card-container label {
-        font-family: poppins;
+        font-family: 'Droid Sans'  !important;
         font-size: 2.5vw;
     }
 
     .enquiry-card-container input,
     textarea {
-        font-family: poppins;
+        font-family: 'Droid Sans'  !important;
         font-size: 2.5vw;
     }
 
     .enquiry-card-container textarea {
-        font-family: poppins;
+        font-family: 'Droid Sans'  !important;
         font-size: 2.5vw;
     }
 
     .enquiry-send-button span {
-        font-family: poppins;
+        font-family: 'Droid Sans'  !important;
         font-size: 5vw;
     }
 }
@@ -3935,27 +3931,27 @@ textarea {
 @media screen and (max-width: 405px) {
     .enquiry-card-container form h2 {
         font-size: 5vw;
-        font-family: poppins;
+        font-family: 'Droid Sans'  !important;
     }
 
     .enquiry-card-container label {
-        font-family: poppins;
+        font-family: 'Droid Sans'  !important;
         font-size: 5vw;
     }
 
     .enquiry-card-container input,
     textarea {
-        font-family: poppins;
+        font-family: 'Droid Sans'  !important;
         font-size: vw;
     }
 
     .enquiry-card-container textarea {
-        font-family: poppins;
+        font-family: 'Droid Sans'  !important;
         font-size: 5vw;
     }
 
     .enquiry-send-button span {
-        font-family: poppins;
+        font-family: 'Droid Sans'  !important;
         font-size: 10vw;
     }
 }
@@ -3994,7 +3990,16 @@ textarea {
     color: #f66136;
     font-size: 25px;
 }
-
+.social-icon.Pinterest {
+    margin: 5px 10px;
+    color: #f66136;
+    font-size: 25px; 
+}
+.social-icon.Quora {
+    margin: 5px 10px;
+    color: #f66136;
+    font-size: 25px; 
+}
 .social-icon:hover {
     transform: scale(1.1);
 }
@@ -4030,16 +4035,26 @@ textarea {
     text-decoration: none;
     transition: color 0.3s;
     font-size: 16px;
-    font-family: "Poppins";
+    font-family: 'Droid Sans'  !important;
 }
 
 .footer-bottom {
     margin-top: 40px;
+    margin-bottom: 28px;
     border-top: 1px solid #555;
     padding-top: 20px;
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
+    align-items: center; 
+    flex-wrap: nowrap; 
+    gap: 2px; 
+    max-width: 100%;
+}
+
+.footer-bottom > * {
+    white-space: nowrap; 
+    flex-grow: 1; 
+    text-align: center; 
 }
 
 .column img {
@@ -4235,10 +4250,11 @@ textarea {
     border-radius: 0 0 50px 50px;
     width: 100%;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    height: 300px;
 }
 
 .blogs-frontpage-card h1 {
-    font-family: poppins;
+    font-family: 'Droid Sans'  !important;
     font-size: 75px;
     color: #f66136;
     font-weight: 600;
@@ -4254,7 +4270,7 @@ textarea {
 }
 
 .blogs-frontpage-card p {
-    font-family: poppins;
+    font-family: 'Droid Sans'  !important;
     font-size: 1.39em;
     color: #908c8c;
     margin: 10px 0 0;
@@ -4345,7 +4361,7 @@ textarea {
     margin: 10px;
     background-color: #ffff;
     color: black;
-    font-family: poppins;
+    font-family: 'Droid Sans'  !important;
     font-size: large;
     border: none;
     border-radius: 5px;
@@ -4944,27 +4960,15 @@ textarea {
 }
 
 .span {
-    font-family: poppins;
+    font-family: 'Droid Sans'  !important;
     margin-top: 10px;
     color: black;
     font-weight: 700;
     font-size: 3vw;
     padding-top: 10px;
 }
-
-.enquiry-background-container {
-    background-color: #f66136;
-    color: #ffffff;
-    margin-top: 20px;
-    height: 200px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 100%;
-}
-
 .enquiry-heading {
-    font-family: poppins;
+    font-family: 'Droid Sans'  !important;
     font-size: 5vw;
     font-weight: 100;
     padding-left: 38px;
@@ -4981,7 +4985,7 @@ textarea {
     margin-bottom: 10px;
     font-weight: 100;
     font-size: 1vw;
-    font-family: poppins;
+    font-family: 'Droid Sans'  !important;
 }
 
 .interest-buttons button {
@@ -4994,14 +4998,14 @@ textarea {
     margin-bottom: 15px;
     cursor: pointer;
     color: #fff;
-    font-family: poppins;
+    font-family: 'Droid Sans'  !important;
     font-size: 2vw;
 }
 
 .enquiry-card-container label {
     margin-top: 5px;
     margin-bottom: 5px;
-    font-family: poppins;
+    font-family: 'Droid Sans'  !important;
     font-size: 1vw;
 }
 
@@ -5012,14 +5016,14 @@ textarea {
     margin-bottom: 20px;
     border: 1px solid #ccc;
     border-radius: 4px;
-    font-family: poppins;
+    font-family: 'Droid Sans'  !important;
     font-size: 1vw;
 }
 
 .enquiry-card-container textarea {
     height: 100px;
     width: auto;
-    font-family: poppins;
+    font-family: 'Droid Sans'  !important;
     font-size: 1vw;
 }
 
@@ -5056,50 +5060,50 @@ textarea {
     }
 
     .left-side p {
-        font-family: poppins;
+        font-family: 'Droid Sans'  !important;
         font-size: 5vw;
         margin-left: 40px;
     }
 
     .span {
-        font-family: poppins;
+        font-family: 'Droid Sans'  !important;
         font-size: 5vw;
         padding-top: 10px;
     }
 
     .enquiry-heading {
-        font-family: poppins;
+        font-family: 'Droid Sans'  !important;
         font-size: 10vw;
     }
 
     .enquiry-card-container form h2 {
         font-size: 2.5vw;
-        font-family: poppins;
+        font-family: 'Droid Sans'  !important;
     }
 
     .interest-buttons span {
-        font-family: poppins;
+        font-family: 'Droid Sans'  !important;
         font-size: 2.5vw;
     }
 
     .enquiry-card-container label {
-        font-family: poppins;
+        font-family: 'Droid Sans'  !important;
         font-size: 2.5vw;
     }
 
     .enquiry-card-container input,
     textarea {
-        font-family: poppins;
+        font-family: 'Droid Sans'  !important;
         font-size: 2.5vw;
     }
 
     .enquiry-card-container textarea {
-        font-family: poppins;
+        font-family: 'Droid Sans'  !important;
         font-size: 2.5vw;
     }
 
     .enquiry-send-button span {
-        font-family: poppins;
+        font-family: 'Droid Sans'  !important;
         font-size: 5vw;
     }
 }
@@ -5107,27 +5111,27 @@ textarea {
 @media screen and (max-width: 405px) {
     .enquiry-card-container form h2 {
         font-size: 5vw;
-        font-family: poppins;
+        font-family: 'Droid Sans'  !important;
     }
 
     .enquiry-card-container label {
-        font-family: poppins;
+        font-family: 'Droid Sans'  !important;
         font-size: 5vw;
     }
 
     .enquiry-card-container input,
     textarea {
-        font-family: poppins;
+        font-family: 'Droid Sans'  !important;
         font-size: vw;
     }
 
     .enquiry-card-container textarea {
-        font-family: poppins;
+        font-family: 'Droid Sans'  !important;
         font-size: 5vw;
     }
 
     .enquiry-send-button span {
-        font-family: poppins;
+        font-family: 'Droid Sans'  !important;
         font-size: 10vw;
     }
 }
@@ -5212,7 +5216,7 @@ textarea {
 }
 
 .copyright li {
-    margin-right: 40px;
+    margin-right: 30px;
     margin-top: 5px;
 }
 
@@ -5277,7 +5281,7 @@ textarea {
 
 body {
     background-color: #f5f2f4;
-    font-family: poppins;
+    font-family: 'Droid Sans'  !important;
     margin-top: 50px;
     width: auto;
 }
@@ -5296,7 +5300,7 @@ body {
     margin-top: 5px;
     margin-left: 8px;
     margin-right: 8px;
-    font-family: poppins;
+    font-family: 'Droid Sans'  !important;
     font-size: 13px;
 }
 
@@ -5705,7 +5709,7 @@ body {
     margin-bottom: 20px;
     font-size: 17px;
     font-weight: bold;
-    font-family: "Poppins";
+    font-family: 'Droid Sans'  !important;
 }
 
 .column img {
@@ -5792,7 +5796,7 @@ body {
     font-weight: bold;
     margin-top: 10px;
     width: auto;
-    font-family: poppins;
+    font-family: 'Droid Sans'  !important;
     font-size: 1vw;
 }
 
@@ -5920,7 +5924,7 @@ body {
     border-radius: 0 0 30px 30px;
     transition: height 0.5s;
     overflow: hidden;
-    height: 110px;
+    height: 120px;
 }
 
 .box-content span,
@@ -5955,7 +5959,7 @@ body {
 }
 
 .box-content h3 {
-    font-size: 35px;
+    font-size: 32px;
 }
 
 .tags {
@@ -5965,18 +5969,6 @@ body {
     margin: 20px;
     padding: 3%;
 }
-
-.tag {
-    display: inline-block;
-    background-color: #efefef;
-    padding: 4px 8px;
-    border-radius: 10px;
-    font-size: 20px;
-    border: 1px solid black;
-    margin: 2px;
-    
-}
-
 @media (max-width: 768px) {
     .box {
         width: 80vw;
@@ -6064,7 +6056,7 @@ body {
 }
 
 .right-section {
-    background: none;
+    background: black;
 	border: 2px solid #FFFFFF;
 	box-sizing: border-box;
 	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -6233,14 +6225,14 @@ body {
 .values-list {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    grid-gap: 40px;
+    grid-gap: 2px;
     margin-top: 50px;
-    margin-left: 5%;
+    margin-left: 0px;
 }
 .values-list div {
     color: #000;
-    background: #fff;
-    padding: 40px;
+    background: none;
+    /* padding: 40px; */
     font-size: 18px;
     font-weight: 300;
     border-radius: 30px;
@@ -6258,11 +6250,11 @@ body {
     font-weight: 500;
     margin-bottom: 15px;
 }
-.values-list div:hover {
+/* .values-list div:hover {
     border-radius: 100%;
     background: #f66136;
     transform: translateY(-10px);
-}
+} */
 .values-list a {
     text-decoration: none;
     color: inherit;
@@ -6284,6 +6276,7 @@ body {
         flex: 0 0 auto;
         max-width: 250px;
         margin-right: 10px;
+        margin-top: 18px;
     }
 }
 
@@ -6342,7 +6335,7 @@ body {
     right: 20px;
     margin: 0;
     padding: 0;
-    font-family: "Poppins", sans-serif;
+    font-family: 'Droid Sans'  !important;
     box-sizing: border-box;
 }
 
@@ -6409,7 +6402,7 @@ body {
     margin-bottom: 15px;
     cursor: pointer;
     color: #fff;
-    font-family: poppins;
+    font-family: 'Droid Sans'  !important;
     font-size: 1vw;
 }
 
@@ -6904,7 +6897,7 @@ body {
     /* border: 1px solid; */
     /* box-shadow: 0px 1px 7px 1px; */
     /* border-radius: 10px !important; */
-    font-family: poppins;
+    font-family: 'Droid Sans'  !important;
 }
 
 .faculty-container h1 {
@@ -7809,7 +7802,7 @@ body {
     font-weight: 600;
     margin-top: 1vw;
     margin-bottom: 10px;
-    font-family: poppins;
+    font-family: 'Droid Sans'  !important;
     font-size: 2.5vw;
     color: #000;
 }
@@ -8317,7 +8310,7 @@ body {
     font-size: 25px;
 }
 .blog1 {
-    font-family: Poppins;
+    font-family: 'Droid Sans'  !important;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -8365,12 +8358,16 @@ body {
     margin-top: 50px;
 }
 .tag {
-    background-color: black;
     padding: 5px 10px;
-    
-    font-size: 0.9em;
-    font-weight: 500;
-    color: white;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: black;
+    justify-content: center;
+    cursor: pointer;
+}
+.tag:hover {
+    text-decoration: underline;
+    cursor: pointer;
 }
 .date1 {
     font-size: 0.9em;
@@ -8806,27 +8803,27 @@ body {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    font-family: "Poppins", sans-serif;
+    font-family: 'Droid Sans'  !important;
 }
 
 .orange-form-cnt {
     /* COLORS */
-    background: none;
+    background: black;
     border: 2px solid #ffffff;
     box-sizing: border-box;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 17px;
     /* END COLORS*/
-    width: 43%;
+    width: 55%;
     max-width: 1000px;
     margin: auto;
     position: absolute;
-    top: 37%;
-    left: 73%;
+    top: 26%;
+    left: 70%;
     transform: translateX(-50%);
     display: flex;
     justify-content: flex-start;
-    padding-top: 12rem;
+    padding-top: 0rem;
     padding-right: 3rem;
     padding-bottom: 3rem;
     padding-left: 3rem;
@@ -8834,7 +8831,7 @@ body {
 @media (min-width: 900px) and (max-width: 1100px){ 
 	.orange-form-cnt {
 		/* COLORS */
-		background: none;
+		background: black;
 		border: 2px solid #FFFFFF;
 		box-sizing: border-box;
 		box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -8853,12 +8850,13 @@ body {
 		padding-right: 3rem;
 		padding-bottom: 1rem;
 		padding-left: 3rem;
+        margin-top: 7rem;
 	  }
   }
 @media (max-width: 900px) {
     .orange-form-cnt {
         /* COLORS */
-        background: none;
+        background: black;
         border: 2px solid #ffffff;
         box-sizing: border-box;
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -8873,6 +8871,7 @@ body {
         transform: translateX(-50%);
         display: flex;
         justify-content: flex-start;
+        margin-top: 205px;
         padding-top: 3rem;
         padding-right: 1rem;
         padding-bottom: 3rem;
@@ -8900,12 +8899,23 @@ body {
 }
 
 .label-cnt {
+    color: white;
     font-style: normal;
     font-weight: 500;
-    font-size: 16px;
+    font-size: 20px;
     line-height: 28px;
+    margin-top: 20px;
 }
-
+.cnt-msg {
+    color: white;
+    margin-top: 20px;
+    font-size: 18px;
+}
+.cnt-interest {
+    font-size: 18px;
+    color: white;
+    margin-bottom: 15px;
+}
 .input-cnt {
     display: block;
     width: 100%;
@@ -8942,10 +8952,10 @@ textarea:focus {
 }
 
 .btn-cnt {
-    background: black;
-    border: 1px solid orangered;
+    background: orangered;
+    border: 1px solid white;
     box-sizing: border-box;
-    box-shadow: 0px 1px 4px orangered;
+    box-shadow: 0px 2px 4px white;
     border-radius: 10px;
     color: white;
     padding: 10px 10px;
@@ -8970,11 +8980,11 @@ textarea:focus {
 
      margin: 5vw 0vw; 
 
-
 }
 
 .text-container-cnt {
     display: flex;
+    color: white;
     flex-direction: column;
     order: 2;
     margin-left: 30px;
@@ -9036,8 +9046,9 @@ input[type="radio"]:checked + .star {
     color: orangered;
 }
 .rating-display {
+    color: white;
     margin-top: 10px;
-    font-size: 16px;
+    font-size: 18px;
 }
  /* enquiry form buttons code style */
  .star-button {
@@ -9186,14 +9197,27 @@ input[type="radio"]:checked + .star {
 }
 
 /* animated images responsive */
-
 .card-text {
     font-size: 1.2vw;
+}
+.extra-content {
+    /* background-color: red; */
+    margin-top: -15px;
 }
 
 .card-title-cdr {
     font-size: 1.6vw;
     margin-bottom: 15px;
+    font-weight: 600;
+}
+@media screen and (min-width:375px) and (max-width:767px) {
+    .extra-content {
+        margin-top: 20px;
+        
+    }
+    .card-text {
+
+    }
 }
 
 @media screen and (min-width:992px) and (max-width:1200px) {
@@ -9255,7 +9279,7 @@ input[type="radio"]:checked + .star {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 .blogs-frontpage-card h1 {
-    font-family: poppins;
+    font-family: 'Droid Sans'  !important;
     font-size: 75px;
     color: #F66136;
     font-weight: 600;
@@ -9270,7 +9294,7 @@ input[type="radio"]:checked + .star {
     margin: 0;
 }
 .blogs-frontpage-card p {
-    font-family: poppins;
+    font-family: 'Droid Sans'  !important;
     font-size: 1.39em;
     color: #908c8c;
     margin: 10px 0 0;
@@ -9291,7 +9315,7 @@ input[type="radio"]:checked + .star {
     margin: 10px;
     background-color: #ffff;
     color: black;
-    font-family: poppins;
+    font-family: 'Droid Sans'  !important;
     font-size: large;
     border: none;
     border-radius: 5px;
@@ -9386,7 +9410,7 @@ input[type="radio"]:checked + .star {
     font-size: 25px;
 }
 .blogsPage-blog1{
-    font-family: Poppins;
+    font-family: 'Droid Sans'  !important;
     display: flex;
     justify-content: center;
     align-items: center;
