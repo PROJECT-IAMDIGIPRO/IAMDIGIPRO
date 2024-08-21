@@ -8871,7 +8871,7 @@ body {
 		transform: translateX(-50%);
 		display: flex;
 		justify-content: flex-start;
-		padding-top: 3rem;
+		padding-top: 0rem;
 		padding-right: 3rem;
 		padding-bottom: 1rem;
 		padding-left: 3rem;
