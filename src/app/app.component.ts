@@ -1,7 +1,7 @@
 import { AfterViewInit, Component, OnDestroy, OnInit } from '@angular/core';
 import { NavigationEnd, Router } from '@angular/router';
 import { Meta, Title } from '@angular/platform-browser';
-import { faInstagram, faFacebook, faLinkedin, faYoutube } from '@fortawesome/free-brands-svg-icons';
+import { faInstagram, faFacebook, faLinkedin, faYoutube, faPinterest, faThreads } from '@fortawesome/free-brands-svg-icons';
 import { faArrowUp, faArrowRight , faBars , faTimes , faStar, faStarHalfAlt } from '@fortawesome/free-solid-svg-icons';
 import { gsap } from 'gsap';
 
@@ -75,6 +75,8 @@ export class AppComponent implements OnInit {
 faFacebook = faFacebook;
 faLinkedin = faLinkedin;
 faYoutube = faYoutube;
+faPinterest = faPinterest;
+faThreads = faThreads;
 faArrowUp = faArrowUp;
 faArrowRight = faArrowRight;
 faBars = faBars;
@@ -209,70 +211,70 @@ faStarHalfAlt = faStarHalfAlt;
     {
       id: 1,
       title: "Search Engine Optimization",
-      desc: "We enhance your online presence and drive engagement through advanced SEO, social media, content marketing, and paid advertising strategies.",
+      desc: "Enhancing website visibility on search engines through organic methods, improving rankings for targeted keywords.",
       photo: "assets/images/homeContent/Search-Engine-Optimization.jpg",
       link: "/searchengineoptimization"
     },
     {
       id: 2,
       title: "Search Engine Marketing",
-      desc: "We enhance your online presence and drive engagement through advanced SEO, social media, content marketing, and paid advertising strategies.",
+      desc: "Paid advertising on search engines like Google Ads to increase visibility and drive traffic to your website.",
       photo: "assets/images/homeContent/Search-Engine-Marketing.jpg",
       link: "/searchenginemarketing"
     },
     {
       id: 3,
       title: "Social Media Optimization",
-      desc: "We enhance your online presence and drive engagement through advanced SEO, social media, content marketing, and paid advertising strategies.",
+      desc: "Maximizing the visibility of social media profiles by optimizing content and strategies, boosting engagement, and increasing followers.",
       photo: "assets/images/homeContent/Social-Media-Optimization.jpg",
       link: "/socialmediaoptimization"
     },
     {
       id: 4,
       title: "Graphic UI & UX Design",
-      desc: "We enhance your online presence and drive engagement through advanced SEO, social media, content marketing, and paid advertising strategies.",
+      desc: "Designing visual content, including logos, branding materials, and user interfaces for websites and apps.",
       photo: "assets/images/homeContent/Graphic_UI-Design.jpg",
       link: "/graphicuidesign"
     },
     {
       id: 5,
       title: "Influencer Marketing",
-      desc: "We enhance your online presence and drive engagement through advanced SEO, social media, content marketing, and paid advertising strategies.",
+      desc: "Collaborating with influencers to promote products or services, leveraging their reach and credibility to target audiences.",
       photo: "assets/images/homeContent/Influencer-Marketing.jpg",
       link: "/influencermarketing"
     },
     {
       id: 6,
       title: "Web/App Development",
-      desc: "We enhance your online presence and drive engagement through advanced SEO, social media, content marketing, and paid advertising strategies.",
+      desc: "Creating and maintaining websites or mobile apps that are responsive, user-friendly, and aligned with client needs.",
       photo: "assets/images/homeContent/Web_App-Development.jpg",
       link: "/webappdevelopment"
     },
     {
       id: 7,
       title: "Content Development",
-      desc: "We enhance your online presence and drive engagement through advanced SEO, social media, content marketing, and paid advertising strategies.",
+      desc: "Producing valuable content (blogs, videos, infographics) and promoting it to attract and engage a target audience.",
       photo: "assets/images/homeContent/Content-Development-&-Marketing.jpg",
       link: "/contentdevelopmenmMarketing"
     },
     {
       id: 8,
       title: "Lead generation",
-      desc: "We enhance your online presence and drive engagement through advanced SEO, social media, content marketing, and paid advertising strategies.",
+      desc: "Identifying and cultivating potential customers for business-to-business (B2B) and business-to-consumer (B2C) services.",
       photo: "assets/images/homeContent/Lead-generation-B2B-&-B2C.jpg",
       link: "/leadgeneration"
     },
     {
       id: 9,
       title: "Consulting",
-      desc: "We enhance your online presence and drive engagement through advanced SEO, social media, content marketing, and paid advertising strategies.",
+      desc: "Providing expert advice and strategies to help businesses improve their digital marketing efforts and overall online presence",
       photo: "assets/images/homeContent/Consulting.jpg",
       link: "/consulting"
     },
     {
       id: 10,
       title: "Email Marketing",
-      desc: "We enhance your online presence and drive engagement through advanced SEO, social media, content marketing, and paid advertising strategies.",
+      desc: "Using email campaigns to nurture leads, maintain customer relationships, and promote services or products.",
       photo: "assets/images/homeContent/Email-Marketing.jpg",
       link: "/emailmarketing"
     }
