@@ -463,7 +463,7 @@ fas :hover {
 }
 
 .home-content p {
-    font-size: 3.5vw;
+    font-size: 2.5vw;
     color: white;
     font-weight: 400;
     margin: 20px;
@@ -617,6 +617,7 @@ button:hover {
         margin-top: 10px;
         margin: 5px;
     }
+    
 }
 
 @media screen and (max-width: 990px) {
@@ -649,6 +650,9 @@ button:hover {
         background-color: #ffffff;
         margin-top: 15px;
         margin: 5px;
+    }
+    .arr-right {
+        margin-left: 50px !important;
     }
 }
 
@@ -868,13 +872,29 @@ textarea {
     margin-top: 50px;
     background-color: none;
 }
-
+.arrow1 {
+    /* display: flex;
+    flex-direction: row;
+    justify-content: left; */
+    margin-left: -100px;
+    /* margin-bottom: 10px; */
+    margin-top: 50px;
+    background-color: none;
+}
 .arr-right {
     width: 70px;
     height: 40px;
     margin-top: -22px;
-    margin-left: 80px;
+    margin-left: 20px;
     margin-right: 20px;
+    animation: bounceLeftRight 2s infinite;
+}
+.arr-right1 {
+    width: 70px;
+    height: 40px;
+    margin-top: -22px;
+    margin-left: 5px;
+    margin-right: 5px;
     animation: bounceLeftRight 2s infinite;
 }
 
@@ -1279,6 +1299,7 @@ textarea {
     align-self: center;
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
     line-height: 22px;
+    margin-top: 15px;
   }
   
   .card-info a {
@@ -1327,6 +1348,7 @@ textarea {
     display: block;
     width: 100%;
     aspect-ratio: 1/0;
+    height: 100%;
   }
   
   .card-photo a {
@@ -2409,14 +2431,16 @@ textarea {
     width: 80%;
     margin: 0px auto;
     padding-bottom: 50px;
+
 }
 
 .faq-container h1 {
-    font-weight: 400;
+    font-weight: 650;
     text-align: center;
     padding: 10px;
     width: 100%;
-    font-size: 28px;
+    font-size: 30px;
+    margin-top: 10px;
     /* Base font size for desktop */
 }
 
@@ -2738,7 +2762,7 @@ textarea {
 .para-1,
 .para-2 {
     color: grey;
-    font-size: 25px;
+    font-size: 23px;
 }
 
 .para-2 {
@@ -3137,7 +3161,7 @@ margin: 0 10%;
     flex: 1;
     color: black;
     display: flex;
-    margin-left: 80px;
+    margin-left: 20px;
     padding-left: 38px;
     margin-top: 20px;
 }
@@ -3773,7 +3797,7 @@ expolore-arr .right {
     flex: 1;
     color: black;
     display: flex;
-    margin-left: 80px;
+    margin-left: 20px;
     padding-left: 38px;
     margin-top: 20px;
 }
@@ -4955,7 +4979,7 @@ textarea {
     flex: 1;
     color: black;
     display: flex;
-    margin-left: 80px;
+    margin-left: 20px;
     padding-left: 38px;
     margin-top: 20px;
 }
@@ -5925,7 +5949,7 @@ body {
     border-radius: 0 0 30px 30px;
     transition: height 0.5s;
     overflow: hidden;
-    height: 120px;
+    height: 133px;
 }
 
 .box-content span,
@@ -8842,7 +8866,7 @@ body {
 		max-width: 1000px;
 		margin: auto;
 		position: absolute;
-		top: 20%;
+		top: 10%;
 		left: 73%;
 		transform: translateX(-50%);
 		display: flex;
@@ -8852,6 +8876,7 @@ body {
 		padding-bottom: 1rem;
 		padding-left: 3rem;
         margin-top: 7rem;
+        margin-bottom: 5px;
 	  }
   }
 @media (max-width: 900px) {
