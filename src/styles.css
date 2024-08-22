@@ -5978,7 +5978,7 @@ body {
 }
 
 .box {
-    min-width: 100px !important;
+    /* min-width: 100px !important; */
     max-width: 450px;
     height: 410px;
     border-radius: 30px;
@@ -5994,7 +5994,7 @@ body {
 .box:hover {
     transform: scale(1.05);
     border: 5px solid orangered;
-    min-width: 100px !important;
+    /* min-width: 100px !important; */
     max-width: 450px;
     height: 410px;
 }
