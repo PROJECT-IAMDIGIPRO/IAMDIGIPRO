@@ -146,7 +146,7 @@
 
 <div class="main-container">
     <div class="left-section">
-        <h5 style="font-weight: 500;">I am Digipro and we are here to serve!</h5>
+        <h5 style="font-weight: 500;">IAM Digipro and we are here to serve!</h5>
         <h5>How can we help you?</h5>
         <h4 style="padding:15px 0px;">Our Location</h4>
         <p style="font-size: medium;">India<br>
@@ -165,24 +165,39 @@
     <div class="right-section">
         <form style="display: flex;">
             <div class="text-container-cnt">
-                <label  for="message">What do you have to say to us?</label>
-                <textarea class="consult-us-textarea" name="message" placeholder="Start typing..."></textarea>
-                <div class="rating-container-cnt">
-                  <p class="rating-text">Please select your interests:</p>
-                  <div class="stars-cnt">
-                    <div *ngFor="let interest of interests">
-                      <button 
-                        class="star-button" 
-                        [ngClass]="{'selected': selectedInterest === interest.label}"
-                        (click)="onInterestSelect(interest.label)">
-                        {{ interest.label }}
-                      </button>
-                    </div>
-                  </div>
-                  <div class="rating-display">Selected: {{ selectedInterest }}</div>
-                </div>
-              </div>
-            <div class="input-container-cnt">
+                <!-- <form class="orange-form-cnt pt-8">
+                    <div class="enquiry-contact-section">
+                        <div class="enquiry-contact-form-container"> -->
+                            <form class="enquiry-contact-form">
+                                <label for="name">IAM</label>
+                                <input type="text" id="name" name="name" placeholder="John">
+                    
+                                <label for="phone">Phone number</label>
+                                <input type="text" id="phone" name="phone" placeholder="">
+                    
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" placeholder="iam@gmail.com">
+                    
+                                <label for="project">Tell us a little about the project...</label>
+                                <textarea id="project" name="project"></textarea>
+                    
+                                <label for="services">How can we help?</label>
+                                <div class="enquiry-checkbox-group">
+                                    <label><input type="checkbox" name="services" value="Digital Marketing"> Digital Marketing</label>
+                                    <label><input type="checkbox" name="services" value="Web Development"> Web Development</label>
+                                    <label><input type="checkbox" name="services" value="Graphic Design"> Graphic Design</label>
+                                    <label><input type="checkbox" name="services" value="Consulting"> Consulting</label>
+                                    <label><input type="checkbox" name="services" value="Influencer Marketing"> Influencer Marketing</label>
+                                    <label><input type="checkbox" name="services" value="Other"> Other</label>
+                                </div>
+                                <button class="cnt-btn">Let's get started!</button>
+                            </form>
+                        </div>
+                    <!-- </div>
+                </form>
+                </div> 
+              </div> -->
+            <!-- <div class="input-container-cnt">
                 <div class="name-container-cnt">
                     <label class="label-cnt" for="name">I am</label>
                     <input class="input-cnt" type="text" name="name" placeholder="Jhon" required />
@@ -206,7 +221,7 @@
                 <div class="button-container-cnt">
                     <button type="submit" name="submit" class="btn-cnt">SEND</button>
                 </div>
-            </div>
+            </div> -->
         </form>
     </div>
     
@@ -227,7 +242,7 @@
             </a>
         </div>
         <div>
-            <a href="https://www.facebook.com/profile.php?id=61560868171435" target="_blank">
+            <a href="https://www.facebook.com/Imdigipro2024/" target="_blank">
                 <img src="../assets/images/Social Platforms dps/facebook.png" alt="socialPlatformimage">
                 <h2>Facebook</h2>
             </a>
@@ -241,12 +256,12 @@
         <div>
             <a href="https://x.com/iamdigipro" target="_blank">
                 <img src="../assets/images/Social Platforms dps/twitter.png" alt="socialPlatformimage">
-                <h2>Twitter</h2>
+                <h2>X</h2>
             </a>
         </div>
         <div>
             <a href="https://www.youtube.com/@IamDigitalPro/featured" target="_blank">
-                <img src="../assets/images/Social Platforms dps/youtube.png" alt="socialPlatformimage">
+                <img src="../assets/images/Social Platforms dps/utube.png" alt="socialPlatformimage">
                 <h2>YouTube</h2>
             </a>
         </div>
@@ -257,12 +272,17 @@
             </a>
         </div>
         <div>
-            <a href="https://www.threads.net/@iam_digipro" target="_blank">
+            <a href="https://www.quora.com/profile/Iam-DigiPro-1" target="_blank">
                 <img src="../assets/images/Social Platforms dps/quora.png" alt="socialPlatformimage">
                 <h2>Quora</h2>
             </a>
         </div>
-        
+        <div>
+            <a href="https://www.threads.net/@iam_digipro" target="_blank">
+                <img src="../assets/images/Social Platforms dps/Threads.png" alt="socialPlatformimage">
+                <h2>Threads</h2>
+            </a>
+        </div>
     </div>
 </div>
 </body>

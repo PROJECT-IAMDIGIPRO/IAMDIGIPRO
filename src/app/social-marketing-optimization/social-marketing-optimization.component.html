@@ -25,11 +25,11 @@
                     <img src="assets/images/hand icon.png" class="arr-right" />
                     
                 </div>
-                <div class="services-ser">
-                    <h1><p><b>Welcome to iamdigipro: Your Social Media Optimization Specialists</b></p></h1>
+                <div class="services-ser11">
+                    <h1>Welcome to IAM Digipro: Your Social Media Optimization Specialists</h1>
                 </div>
                 <p class="overview-description text-center">
-                    A strong social media presence is crucial for brand success in the modern digital era.At iamdigipro, we offer comprehensive <b>Social Media Optimization (SMO)</b> services designed to boost your online visibility, engage your audience, and grow your brand across all social platforms.
+                    A strong social media presence is crucial for brand success in the modern digital era.At IAM Digipro, we offer comprehensive <b>Social Media Optimization (SMO)</b> services designed to boost your online visibility, engage your audience, and grow your brand across all social platforms.
                 </p>
                 <!-- CARD 1 -->
                 <div class="container-cdr py-3">
@@ -8228,66 +8228,59 @@
             </div>
         </div>
          <!--enquiry form-->
-         <div class="enquiry-container pt-3">
-            <div class="enquiry-form">
-                <div class="arrow">
-                    <img src="../assets/images/hand icon.png" class="arr-right" />
-                </div>
-                <div class="services-ser">
-                    <h1>Enquiry</h1>
-                </div>
-                <div class="left-side pt-5">
-                    <p style="font-size: 20px;"> <span class="span">
+            <div class="enquiry-container pt-3">
+                <div class="enquiry-form">
+                    <div class="arrow">
+                        <img src="../assets/images/hand icon.png" class="arr-right" />
+                    </div>
+                    <div class="services-ser">
+                        <h1>Enquiry</h1>
+                    </div>
+                    <div class="left-side pt-5">
+                        <p style="font-size: 20px;"> <span class="span"> Partner with Us to Reach New Heights!
+                             <br />
+                        </span>
                         Ready to elevate your 
-                        brand online? <br />
-                    </span>
-                            Partner with Us to Reach New Heights!
-                       
-                    </p>
+                        brand online?    
+                           
+                        </p>
+                    </div>
+                    <div class="enquiry-background-container">
+                        <h1 class="enquiry-heading d-flex justify-content-start">Let's Collab <fa-icon [icon]="faArrowRight"></fa-icon></h1>
+                    </div>
                 </div>
-                <div class="enquiry-background-container">
-                    <h1 class="enquiry-heading d-flex justify-content-start">Let's Collab <fa-icon [icon]="faArrowRight"></fa-icon></h1>
-                </div>
-            </div>
-            <div class="container-cnt mt-8">
-                <form class="orange-form-cnt pt-8">
-                  <div class="text-container-cnt">
-                    <label for="message" class="cnt-msg">What do you have to say to us?</label>
-                    <textarea name="message" class="consult-us-textarea" placeholder="Start typing..."></textarea>
-                    <div class="rating-container-cnt">
-                      <p class="rating-text" class="cnt-interest">Please select your interests:</p>
-                      <div class="stars-cnt">
-                        <div *ngFor="let interest of interests">
-                          <button 
-                            class="star-button" 
-                            [ngClass]="{'selected': selectedInterest === interest.label}"
-                            (click)="onInterestSelect(interest.label)">
-                            {{ interest.label }}
-                          </button>
+                <!-- <div class="container-cnt mt-8"> -->
+                    <form class="orange-form-cnt pt-8">
+                        <div class="enquiry-contact-section">
+                            <div class="enquiry-contact-form-container">
+                                <form class="enquiry-contact-form">
+                                    <label for="name">IAM</label>
+                                    <input type="text" id="name" name="name" placeholder="John">
+                        
+                                    <label for="phone">Phone number</label>
+                                    <input type="text" id="phone" name="phone" placeholder="">
+                        
+                                    <label for="email">Email</label>
+                                    <input type="email" id="email" name="email" placeholder="iam@gmail.com">
+                        
+                                    <label for="project">Tell us a little about the project...</label>
+                                    <textarea id="project" name="project"></textarea>
+                        
+                                    <label for="services">How can we help?</label>
+                                    <div class="enquiry-checkbox-group">
+                                        <label><input type="checkbox" name="services" value="Digital Marketing"> Digital Marketing</label>
+                                        <label><input type="checkbox" name="services" value="Web Development"> Web Development</label>
+                                        <label><input type="checkbox" name="services" value="Graphic Design"> Graphic Design</label>
+                                        <label><input type="checkbox" name="services" value="Consulting"> Consulting</label>
+                                        <label><input type="checkbox" name="services" value="Influencer Marketing"> Influencer Marketing</label>
+                                        <label><input type="checkbox" name="services" value="Other"> Other</label>
+                                    </div>
+                                    <button class="cnt-btn">Let's get started!</button>
+                                </form>
+                            </div>
                         </div>
-                      </div>
-                      <div class="rating-display">Selected: {{ selectedInterest }}</div>
-                    </div>
-                  </div>
-                  <div class="input-container-cnt">
-                    <div class="name-container-cnt">
-                        <label class="label-cnt" for="name">I am</label>
-                        <input class="input-cnt" type="text" name="name" placeholder="Jhon" required />
-                    </div>
-                    <div class="email-container-cnt">
-                        <label class="label-cnt" for="email">Email</label>
-                        <input class="input-cnt" type="text" name="email" placeholder="Iam@gmail.com" required />
-                    </div>
-                    <div class="phone-container-cnt">
-                      <label class="label-cnt" for="phone">Phone</label>
-                      <input class="input-cnt" type="text" name="phone" placeholder="+91 9999900000">
-                    </div>
-                    <div class="button-container-cnt">
-                      <button type="submit" name="submit" class="btn-cnt">SEND</button>
-                    </div>
-                  </div>
-                </form>
-              </div>
-        </div>
+                    </form>
+                  <!-- </div> -->
+            </div>
     </body>
 </html>
