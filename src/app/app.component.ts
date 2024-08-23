@@ -199,6 +199,93 @@ faStarHalfAlt = faStarHalfAlt;
     if (menuCheckbox) {
       menuCheckbox.checked = false;
     }
+    const dropDown = document.querySelector('.drop-menu') as HTMLElement;
+    if (dropDown) {
+      dropDown.style.display = 'none'; 
+    }
+    const megaBox = document.querySelector('.mega-box') as HTMLElement;
+    if (megaBox) {
+      megaBox.style.display = 'none';
+    }
+
+    // -------
+
+const desktopItems = document.querySelectorAll('.desktop-item'); // Assuming class 'desktop-item' is used for the desktop links
+const mobileItems = document.querySelectorAll('.mobile-item'); // Assuming class 'mobile-item' is used for the mobile links
+
+if (dropDown && megaBox && desktopItems && mobileItems) {
+  desktopItems.forEach(item => {
+    // Show the menu when mouse is over the desktop link
+    item.addEventListener('mouseover', (event) => {
+      const target = event.target as HTMLElement;
+
+      if (target.textContent?.trim() === 'Careers') {
+        dropDown.style.display = 'block';  // Show the dropdown when hovering over 'Careers'
+      } else if (target.textContent?.trim() === 'Services') {
+        megaBox.style.display = 'block';  // Show the megabox when hovering over 'Services'
+      }
+    });
+
+    // Hide the menu when mouse leaves the desktop link
+    item.addEventListener('mouseout', (event) => {
+      dropDown.style.display = 'none';  // Hide drop-menu
+      megaBox.style.display = 'none';  // Hide mega-box
+    });
+  });
+
+  // Optional: Ensure the dropdown and megabox stay open if hovered over
+  dropDown.addEventListener('mouseover', () => {
+    dropDown.style.display = 'block';
+  });
+
+  dropDown.addEventListener('mouseout', () => {
+    dropDown.style.display = 'none';
+  });
+
+  megaBox.addEventListener('mouseover', () => {
+    megaBox.style.display = 'block';
+  });
+
+  megaBox.addEventListener('mouseout', () => {
+    megaBox.style.display = 'none';
+  });
+
+  mobileItems.forEach(item => {
+    // Show the menu when mouse is over the mobile link
+    item.addEventListener('mouseover', (event) => {
+      const target = event.target as HTMLElement;
+
+      if (target.textContent?.trim() === 'Careers') {
+        dropDown.style.display = 'block';  // Show the dropdown when hovering over 'Careers'
+      } else if (target.textContent?.trim() === 'Services') {
+        megaBox.style.display = 'block';  // Show the megabox when hovering over 'Services'
+      }
+    });
+
+    // Hide the menu when mouse leaves the mobile link
+    item.addEventListener('mouseout', (event) => {
+      dropDown.style.display = 'none';  // Hide drop-menu
+      megaBox.style.display = 'none';  // Hide mega-box
+    });
+  });
+
+  // Optional: Ensure the dropdown and megabox stay open if hovered over
+  dropDown.addEventListener('mouseover', () => {
+    dropDown.style.display = 'block';
+  });
+
+  dropDown.addEventListener('mouseout', () => {
+    dropDown.style.display = 'none';
+  });
+
+  megaBox.addEventListener('mouseover', () => {
+    megaBox.style.display = 'block';
+  });
+
+  megaBox.addEventListener('mouseout', () => {
+    megaBox.style.display = 'none';
+  });
+}
   }
   
   

@@ -1,0 +1,7 @@
+{
+    "/Login": {
+      "target": "http://3.208.6.7/",
+      "secure": false,
+      "changeOrigin": true
+    }
+  }

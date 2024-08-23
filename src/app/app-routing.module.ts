@@ -23,7 +23,7 @@ import { InternshipComponent } from './internship/internship.component';
 import { TermsComponent } from './terms/terms.component';
 import { PrivacyPolicyComponent } from './privacy-policy/privacy-policy.component';
 import { CookiesPolicyComponent } from './cookies-policy/cookies-policy.component';
-
+import { ContactFormComponent } from './contact-form/contact-form.component';
 const routes: Routes = [
 
    {path: '', redirectTo: '#', pathMatch: 'full' },
@@ -54,6 +54,7 @@ const routes: Routes = [
    {path:'terms',component: TermsComponent},
    {path:'privacypolicy',component: PrivacyPolicyComponent},
    {path:'cookies',component:CookiesPolicyComponent},  
+   {path: 'contactform' , component:ContactFormComponent}
 ];
 
 @NgModule({
