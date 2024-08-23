@@ -53,7 +53,7 @@
             <div class="wrapper">
                 <div class="logo">
                     <a href="">
-                        <img src="../assets/images/logo2.png" alt="iamdigipro logo" style="width: 100px; height: 50px; margin-bottom: 10px;" />
+                        <img src="../assets/images/logo2.png" alt="IAM Digipro logo" style="width: 100px; height: 50px; margin-bottom: 10px;" />
                     </a>
                 </div>
                 <input type="radio" name="slider" id="menu-btn" />
@@ -138,20 +138,29 @@
             </div>
             <!-- scrolling add -->
             <div class="scrolling-text-container1">
-                <div class="scrolling-text-inner1" style="--marquee-speed: 15s; --direction: scroll-left;" role="marquee">
-                    <div class="scrolling-text-item1"> Digital Marketing</div>
-                    <div class="scrolling-text-item1"> Web/App Development</div>
-                    <div class="scrolling-text-item1"> Graphic/UI Design</div>
-                    <div class="scrolling-text-item1"> Consulting</div>
+                <div class="scrolling-text-inner1">
+                    <div class="scrolling-text-item1">Search Engine Optimization</div>
+                    <div class="scrolling-text-item1"> Search Engine Marketing</div>
+                    <div class="scrolling-text-item1"> Social Media Optimization</div>
+                    <div class="scrolling-text-item1"> Graphic UI/UX Design</div>
                     <div class="scrolling-text-item1"> Influencer Marketing</div>
-                    <div class="scrolling-text-item1"> Digital Marketing</div>
                     <div class="scrolling-text-item1"> Web/App Development</div>
-                    <div class="scrolling-text-item1"> Graphic/UI Design</div>
+                    <div class="scrolling-text-item1"> Content Development & Marketing</div>
+                    <div class="scrolling-text-item1"> Lead generation - B2B & B2C</div>
                     <div class="scrolling-text-item1"> Consulting</div>
+                    <div class="scrolling-text-item1"> Email Marketing</div>
+                    <div class="scrolling-text-item1">Search Engine Optimization</div>
+                    <div class="scrolling-text-item1"> Search Engine Marketing</div>
+                    <div class="scrolling-text-item1"> Social Media Optimization</div>
+                    <div class="scrolling-text-item1"> Graphic UI/UX Design</div>
                     <div class="scrolling-text-item1"> Influencer Marketing</div>
+                    <div class="scrolling-text-item1"> Web/App Development</div>
+                    <div class="scrolling-text-item1"> Content Development & Marketing</div>
+                    <div class="scrolling-text-item1"> Lead generation - B2B & B2C</div>
+                    <div class="scrolling-text-item1"> Consulting</div>
+                    <div class="scrolling-text-item1"> Email Marketing</div>
                 </div>
             </div>
-
             <div class="enquiry-form">
                 <div class="arrow">
                     <img src="../assets/images/hand icon.png" class="arr-right" />
@@ -167,7 +176,7 @@
                         <p class="about-description">Discover the essence of digital marketing with IAM Digipro. Learn from industry veterans who emphasize practical strategies over theoretical concepts. Subscribe to our newsletter and chart your course to becoming a digital marketing expert.</p>
                         <div>
                             <a routerLink="/about-us">
-                                <button class="get-started-button"><img src="../assets/images/hand icon.png" class="arr-right1" style="margin:0px 0px;"/>Explore our journey and meet our team!</button>
+                                <button class="get-started-button"><img src="../assets/images/hand icon.png" class="arr-right1"/>Explore our journey and meet our team!</button>
                             </a>
                         </div>
                     </div>
@@ -603,7 +612,7 @@
                             </div>
                             <hr />
                             <p>
-                                IAM Digiprooo revamped our online marketing strategy, and the results were immediate. Our restaurant now enjoys a steady stream of new customers thanks to their social media campaigns and local SEO efforts.
+                                IAM Digipro revamped our online marketing strategy, and the results were immediate. Our restaurant now enjoys a steady stream of new customers thanks to their social media campaigns and local SEO efforts.
                                 They're worth every penny.
                             </p>
                         </div>
@@ -659,11 +668,11 @@
                         <h1>Enquiry</h1>
                     </div>
                     <div class="left-side pt-5">
-                        <p style="font-size: 20px;"> <span class="span">
-                            Ready to elevate your 
-                            brand online? <br />
+                        <p style="font-size: 20px;"> <span class="span"> Partner with Us to Reach New Heights!
+                             <br />
                         </span>
-                                Partner with Us to Reach New Heights!
+                        Ready to elevate your 
+                        brand online?    
                            
                         </p>
                     </div>
@@ -671,45 +680,38 @@
                         <h1 class="enquiry-heading d-flex justify-content-start">Let's Collab <fa-icon [icon]="faArrowRight"></fa-icon></h1>
                     </div>
                 </div>
-                <div class="container-cnt mt-8">
+                <!-- <div class="container-cnt mt-8"> -->
                     <form class="orange-form-cnt pt-8">
-                      <div class="text-container-cnt">
-                        <label for="message" class="cnt-msg">What do you have to say to us?</label>
-                        <textarea name="message" class="consult-us-textarea" placeholder="Start typing..."></textarea>
-                        <div class="rating-container-cnt">
-                          <p class="rating-text" class="cnt-interest">Please select your interests:</p>
-                          <div class="stars-cnt">
-                            <div *ngFor="let interest of interests">
-                              <button 
-                                class="star-button" 
-                                [ngClass]="{'selected': selectedInterest === interest.label}"
-                                (click)="onInterestSelect(interest.label)">
-                                {{ interest.label }}
-                              </button>
+                        <div class="enquiry-contact-section">
+                            <div class="enquiry-contact-form-container">
+                                <form class="enquiry-contact-form">
+                                    <label for="name">IAM</label>
+                                    <input type="text" id="name" name="name" placeholder="John">
+                        
+                                    <label for="phone">Phone number</label>
+                                    <input type="text" id="phone" name="phone" placeholder="">
+                        
+                                    <label for="email">Email</label>
+                                    <input type="email" id="email" name="email" placeholder="iam@gmail.com">
+                        
+                                    <label for="project">Tell us a little about the project...</label>
+                                    <textarea id="project" name="project"></textarea>
+                        
+                                    <label for="services">How can we help?</label>
+                                    <div class="enquiry-checkbox-group">
+                                        <label><input type="checkbox" name="services" value="Digital Marketing"> Digital Marketing</label>
+                                        <label><input type="checkbox" name="services" value="Web Development"> Web Development</label>
+                                        <label><input type="checkbox" name="services" value="Graphic Design"> Graphic Design</label>
+                                        <label><input type="checkbox" name="services" value="Consulting"> Consulting</label>
+                                        <label><input type="checkbox" name="services" value="Influencer Marketing"> Influencer Marketing</label>
+                                        <label><input type="checkbox" name="services" value="Other"> Other</label>
+                                    </div>
+                                    <button class="cnt-btn">Let's get started!</button>
+                                </form>
                             </div>
-                          </div>
-                          <div class="rating-display">Selected: {{ selectedInterest }}</div>
                         </div>
-                      </div>
-                      <div class="input-container-cnt">
-                        <div class="name-container-cnt">
-                            <label class="label-cnt" for="name">I AM</label>
-                            <input class="input-cnt" type="text" name="name" placeholder="Jhon" required />
-                        </div>
-                        <div class="email-container-cnt">
-                            <label class="label-cnt" for="email">Email</label>
-                            <input class="input-cnt" type="text" name="email" placeholder="IAM@gmail.com" required />
-                        </div>
-                        <div class="phone-container-cnt">
-                          <label class="label-cnt" for="phone">Phone</label>
-                          <input class="input-cnt" type="text" name="phone" placeholder="+91 9999900000">
-                        </div>
-                        <div class="button-container-cnt">
-                          <button type="submit" name="submit" class="btn-cnt">SEND</button>
-                        </div>
-                      </div>
                     </form>
-                  </div>
+                  <!-- </div> -->
             </div>
             <!-- FAQs -->
             <div class="faq-container mt-0 pt-0">
@@ -893,7 +895,7 @@
                 </div>
                 <div class="social-icons">
                     <a href="https://www.instagram.com/iam_digipro?igsh=MzRlODBiNWFlZA==" target="_blank" class="social-icon instagram"><fa-icon [icon]="faInstagram"></fa-icon></a>
-                    <a href="https://www.facebook.com/profile.php?id=61560868171435" target="_blank" class="social-icon facebook"><fa-icon [icon]="faFacebook"></fa-icon></a>
+                    <a href="https://www.facebook.com/Imdigipro2024/" target="_blank" class="social-icon facebook"><fa-icon [icon]="faFacebook"></fa-icon></a>
                     <a href="https://www.linkedin.com/in/iam-digipro-127123313/" target="_blank" class="social-icon linkedin"><fa-icon [icon]="faLinkedin"></fa-icon></a>
                     <a href="https://x.com/iamdigipro" target="_blank" class="social-icon linkedin"><fa-icon [icon]="['fab', 'twitter']"></fa-icon></a>
                     <a href="https://www.youtube.com/@IamDigitalPro/featured" target="_blank" class="social-icon linkedin"><fa-icon [icon]="faYoutube"></fa-icon></a>
