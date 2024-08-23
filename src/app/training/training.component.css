@@ -48,7 +48,7 @@ position: sticky;
   width: 70px;
   height: 40px;
   margin-top: -115px;
-  margin-left: 80px;
+  margin-left: 60px !important;
   margin-right: 20px;
 }
 .knowmore-bottom-contaner {
@@ -348,6 +348,7 @@ display: flex;
 }
 .faculty-container h1{
   font-size: 1.1rem;
+  padding-top: 10px;
 }
 .faculty-container p{
   font-size: 1rem;
@@ -939,7 +940,7 @@ margin-right: 3vw;
   .arr-right {
     width: 70px;
     height: 40px;
-    margin-top: -156px;
+    margin-top: -100px;
     margin-left: 80px;
     margin-right: 20px;
   }
@@ -1004,6 +1005,7 @@ width: 70px;
 height: 40px;
 margin-top: -75px;
 margin-left: 90px;
+animation: bounceLeftRight 2s infinite;
 }
 
 @media (max-width: 800px) {
@@ -1121,10 +1123,10 @@ border-radius: 30px;
   border-radius: 20px;
 }
 .arr-right-about {
-width: 70px;
-height: 40px;
-margin-top: -156px;
-margin-left: 90px;
+width: 50px;
+height: 30px;
+margin-top: -100px;
+margin-left: 68px;
 }
 }
 /* job assistance section */

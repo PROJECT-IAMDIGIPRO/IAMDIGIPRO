@@ -1,22 +1,30 @@
-import { Component } from '@angular/core';
+import { Component, AfterViewInit } from '@angular/core';
 
 @Component({
   selector: 'app-consult-us',
   templateUrl: './consult-us.component.html',
-  styleUrl: './consult-us.component.css'
+  styleUrls: ['./consult-us.component.css']
 })
-export class ConsultUsComponent {
-// enquiry form buttons function 
-selectedInterest: string = 'None';
-interests = [
-  { value: '5', label: 'Marketing' },
-  { value: '4', label: 'Web Development' },
-  { value: '3', label: 'Graphic Design' },
-  { value: '2', label: 'Consulting' },
-  { value: '1', label: 'Influencer Marketing' }
-];
+export class ConsultUsComponent implements AfterViewInit {
 
-onInterestSelect(interest: string) {
-  this.selectedInterest = interest;
-}
+  ngAfterViewInit() {
+    this.addHorizontalScrollListener();
+  }
+
+  addHorizontalScrollListener() {
+    const scrollContainer = document.querySelector('.scroll-container') as HTMLElement;
+
+    if (scrollContainer) {
+      scrollContainer.addEventListener('wheel', (event: WheelEvent) => {
+        event.preventDefault();
+        
+        const scrollAmount = event.deltaY > 0 ? 200 : -100;
+        
+        scrollContainer.scrollBy({
+          left: scrollAmount,
+          behavior: 'smooth'
+        });
+      });
+    }
+  }
 }
