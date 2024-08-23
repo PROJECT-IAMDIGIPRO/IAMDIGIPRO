@@ -32,7 +32,7 @@ const routes: Routes = [
    {path:'influencermarketing',component: InfluencerMarketingComponent},
    {path:'socialmediaoptimization',component: SocialMarketingOptimizationComponent},
    {path:'webappdevelopment',component: WebAppDevelopmentComponent},
-   {path:'contentdevelopmenmMarketing',component: ContentDevelopmentMarketingComponent},
+   {path:'contentdevelopmenMarketing',component: ContentDevelopmentMarketingComponent},
    {path:'emailmarketing',component: EmailMarketingComponent},
    {path:'graphicuidesign',component: GraphicUIDesignComponent},
    {path:'leadgeneration',component: LeadGenerationComponent},
