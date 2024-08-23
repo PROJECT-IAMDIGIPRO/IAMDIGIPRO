@@ -26,7 +26,7 @@
                     
                 </div>
                 <div class="services-ser">
-                    <h1>Overview</h1>
+                    <h1>Top SEO Services in Hyderabad</h1>
                 </div>
                 <p class="overview-description text-center">
                     Looking to enhance your online presence and reach more customers? <b>IAM Digipro</b> offers the <b>best SEO services in Hyderabad</b> to help your business dominate search engine results. As the <b>No.1 SEO agency in Hyderabad</b>, we specialize in creating tailored strategies that drive traffic, boost rankings, and increase conversions.
@@ -3811,6 +3811,68 @@
                     <i>"As digital landscapes evolve, SEO remains crucial for online success. IAM Digipro is committed to maximizing your visibility and driving organic traffic. Contact us now to start your SEO journey with confidence."</i>
                 </p>
             </div>
+        </div>
+         <!--enquiry form-->
+         <div class="enquiry-container pt-3">
+            <div class="enquiry-form">
+                <div class="arrow">
+                    <img src="../assets/images/hand icon.png" class="arr-right" />
+                </div>
+                <div class="services-ser">
+                    <h1>Enquiry</h1>
+                </div>
+                <div class="left-side pt-5">
+                    <p style="font-size: 20px;"> <span class="span">
+                        Ready to elevate your 
+                        brand online? <br />
+                    </span>
+                            Partner with Us to Reach New Heights!
+                       
+                    </p>
+                </div>
+                <div class="enquiry-background-container">
+                    <h1 class="enquiry-heading d-flex justify-content-start">Let's Collab <fa-icon [icon]="faArrowRight"></fa-icon></h1>
+                </div>
+            </div>
+            <div class="container-cnt mt-8">
+                <form class="orange-form-cnt pt-8">
+                  <div class="text-container-cnt">
+                    <label for="message" class="cnt-msg">What do you have to say to us?</label>
+                    <textarea name="message" class="consult-us-textarea" placeholder="Start typing..."></textarea>
+                    <div class="rating-container-cnt">
+                      <p class="rating-text" class="cnt-interest">Please select your interests:</p>
+                      <div class="stars-cnt">
+                        <div *ngFor="let interest of interests">
+                          <button 
+                            class="star-button" 
+                            [ngClass]="{'selected': selectedInterest === interest.label}"
+                            (click)="onInterestSelect(interest.label)">
+                            {{ interest.label }}
+                          </button>
+                        </div>
+                      </div>
+                      <div class="rating-display">Selected: {{ selectedInterest }}</div>
+                    </div>
+                  </div>
+                  <div class="input-container-cnt">
+                    <div class="name-container-cnt">
+                        <label class="label-cnt" for="name">I am</label>
+                        <input class="input-cnt" type="text" name="name" placeholder="Jhon" required />
+                    </div>
+                    <div class="email-container-cnt">
+                        <label class="label-cnt" for="email">Email</label>
+                        <input class="input-cnt" type="text" name="email" placeholder="Iam@gmail.com" required />
+                    </div>
+                    <div class="phone-container-cnt">
+                      <label class="label-cnt" for="phone">Phone</label>
+                      <input class="input-cnt" type="text" name="phone" placeholder="+91 9999900000">
+                    </div>
+                    <div class="button-container-cnt">
+                      <button type="submit" name="submit" class="btn-cnt">SEND</button>
+                    </div>
+                  </div>
+                </form>
+              </div>
         </div>
     </body>
 </html>

@@ -127,7 +127,7 @@ faStarHalfAlt = faStarHalfAlt;
     this.isIMRoute = url.startsWith('/influencermarketing');
     this.isWADRoute = url.startsWith('/webappdevelopment');
     this.isGraphicUIDesignRoute = url.startsWith('/graphicuidesign');
-    this.isCDMRoute = url.startsWith('/contentdevelopmenmMarketing');
+    this.isCDMRoute = url.startsWith('/contentdevelopmenMarketing');
     this.isLGRoute = url.startsWith('/leadgeneration');
     this.isConsultingRoute = url.startsWith('/consulting');
     this.isEMRoute = url.startsWith('/emailmarketing');
@@ -200,6 +200,9 @@ faStarHalfAlt = faStarHalfAlt;
       menuCheckbox.checked = false;
     }
   }
+  
+  
+  
   scrollToTop(): void {
     window.scrollTo({
       top: 0,
@@ -255,7 +258,7 @@ faStarHalfAlt = faStarHalfAlt;
       title: "Content Development",
       desc: "Producing valuable content (blogs, videos, infographics) and promoting it to attract and engage a target audience.",
       photo: "assets/images/homeContent/Content-Development-&-Marketing.jpg",
-      link: "/contentdevelopmenmMarketing"
+      link: "/contentdevelopmenMarketing"
     },
     {
       id: 8,

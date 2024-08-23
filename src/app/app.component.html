@@ -94,7 +94,7 @@
                                     <ul class="mega-links">
                                         <li><a routerLink="/influencermarketing" (click)="closeMenu()">Influencer Marketing</a></li>
                                         <li><a routerLink="/webappdevelopment" (click)="closeMenu()">Web/App Development</a></li>
-                                        <li><a routerLink="/contentdevelopmenmMarketing" (click)="closeMenu()">Content Development & Marketing</a></li>
+                                        <li><a routerLink="/contentdevelopmenMarketing" (click)="closeMenu()">Content Development & Marketing</a></li>
                                     </ul>
                                 </div>
                                 <div class="row">
@@ -167,7 +167,7 @@
                         <p class="about-description">Discover the essence of digital marketing with IAM Digipro. Learn from industry veterans who emphasize practical strategies over theoretical concepts. Subscribe to our newsletter and chart your course to becoming a digital marketing expert.</p>
                         <div>
                             <a routerLink="/about-us">
-                                <button class="get-started-button"><img src="../assets/images/hand icon.png" class="arr-right" style="margin:3px 32px;"/>Explore our journey and meet our team!</button>
+                                <button class="get-started-button"><img src="../assets/images/hand icon.png" class="arr-right1" style="margin:0px 0px;"/>Explore our journey and meet our team!</button>
                             </a>
                         </div>
                     </div>
@@ -281,7 +281,7 @@
                                 Gain real-world experience in digital marketing, web development, graphic design, consulting, and influencer marketing. Work with industry experts, develop your skills, and contribute to impactful projects.
                                 Apply now to kickstart your career with us!
                             </p>
-                            <a routerLink="/internship" class="careers-arrow-btn"></a>
+                            <a routerLink="/internship" class="careers-arrow-btn"><fa-icon [icon]="faArrowRight"></fa-icon></a>
                         </div>
                         <div class="careers-card">
                             <h2>Training Courses</h2>
@@ -289,7 +289,7 @@
                                 Gain real-world experience and comprehensive training in digital marketing, web development, graphic design, consulting, and influencer marketing. Work with industry experts, enhance your skills, and
                                 contribute to impactful projects. Apply now to kickstart your career with us!
                             </p>
-                            <a routerLink="/training" class="careers-arrow-btn"> </a>
+                            <a routerLink="/training" class="careers-arrow-btn"><fa-icon [icon]="faArrowRight"></fa-icon></a>
                         </div>
                         <div class="careers-card">
                             <h2>Job Opportunities</h2>
@@ -297,7 +297,7 @@
                                 Discover rewarding career paths in digital marketing, web development, graphic design, consulting, and influencer marketing. Join our dynamic team, collaborate with industry experts, and contribute to
                                 innovative projects. Take the next step in your career journey with us. Apply now!
                             </p>
-                            <a routerLink="/jobopportunity" class="careers-arrow-btn"></a>
+                            <a routerLink="/jobopportunity" class="careers-arrow-btn"><fa-icon [icon]="faArrowRight"></fa-icon></a>
                         </div>
                     </div>
                 </div>
@@ -693,12 +693,12 @@
                       </div>
                       <div class="input-container-cnt">
                         <div class="name-container-cnt">
-                            <label class="label-cnt" for="name">I am</label>
+                            <label class="label-cnt" for="name">I AM</label>
                             <input class="input-cnt" type="text" name="name" placeholder="Jhon" required />
                         </div>
                         <div class="email-container-cnt">
                             <label class="label-cnt" for="email">Email</label>
-                            <input class="input-cnt" type="text" name="email" placeholder="Iam@gmail.com" required />
+                            <input class="input-cnt" type="text" name="email" placeholder="IAM@gmail.com" required />
                         </div>
                         <div class="phone-container-cnt">
                           <label class="label-cnt" for="phone">Phone</label>
@@ -713,7 +713,10 @@
             </div>
             <!-- FAQs -->
             <div class="faq-container mt-0 pt-0">
-                <h1>Frequently Asked Questions</h1>
+                <div class="services-ser">
+                    <h1>Frequently Asked Questions</h1>
+                </div>
+                <!-- <h1>Frequently Asked Questions</h1> -->
                 <div *ngFor="let faq of faqs; let i = index" class="faq-item">
                     <div class="faq-question" (click)="toggleFaq(i)">
                         <p>{{ faq.isOpen ? faq.answer : faq.question }}</p>
@@ -836,7 +839,7 @@
                     </ul>
                     <ul>                    
                         <li><a routerLink="/webappdevelopment">Web/App Development</a></li>
-                        <li><a routerLink="/contentdevelopmenmMarketing">Content Development & Marketing</a></li>
+                        <li><a routerLink="/contentdevelopmenMarketing">Content Development & Marketing</a></li>
                         <li><a routerLink="/leadgeneration">Lead generation - B2B & B2C</a></li>
                         <li><a routerLink="/consulting">Consulting</a></li>
                         <li><a routerLink="/emailmarketing">Email Marketing</a></li>
@@ -894,8 +897,8 @@
                     <a href="https://www.linkedin.com/in/iam-digipro-127123313/" target="_blank" class="social-icon linkedin"><fa-icon [icon]="faLinkedin"></fa-icon></a>
                     <a href="https://x.com/iamdigipro" target="_blank" class="social-icon linkedin"><fa-icon [icon]="['fab', 'twitter']"></fa-icon></a>
                     <a href="https://www.youtube.com/@IamDigitalPro/featured" target="_blank" class="social-icon linkedin"><fa-icon [icon]="faYoutube"></fa-icon></a>
-                    <a href="https://www.youtube.com/@IamDigitalPro/featured" target="_blank" class="social-icon Pinterest"><fa-icon [icon]="faPinterest"></fa-icon></a>
-                    <a href="https://www.youtube.com/@IamDigitalPro/featured" target="_blank" class="social-icon Quora"><fa-icon [icon]="faThreads"></fa-icon></a>
+                    <a href="https://in.pinterest.com/iamdigipro2024/" target="_blank" class="social-icon Pinterest"><fa-icon [icon]="faPinterest"></fa-icon></a>
+                    <a href="https://www.threads.net/@iam_digipro" target="_blank" class="social-icon Quora"><fa-icon [icon]="faThreads"></fa-icon></a>
                 </div>
             </div>
         </footer>
