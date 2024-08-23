@@ -74,7 +74,7 @@ nav .wrapper {
 .nav-links li:hover .drop-menu,
 .nav-links li:hover .mega-box {
     transition: all 0.3s ease;
-    top: 70px;
+    top: 60px;
     opacity: 1;
     visibility: visible;
 }
@@ -942,6 +942,19 @@ textarea {
     justify-content: center;
     /* display: -webkit-inline-box; */
 }
+.services-ser22 h1{
+    
+    margin-top: -68px;
+    margin-left: -172px;
+    font-weight: 650;
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    /* font-family: sans-serif; */
+    color: rgb(19, 19, 19);
+    display: flex;
+    justify-content: center;
+    /* display: -webkit-inline-box; */
+}
 .services-ser11 h1{
     
     margin-top: -40px;
@@ -1199,6 +1212,12 @@ textarea {
         /* Increase font size for smaller screens */
     }
     .services-ser h1{
+        font-size: 26px;
+        margin-left: 6px;
+        text-wrap: balance;
+        text-align: center;
+    }
+    .services-ser22 h1{
         font-size: 26px;
         margin-left: 6px;
         text-wrap: balance;
@@ -2803,7 +2822,7 @@ textarea {
 
 .head-1 {
     color: #de4c12;
-    font-size: 80px;
+    font-size: 63px;
     font-weight: 100;
 }
 
@@ -5996,7 +6015,8 @@ body {
     border: 5px solid orangered;
     /* min-width: 100px !important; */
     max-width: 450px;
-    height: 410px;
+    height: 400px;
+    margin-top: 10px;
 }
 
 .box-content {
@@ -6057,7 +6077,7 @@ body {
 @media (max-width: 768px) {
     .box {
         width: 80vw;
-        height: 80vw;
+        height: 60vw;
     }
 
     .box-content h3 {
@@ -6065,7 +6085,7 @@ body {
     }
 
     .box-content p {
-        font-size: 3.5vw;
+        font-size: 15px !important;
     }
 
     .tag {
@@ -6076,8 +6096,8 @@ body {
 @media (max-width: 480px) {
     .box {
         min-width: 80vw;
-        height: 80vw;
-        padding: 1%;
+        height: 100vw;
+        padding: 0%;
     }
 
     .box-content h3 {
@@ -6085,7 +6105,7 @@ body {
     }
 
     .box-content p {
-        font-size: 4vw;
+        font-size: 15px !important;
     }
 
     .tag {
@@ -6098,6 +6118,7 @@ body {
     width: auto;
     border-radius: 10px;
     overflow: hidden;
+    padding-right: 50px;
 }
 .left-section {
     margin-left: 10px;
@@ -6241,6 +6262,7 @@ body {
 @media (max-width: 768px) {
     .main-container {
         flex-direction: column;
+        padding-right: 0px;
     }
 
     .left-section,
@@ -7563,7 +7585,7 @@ body {
 .fee-card {
     background-color: lightgray;
     border-radius: 20px;
-    padding: 100px 50px;
+    padding: 85px 35px;
     box-shadow: 0 4px 6px rgba(179, 21, 21, 0.1);
     width: 250px;
     height: 200px;
@@ -7572,6 +7594,7 @@ body {
     font-weight: 600;
     flex-shrink: 0;
     scroll-snap-align: start;
+    font-size: 20px;
 }
 
 @media (max-width: 568px) {
@@ -8317,7 +8340,7 @@ body {
 @media screen and (max-width: 767px) {
     .commmon-seo-card {
         font-size: 10px;
-        margin: 0;
+        margin: 2px;
         padding: 5px;
     }
 }
@@ -8443,7 +8466,7 @@ body {
     margin-top: 50px;
 }
 .tag {
-    padding: 5px 10px;
+    padding: 20px 10px;
     font-size: 1.5rem;
     font-weight: 600;
     color: black;
@@ -8805,7 +8828,7 @@ body {
 @media (max-width: 767px) {
     .term-hed {
         font-size: 50px;
-        margin-left: 45px;
+        /* margin-left: 45px; */
     }
     .hed-acc {
         font-size: 15px;
@@ -9295,10 +9318,11 @@ input[type="radio"]:checked + .star {
     font-size: 1.6vw;
     margin-bottom: 15px;
     font-weight: 600;
+    margin-top: 30px;
 }
 @media screen and (min-width:375px) and (max-width:767px) {
     .extra-content {
-        margin-top: 20px;
+        margin-top: 0px;
         
     }
     .card-text {
@@ -9363,6 +9387,21 @@ input[type="radio"]:checked + .star {
     border-radius: 0 0 50px 50px;
     width: 100%;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.blogs-frontpage-card1 {
+    background-color: #000;
+    text-align: center;
+    padding: 55px;
+    border-radius: 0 0 50px 50px;
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.blogs-frontpage-card1 h1 {
+    font-family: 'Droid Sans'  !important;
+    font-size: 75px;
+    color: #F66136;
+    font-weight: 600;
+    margin: 0px;
 }
 .blogs-frontpage-card h1 {
     font-family: 'Droid Sans'  !important;
@@ -9575,6 +9614,9 @@ input[type="radio"]:checked + .star {
     .blogs-frontpage-card h1 {
         font-size: 60px;
    }
+   .blogs-frontpage-card1 h1 {
+    font-size: 60px;
+}
     .blogs-frontpage-card h1 span {
         font-size: 60px;
    }
@@ -9638,6 +9680,9 @@ input[type="radio"]:checked + .star {
     .blogs-frontpage-card h1 {
         font-size: 50px;
    }
+   .blogs-frontpage-card1 h1 {
+    font-size: 50px;
+}
     .blogs-frontpage-card h1 span {
         font-size: 50px;
    }
@@ -9670,8 +9715,10 @@ input[type="radio"]:checked + .star {
 @media (max-width: 768px) {
     .blogs-frontpage-card h1 {
         font-size: 40px;
-       
    }
+   .blogs-frontpage-card1 h1 {
+    font-size: 40px;
+}
     .blogs-frontpage-card h1 span {
         font-size: 40px;
       
@@ -9906,14 +9953,14 @@ input[type="radio"]:checked + .star {
     background-color: #e64a19;
 }
   .cnt-btn {
-    font-size: 1rem;
+    font-size: 1.0rem;
     font-weight: 600;
     font-family: sans-serif;
     border: none;
     background-image: linear-gradient(90deg,  white 0%, orangered 51%, white 100%);
     color: black;
     /* text-transform: uppercase; */
-    padding: 1em 5em;
+    padding: 0.5em 5em;
     transition: 0.3s;
     cursor: pointer;
   }
