@@ -1,6 +1,6 @@
 import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { ReactiveFormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { SearchEngineOptimizationComponent } from './search-engine-optimization/search-engine-optimization.component';
@@ -32,6 +32,7 @@ import { faTwitter, faWhatsapp  } from '@fortawesome/free-brands-svg-icons';
 import { TermsComponent } from './terms/terms.component';
 import { PrivacyPolicyComponent } from './privacy-policy/privacy-policy.component';
 import { CookiesPolicyComponent } from './cookies-policy/cookies-policy.component';
+import { ContactFormComponent } from './contact-form/contact-form.component';
 
 @NgModule({
   declarations: [
@@ -59,6 +60,7 @@ import { CookiesPolicyComponent } from './cookies-policy/cookies-policy.componen
     TermsComponent,
     PrivacyPolicyComponent,
     CookiesPolicyComponent,
+    ContactFormComponent,
     ],
   imports: [
     BrowserModule,
@@ -66,7 +68,8 @@ import { CookiesPolicyComponent } from './cookies-policy/cookies-policy.componen
     HttpClientModule,
     FormsModule,
     NgParticlesModule,
-    FontAwesomeModule
+    FontAwesomeModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent],

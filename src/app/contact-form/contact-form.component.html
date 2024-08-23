@@ -1,0 +1,41 @@
+<p>contact-form works!</p>
+<!-- interest-form.component.html -->
+
+
+<!-- Modal Overlay -->
+<div class="modal" *ngIf="showModal">
+  <div class="modal-content">
+    <!-- Close Icon -->
+    <i class="fa-solid fa-circle-xmark cl-icon" (click)="closeForm()" style="float: right; color: white; cursor: pointer;"></i>
+    
+    <!-- Form Title -->
+    <h1 style="font-size: small; margin: 5px;">I am Interested in</h1>
+    
+    <!-- Interest Buttons -->
+    <div class="interest-buttons">
+      <div>
+        <button type="button" style="font-size: x-small">Digital Marketing</button>
+        <button type="button" style="font-size: x-small">Web Development</button>
+      </div>
+      <div>
+        <button type="button" style="font-size: x-small">Graphic Design</button>
+        <button type="button" style="font-size: x-small">Consulting</button>
+        <button type="button" style="font-size: x-small">Influencer Marketing</button>
+      </div>
+    </div>
+    
+    <!-- Form Fields -->
+    <form (ngSubmit)="onSubmit(form.value)" #form="ngForm">
+      <label for="name">I am</label>
+      <input type="text" id="name" name="name" placeholder="John" required [(ngModel)]="formData.name">
+      
+      <label for="phone">Phone number</label>
+      <input type="tel" id="phone" name="phone" required [(ngModel)]="formData.phone">
+      
+      <label for="email">Email <span style="color:rgb(109, 109, 108);">(Optional)</span></label>
+      <input type="email" id="email" name="email" placeholder="iam@gmail.com" [(ngModel)]="formData.email">
+      
+      <button type="submit" class="enquiry-send-button" style="padding: 10px; margin-right: 15px; font-size: small;">Send</button>
+    </form>
+  </div>
+</div>

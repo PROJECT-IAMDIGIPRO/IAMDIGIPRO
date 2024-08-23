@@ -38,7 +38,7 @@
                     </div>
                     <div class="course-info">
                         <p>
-                            Welcome to Iam Digipro Digital Marketing Course - a unique blend of classroom learning and real-time project experience designed to transform you into a digital marketing expert. Our course is perfect for anyone
+                            Welcome to IAM Digipro Digital Marketing Course - a unique blend of classroom learning and real-time project experience designed to transform you into a digital marketing expert. Our course is perfect for anyone
                             looking to gain in-depth knowledge, practical skills, and valuable industry experience in digital marketing.
                         </p>
                     </div>
@@ -67,7 +67,45 @@
                     <div class="buttons">
                         <!-- <button class="download-btn"><b>Download Pdf</b></button> -->
                         <button class="download-btn" id="downloadPdfButton" (click)="downloadImage()"><b>Download Pdf</b></button>
-                        <button class="apply-btn">Apply now</button>
+                        <button class="apply-btn">Apply now</button><!-- Trigger Button -->
+                        
+                        
+                        <!-- Pop-up Container -->
+                        <!-- <div class="pop-up" *ngIf="showContactForm">
+                          <div class="pop-up-content">
+                            
+                            <button class="close-button" (click)="toggleContactForm()">X</button>
+                        
+                           
+                            <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+                                <form class="enquiry-contact-form">
+                                    <label for="name">IAM</label>
+                                    <input type="text" id="name" name="name" placeholder="John">
+                        
+                                    <label for="phone">Phone number</label>
+                                    <input type="text" id="phone" name="phone" placeholder="">
+                        
+                                    <label for="email">Email</label>
+                                    <input type="email" id="email" name="email" placeholder="iam@gmail.com">
+                        
+                                    <label for="project">Tell us a little about the project...</label>
+                                    <textarea id="project" name="project"></textarea>
+                        
+                                    <label for="services">How can we help?</label>
+                                    <div class="enquiry-checkbox-group">
+                                        <label><input type="checkbox" name="services" value="Digital Marketing"> Digital Marketing</label>
+                                        <label><input type="checkbox" name="services" value="Web Development"> Web Development</label>
+                                        <label><input type="checkbox" name="services" value="Graphic Design"> Graphic Design</label>
+                                        <label><input type="checkbox" name="services" value="Consulting"> Consulting</label>
+                                        <label><input type="checkbox" name="services" value="Influencer Marketing"> Influencer Marketing</label>
+                                        <label><input type="checkbox" name="services" value="Other"> Other</label>
+                                    </div>
+                                    <button class="cnt-btn">Let's get started!</button>
+                                </form>
+                            </form>
+                          </div>
+                        </div>
+                         -->
                     </div>
                     <div class="knowmore-bottom-contaner">
                         <div class="arrow">
@@ -247,7 +285,7 @@
                     
                 </div>
                 <div class="services-ser">
-                    <h1>Benifits</h1>
+                    <h1>Benefits</h1>
                 </div>
                 <div class="benef-con">
                     <div class="orange-cir" id="org-cir1">
@@ -314,7 +352,7 @@
                             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQG4Tb6DSXJjYigEtTo4GhgmFtUNl5sxVJs2A&s" alt="reviewStudentimage1" />
                             <p>
                                 <b>Name</b> <br />
-                                KATE WINSLET
+                                Rithika
                             </p>
                         </div>
                         <p class="testimonial">
@@ -326,7 +364,7 @@
                             <img src="https://achieveracademy.co.in/wp-content/uploads/2022/03/studen.jpeg" alt="reviewStudentimage2" />
                             <p>
                                 <b>Name</b> <br />
-                                NOOHA
+                                Jaya Sree
                             </p>
                         </div>
                         <p class="testimonial">
@@ -338,7 +376,7 @@
                             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTV-8qnDYmH8ITB-k18JcdHGbjMnj5Tm7xnWA&s" alt="reviewStudentimage3" />
                             <p>
                                 <b>Name</b> <br />
-                                JOHN
+                                Revanth
                             </p>
                         </div>
                         <p class="testimonial">
@@ -350,7 +388,7 @@
                             <img src="../assets/images\carrersPage\image_carrerPage4.jpg" alt="reviewStudentimage4" />
                             <p>
                                 <b>Name</b> <br />
-                                ROCK
+                                Pavan
                             </p>
                         </div>
                         <p class="testimonial">
@@ -387,16 +425,16 @@
                 </div>
                 <div class="fee-card-container">
                     <div class="fee-card">
-                        3 Months of Intensive Learning
+                        <p class="fee-msg">3 Months of Intensive Learning</p>
                     </div>
                     <div class="fee-card">
-                        Expert Faculty
+                        <p class="fee-msg">Expert Faculty</p>
                     </div>
                     <div class="fee-card">
-                        Certification
+                        <p class="fee-msg">Certification</p>
                     </div>
                     <div class="fee-card">
-                        Internship Support
+                        <p class="fee-msg">Internship Support</p>
                     </div>
                 </div>
             </div>

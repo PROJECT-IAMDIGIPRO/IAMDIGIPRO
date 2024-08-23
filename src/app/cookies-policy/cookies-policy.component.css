@@ -4,15 +4,6 @@ body {
     width: auto;
     margin-top: 50px;
   }
-  @font-face {
-    font-family: poppins;
-    /* src: url(Poppins-Regular.ttf); */
-  }
-  
-  @font-face {
-    font-family: alifira;
-    /* src: url(Alifira.ttf); */
-  }
   .black-cont{
     background-color: black;
     height: 200px;
