@@ -22,7 +22,7 @@
  <!-- HTML -->
 
 <div class="contact-section">
-    <div class="blogs-frontpage-card">
+    <div class="blogs-frontpage-card1">
         <!-- <h>Consult Us</h> -->
         <h1>Consult us</h1>
     </div>
@@ -168,27 +168,29 @@
                 <!-- <form class="orange-form-cnt pt-8">
                     <div class="enquiry-contact-section">
                         <div class="enquiry-contact-form-container"> -->
-                            <form class="enquiry-contact-form">
+                            <form class="enquiry-contact-form" (ngSubmit)="onSubmit()">
                                 <label for="name">IAM</label>
-                                <input type="text" id="name" name="name" placeholder="John">
+                                <input type="text" id="name" name="name" placeholder="John" [(ngModel)]="contactForm.username" required>
                     
                                 <label for="phone">Phone number</label>
-                                <input type="text" id="phone" name="phone" placeholder="+91 9999900000">
+                                <input type="text" id="phone" name="phone" placeholder="" [(ngModel)]="contactForm.phonenumber" 
+                                required>
                     
                                 <label for="email">Email</label>
-                                <input type="email" id="email" name="email" placeholder="IAM@gmail.com">
+                                <input type="email" id="email" name="email" placeholder="iam@gmail.com" [(ngModel)]="contactForm.email" 
+                                required>
                     
-                                <label for="project">Tell us a little about the project...</label>
-                                <textarea id="project" name="project"></textarea>
+                                <label for="description">Tell us a little about the project...</label>
+                                <textarea id="description" name="description" [(ngModel)]="contactForm.description"></textarea>
                     
                                 <label for="services">How can we help?</label>
                                 <div class="enquiry-checkbox-group">
-                                    <label><input type="checkbox" name="services" value="Digital Marketing"> Digital Marketing</label>
-                                    <label><input type="checkbox" name="services" value="Web Development"> Web Development</label>
-                                    <label><input type="checkbox" name="services" value="Graphic Design"> Graphic Design</label>
-                                    <label><input type="checkbox" name="services" value="Consulting"> Consulting</label>
-                                    <label><input type="checkbox" name="services" value="Influencer Marketing"> Influencer Marketing</label>
-                                    <label><input type="checkbox" name="services" value="Other"> Other</label>
+                                    <label><input type="checkbox" name="services" value="Digital Marketing" (change)="onServiceChange($event)"> Digital Marketing</label>
+                                    <label><input type="checkbox" name="services" value="Web Development" (change)="onServiceChange($event)"> Web Development</label>
+                                    <label><input type="checkbox" name="services" value="Graphic Design" (change)="onServiceChange($event)"> Graphic Design</label>
+                                    <label><input type="checkbox" name="services" value="Consulting" (change)="onServiceChange($event)"> Consulting</label>
+                                    <label><input type="checkbox" name="services" value="Influencer Marketing" (change)="onServiceChange($event)"> Influencer Marketing</label>
+                                    <label><input type="checkbox" name="services" value="Other" (change)="onServiceChange($event)"> Other</label>
                                 </div>
                                 <button class="cnt-btn">Let's get started!</button>
                             </form>

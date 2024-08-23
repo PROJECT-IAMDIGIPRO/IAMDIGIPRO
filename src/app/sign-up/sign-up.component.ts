@@ -9,22 +9,26 @@ import { Router } from '@angular/router';
 })
 export class SignUpComponent {
   user = {
-    
     email: '',
     password: ''
   };
 
-  private apiUrl = 'http://3.208.6.7/Login/employees_signup';
-
-  constructor(private http: HttpClient, private router: Router) { }
+  private apiUrl = '/Login/employees_signup';
+  constructor(private http: HttpClient, private router: Router) {}
 
   onSubmit() {
-    this.http.post<any>(this.apiUrl, this.user).subscribe(response => {
-      if (response.status === 'successfully signup') {
-        this.router.navigate(['/login']);  
-      } else {
-        alert(response.status);
-      } 
-    });
+    this.http.post<{ status: string }>(this.apiUrl, this.user).subscribe(
+      response => {
+        if (response.status === 'successfully signup') {
+          this.router.navigate(['/login']);
+        } else {
+          alert(response.status);
+        }
+      },
+      error => {
+        alert('An error occurred during signup. Please try again later.');
+        console.error('Signup error:', error);
+      }
+    );
   }
 }

@@ -499,12 +499,12 @@ overflow: hidden;
 }
 .course-header {
 position: relative;
-background-image: url('https://res.cloudinary.com/dwkkhhr8a/image/upload/v1719297969/image_ebgamo.jpg');
+background-image: url('https://res.cloudinary.com/dwkkhhr8a/image/upload/v1724418587/DM-removebg-preview_1_zos17b.png');
 background-size: cover;
 background-position: center;
 background-repeat: no-repeat;
 padding: 20px;
-color: white;
+color: black;
 display: flex;
 align-items: left; /* Center content vertically */
  /* Center content horizontally */
@@ -1025,7 +1025,7 @@ display: none;
 .fee-card {
 background-color: lightgray;
 border-radius: 20px;
-padding: 100px 50px;
+padding: 85px 35px;
 box-shadow: 0 4px 6px rgba(179, 21, 21, 0.1);
 width: 250px;
 height: 200px;
@@ -1034,6 +1034,7 @@ font-weight: 570;
 font-weight: 600;
 flex-shrink: 0;
 scroll-snap-align: start;
+font-size: 20px;
 }
 
 @media (max-width: 568px) {
