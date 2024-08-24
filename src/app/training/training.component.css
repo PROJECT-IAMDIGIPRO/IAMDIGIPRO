@@ -303,6 +303,7 @@ font-family: poppins;
 
 .faculty-container h1{
 font-size: 1.6rem;
+margin-left: -150px;
 }
 .faculty-container p{
 font-size: 1.2rem;
@@ -342,7 +343,13 @@ color: black;
 .faculty-item{
 display: flex;
 }
-
+@media (max-width: 1200px) {
+  .faculty-container h1{
+    font-size: 1.1rem;
+    margin-left: 0px;
+  }
+  
+}
 @media (max-width: 767px) {
 #facultySection {
   width: 100%;
@@ -350,6 +357,7 @@ display: flex;
 .faculty-container h1{
   font-size: 1.1rem;
   padding-top: 10px;
+  margin-left: 0px;
 }
 .faculty-container p{
   font-size: 1rem;

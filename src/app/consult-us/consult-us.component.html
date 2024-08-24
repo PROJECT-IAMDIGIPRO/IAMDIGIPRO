@@ -33,10 +33,14 @@
     <div class="scroll-container">
         <div class="container">
             <div class="box" style="background-color: #ffd5ba;">
-                <div class="box-content">
+                <!-- <div class="box" style="background-image: url('https://res.cloudinary.com/dwkkhhr8a/image/upload/v1724418587/DM-removebg-preview_1_zos17b.png'); background-size: cover; background-position: center; "> -->
+                <!-- <div class="box-image">
+                    <img src="assets/images/blogs/image_blogPage2.jpg"/>
+                </div> -->
+                    <div class="box-content">
                     <span>01</span>
                     <h3>Search Engine Optimization</h3>
-                    <p>Dominate search results and attract more organic traffic to your website with our cutting-edge SEO strategies. We focus on boosting your site’s visibility and credibility, ensuring long-term growth.
+                    <p>Dominate search results and attract more organic traffic to your website with our cutting-edge SEO strategies. We focus on ensuring long term growth.
                     </p>
                     <div class="tags">
                         <div class="tag" routerLink="/searchengineoptimization">More Details</div>
@@ -109,10 +113,11 @@
                 </div>
             </div>
             <div class="box" style="background-color: #bafdff;">
+                <!-- <div class="box" style="background-image: url(https://res.cloudinary.com/dwkkhhr8a/image/upload/v1724418587/DM-removebg-preview_1_zos17b.png)">  -->
                 <div class="box-content">
                     <span>08</span>
                     <h3>Lead Generation-B2B & B2C</h3>
-                    <p>Fuel your business growth with our targeted lead generation services. Whether you're in B2B or B2C, we help you connect with the right prospects and drive sales.
+                    <p>Fuel your business growth with our targeted lead generation services. Whether you're in B2B or B2C, we help you connect to drive your sales.
                     </p>
                     <div class="tags">
                         <div class="tag" routerLink="/leadgeneration">More Details</div>
@@ -171,14 +176,11 @@
                             <form class="enquiry-contact-form" (ngSubmit)="onSubmit()">
                                 <label for="name">IAM</label>
                                 <input type="text" id="name" name="name" placeholder="John" [(ngModel)]="contactForm.username" required>
-                    
                                 <label for="phone">Phone number</label>
-                                <input type="text" id="phone" name="phone" placeholder="" [(ngModel)]="contactForm.phonenumber" 
-                                required>
+                                <input type="text" id="phone" name="phone" placeholder="+91 9999900000" [(ngModel)]="contactForm.phonenumber">
                     
                                 <label for="email">Email</label>
-                                <input type="email" id="email" name="email" placeholder="iam@gmail.com" [(ngModel)]="contactForm.email" 
-                                required>
+                                <input type="email" id="email" name="email" placeholder="IAM@gmail.com" [(ngModel)]="contactForm.email">
                     
                                 <label for="description">Tell us a little about the project...</label>
                                 <textarea id="description" name="description" [(ngModel)]="contactForm.description"></textarea>
@@ -258,7 +260,7 @@
         <div>
             <a href="https://x.com/iamdigipro" target="_blank">
                 <img src="../assets/images/Social Platforms dps/twitter.png" alt="socialPlatformimage">
-                <h2>X</h2>
+                <h2>X (Twitter)</h2>
             </a>
         </div>
         <div>

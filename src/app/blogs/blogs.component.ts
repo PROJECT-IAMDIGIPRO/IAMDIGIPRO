@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-
+import { faArrowLeft } from '@fortawesome/free-solid-svg-icons';
 @Component({
   selector: 'app-blogs',
   templateUrl: './blogs.component.html',
@@ -11,7 +11,7 @@ export class BlogsComponent {
   posts = [
     {
       title: "How to Maximize Your Digital Marketing Efforts",
-      image: "../assets/images/blogs/image_blogPage1.jpg",
+      image: "../assets/images/blogs/image_blogpage1.png",
       // image: "images/blogs/image_blogPage1.jpg",
       content: "To maximize your digital marketing efforts, focus on integrating end-to-end digital marketing strategies, impactful web development...",
       category: "Marketing",
@@ -62,5 +62,5 @@ export class BlogsComponent {
   blogcardClose() {
     this.isBlogCardOpen = false;
   }
-
+  faArrowLeft = faArrowLeft;
 }
