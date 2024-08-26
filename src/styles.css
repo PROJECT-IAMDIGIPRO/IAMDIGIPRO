@@ -3732,6 +3732,7 @@ textarea {
 @media screen and (max-width: 767px) {
     .content h1 {
         font-size: 40px;
+        padding-left: 0px;
     }
 }
 

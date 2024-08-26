@@ -414,6 +414,7 @@ if (dropDown && megaBox && desktopItems && mobileItems) {
   navigateToCard() {
     this.router.navigate([this.currentCard.link]);
   }
+  
 }
 
 

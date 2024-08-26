@@ -30,7 +30,7 @@ export class ConsultUsComponent implements AfterViewInit, OnInit {
     this.http.post<{ status: string }>(this.apiUrl, this.contactForm).subscribe(
       response => {
         if (response.status === 'contact saved successfully') {
-          alert('Thank you for your inquiry!');
+          alert('Thank you for your enquiry!');
           this.router.navigate(['/thank-you']);
         } else {
           alert(response.status || 'Submission failed');

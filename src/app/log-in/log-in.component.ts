@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
+// import { environment } from '../../environments/environment';
 
 @Component({
   selector: 'app-log-in',
@@ -14,30 +15,28 @@ export class LogInComponent {
 
   onLogin() {
     const url = `/Login/employees_login/${encodeURIComponent(this.loginObj.email)}/${encodeURIComponent(this.loginObj.password)}`;
-
-    this.http.post(url, {}).subscribe(
+    
+    this.http.post<{ status: string }>(url, {}).subscribe(
       (res: any) => {
-        alert("Login Success");
-        console.log('Response:', res);
+        if (res.status === 'Successfully Logged In') {
+          alert("Successfully Login");
+          console.log('Response:', res);
+        } else if (res.status === 'Invalid email or password') {
+          this.handleError('Invalid email or password.');
+        } else {
+          this.handleError('Login failed. Please check your credentials.');
+        }
       },
       (error) => {
-        if (error.status === 404) {
-          this.errorMessage = 'API endpoint not found. Please check the URL.';
-        } else if (error.status === 400) {
-          if (error.error === 'Invalid email') {
-            this.errorMessage = 'Wrong email address.';
-          } else if (error.error === 'Incorrect password') {
-            this.errorMessage = 'Wrong password.'; 
-          } else {
-            this.errorMessage = 'Login failed. Please check your credentials.';
-          }
-        } else {
-          this.errorMessage = 'An unexpected error occurred.';
-        }
-        alert(this.errorMessage);
+        this.handleError('An unexpected error occurred.');
         console.error('Error:', error);
       }
     );
+  }
+
+  private handleError(message: string) {
+    this.errorMessage = message;
+    alert(this.errorMessage);
   }
 }
 
