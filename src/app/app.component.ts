@@ -342,14 +342,14 @@ if (dropDown && megaBox && desktopItems && mobileItems) {
     },
     {
       id: 7,
-      title: "Content Development",
+      title: "Content Development & Marketing",
       desc: "Producing valuable content (blogs, videos, infographics) and promoting it to attract and engage a target audience.",
       photo: "assets/images/homeContent/Content-Development-&-Marketing.jpg",
       link: "/contentdevelopmenMarketing"
     },
     {
       id: 8,
-      title: "Lead generation",
+      title: "Lead generation - B2B & B2C",
       desc: "Identifying and cultivating potential customers for business-to-business (B2B) and business-to-consumer (B2C) services.",
       photo: "assets/images/homeContent/Lead-generation-B2B-&-B2C.jpg",
       link: "/leadgeneration"

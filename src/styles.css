@@ -1230,7 +1230,7 @@ textarea {
     }
     .services-ser11 h1{
         font-size: 21px;
-        margin-left: 6px;
+        margin-left: 20px;
         text-wrap: balance;
         text-align: center;
     }
@@ -2177,7 +2177,7 @@ textarea {
         /* Reduced gap further for smaller screens */
     }
     .arr-right {
-        margin-left: 70px !important;
+        margin-left: 60px !important;
         width: 50px !important;
         height: 30px !important;
     }
@@ -2845,7 +2845,7 @@ textarea {
 .para-1,
 .para-2 {
     color: grey;
-    font-size: 23px;
+    font-size: 22px;
 }
 
 .para-2 {
@@ -3065,10 +3065,6 @@ h1 {
 .hover-container:hover .label-1 {
     color: white;
 }
-
-.hover-container:hover .content h1 {
-    color: white;
-}
 .hover-container:hover .content h1 {
     color: white !important;
 }
@@ -3131,11 +3127,17 @@ h1 {
         margin-right: 1%;
         margin-left: 10%;
     }
+    .hover-container {
+        height: 90vh;
+    }
 }
 
 @media (max-width: 768px) {
     .about-us-values-para {
         font-size: 3vw;
+    }
+    .hover-container {
+        height: 70vh;
     }
 }
 
@@ -3143,6 +3145,9 @@ h1 {
     .about-us-values-para {
         margin-left: 1% !important;
         font-size: 6vw !important;
+    }
+    .hover-container {
+        height: 80vh;
     }
 }
 
@@ -8762,6 +8767,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 15px;
 }
 
 .scrolling-ad {
@@ -9355,7 +9361,7 @@ input[type="radio"]:checked + .star {
     font-weight: 600;
     margin-top: 30px;
 }
-@media screen and (min-width:375px) and (max-width:767px) {
+@media screen and (min-width:300px) and (max-width:767px) {
     .extra-content {
         margin-top: 0px;
         
@@ -9511,6 +9517,8 @@ input[type="radio"]:checked + .star {
 }
 .blogsPage-post-image img {
     width: 100%;
+    height: 300px;
+    border-radius: 20px;
 }
 .blogsPage-post-content {
     padding: 16px;
@@ -9599,6 +9607,7 @@ input[type="radio"]:checked + .star {
     width: 100%;
     height: auto;
     margin: 4px;
+    border-radius: 20px;
 }
 .blogsPage-image-container{
     display: flex;
@@ -9921,7 +9930,7 @@ input[type="radio"]:checked + .star {
 
 .enquiry-contact-form-container {
     background-color: #000000;
-    padding: 40px;
+    padding: 35px;
     border-radius: 20px;
     width: 100%;
     margin-bottom: 15px;

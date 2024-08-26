@@ -31,10 +31,13 @@
                 <form (ngSubmit)="onSubmit()">
                     
                     <div class="input-box">
-                        <input type="email" name="email" placeholder="Email" [(ngModel)]="user.email" required>
+                        <input type="email" name="email" placeholder="Email" [(ngModel)]="user.email" maxlength ="25" required>
                     </div>
                     <div class="input-box">
                         <input type="password" name="password" placeholder="Password" [(ngModel)]="user.password" required>
+                    </div>
+                    <div class="input-box">
+                        <input type="password" name="confirmPassword" placeholder="Confirm Password" [(ngModel)]="user.confirmPassword" required>
                     </div>
                     <div class="input-box">
                         <input type="submit" value="Signup">

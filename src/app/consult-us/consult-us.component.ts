@@ -27,10 +27,16 @@ export class ConsultUsComponent implements AfterViewInit, OnInit {
   }
 
   onSubmit() {
+
+    if (!this.contactForm.email || !this.contactForm.phonenumber || !this.contactForm.description || !this.contactForm.interested || !this.contactForm.username) {
+      alert('Please fill in all required details.');
+      return; 
+    }
+
     this.http.post<{ status: string }>(this.apiUrl, this.contactForm).subscribe(
       response => {
         if (response.status === 'contact saved successfully') {
-          alert('Thank you for your enquiry!');
+          alert('Thank you for your inquiry!');
           this.router.navigate(['/thank-you']);
         } else {
           alert(response.status || 'Submission failed');
