@@ -9,7 +9,7 @@ import { Router } from '@angular/router';
 })
 export class ConsultUsComponent implements AfterViewInit, OnInit {
 
-  // Define the form model
+  
   contactForm = {
     username: '',
     phonenumber: '',
@@ -18,34 +18,37 @@ export class ConsultUsComponent implements AfterViewInit, OnInit {
     interested: ''
   };
 
-  // API endpoint
   private apiUrl = 'http://3.208.6.7/contact/contactus';
 
   constructor(private http: HttpClient, private router: Router) {}
 
   ngOnInit(): void {
-    // Any initialization logic can be placed here
     console.log('ConsultUsComponent initialized');
   }
 
-  // Handle form submission
   onSubmit() {
-    this.http.post<any>(this.apiUrl, this.contactForm).subscribe({
-      next: (response) => {
-        if (response.status === 'success') {
+
+    if (!this.contactForm.email || !this.contactForm.phonenumber || !this.contactForm.description || !this.contactForm.interested || !this.contactForm.username) {
+      alert('Please fill in all required details.');
+      return; 
+    }
+
+    this.http.post<{ status: string }>(this.apiUrl, this.contactForm).subscribe(
+      response => {
+        if (response.status === 'contact saved successfully') {
           alert('Thank you for your inquiry!');
           this.router.navigate(['/thank-you']);
         } else {
-          alert('Submission failed: ' + response.message);
+          alert(response.status || 'Submission failed');
         }
       },
-      error: (error) => {
+      error => {
         console.error('Error during form submission:', error);
         alert('An error occurred. Please try again later.');
       }
-    });
+    );
   }
-
+  
   // Update selected services
   onServiceChange(event: any) {
     const value = event.target.value;

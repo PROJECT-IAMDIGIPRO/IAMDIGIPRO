@@ -73,8 +73,8 @@ nav .wrapper {
 }
 .nav-links li:hover .drop-menu,
 .nav-links li:hover .mega-box {
-    transition: all 0.3s ease;
-    top: 60px;
+    /* transition: all 0.3s ease; */
+    top: 70px;
     opacity: 1;
     visibility: visible;
 }
@@ -145,7 +145,12 @@ nav .wrapper {
     top: 10px;
 }
 
-
+/* .nav-links li:hover .drop-menu,
+.nav-links li:hover .mega-box {
+    top: 70px;
+    opacity: 1;
+    visibility: visible;
+} */
 @media screen and (min-width: 971px) and (max-width: 1200px){
     .wrapper {
         padding: 0px 30px; 
@@ -1225,7 +1230,7 @@ textarea {
     }
     .services-ser11 h1{
         font-size: 21px;
-        margin-left: 6px;
+        margin-left: 20px;
         text-wrap: balance;
         text-align: center;
     }
@@ -2025,14 +2030,14 @@ textarea {
 }
 
 .testimonials-details-container {
-    height: 450px;
+    height: 300px;
     margin: auto;
     position: relative;
     display: flex;
     place-items: center;
     overflow: hidden;
     scroll-behavior: smooth;
-    margin-top: -50px;
+    margin-top: 0px;
 }
 
 .testimonials-card-container {
@@ -2172,7 +2177,7 @@ textarea {
         /* Reduced gap further for smaller screens */
     }
     .arr-right {
-        margin-left: 70px !important;
+        margin-left: 60px !important;
         width: 50px !important;
         height: 30px !important;
     }
@@ -2227,6 +2232,7 @@ textarea {
     padding-left: 38px;
     margin-top: 20px;
 }
+
 
 .span {
     font-family: 'Droid Sans'  !important;
@@ -2730,7 +2736,12 @@ textarea {
     margin-right: 80px;
     color: white;
 }
-
+.footer-email p{
+    font-size: 19px;
+}
+.footer-email b{
+    font-size: 15px;
+}
 /* whatsapp icon */
 
 .wtsapp-icons i {
@@ -2834,7 +2845,7 @@ textarea {
 .para-1,
 .para-2 {
     color: grey;
-    font-size: 23px;
+    font-size: 22px;
 }
 
 .para-2 {
@@ -2911,6 +2922,9 @@ textarea {
 
     .small-heading {
         font-size: 1.5vw;
+    }
+    .services-ser22 h1{
+        margin-left: 0px;
     }
 }
 
@@ -3051,10 +3065,6 @@ h1 {
 .hover-container:hover .label-1 {
     color: white;
 }
-
-.hover-container:hover .content h1 {
-    color: white;
-}
 .hover-container:hover .content h1 {
     color: white !important;
 }
@@ -3117,11 +3127,17 @@ h1 {
         margin-right: 1%;
         margin-left: 10%;
     }
+    .hover-container {
+        height: 90vh;
+    }
 }
 
 @media (max-width: 768px) {
     .about-us-values-para {
         font-size: 3vw;
+    }
+    .hover-container {
+        height: 70vh;
     }
 }
 
@@ -3129,6 +3145,9 @@ h1 {
     .about-us-values-para {
         margin-left: 1% !important;
         font-size: 6vw !important;
+    }
+    .hover-container {
+        height: 80vh;
     }
 }
 
@@ -3240,7 +3259,7 @@ margin: 0 10%;
 
 .left-side p {
     font-family: 'Droid Sans'  !important;
-    font-size: 3vw;
+    font-size: 2.5vw;
     color: #222222;
     margin-left: -110px;
     margin-bottom: 0px;
@@ -3718,6 +3737,7 @@ textarea {
 @media screen and (max-width: 767px) {
     .content h1 {
         font-size: 40px;
+        padding-left: 0px;
     }
 }
 
@@ -6018,7 +6038,17 @@ body {
     height: 400px;
     margin-top: 10px;
 }
+.box-image {
+    width: 100%;
+    height: 69%; /* Adjust this value as needed */
+    overflow: hidden;
+}
 
+.box-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the area */
+}
 .box-content {
     position: absolute;
     bottom: 0;
@@ -6121,7 +6151,7 @@ body {
     padding-right: 50px;
 }
 .left-section {
-    margin-left: 10px;
+    margin-left: 0px;
 }
 .right-form {
     width: auto;
@@ -6311,7 +6341,7 @@ body {
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
         border-radius: 17px;
         /* END COLORS*/
-        width: 100%;
+        width: 94%;
         max-width: 1000px;
         margin-top: 10px;
         display: flex;
@@ -8737,6 +8767,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 15px;
 }
 
 .scrolling-ad {
@@ -8968,7 +8999,7 @@ body {
         position: relative;
         /* COLORS */
         /* END COLORS*/
-        width: 100%;
+        width: 90%;
         /* top: 200%; */
         left: 50%;
         transform: translateX(-50%);
@@ -8999,7 +9030,7 @@ body {
     }
 @media (max-width: 767px) {
     .orange-form-cnt {
-        width: 100%;
+        width: 90%;
         top: 20%;
         left: 50%;
         transform: translateX(-50%);
@@ -9013,6 +9044,16 @@ body {
         order: 1;
         min-width: 41%;
     } */
+}
+@media (max-width: 465px) {
+    .orange-form-cnt {
+        width: 95%;
+        top: 20%;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        justify-content: flex-start;
+    }
 }
 /* .label-cnt {
     color: white;
@@ -9320,7 +9361,7 @@ input[type="radio"]:checked + .star {
     font-weight: 600;
     margin-top: 30px;
 }
-@media screen and (min-width:375px) and (max-width:767px) {
+@media screen and (min-width:300px) and (max-width:767px) {
     .extra-content {
         margin-top: 0px;
         
@@ -9391,7 +9432,7 @@ input[type="radio"]:checked + .star {
 .blogs-frontpage-card1 {
     background-color: #000;
     text-align: center;
-    padding: 55px;
+    padding: 85px;
     border-radius: 0 0 50px 50px;
     width: 100%;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -9476,6 +9517,8 @@ input[type="radio"]:checked + .star {
 }
 .blogsPage-post-image img {
     width: 100%;
+    height: 300px;
+    border-radius: 20px;
 }
 .blogsPage-post-content {
     padding: 16px;
@@ -9520,9 +9563,16 @@ input[type="radio"]:checked + .star {
     justify-content: center;
     display: flex;
 }
+.backto-blogs{
+    text-align: left;
+}
 .blogsPage-header1 button{
+    padding: 15px;
+    margin: 10px;
+    background-color: #f66136;
+    color: #f5f2f4;
     border: none;
-    background-color: transparent;
+    border-radius: 5px;
 }
 .blogsPage-header1 i{
     margin-top: 35px;
@@ -9533,6 +9583,9 @@ input[type="radio"]:checked + .star {
 }
 .blogsPage-header1 p{
     font-size: 25px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
 }
 .blogsPage-blog1{
     font-family: 'Droid Sans'  !important;
@@ -9554,6 +9607,7 @@ input[type="radio"]:checked + .star {
     width: 100%;
     height: auto;
     margin: 4px;
+    border-radius: 20px;
 }
 .blogsPage-image-container{
     display: flex;
@@ -9863,6 +9917,9 @@ input[type="radio"]:checked + .star {
         gap: 20px; 
         flex-wrap: wrap;
     }
+    .cnt-btn {
+        font-size: 1.0rem;
+      }
 }
 .enquiry-contact-section {
     display: flex;
@@ -9873,7 +9930,7 @@ input[type="radio"]:checked + .star {
 
 .enquiry-contact-form-container {
     background-color: #000000;
-    padding: 40px;
+    padding: 35px;
     border-radius: 20px;
     width: 100%;
     margin-bottom: 15px;
@@ -9953,14 +10010,14 @@ input[type="radio"]:checked + .star {
     background-color: #e64a19;
 }
   .cnt-btn {
-    font-size: 1.0rem;
+    font-size: 1.5rem;
     font-weight: 600;
     font-family: sans-serif;
     border: none;
     background-image: linear-gradient(90deg,  white 0%, orangered 51%, white 100%);
     color: black;
     /* text-transform: uppercase; */
-    padding: 0.5em 5em;
+    padding: 0.5em 0em;
     transition: 0.3s;
     cursor: pointer;
   }
