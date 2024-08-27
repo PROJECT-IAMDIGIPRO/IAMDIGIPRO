@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Router } from '@angular/router';
 
+
 @Component({
   selector: 'app-sign-up',
   templateUrl: './sign-up.component.html',
@@ -10,19 +11,30 @@ import { Router } from '@angular/router';
 export class SignUpComponent {
   user = {
     email: '',
-    password: ''
+    password: '',
+    confirmPassword: ''
   };
 
-  private apiUrl = '/Login/employees_signup';
+  private apiUrl = 'http://3.208.6.7/User/userSignup';
+ 
   constructor(private http: HttpClient, private router: Router) {}
 
   onSubmit() {
-    this.http.post<{ status: string }>(this.apiUrl, this.user).subscribe(
+
+    if (!this.user.email || !this.user.password) {
+      alert('Please fill in all required details.');
+      return; 
+    }
+    
+    this.http.post<{ status: string, message: string }>(this.apiUrl, this.user).subscribe(
       response => {
-        if (response.status === 'successfully signup') {
+        if (response.status === 'success') {
+          alert('user signup successful!');
           this.router.navigate(['/login']);
+        } else if (response.status === 'failure') {
+          alert(response.message);
         } else {
-          alert(response.status);
+          alert('Signup failed. Please try again.');
         }
       },
       error => {

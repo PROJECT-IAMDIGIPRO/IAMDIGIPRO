@@ -303,6 +303,7 @@ font-family: poppins;
 
 .faculty-container h1{
 font-size: 1.6rem;
+margin-left: -150px;
 }
 .faculty-container p{
 font-size: 1.2rem;
@@ -342,7 +343,13 @@ color: black;
 .faculty-item{
 display: flex;
 }
-
+@media (max-width: 1200px) {
+  .faculty-container h1{
+    font-size: 1.1rem;
+    margin-left: 0px;
+  }
+  
+}
 @media (max-width: 767px) {
 #facultySection {
   width: 100%;
@@ -350,6 +357,7 @@ display: flex;
 .faculty-container h1{
   font-size: 1.1rem;
   padding-top: 10px;
+  margin-left: 0px;
 }
 .faculty-container p{
   font-size: 1rem;
@@ -499,7 +507,7 @@ overflow: hidden;
 }
 .course-header {
 position: relative;
-background-image: url('https://res.cloudinary.com/dwkkhhr8a/image/upload/v1724418587/DM-removebg-preview_1_zos17b.png');
+background-image: url('https://img.freepik.com/premium-photo/businessman-sketch-drawn-against-white-background-concept-hi-tech-innovation-business-production-mixed-media_641298-13239.jpg?ga=GA1.1.237876679.1680103382&semt=ais_hybrid');
 background-size: cover;
 background-position: center;
 background-repeat: no-repeat;
@@ -942,7 +950,7 @@ margin-right: 3vw;
     width: 70px;
     height: 40px;
     margin-top: -100px;
-    margin-left: 80px;
+    margin-left: 76px !important;
     margin-right: 20px;
   }
   }
@@ -1128,7 +1136,7 @@ border-radius: 30px;
 width: 50px;
 height: 30px;
 margin-top: -100px;
-margin-left: 68px;
+margin-left: 70px;
 }
 }
 /* job assistance section */

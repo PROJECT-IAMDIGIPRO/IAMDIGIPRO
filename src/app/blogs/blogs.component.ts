@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-
+import { faArrowLeft } from '@fortawesome/free-solid-svg-icons';
 @Component({
   selector: 'app-blogs',
   templateUrl: './blogs.component.html',
@@ -11,7 +11,7 @@ export class BlogsComponent {
   posts = [
     {
       title: "How to Maximize Your Digital Marketing Efforts",
-      image: "../assets/images/blogs/image_blogPage1.jpg",
+      image: "../assets/images/blogs/image_blogPage1.avif",
       // image: "images/blogs/image_blogPage1.jpg",
       content: "To maximize your digital marketing efforts, focus on integrating end-to-end digital marketing strategies, impactful web development...",
       category: "Marketing",
@@ -19,35 +19,35 @@ export class BlogsComponent {
     },
     {
       title: "Create a User-Centric Website with iamdigipro",
-      image: "../assets/images/blogs/image_blogPage2.jpg",
+      image: "../assets/images/blogs/image_blogPage2.avif",
       content: "At iamdigipro, we specialize in designing user-centric websites that captivate and engage. Our expert team focuses on intuitive navigation...",
       category: "Design",
       date: "24 June 2024"
     },
     {
       title: "Top Web Development Trends in 2024",
-      image: "../assets/images/blogs/image_blogPage3.jpg",
+      image: "../assets/images/blogs/image_blogPage3.avif",
       content: "Stay ahead in 2024 with the latest web development trends. Embrace AI-driven solutions, progressive web apps (PWAs), and enhanced cybersecurity...",
       category: "Development",
       date: "24 June 2024"
     },
     {
       title: "Enhancing User Experience with Intuitive UI",
-      image: "../assets/images/blogs/image_blogPage4.jpg",
+      image: "../assets/images/blogs/image_blogPage4.avif",
       content: "Boost user satisfaction with iamdigipro’s intuitive UI designs. Our approach focuses on simplicity, accessibility, and seamless...",
       category: "Design",
       date: "24 June 2024"
     },
     {
       title: "How to Dominate Search Engines with Effective SEO Techniques",
-      image: "../assets/images/blogs/image_blogPage5.jpg",
+      image: "../assets/images/blogs/image_blogPage5.avif",
       content: "Elevate your online visibility with iamdigipro’s expert SEO techniques. Optimize your content with relevant...",
       category: "Marketing",
       date: "24 June 2024"
     },
     {
       title: "How to Measure and Improve Your Digital Marketing ROI",
-      image: "../assets/images/blogs/image_blogPage6.jpg",
+      image: "../assets/images/blogs/image_blogPage6.avif",
       content: "Maximize your returns with iamdigipro’s strategic approach to digital marketing. Track key performance indicators...",
       category: "Marketing",
       date: "24 June 2024"
@@ -62,5 +62,5 @@ export class BlogsComponent {
   blogcardClose() {
     this.isBlogCardOpen = false;
   }
-
+  faArrowLeft = faArrowLeft;
 }
