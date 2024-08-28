@@ -35,7 +35,7 @@ export class ContactFormComponent implements AfterViewInit, OnInit {
 
     this.http.post<{ status: string }>(this.apiUrl, this.contactForm).subscribe(
       response => {
-        if (response.status === 'contact saved successfully') {
+        if (response.status === 'Thank you for your inquiry!') {
           alert('Thank you for your inquiry!');
           this.router.navigate(['/thank-you']);
         } else {

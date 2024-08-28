@@ -80,7 +80,7 @@
                         <div class="mega-box">
                             <div class="content" style="background-color: black;">
                                 <div class="row">
-                                    <img src="../assets/images/flowChart1.png" alt="" style="width: 100%; height: 100%;" />
+                                    <img src="../assets/images/flowChart1.jpg" alt="" style="width: 100%; height: 100%;" />
                                 </div>
                                 <div class="row">
                                     <ul class="mega-links">
@@ -852,7 +852,7 @@
                         </div>
                     </button>
                 </div>
-                <a id="goTop" (click)="scrollToTop()" class="go-top"><fa-icon [icon]="faArrowUp"></fa-icon></a>
+                <a id="goTop" (click)="scrollToTop()" class="go-top" [ngClass]="{'show': showGoTop}"><fa-icon [icon]="faArrowUp"></fa-icon></a>
             </div>
             <div class="footer-bottom">
                 <div class="copyright">
@@ -877,5 +877,7 @@
                 </div>
             </div>
         </footer>
+        <app-cookies-popup></app-cookies-popup>
+       
     </body>
 </html>

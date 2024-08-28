@@ -66,47 +66,11 @@
                     </div>
                     <div class="buttons">
                         <!-- <button class="download-btn"><b>Download Pdf</b></button> -->
-                        <button class="download-btn" id="downloadPdfButton" (click)="downloadImage()"><b>Download Pdf</b></button>
+                        <button class="download-btn" (click)="openModal()">Download Pdf</button>
+                        <!-- <app-contact-form-popup *ngIf="showModal" (close)="closeModal()"></app-contact-form-popup> -->
                         <button class="apply-btn" (click)="openModal()">Apply now</button>
                         <app-contact-form-popup *ngIf="showModal" (close)="closeModal()"></app-contact-form-popup> 
                         
-                        
-                        <!-- Pop-up Container -->
-                        <!-- <div class="pop-up" *ngIf="showContactForm">
-                          <div class="pop-up-content">
-                            
-                            <button class="close-button" (click)="toggleContactForm()">X</button>
-                        
-                           
-                            <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
-                                <form class="enquiry-contact-form">
-                                    <label for="name">IAM</label>
-                                    <input type="text" id="name" name="name" placeholder="John">
-                        
-                                    <label for="phone">Phone number</label>
-                                    <input type="text" id="phone" name="phone" placeholder="">
-                        
-                                    <label for="email">Email</label>
-                                    <input type="email" id="email" name="email" placeholder="iam@gmail.com">
-                        
-                                    <label for="project">Tell us a little about the project...</label>
-                                    <textarea id="project" name="project"></textarea>
-                        
-                                    <label for="services">How can we help?</label>
-                                    <div class="enquiry-checkbox-group">
-                                        <label><input type="checkbox" name="services" value="Digital Marketing"> Digital Marketing</label>
-                                        <label><input type="checkbox" name="services" value="Web Development"> Web Development</label>
-                                        <label><input type="checkbox" name="services" value="Graphic Design"> Graphic Design</label>
-                                        <label><input type="checkbox" name="services" value="Consulting"> Consulting</label>
-                                        <label><input type="checkbox" name="services" value="Influencer Marketing"> Influencer Marketing</label>
-                                        <label><input type="checkbox" name="services" value="Other"> Other</label>
-                                    </div>
-                                    <button class="cnt-btn">Let's get started!</button>
-                                </form>
-                            </form>
-                          </div>
-                        </div>
-                         -->
                     </div>
                     <div class="knowmore-bottom-contaner">
                         <div class="arrow">

@@ -1,0 +1,101 @@
+.popup-wrapper {
+    position: fixed;
+    bottom: 50px; /* Distance from the bottom edge */
+    right: 50px; /* Distance from the right edge */
+    display: flex;
+    align-items: flex-end; /* Align items to the bottom */
+    justify-content: flex-end; /* Align items to the right */
+    z-index: 1000;
+  }
+  
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+    z-index: 999; /* Behind the popup but in front of everything else */
+  }
+  
+  .popup-content {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 400px;
+    width: 100%;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 1000; /* Above the overlay */
+  }
+  
+  header {
+    display: flex;
+    align-items: center;
+    column-gap: 15px;
+  }
+  
+  header i {
+    color: orangered;
+    font-size: 32px;
+  }
+  
+  header h2 {
+    color: orangered;
+    font-weight: 500;
+  }
+  
+  .data {
+    margin-top: 10px;
+  }
+  
+  .data p {
+    color: #333;
+    font-size: 16px;
+  }
+  
+  .data p a {
+    color: #4070f4;
+    text-decoration: none;
+  }
+  
+  .data p a:hover {
+    text-decoration: underline;
+  }
+  
+  .buttons {
+    margin-top: 16px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .button {
+    border: none;
+    color: #fff;
+    padding: 8px 20px;
+    border-radius: 4px;
+    background: orangered;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.2s ease;
+  }
+  
+  #acceptBtn {
+    background-color: orangered;
+  }
+  
+  #acceptBtn:hover {
+    background-color: white;
+    color: orangered;
+    border:1px solid orangered;
+  }
+  
+  #declineBtn {
+    background-color: orangered;
+  }
+  
+  #declineBtn:hover {
+    background-color: white;
+    color: orangered;
+    border:1px solid orangered;
+  }

@@ -1,0 +1,19 @@
+<link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet" />
+
+<div class="popup-wrapper" *ngIf="showDialog">
+    <div class="overlay" (click)="handleDecline()"></div>
+    <div class="popup-content">
+      <header>
+        <i class="bx bx-cookie"></i>
+        <h2>Cookies Policy</h2>
+      </header>
+      <div class="data">
+        <p>By using IAMDIGIPO, you agree to our use of cookies to enhance your experience and improve our digital marketing services.
+          <br><a href="#">Read more...</a></p>
+      </div>
+      <div class="buttons">
+        <button class="button" id="acceptBtn" (click)="handleAccept()">Accept</button>
+        <button class="button" id="declineBtn" (click)="handleDecline()">Decline</button>
+      </div>
+    </div>
+  </div>
