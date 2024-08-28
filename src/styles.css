@@ -70,6 +70,7 @@ nav .wrapper {
     opacity: 0;
     visibility: hidden;
     box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+    margin-top: -13px;
 }
 .nav-links li:hover .drop-menu,
 .nav-links li:hover .mega-box {
@@ -101,6 +102,7 @@ nav .wrapper {
     width: 100%;
     justify-content: space-between;
     box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+    margin-top: -13px;
 }
 .mega-box .content .row {
     width: calc(25% - 30px);
@@ -6191,20 +6193,18 @@ body {
     margin-top: 20px; /* Removed padding for a clean look */
 }
 
-.right-section {
+/* .right-section {
     background: black;
 	border: 2px solid #FFFFFF;
 	box-sizing: border-box;
 	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 	border-radius: 17px;
-	/* END COLORS*/
 	margin: auto;
 	display: flex;
-	/* justify-content: flex-start; */
 	padding-top: 3rem;
 	padding-right: 3rem;
 	padding-bottom: 3rem;
-	padding-left: 3rem;}
+	padding-left: 3rem;} */
 
 .modal-form {
     display: flex;
@@ -6334,13 +6334,12 @@ body {
     .form-group {
         margin-left: 0;
     }
-    .right-section {
+    /* .right-section {
         background: black;
         border: 2px solid #FFFFFF;
         box-sizing: border-box;
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
         border-radius: 17px;
-        /* END COLORS*/
         width: 94%;
         max-width: 1000px;
         margin-top: 10px;
@@ -6351,7 +6350,7 @@ body {
         padding-bottom: 3rem;
         padding-left: 1rem;
     
-      }
+      } */
 }
 
 #social-icons-list {
@@ -6636,7 +6635,7 @@ body {
     font-weight: 500;
     background-color: lightgrey;
     border-radius: 10px;
-    margin: 30px 10px;
+    margin: 10px 10px;
     padding: 30px 20px;
     text-align: center;
     display: flex;

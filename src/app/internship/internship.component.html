@@ -41,7 +41,8 @@
           Gain hands-on experience through a three-month internship, with a <br/> <span class="span-par">performance-based stipend of 5,999 Rs/-</span>  awarded at the end.
       </p>
       <div class="d-flex justify-content-center mt-5">
-        <button class="app-btn">Apply now</button>
+        <button class="app-btn" (click)="openModal()">Apply now</button>
+        <app-contact-form-popup *ngIf="showModal" (close)="closeModal()"></app-contact-form-popup>
     </div>
   </div><br>
     
