@@ -272,7 +272,7 @@ nav .wrapper {
     .mega-box .content {
         box-shadow: none;
         flex-direction: column;
-        padding: 0px 0px 0 20px;
+        padding: 20px 0px 0 20px;
     }
     .mega-box .content .row {
         width: 100%;
@@ -1220,7 +1220,7 @@ textarea {
     }
     .services-ser h1{
         font-size: 26px;
-        margin-left: 6px;
+        margin-left: -13px;
         text-wrap: balance;
         text-align: center;
     }
@@ -6415,15 +6415,29 @@ body {
 @media (max-width: 768px) {
     .values-list {
         display: flex;
-        overflow-x: auto;
+        overflow-x: scroll;
         white-space: nowrap;
     }
+    
+.values-list::-webkit-scrollbar-thumb {
+    background-image: 
+          linear-gradient(to right, rgb(226, 77, 17), rgb(207, 140, 51));
+  }
+  .values-list::-webkit-scrollbar {
+    scrollbar-width: thin;
+  }
+  .values-list::-webkit-scrollbar-track {
+    background-color: #9e9e9eb2;
+  }
     .values-list div {
         display: inline-block;
         flex: 0 0 auto;
-        max-width: 250px;
+        max-width: 150px;
         margin-right: 10px;
         margin-top: 18px;
+    }
+    .values-list div h2{
+        font-size: 20px;
     }
 }
 
@@ -6705,7 +6719,7 @@ body {
 
     .detail h3 {
         margin: 0 0 5px 0;
-        font-size: 10px;
+        font-size: 11px;
         color: #414040;
     }
 
@@ -7322,16 +7336,16 @@ body {
 
 @media (max-width: 480px) {
     .orange-cir {
-        width: 30vw;
-        height: 30vw;
+        width: 45vw;
+        height: 45vw;
     }
 
     .pra-head {
-        font-size: 2.3vw;
+        font-size: 2.0vw;
     }
 
     .rev-par {
-        font-size: 2.3vw;
+        font-size: 2.0vw;
     }
 }
 
@@ -7703,7 +7717,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: -60px;
+    margin-bottom: -40px;
 }
 
 @media (max-width: 800px) {

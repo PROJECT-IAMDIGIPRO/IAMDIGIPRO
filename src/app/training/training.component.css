@@ -216,6 +216,7 @@ background-color:orangered;
 color: white;
 border: none;
 padding-bottom: 10px;
+height: 55px;
 }
 
 ul {
@@ -266,7 +267,7 @@ margin-top: 80px;
 }
 
 .buttons {
-  justify-content: flex-start; /* Adjust button alignment */
+  justify-content: center; /* Adjust button alignment */
   padding-bottom: 35px;
 }
 
@@ -695,6 +696,7 @@ display: none;
 @media (max-width: 768px) {
 .benef-con {
     flex-wrap: nowrap;
+    justify-content: flex-start;
 }
 
 .orange-cir {
@@ -713,12 +715,13 @@ display: none;
 
 @media (max-width: 480px) {
 .orange-cir {
-    width: 30vw;
-    height: 30vw;
+    width: 45vw;
+    height: 45vw;
 }
 
 .pra-head {
     font-size: 2.3vw;
+    /* margin-bottom: 0px; */
 }
 
 .rev-par {
