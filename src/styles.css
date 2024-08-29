@@ -306,7 +306,7 @@ nav input {
 }
 /* ================================= except nav bar ========================================= */
 body {
-    background-color: #f5f2f4;
+    background-color: #f5f2f4 !important;
     font-family: 'Droid Sans'  !important;
     width: auto;
     margin-top: 50px;
@@ -1220,7 +1220,7 @@ textarea {
     }
     .services-ser h1{
         font-size: 26px;
-        margin-left: -13px;
+        margin-left: 6px;
         text-wrap: balance;
         text-align: center;
     }
@@ -2950,7 +2950,7 @@ textarea {
 
     .paragraph-1 {
         font-size: 3vw;
-        margin-left: 2%;
+        margin-left: 5%;
         margin-top: 0;
     }
 
@@ -3005,12 +3005,13 @@ textarea {
 }
 
 .hover-container {
-    height: 100vh;
+    height: 40vh;
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
     overflow: hidden;
+    margin-bottom: -40px;
 }
 
 .background-circle {
@@ -3138,7 +3139,7 @@ h1 {
         margin-left: 10%;
     }
     .hover-container {
-        height: 90vh;
+        height: 70vh;
     }
 }
 
@@ -3147,7 +3148,8 @@ h1 {
         font-size: 3vw;
     }
     .hover-container {
-        height: 70vh;
+        height: 40vh;
+        margin-bottom: -40px;
     }
 }
 
@@ -3157,7 +3159,8 @@ h1 {
         font-size: 6vw !important;
     }
     .hover-container {
-        height: 80vh;
+        height: 50vh;
+        margin-bottom: -40px;
     }
 }
 
@@ -5412,13 +5415,6 @@ textarea {
     margin-top: 10px;
 }
 
-body {
-    background-color: #f5f2f4;
-    font-family: 'Droid Sans'  !important;
-    margin-top: 50px;
-    width: auto;
-}
-
 .logo h3 {
     color: #000000;
     padding: 0px;
@@ -6124,7 +6120,7 @@ body {
     }
 
     .box-content h3 {
-        font-size: 5vw;
+        font-size: 4vw;
     }
 
     .box-content p {
@@ -6144,7 +6140,7 @@ body {
     }
 
     .box-content h3 {
-        font-size: 7vw;
+        font-size: 6.5vw;
     }
 
     .box-content p {
@@ -6161,7 +6157,7 @@ body {
     width: auto;
     border-radius: 10px;
     overflow: hidden;
-    padding-right: 50px;
+    padding-right: 0px;
 }
 .left-section {
     margin-left: 0px;
@@ -6200,22 +6196,13 @@ body {
 .left-section .map-image {
     border-radius: 10px; /* Adjusted to 10px for better appearance */
     width: 100%; /* Full width of the parent container */
-    height: 300px; /* Increased height for better visibility */
+    height: 250px; /* Increased height for better visibility */
     margin-top: 20px; /* Removed padding for a clean look */
 }
 
-/* .right-section {
-    background: black;
-	border: 2px solid #FFFFFF;
-	box-sizing: border-box;
-	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-	border-radius: 17px;
-	margin: auto;
-	display: flex;
-	padding-top: 3rem;
-	padding-right: 3rem;
-	padding-bottom: 3rem;
-	padding-left: 3rem;} */
+.right-section {
+    margin-top: 0px;
+   }
 
 .modal-form {
     display: flex;
@@ -6304,11 +6291,13 @@ body {
     .main-container {
         flex-direction: column;
         padding-right: 0px;
+        margin-bottom: -50px;
     }
 
     .left-section,
     .right-section {
         padding: 4vw;
+        margin-top: 0px;
     }
 
     .left-section h2 {
@@ -6368,6 +6357,7 @@ body {
     padding: 0px 0;
     border-radius: 25px;
     overflow: visible;
+    margin-top: -30px;
 }
 .values-list {
     display: grid;
@@ -6417,6 +6407,7 @@ body {
         display: flex;
         overflow-x: scroll;
         white-space: nowrap;
+        margin-top: 5px;
     }
     
 .values-list::-webkit-scrollbar-thumb {
@@ -7628,7 +7619,7 @@ body {
         display: flex;
         gap: 20px;
         flex-wrap: nowrap;
-        justify-content: start;
+        justify-content: flex-start;
     }
 }
 
@@ -8788,11 +8779,11 @@ body {
     width: 100%;
     background: linear-gradient(120deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.4) 50%, rgba(0, 0, 0, 0) 100%);
     border-radius: 10px;
-    padding: 20px 0;
+    padding: 10px 0;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 15px;
+    margin-top: 30px;
 }
 
 .scrolling-ad {
@@ -8804,12 +8795,12 @@ body {
 
 .scrolling-ad span {
     display: inline-block;
-    padding: 20px 50px;
+    padding: 5px 50px;
     margin: 0 10px;
     background: rgba(0, 0, 0, 0.5);
     border-radius: 8px;
     scroll-snap-align: center;
-    font-size: 45px;
+    font-size: 30px;
     font-weight: 600;
     color: white;
 }
@@ -8881,7 +8872,7 @@ body {
     }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
     .term-hed {
         font-size: 50px;
         /* margin-left: 45px; */
@@ -8894,6 +8885,9 @@ body {
     }
     .wel-par {
         font-size: 15px;
+    }
+    .scrolling-ad-container{
+        margin-bottom: 15px;
     }
 }
 @media (min-width: 900px) and (max-width: 1000px) {
@@ -10051,4 +10045,173 @@ input[type="radio"]:checked + .star {
   .cnt-btn:focus {
     background-image: linear-gradient(90deg,  orangered 0%, white 51%, orangered 100%);
     color: black;
+  }
+  .left-2 {
+    border: 1px solid black;
+    position: relative;
+    padding: 1rem;
+    background: url('https://c4.wallpaperflare.com/wallpaper/111/885/280/abstract-design-graphic-digital-wallpaper-preview.jpg') no-repeat center center/cover;
+    overflow: hidden;
+    border-radius: 1rem;
+    color: white;
+    z-index: 0; 
+    box-shadow: 0px 1px 7px 1px rgba(0, 0, 0, 0.2);
+  }
+  
+  .left-2::before {
+    content: "";
+    width: 1000px;
+    height: 2000px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    animation: rotating 2s infinite cubic-bezier(0.45, 0, 0.55, 1);
+    transform-origin: center;
+    background: conic-gradient(
+      orangered,
+      transparent,
+      transparent,
+      orangered,
+      transparent,
+      transparent,
+      orangered 
+    );
+    z-index: -1;
+    transform: translate(-500px, -500px) rotate(0deg);
+  }
+  
+  .left-2::after {
+    content: "";
+    width: calc(100% - 10px);
+    height: calc(100% - 10px);
+    position: absolute;
+    left: 5px;
+    top: 5px;
+    background: inherit;
+    border-radius: .8rem;
+    z-index: 0; 
+    box-shadow: 0 0 15px rgba(255, 69, 0, 0.6); 
+  }
+  
+  .left-2 h4, .left-2 p, .left-2 h5 {
+    position: relative;
+    z-index: 1;
+  }
+  
+  @keyframes rotating {
+    from {
+      transform: translate(-500px, -500px) rotate(0deg);
+    }
+    to {
+      transform: translate(-500px, -500px) rotate(360deg);
+    }
+  }
+  .left-2 {
+    border: 1px solid black;
+    position: relative;
+    padding: 1rem;
+    background: url('https://c4.wallpaperflare.com/wallpaper/111/885/280/abstract-design-graphic-digital-wallpaper-preview.jpg') no-repeat center center/cover;
+    overflow: hidden;
+    border-radius: 1rem;
+    color: white;
+    z-index: 0; 
+    box-shadow: 0px 1px 7px 1px rgba(0, 0, 0, 0.2);
+  }
+  
+  .left-2::before {
+    content: "";
+    width: 1000px;
+    height: 2000px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    animation: rotating 2s infinite cubic-bezier(0.45, 0, 0.55, 1);
+    transform-origin: center;
+    background: conic-gradient(
+      orangered,
+      transparent,
+      transparent,
+      orangered,
+      transparent,
+      transparent,
+      orangered 
+    );
+    z-index: -1;
+    transform: translate(-500px, -500px) rotate(0deg);
+  }
+  
+  .left-2::after {
+    content: "";
+    width: calc(100% - 10px);
+    height: calc(100% - 10px);
+    position: absolute;
+    left: 5px;
+    top: 5px;
+    background: inherit;
+    border-radius: .8rem;
+    z-index: 0; 
+    box-shadow: 0 0 15px rgba(255, 69, 0, 0.6); 
+  }
+  
+  .left-2 h4, .left-2 p, .left-2 h5 {
+    position: relative;
+    z-index: 1;
+  }
+  
+  @keyframes rotating {
+    from {
+      transform: translate(-500px, -500px) rotate(0deg);
+    }
+    to {
+      transform: translate(-500px, -500px) rotate(360deg);
+    }
+  }
+  .location-container {
+    /* background-color: #F66136;  */
+    background: url('https://th.bing.com/th/id/R.e2d1b45fbd1ebe09ec7e78b105652b1d?rik=XS73S9pWErlmdw&riu=http%3a%2f%2fgetwallpapers.com%2fwallpaper%2ffull%2ff%2fe%2fe%2f367521.jpg&ehk=Jn%2bFc%2bnnxJ1AwVISZ9p3IVLJTqsZASu8NMJWwOKrv%2fE%3d&risl=&pid=ImgRaw&r=0') no-repeat center center/cover;
+    color: white; /* White text color for contrast */
+    padding: 10px 20px; /* Padding for spacing */
+    border-radius: 12px; /* Smooth rounded corners */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    /* max-width: 620px; Maximum width for the container */
+    margin: 15px auto; /* Center align with margin */
+    font-family: 'Helvetica Neue', sans-serif; /* Modern sans-serif font */
+    text-align: center; /* Center align text */
+    transition: transform 0.3s; /* Animation effect */
+  }
+  
+  .location-container:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+  }
+  
+  .location-container h4 {
+    font-size: 2em; /* Heading size */
+    margin-bottom: 0px; /* Space below the heading */
+    text-transform: uppercase; /* Uppercase heading */
+    letter-spacing: 1.2px; /* Letter spacing */
+    border-bottom: 2px solid rgba(255, 255, 255, 0.6); /* Underline effect */
+    padding-bottom: 5px; /* Space below underline */
+  }
+  
+  .location-details {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0px; /* Space between details */
+  }
+  
+  .location-details p {
+    margin: 0;
+    font-size: 1.5em; /* Font size for details */
+    padding: 0 8px; /* Padding between icon and text */
+  }
+  
+  .location-icon {
+    font-size: 1.8em; /* Icon size */
+    margin-right: 8px; /* Space between icon and text */
+  }
+  
+  .location-details p:not(.location-icon) {
+    border-left: 2px solid rgba(255, 255, 255, 0.6); /* Vertical line between icon and text */
+    padding-left: 12px; /* Padding for text */
   }

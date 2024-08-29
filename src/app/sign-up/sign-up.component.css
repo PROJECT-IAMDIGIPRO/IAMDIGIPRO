@@ -205,6 +205,7 @@ body {
         width: 100%;
         max-width: 500px;
         height: auto;
+        margin-top: 90px;
     }
 
     .container .drop .content h2 {
@@ -237,7 +238,8 @@ body {
 
 @media (max-width: 480px) {
     .container .drop {
-        max-width: 300px;
+        /* max-width: 300px; */
+        width: 350px;
     }
 
     .container .drop .content {
