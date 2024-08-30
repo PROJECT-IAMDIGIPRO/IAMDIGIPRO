@@ -1,10 +1,3 @@
-body {
-  background-color:#F5F2F4;
-  font-family: poppins;
-  margin-top: 70px;
-  width: auto;
-}
-
 /* about section */
 
 .careers-top-container {
@@ -110,7 +103,7 @@ scrollbar-width: none;  /* Firefox */
 .about-left-content {
   flex: 1; /* Take remaining space */
   overflow-y: auto; /* Enable vertical scroll for left content */
-  width: 103%;
+  width: 100%;
 }
 }
 
@@ -202,7 +195,7 @@ margin-bottom: 20px;
 .apply-btn {
 padding: 12px 24px;
 border-radius: 50px;
-margin-right: 20px;
+margin-right: 0px;
 cursor: pointer;
 }
 
@@ -216,8 +209,19 @@ background-color:orangered;
 color: white;
 border: none;
 padding-bottom: 10px;
+height: 50px;
+margin-left: 10px;
 }
-
+.apply-btn2{
+background-color:orangered;
+color: white;
+border: none;
+padding-bottom: 10px;
+height: 50px;
+margin-left: 10px;
+padding: 0px 20px; 
+border-radius: 25px;
+}
 ul {
 padding: 0;
 color: #000;
@@ -266,16 +270,17 @@ margin-top: 80px;
 }
 
 .buttons {
-  justify-content: flex-start; /* Adjust button alignment */
-  padding-bottom: 35px;
+  justify-content: center; /* Adjust button alignment */
+  padding-bottom: 5px;
 }
 
 .download-btn,
 .apply-btn1 {
   margin-bottom: 10px; /* Adjust button spacing */
-  
-
 }
+.apply-btn2{
+  margin-top: 10px;
+ } 
 .detail h3 {
   margin: 0 0 5px 0;
   font-size: 10px;
@@ -488,7 +493,7 @@ font-size: 16px;
   margin: 25px;
   padding:20px 0px;
   position: none;
-  margin: 50px 0;
+  margin: 0px 0;
   
 }
 }
@@ -499,7 +504,7 @@ white-space: nowrap;
 }
 
 .course-box {
-margin-bottom: 40px;
+margin-bottom: 0px;
 background-color: #FFF;
 border-radius: 10px;
 box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -626,13 +631,13 @@ font-size: 16px;
 
 /* benefits section */
 #benefitsSection {
-margin-top: 2vw;
+margin-top: 0vw;
 }
 
 .benefits-cont {
 background-color: #F5F2F4;
 background-size: cover;
-padding: 20px 20px;
+padding: 20px 20px 0px 20px;
 text-align: center;
 }
 
@@ -695,6 +700,7 @@ display: none;
 @media (max-width: 768px) {
 .benef-con {
     flex-wrap: nowrap;
+    justify-content: flex-start;
 }
 
 .orange-cir {
@@ -713,12 +719,13 @@ display: none;
 
 @media (max-width: 480px) {
 .orange-cir {
-    width: 30vw;
-    height: 30vw;
+    width: 45vw;
+    height: 45vw;
 }
 
 .pra-head {
     font-size: 2.3vw;
+    /* margin-bottom: 0px; */
 }
 
 .rev-par {
@@ -797,7 +804,7 @@ align-items: center;
   display: block;
   background-color: #f5f2f4;
   width: 100%;
-  padding: 20px;
+  padding:  0px 20px;
 }
 
 .certification-support-content {
@@ -931,6 +938,7 @@ margin-right: 3vw;
 @media (max-width: 768px) {
 #feesSection {
   margin: 10px;
+  padding-top: 0px;
 }
 }
 
@@ -985,7 +993,7 @@ gap: 10px;
 flex-wrap: wrap;
 justify-content: center;
 padding: 20px;
-margin-top: 30px;
+margin-top: 0px;
 text-align: center;
 }
 
@@ -1007,6 +1015,7 @@ padding: 20px;
 overflow-x: auto;
 scroll-snap-type: x mandatory;
 -webkit-overflow-scrolling: touch;
+margin-bottom: -65px;
 }
 
 .arr-right-about {
@@ -1066,6 +1075,7 @@ margin-left: -250px;
   color: black;
   font-weight: 300;
   padding-top: 20px;
+  margin: 0px;
 }
 }
 
@@ -1214,7 +1224,8 @@ padding: 0;
 
 .case-studies-container img {
 width: 100vw;
-}.pop-up {
+}
+.pop-up {
   position: fixed;
   top: 55%;
   left: 50%;

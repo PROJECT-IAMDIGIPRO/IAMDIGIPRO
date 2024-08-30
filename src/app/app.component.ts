@@ -40,7 +40,7 @@ export class AppComponent implements OnInit {
   isPrivacyPolicyRoute = false;
   isTermsRoute = false;
   isCookiesRoute = false;
-
+  showGoTop: boolean = false;
   visibleSection = 1;
 
   faqs = [
@@ -71,7 +71,7 @@ export class AppComponent implements OnInit {
     }
   ];
   
-  faInstagram = faInstagram;
+faInstagram = faInstagram;
 faFacebook = faFacebook;
 faLinkedin = faLinkedin;
 faYoutube = faYoutube;
@@ -92,9 +92,15 @@ faStarHalfAlt = faStarHalfAlt;
       if (event instanceof NavigationEnd) {
         this.updateRouteFlags(event.url);
       }
+      window.addEventListener('scroll', this.onWindowScroll);
     });
   }
+ onWindowScroll = () => {
+    const scrollPosition = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
 
+    // If scroll is more than 100px, show the button, else hide it
+    this.showGoTop = scrollPosition > 700;
+}
   setMetaTags(): void {
     this.title.setTitle('IAM Digipro');
     // this.title.setTitle('IamDigiPro:Innovative Digital Marketing & Branding for Your Business/Hyderabad');

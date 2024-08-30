@@ -33,6 +33,8 @@ import { TermsComponent } from './terms/terms.component';
 import { PrivacyPolicyComponent } from './privacy-policy/privacy-policy.component';
 import { CookiesPolicyComponent } from './cookies-policy/cookies-policy.component';
 import { ContactFormComponent } from './contact-form/contact-form.component';
+import { ContactFormPopupComponent } from './contact-form-popup/contact-form-popup.component';
+import { CookiesPopupComponent } from './cookies-popup/cookies-popup.component';
 
 @NgModule({
   declarations: [
@@ -61,6 +63,8 @@ import { ContactFormComponent } from './contact-form/contact-form.component';
     PrivacyPolicyComponent,
     CookiesPolicyComponent,
     ContactFormComponent,
+    ContactFormPopupComponent,
+    CookiesPopupComponent,
     ],
   imports: [
     BrowserModule,
