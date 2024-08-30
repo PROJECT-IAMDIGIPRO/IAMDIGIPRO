@@ -2540,12 +2540,18 @@ textarea {
     font-size: 20px;
     font-weight: 500;
 }
-
-.faq-item:hover {
-    border: 2px solid #f66136;
-}
-
-.faq-question {
+.faq-item {
+    margin-bottom: 10px;
+    padding: 0px;
+    border-radius: 15px;
+    margin: 1rem 0;
+    font-size: 20px;
+    font-weight: 500;
+  }
+  
+  /* No need to add hover effects if you're using click-based toggle */
+  
+  .faq-question {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -2553,14 +2559,15 @@ textarea {
     padding: 15px;
     background-color: white;
     border-radius: 10px;
-}
-
-.faq-question.active {
+    transition: background-color 0.3s ease;
+  }
+  
+  .faq-question.active {
     background-color: #f66136;
     color: white;
-}
-
-.faq-answer {
+  }
+  
+  .faq-answer {
     display: none;
     padding: 15px;
     background-color: #f66136;
@@ -2569,17 +2576,23 @@ textarea {
     padding-bottom: 5px;
     padding-top: 0;
     font-size: 15px;
-}
-
-.toggle-btn {
+    transition: background-color 0.3s ease;
+  }
+  
+  .faq-answer.active {
+    display: block;
+    background-color: #f66136; /* Ensure the background is orange when active */
+  }
+  
+  .toggle-btn {
     background: transparent;
     border: none;
     font-size: 20px;
     cursor: pointer;
     color: #f66136;
-}
-
-.toggle-btn.active {
+  }
+  
+  .toggle-btn.active {
     color: white;
     border: 1px solid white;
     border-radius: 50px;
@@ -2589,9 +2602,9 @@ textarea {
     flex-direction: column;
     justify-content: center;
     padding-left: 8px;
-}
-
-.number-circle {
+  }
+  
+  .number-circle {
     border-radius: 50px;
     border: 1px solid #f66136;
     width: 25px;
@@ -2601,8 +2614,7 @@ textarea {
     display: flex;
     flex-direction: column;
     justify-content: center;
-}
-
+  }
 /* /footer/ */
 
 .go-top {

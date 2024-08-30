@@ -686,20 +686,29 @@
                   <!-- </div> -->
             </div>
             <!-- FAQs -->
-            <div class="faq-container mt-0 pt-0">
-                <div class="services-ser">
-                    <h1>Frequently Asked Questions</h1>
-                </div>
-                <!-- <h1>Frequently Asked Questions</h1> -->
-                <div *ngFor="let faq of faqs; let i = index" class="faq-item">
-                    <div class="faq-question" (click)="toggleFaq(i)">
-                        <p>{{ faq.isOpen ? faq.answer : faq.question }}</p>
-                        <div class="number-circle">
-                            <button class="toggle-btn">{{ faq.isOpen ? '-' : '+' }}</button>
-                        </div>
+            <div class="faq-container">
+                <h1>Frequently Asked Questions</h1>
+              
+                <div class="faq-item" *ngFor="let faq of faqs; let i = index">
+                  <div 
+                    class="faq-question" 
+                    [ngClass]="{'active': faq.isOpen}" 
+                    (click)="toggleFaq(i)">
+                    <span>{{ faq.question }}</span>
+                    <div class="number-circle">
+                      <button class="toggle-btn" [ngClass]="{'active': faq.isOpen}">
+                        {{ faq.isOpen ? '-' : '+' }}
+                      </button>
                     </div>
+                  </div>
+                  <div 
+                    class="faq-answer" 
+                    *ngIf="faq.isOpen" 
+                    [ngClass]="{'active': faq.isOpen}">
+                    <p>{{ faq.answer }}</p>
+                  </div>
                 </div>
-            </div>
+              </div>
         </div>
         <!-- Router outlet for changing content of SERVICES -->
         <div *ngIf="isSEORoute">
