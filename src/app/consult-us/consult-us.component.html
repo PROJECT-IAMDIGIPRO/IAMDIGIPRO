@@ -181,13 +181,30 @@
     <div class="left-section">
         <h5 style="font-weight: 500;">IAM Digipro and we are here to serve!</h5>
         <h5>How can we help you?</h5>
-        <h4 style="padding:15px 0px;">Our Location</h4>
-        <p style="font-size: medium;">India<br>
-            HUDA COLONY Chandanagar Hyderabad<br>
-        Mon – Fri: 9:30 AM – 6:00 PM<br>
-        (040) 66746684<br>
-        +91 93817 76396
-    </p>
+        <div class="location-container">
+            <h4>Our Location</h4>
+            <div class="location-details">
+              <p class="location-icon"><fa-icon [icon]="faMapMarkerAlt" title="Location"></fa-icon></p>
+              <p>
+                India<br>
+                HUDA COLONY, Chandanagar, Hyderabad
+              </p>
+            </div>
+            <div class="location-details">
+              <p class="location-icon"><fa-icon [icon]="faClock" title="Time"></fa-icon></p>
+              <p>
+                Mon – Fri: 9:30 AM – 6:00 PM
+              </p>
+            </div>
+            <div class="location-details">
+              <p class="location-icon"><fa-icon [icon]="faPhone" title="Phone"></fa-icon></p>
+              <p>
+                (040) 66746684<br>
+                +91 93817 76396
+              </p>
+            </div>
+          </div>
+    
         <!-- <p style="font-size: medium;">Email us at:<br>
         info@iamdigipro.com</p> -->
         <div class="map-image">
@@ -201,29 +218,7 @@
                 <!-- <form class="orange-form-cnt pt-8">
                     <div class="enquiry-contact-section">
                         <div class="enquiry-contact-form-container"> -->
-                            <form class="enquiry-contact-form" (ngSubmit)="onSubmit()">
-                                <label for="name">IAM</label>
-                                <input type="text" id="name" name="name" placeholder="John" [(ngModel)]="contactForm.username" required>
-                                <label for="phone">Phone number</label>
-                                <input type="text" id="phone" name="phone" placeholder="+91 9999900000" [(ngModel)]="contactForm.phonenumber">
-                    
-                                <label for="email">Email</label>
-                                <input type="email" id="email" name="email" placeholder="IAM@gmail.com" [(ngModel)]="contactForm.email">
-                    
-                                <label for="description">Tell us a little about the project...</label>
-                                <textarea id="description" name="description" [(ngModel)]="contactForm.description"></textarea>
-                    
-                                <label for="services">How can we help?</label>
-                                <div class="enquiry-checkbox-group">
-                                    <label><input type="checkbox" name="services" value="Digital Marketing" (change)="onServiceChange($event)"> Digital Marketing</label>
-                                    <label><input type="checkbox" name="services" value="Web Development" (change)="onServiceChange($event)"> Web Development</label>
-                                    <label><input type="checkbox" name="services" value="Graphic Design" (change)="onServiceChange($event)"> Graphic Design</label>
-                                    <label><input type="checkbox" name="services" value="Consulting" (change)="onServiceChange($event)"> Consulting</label>
-                                    <label><input type="checkbox" name="services" value="Influencer Marketing" (change)="onServiceChange($event)"> Influencer Marketing</label>
-                                    <label><input type="checkbox" name="services" value="Other" (change)="onServiceChange($event)"> Other</label>
-                                </div>
-                                <button class="cnt-btn">Let's get started!</button>
-                            </form>
+                            <app-contact-form></app-contact-form>
                         </div>
                     <!-- </div>
                 </form>
