@@ -1,4 +1,4 @@
-import { AfterViewInit, Component, OnDestroy, OnInit } from '@angular/core';
+import { AfterViewInit, Component, HostListener, OnDestroy, OnInit } from '@angular/core';
 import { NavigationEnd, Router } from '@angular/router';
 import { Meta, Title } from '@angular/platform-browser';
 import { faInstagram, faFacebook, faLinkedin, faYoutube, faPinterest, faThreads } from '@fortawesome/free-brands-svg-icons';
@@ -12,7 +12,34 @@ import { gsap } from 'gsap';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit {
+  isMenuVisible: boolean = false;
+  isMegaMenuVisible: boolean = false;
+  isMobile: boolean = false;
 
+
+  // Method to check the screen size
+  @HostListener('window:resize', ['$event'])
+  onResize(event: any) {
+    this.checkScreenSize();
+  }
+
+  checkScreenSize() {
+    this.isMobile = window.innerWidth <= 970;
+  }
+
+  toggleMenu() {
+    this.isMenuVisible = !this.isMenuVisible;
+    if (this.isMenuVisible) {
+      this.isMegaMenuVisible = false; // Close mega menu when dropdown is opened
+    }
+  }
+
+  toggleMegaMenu() {
+    this.isMegaMenuVisible = !this.isMegaMenuVisible;
+    if (this.isMegaMenuVisible) {
+      this.isMenuVisible = false; // Close dropdown when mega menu is opened
+    }
+  }
   isServiceRoute = false;
   isSEORoute = false;
   isSEMRoute = false;
@@ -204,6 +231,8 @@ faStarHalfAlt = faStarHalfAlt;
     const menuCheckbox = document.getElementById('menu-btn') as HTMLInputElement;
     if (menuCheckbox) {
       menuCheckbox.checked = false;
+      this.isMenuVisible = false;
+     this.isMegaMenuVisible = false;
     }
     const dropDown = document.querySelector('.drop-menu') as HTMLElement;
     if (dropDown) {
@@ -213,89 +242,13 @@ faStarHalfAlt = faStarHalfAlt;
     if (megaBox) {
       megaBox.style.display = 'none';
     }
-
-    // -------
-
-const desktopItems = document.querySelectorAll('.desktop-item'); // Assuming class 'desktop-item' is used for the desktop links
-const mobileItems = document.querySelectorAll('.mobile-item'); // Assuming class 'mobile-item' is used for the mobile links
-
-if (dropDown && megaBox && desktopItems && mobileItems) {
-  desktopItems.forEach(item => {
-    // Show the menu when mouse is over the desktop link
-    item.addEventListener('mouseover', (event) => {
-      const target = event.target as HTMLElement;
-
-      if (target.textContent?.trim() === 'Careers') {
-        dropDown.style.display = 'block';  // Show the dropdown when hovering over 'Careers'
-      } else if (target.textContent?.trim() === 'Services') {
-        megaBox.style.display = 'block';  // Show the megabox when hovering over 'Services'
-      }
-    });
-
-    // Hide the menu when mouse leaves the desktop link
-    item.addEventListener('mouseout', (event) => {
-      dropDown.style.display = 'none';  // Hide drop-menu
-      megaBox.style.display = 'none';  // Hide mega-box
-    });
-  });
-
-  // Optional: Ensure the dropdown and megabox stay open if hovered over
-  dropDown.addEventListener('mouseover', () => {
-    dropDown.style.display = 'block';
-  });
-
-  dropDown.addEventListener('mouseout', () => {
-    dropDown.style.display = 'none';
-  });
-
-  megaBox.addEventListener('mouseover', () => {
-    megaBox.style.display = 'block';
-  });
-
-  megaBox.addEventListener('mouseout', () => {
-    megaBox.style.display = 'none';
-  });
-
-  mobileItems.forEach(item => {
-    // Show the menu when mouse is over the mobile link
-    item.addEventListener('mouseover', (event) => {
-      const target = event.target as HTMLElement;
-
-      if (target.textContent?.trim() === 'Careers') {
-        dropDown.style.display = 'block';  // Show the dropdown when hovering over 'Careers'
-      } else if (target.textContent?.trim() === 'Services') {
-        megaBox.style.display = 'block';  // Show the megabox when hovering over 'Services'
-      }
-    });
-
-    // Hide the menu when mouse leaves the mobile link
-    item.addEventListener('mouseout', (event) => {
-      dropDown.style.display = 'none';  // Hide drop-menu
-      megaBox.style.display = 'none';  // Hide mega-box
-    });
-  });
-
-  // Optional: Ensure the dropdown and megabox stay open if hovered over
-  dropDown.addEventListener('mouseover', () => {
-    dropDown.style.display = 'block';
-  });
-
-  dropDown.addEventListener('mouseout', () => {
-    dropDown.style.display = 'none';
-  });
-
-  megaBox.addEventListener('mouseover', () => {
-    megaBox.style.display = 'block';
-  });
-
-  megaBox.addEventListener('mouseout', () => {
-    megaBox.style.display = 'none';
-  });
-}
   }
   
-  
-  
+  closeAllMenus() {
+    this.isMenuVisible = false;
+    this.isMegaMenuVisible = false;
+  }
+
   scrollToTop(): void {
     window.scrollTo({
       top: 0,

@@ -1,57 +1,183 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-</head>
-<body>
-    <div>
-        <img src="https://newlifecenteradc.org/wp-content/uploads/2021/07/job-opportunity.jpeg" class="home-content">
-    </div>
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+        <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet" />
+        <title>Job opportunity</title>
+    </head>
 
-    <div class="job-assistance-container" id="jobAssistanceSection">
-        <div class="knowmore-bottom-contaner">
-            <div class="arrow" style="padding-left: 5%;">
-                <img src="../assets/images/hand icon.png"  class="arr-right"/>
-                
+    <body>
+        <!-- header starts -->
+        <header class="main-header">
+            <div class="container">
+                <nav class="navbar navbar-expand-lg main-nav px-0">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainMenu" aria-controls="mainMenu" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="icon-bar icon-bar-1"></span>
+                        <span class="icon-bar icon-bar-2"></span>
+                        <span class="icon-bar icon-bar-3"></span>
+                    </button>
+                </nav>
             </div>
-            <div class="services-ser">
-                <h1>Job Assistance</h1>
-            </div>
-            <h1 class="job-heading">Job Assistance provided by IAM DIGIPRO</h1>
-            <p  class="job-description">At IAM DIGIPRO, we are committed to not only providing you with top-notch digital marketing education but also supporting your career growth every step of the way. Our comprehensive job assistance program is designed to help you seamlessly transition from student to professional.</p>
-            <div class="services d-flex flex-row justify-content-center">
-                  <div>Career Counseling</div>
-                  <div>Resume Building</div>
-                  <div>Interview Preparation</div>
-                  <div>Job Placement Support</div>
-                  <div>Networking Opportunities</div>
-                  <div>Continued Learning</div>
-              </div>
-        
-        <div class="d-flex justify-content-center">
-            <button class="app-btn" (click)="openModal()">Apply now</button>
-            <app-contact-form-popup *ngIf="showModal" (close)="closeModal()"></app-contact-form-popup>
+        </header>
+        <!-- header ends -->
+        <!-- section 2 -->
+        <div class="banner text-center">
+            <h1><span style="color: orangered; font-size: 1.7em;">1000+</span> Jobs on Jobsite</h1>
+            <p>
+                With verified, up-to-date job listings directly from employer websites,<br />
+                we create a premium experience for job seekers, employers,<br />
+                Quickly find and apply for the jobs you want
+            </p>
         </div>
-    </div>
-  </div><br><br><br>
 
-   <!--case studies-->
-   <div class="knowmore-bottom-contaner" style="margin-top: -35px;">
-    <div class="arrow">
-        <img src="../assets/images/hand icon.png"  class="arr-right"/>
-        
-    </div>
-    <div class="services-ser">
-        <h1>Case Studies</h1>
-    </div>
-    <div class="d-flex flex-row justify-content-center" style="margin-bottom: 20px;">
-       <div class="case-studies-container" style="padding-top: 4%;">
-          <img src="https://st2.depositphotos.com/2119479/7679/i/950/depositphotos_76796041-stock-photo-digital-marketing.jpg" style="width:100%">
-          <!-- <button class="explore-button">Explore <i class="fa-solid fa-arrow-right arr-right right"></i></button> -->
-       </div>
-    </div>
-</div>
+        <!-- search box -->
+        <div class="search-job text-center">
+            <input type="text" class="form-control" placeholder="Skills, Job Title, Designation" />
+            <input type="text" class="form-control" placeholder="Experience" />
+            <input type="button" class="btn btn-primary" value="Search" />
+        </div>
+        <!-- recent jobs -->
+        <section id="jobs">
+            <div class="container-jo">
+                <h5>RECENT JOB UPDATES</h5>
 
-    
+                <div class="company-details">
+                    <div class="job-update">
+                        <h4><strong> Senior Java Developer </strong></h4>
+                        <h6>IAM Digipro</h6>
+                        <i class="fa fa-briefcase"></i><span>1-2 years</span><br />
 
-   </body>
+                        <i class="fa fa-map-marker"></i><span class="location"> Hyderabad</span>
+                        <p><strong>Skills</strong> <i class="fa fa-angle-double-right"></i><small> Java</small><small>Spring boot</small><small> Mongo DB</small><small>Sql DB</small><small>Postman</small></p>
+                        <p class="description">
+                            <strong>Description</strong> <i class="fa fa-angle-double-right"></i> Works independently under limited supervision and applies knowledge of backend development, particularly in Java and Spring Boot. Possesses sufficient expertise to effectively address challenges and develop robust backend solutions. Experienced in working with various databases and proficient in using Postman for API testing. A second-level professional with a direct impact on project outcomes and results.
+                            <!-- <a href="#"> Read More</a> -->
+                        </p>
+                    </div>
+                    <div class="apply-btn-jp">
+                        <button type="button" class="btn btn-primary" target="_blank">Apply</button>
+                    </div>
+                </div>
+                <div class="company-details">
+                    <div class="job-update">
+                        <h4><strong> Senior 3D Designer & Animater </strong></h4>
+                        <h6>IAM Digipro</h6>
+                        <i class="fa fa-briefcase"></i><span> 2-4 years</span><br />
+
+                        <i class="fa fa-map-marker"></i><span class="location"> Hyderabad</span>
+                        <p><strong>Skills</strong> <i class="fa fa-angle-double-right"></i><small>Creativity</small><small>2D & 3D Rendering</small><small>Blender</small></p>
+                        <p class="description">
+                            <strong>Description</strong> <i class="fa fa-angle-double-right"></i> Works independently under limited supervision and applies knowledge of subject matter in Applications Development. Possess sufficient
+                            knowledge and skills to effectively deal with issues, challenges within field of specialization to develop simple applications solutions. Second level professional with direct impact on results and outcome.
+                            <!-- <a href="#"> Read More</a> -->
+                        </p>
+                    </div>
+                    <div class="apply-btn-jp">
+                        <button type="button" class="btn btn-primary" target="_blank">Apply</button>
+                    </div>
+                </div>
+                <div class="company-details">
+                    <div class="job-update">
+                        <h4><strong> Senior Graphical Designer </strong></h4>
+                        <h6>IAM Digipro</h6>
+                        <i class="fa fa-briefcase"></i><span>5-6 years</span><br />
+
+                        <i class="fa fa-map-marker"></i><span class="location"> Hyderabad</span>
+                        <p><strong>Skills</strong> <i class="fa fa-angle-double-right"></i><small>Photoshop</small><small>AfterEffects</small><small>Adobe illustrator</small><small>Premiere pro</small></p>
+                        <p class="description">
+                            <strong>Description</strong> <i class="fa fa-angle-double-right"></i> Works independently under limited supervision and applies knowledge of subject matter in Applications Development. Possess sufficient
+                            knowledge and skills to effectively deal with issues, challenges within field of specialization to develop simple applications solutions. Second level professional with direct impact on results and outcome.
+                            <!-- <a href="#"> Read More</a> -->
+                        </p>
+                    </div>
+                    <div class="apply-btn-jp">
+                        <button type="button" class="btn btn-primary" target="_blank">Apply</button>
+                    </div>
+                </div>
+                <div class="company-details">
+                    <div class="job-update">
+                        <h4><strong> Telecaller </strong></h4>
+                        <h6>IAM Digipro</h6>
+                        <i class="fa fa-briefcase"></i><span>1-2 years</span><br />
+
+                        <i class="fa fa-map-marker"></i><span class="location"> Hyderabad</span>
+                        <p><strong>Skills</strong> <i class="fa fa-angle-double-right"></i><small>Problem Solving</small><small>Active Listening</small><small>Multi Tasking</small><small>Communication</small></p>
+                        <p class="description">
+                            <strong>Description</strong> <i class="fa fa-angle-double-right"></i> Works independently under limited supervision and applies knowledge of subject matter in Applications Development. Possess sufficient
+                            knowledge and skills to effectively deal with issues, challenges within field of specialization to develop simple applications solutions. Second level professional with direct impact on results and outcome.
+                            <!-- <a href="#"> Read More</a> -->
+                        </p>
+                    </div>
+                    <div class="apply-btn-jp">
+                        <button type="button" class="btn btn-primary" target="_blank">Apply</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- site stats -->
+        <section id="site-stats">
+            <div class="container-jo text-center">
+                <h3>JOB ASSISTANCE</h3>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="stats-box">
+                                    <i class="fa fa-user-o"></i><span><small>10</small></span>
+                                    <p>Career Counseling</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="stats-box">
+                                    <i class="fa fa-slideshare"></i><span><small>15</small></span>
+                                    <p>Resume Building</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="stats-box">
+                                    <i class="fa fa-hand-peace-o"></i><span><small>10</small></span>
+                                    <p>Interview Preparation</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="stats-box">
+                                    <i class="fa fa-building"></i><span><small>20</small></span>
+                                    <p>Job Placement Support</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="stats-box">
+                                    <i class="fa fa-hand-peace-o"></i><span><small>10</small></span>
+                                    <p>Networking Opportunities</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="stats-box">
+                                    <i class="fa fa-building"></i><span><small>40</small></span>
+                                    <p>Continued Learning</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    </body>
 </html>
