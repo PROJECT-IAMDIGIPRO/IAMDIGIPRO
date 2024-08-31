@@ -28,19 +28,18 @@
         <!-- header ends -->
         <!-- section 2 -->
         <div class="banner text-center">
-            <h1><span style="color: orangered; font-size: 1.7em;">1000+</span> Jobs on Jobsite</h1>
-            <p>
-                With verified, up-to-date job listings directly from employer websites,<br />
-                we create a premium experience for job seekers, employers,<br />
-                Quickly find and apply for the jobs you want
+            <h1><span>Join Our Innovative Team at IAM Digipro</span></h1>
+            <p>Shape the future of digital marketing, design, and development <br/>
+                with us. Explore exciting career opportunities <br/>
+                 where your talent and creativity can thrive.
             </p>
         </div>
 
         <!-- search box -->
         <div class="search-job text-center">
-            <input type="text" class="form-control" placeholder="Skills, Job Title, Designation" />
-            <input type="text" class="form-control" placeholder="Experience" />
-            <input type="button" class="btn btn-primary" value="Search" />
+            <input id="search-skills" type="text" class="form-control1" placeholder="Skills, Job Title, Designation" />
+            <input id="search-experience" type="text" class="form-control1" placeholder="Experience" />
+            <input type="button" class="btn btn-primary" value="Search" (click)="filterJobs()"/>
         </div>
         <!-- recent jobs -->
         <section id="jobs">
@@ -61,7 +60,7 @@
                         </p>
                     </div>
                     <div class="apply-btn-jp">
-                        <button type="button" class="btn btn-primary" target="_blank">Apply</button>
+                        <button type="button" class="btn btn" target="_blank">Apply</button>
                     </div>
                 </div>
                 <div class="company-details">

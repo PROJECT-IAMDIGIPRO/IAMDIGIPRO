@@ -45,7 +45,12 @@ nav .wrapper {
 /* Nav-links and dropdown styles */
 .wrapper .nav-links {
     display: inline-flex;
+    align-items: center;
 }
+.rotate {
+    transform: rotate(180deg);
+    transition: transform 0.5s ease;
+  }
 .nav-links li {
     list-style: none;
 }
