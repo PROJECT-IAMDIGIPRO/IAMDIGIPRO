@@ -184,7 +184,7 @@
     }
   
     .banner {
-        padding-top: 150px;
+        padding-top: 30px;
     }
     .dropdown-toggle {
         padding-right: 55px;
@@ -289,10 +289,11 @@
     padding: 5px 20px;
     display: table-cell;
     vertical-align: middle;
+    background-color: orangered;
   }
   
   .search-job .btn-primary:hover {
-    border: 1px solid yellow;
+    border: 1px solid white;
   }
   /* top recuruiters */
   
