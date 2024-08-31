@@ -35,7 +35,7 @@ import { CookiesPolicyComponent } from './cookies-policy/cookies-policy.componen
 import { ContactFormComponent } from './contact-form/contact-form.component';
 import { ContactFormPopupComponent } from './contact-form-popup/contact-form-popup.component';
 import { CookiesPopupComponent } from './cookies-popup/cookies-popup.component';
-
+import { IonicModule } from '@ionic/angular';
 @NgModule({
   declarations: [
     AppComponent,
@@ -73,7 +73,8 @@ import { CookiesPopupComponent } from './cookies-popup/cookies-popup.component';
     FormsModule,
     NgParticlesModule,
     FontAwesomeModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    IonicModule.forRoot(),
   ],
   providers: [],
   bootstrap: [AppComponent],
