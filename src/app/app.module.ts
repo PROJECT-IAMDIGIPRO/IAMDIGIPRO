@@ -36,6 +36,8 @@ import { ContactFormComponent } from './contact-form/contact-form.component';
 import { ContactFormPopupComponent } from './contact-form-popup/contact-form-popup.component';
 import { CookiesPopupComponent } from './cookies-popup/cookies-popup.component';
 import { IonicModule } from '@ionic/angular';
+import { DigitalMarketingCourseComponent } from './digital-marketing-course/digital-marketing-course.component';
+import { GraphicDesignCourseComponent } from './graphic-design-course/graphic-design-course.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -65,6 +67,8 @@ import { IonicModule } from '@ionic/angular';
     ContactFormComponent,
     ContactFormPopupComponent,
     CookiesPopupComponent,
+    DigitalMarketingCourseComponent,
+    GraphicDesignCourseComponent,
     ],
   imports: [
     BrowserModule,

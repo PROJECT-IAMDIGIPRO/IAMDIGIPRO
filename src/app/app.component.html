@@ -790,7 +790,12 @@
         <div *ngIf="isTOURoute">
             <router-outlet></router-outlet>
         </div>
-
+        <div *ngIf="isDMCRoute">
+            <router-outlet></router-outlet>
+        </div>
+        <div *ngIf="isGDCRoute">
+            <router-outlet></router-outlet>
+        </div>
         <!-- Footer -->
         <footer class="footer">
             <div class="footer-section">

@@ -67,6 +67,8 @@ export class AppComponent implements OnInit {
   isPrivacyPolicyRoute = false;
   isTermsRoute = false;
   isCookiesRoute = false;
+  isDMCRoute = false;
+  isGDCRoute = false;
   showGoTop: boolean = false;
   visibleSection = 1;
 
@@ -177,6 +179,8 @@ faStarHalfAlt = faStarHalfAlt;
     this.isPPRoute = url.startsWith('/privacypolicy');
     this.isCPRoute = url.startsWith('/cookies');
     this.isTOURoute = url.startsWith('/terms');
+    this.isDMCRoute = url.startsWith('training/digitalmarketingcourse');
+    this.isGDCRoute = url.startsWith('training/graphicdesignCourse');
 
     this.isServiceRoute = this.isSEORoute || this.isSEMRoute ||
       this.isSMORoute ||this.isGraphicUIDesignRoute || this.isIMRoute || this.isWADRoute ||
@@ -184,7 +188,7 @@ faStarHalfAlt = faStarHalfAlt;
       this.isEMRoute || this.isAboutRoute || this.isTrainingRoute ||
       this.isInternshipRoute || this.isJORoute || this.isPortfolioRoute ||
       this.isBlogsRoute || this.isCURoute || this.isLoginRoute || this.isSignUpRoute ||
-      this.isRegisterRoute || this.isPPRoute || this.isCPRoute || this.isTOURoute;
+      this.isRegisterRoute || this.isPPRoute || this.isCPRoute || this.isTOURoute || this.isDMCRoute || this.isGDCRoute;
   }
 
   toggleSection(currentSection: number) {

@@ -26,11 +26,12 @@
 
                         <p class="hero-text">Join our internship program to gain real-world experience and work alongside industry experts. Build a strong portfolio and kickstart your career with us.</p>
 
-                        <button class="btn">Apply Now</button>
+                        <button class="btn" (click)="openModal()">Apply Now</button>
+                        <app-contact-form-popup *ngIf="showModal" (close)="closeModal()"></app-contact-form-popup>
                     </div>
 
                     <figure class="hero-banner">
-                        <img src="https://raw.githubusercontent.com/codewithsadee/desinic/master/assets/images/hero-banner.png" width="694" height="529" loading="lazy" alt="hero-banner" class="w-100 banner-animation" />
+                        <img src="https://raw.githubusercontent.com/codewithsadee/desinic/master/assets/images/hero-banner.png" width="95%" height="529" loading="lazy" alt="hero-banner" class="w-95 banner-animation" />
                     </figure>
                 </div>
             </section>
@@ -40,7 +41,7 @@
             <section class="section about" id="about">
                 <div class="container">
                     <figure class="about-banner">
-                        <img src="https://github.com/codewithsadee/desinic/blob/master/assets/images/about-banner.png?raw=true" width="700" height="532" loading="lazy" alt="about banner" class="w-100 banner-animation" />
+                        <img src="https://github.com/codewithsadee/desinic/blob/master/assets/images/about-banner.png?raw=true" width="95%" height="532" loading="lazy" alt="about banner" class="w-95 banner-animation" />
                     </figure>
 
                     <div class="about-content">
@@ -95,9 +96,11 @@
                                 <h3 class="h3 title">Digital Marketing</h3>
 
                                 <p class="text-int">
-                                    Gain hands-on experience in SEO, SEM, and social media marketing. Learn to develop strategies that enhance online visibility, drive traffic, and increase conversions.
+                                    Gain hands-on experience in <b>SEO, SEM ,</b> and <b>social media marketing</b> . Learn to develop data-driven strategies that enhance <b>online visibility, drive targeted traffic</b> , and boost conversion rates.
+
                                 </p>
-                                <button class="btn">Apply Now</button>
+                                <button class="btn" (click)="openModal()">Apply Now</button>
+                                <app-contact-form-popup *ngIf="showModal" (close)="closeModal()"></app-contact-form-popup>
                                 <!-- <button class="card-btn" aria-label="Show More">
                                     <ion-icon name="chevron-forward-outline"></ion-icon>
                                 </button> -->
@@ -114,10 +117,11 @@
                                 <h3 class="h3 title">Graphic Design</h3>
 
                                 <p class="text-int">
-                                    Create impactful visual content and user-friendly interfaces. Enhance your skills in branding, logo design, and UI/UX.
+                                    Create impactful visual content and <b>user-friendly interfaces </b>. Enhance your skills in <b>branding, logo design</b> , and <b>UI/UX design </b>to elevate brand identity and user experience.
                                 </p>
-                                <br>
-                                <button class="btn">Apply Now</button>
+                                <!-- <br> -->
+                                <button class="btn" (click)="openModal()">Apply Now</button>
+                        <app-contact-form-popup *ngIf="showModal" (close)="closeModal()"></app-contact-form-popup>
                                 <!-- <button class="card-btn" aria-label="Show More">
                                     <ion-icon name="chevron-forward-outline"></ion-icon>
                                 </button> -->
@@ -133,10 +137,11 @@
                                 <h3 class="h3 title">Web Development</h3>
 
                                 <p class="text-int">
-                                    Build and optimize responsive websites and apps. Focus on front-end and back-end development, ensuring seamless user experiences.
+                                    Web Development: Build and optimize <b> responsive websites</b> and <b>mobile apps </b>. Focus on <b>front-end</b> and <b>back-end development</b> to ensure seamless, high-performance user experiences.
                                 </p>
-                                <br>
-                                <button class="btn">Apply Now</button>
+                                <!-- <br> -->
+                                <button class="btn" (click)="openModal()">Apply Now</button>
+                        <app-contact-form-popup *ngIf="showModal" (close)="closeModal()"></app-contact-form-popup>
                                 <!-- <button class="card-btn" aria-label="Show More">
                                     <ion-icon name="chevron-forward-outline"></ion-icon>
                                 </button> -->

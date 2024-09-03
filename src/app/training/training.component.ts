@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Observable, Observer } from "rxjs";
+import { faDownload } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-training',
@@ -7,6 +8,15 @@ import { Observable, Observer } from "rxjs";
   styleUrls: ['./training.component.css']
 })
 export class TrainingComponent implements OnInit {
+  faDownload = faDownload;
+  tooltipVisible = false;
+  showTooltip() {
+    this.tooltipVisible = true;
+  }
+
+  hideTooltip() {
+    this.tooltipVisible = false;
+  }
   base64Image: string | undefined;
 
   showModal: boolean = false;
@@ -20,6 +30,7 @@ export class TrainingComponent implements OnInit {
     this.showModal = false; // Close the modal when the event is triggered
     document.body.classList.remove('modal-open'); 
   }
+
 
   ngOnInit() {}
 
