@@ -23,9 +23,9 @@
   span,
   input,
   button,
-  ion-icon {
+  /* ion-icon {
     display: block;
-  }
+  } */
   
   button,
   input {
@@ -123,7 +123,7 @@
       transform: translate(0, 0) rotate(0);
     }
     100% {
-      transform: translate(2px, 2px) rotate(1deg);
+      transform: translate(3px, 3px) rotate(1deg);
     }
   }
   
@@ -149,7 +149,7 @@
     bottom: -20px;
     left: 50%;
     transform: translateX(-50%);
-    width: 70%;
+    width: 90%;
     height: 6px;
     background-image: linear-gradient(90deg, hsl(335, 87%, 51%), hsl(29, 99%, 67%));
     border-radius: 10px;
@@ -333,14 +333,14 @@
     margin-block-end: 30px;
   }
   
-  .about .section-title {
+  /* .about .section-title {
     margin-inline: 0;
   }
-  
-  .about .underline::before {
+   */
+  /* .about .underline::before {
     left: 0;
     transform: translateX(0);
-  }
+  } */
   
   .about-text {
     font-size: 1.5rem;
@@ -354,19 +354,19 @@
   
   .stats-card {
     text-align: center;
-    padding: 15px;
+    padding: 10px;
     box-shadow: 0 5px 20px 1px hsla(220, 63%, 33%, 0.1);;
     border-radius: 12px;
   }
   
   .stats-title {
     color: orangered;
-    font-size: 3.8rem;
+    font-size: 2rem;
     font-weight: 700;
   }
   
   .stats-text {
-    font-size: 1.5rem;
+    font-size: 1rem;
   }
   
   /*-----------------------------------*\
@@ -383,7 +383,10 @@
     box-shadow: 0 5px 20px 1px hsla(220, 63%, 33%, 0.1);
     border-radius: 12px;
   }
-  
+  .service-card img{
+    height: 250px;
+    width: 100%;
+  }
   .service-card .card-icon {
     background-image: url("https://raw.githubusercontent.com/codewithsadee/desinic/master/assets/images/service-banner-pattern.png");
     background-repeat: no-repeat;
@@ -415,6 +418,7 @@
   .service-card .title {
     text-align: center;
     margin-block-end: 15px;
+    margin-block-start: 15px;
   }
   
   .service-card .text-int {
@@ -461,9 +465,10 @@
     color: hsl(0, 0%, 100%);
     min-width: max-content;
     max-width: max-content;
-    font-size: 36px;
-    padding: 22px;
+    font-size: 25px;
+    padding: 15px;
     border-radius: 50%;
+    margin-top: 5px;
   }
   
   .features-card .icon ion-icon {
@@ -609,7 +614,7 @@
     }
   
     .section-title {
-        font-size: 3.6rem;
+        font-size: 3.0rem;
     }
     
   
@@ -623,7 +628,9 @@
       gap: 5px;
       margin-inline-start: auto;
     }
-  
+    /* .hero-title h2 {
+      font-size:  3.5rem;
+    } */
     /**
      * ABOUT
      */
@@ -685,7 +692,9 @@
       align-items: center;
       gap: 30px;
     }
-  
+    /* .hero-title {
+      font-size:  3.0rem;
+    } */
     /**
      * SERVICE
      */
@@ -788,7 +797,9 @@
       grid-template-columns: 1fr 1fr;
       gap: 30px;
     }
-  
+    /* .hero-title {
+      font-size:  3.5rem;
+    } */
     /**
      * SERVICE
      */
@@ -836,7 +847,7 @@
     }
   
     .section-title {
-        font-size: 3.6rem;
+        font-size: 3.0rem;
     }
   
     /**

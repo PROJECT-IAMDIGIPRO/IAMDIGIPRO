@@ -24,6 +24,8 @@ import { TermsComponent } from './terms/terms.component';
 import { PrivacyPolicyComponent } from './privacy-policy/privacy-policy.component';
 import { CookiesPolicyComponent } from './cookies-policy/cookies-policy.component';
 import { ContactFormComponent } from './contact-form/contact-form.component';
+import { DigitalMarketingCourseComponent } from './digital-marketing-course/digital-marketing-course.component';
+import { GraphicDesignCourseComponent } from './graphic-design-course/graphic-design-course.component';
 const routes: Routes = [
 
    {path: '', redirectTo: '#', pathMatch: 'full' },
@@ -49,6 +51,8 @@ const routes: Routes = [
    {path:'training',component: TrainingComponent},
    {path:'jobopportunity',component: JobOpportunityComponent},
    {path:'internship',component: InternshipComponent},
+   {path: 'training/digitalmarketingcourse', component:DigitalMarketingCourseComponent},
+   {path: 'training/graphicdesignCourse', component:GraphicDesignCourseComponent },
 
   // COOKIES
    {path:'terms',component: TermsComponent},

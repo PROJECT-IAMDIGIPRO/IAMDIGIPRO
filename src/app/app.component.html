@@ -63,9 +63,13 @@
                     
                     <li><a routerLink="/aboutus" (click)="closeMenu()">About Us</a></li>
                     <li>
-                        <a routerLink="#" class="desktop-item" (click)="toggleMenu()">Careers</a>
-                        <input type="checkbox" id="showDrop" />
-                        <label for="showDrop" class="mobile-item" (click)="toggleMenu()">Careers</label>
+                        <a routerLink="#" class="desktop-item" (click)="toggleMenu()">
+                            Careers <fa-icon class="fa fa-angle-down" [ngClass]="{'rotate': isMenuVisible}"></fa-icon>
+                          </a>
+                          <label for="showDrop" class="mobile-item" (click)="toggleMenu()">
+                            Careers <fa-icon class="fa fa-angle-down" [ngClass]="{'rotate': isMenuVisible}"></fa-icon>
+                          </label>
+                          
                         <ul class="drop-menu" *ngIf="isMenuVisible">
                           <li><a routerLink="/internship" (click)="closeMenu()">Internship</a></li>
                           <li><a routerLink="/training" (click)="closeMenu()">Training</a></li>
@@ -73,9 +77,15 @@
                         </ul>
                       </li>
                     <li>
-                        <a routerLink="#" class="desktop-item" (click)="toggleMegaMenu()">Services</a>
-                        <input type="checkbox" id="showMega" />
-                        <label for="showMega" class="mobile-item" (click)="toggleMegaMenu()">Services</label>
+                        <a routerLink="#" class="desktop-item" (click)="toggleMegaMenu()">
+                            Services 
+                            <fa-icon class="fa fa-angle-down" [ngClass]="{'rotate': isMegaMenuVisible}"></fa-icon>
+                          </a>
+                          <input type="checkbox" id="showMega" />
+                          <label for="showMega" class="mobile-item" (click)="toggleMegaMenu()">
+                            Services 
+                            <fa-icon class="fa fa-angle-down" [ngClass]="{'rotate': isMegaMenuVisible}"></fa-icon>
+                          </label>
                         <div class="mega-box" *ngIf="isMegaMenuVisible">
                             <div class="content" style="background-color: black;">
                                 <div class="row">
@@ -780,7 +790,12 @@
         <div *ngIf="isTOURoute">
             <router-outlet></router-outlet>
         </div>
-
+        <div *ngIf="isDMCRoute">
+            <router-outlet></router-outlet>
+        </div>
+        <div *ngIf="isGDCRoute">
+            <router-outlet></router-outlet>
+        </div>
         <!-- Footer -->
         <footer class="footer">
             <div class="footer-section">
