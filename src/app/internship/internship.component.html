@@ -20,17 +20,18 @@
                <section class="hero" id="home">
                 <div class="container">
                     <div class="hero-content">
-                        <p class="hero-subtitle">We Are Digital Maketing From HYDERABAD</p>
+                        <p class="hero-subtitle">We are Digital Marketing Company from HYDERABAD</p>
 
                         <h2 class="h2 hero-title">Kickstart Your Career with Our Internship Program</h2>
 
                         <p class="hero-text">Join our internship program to gain real-world experience and work alongside industry experts. Build a strong portfolio and kickstart your career with us.</p>
 
-                        <button class="btn">Apply Now</button>
+                        <button class="btn" (click)="openModal()">Apply Now</button>
+                        <app-contact-form-popup *ngIf="showModal" (close)="closeModal()"></app-contact-form-popup>
                     </div>
 
                     <figure class="hero-banner">
-                        <img src="https://raw.githubusercontent.com/codewithsadee/desinic/master/assets/images/hero-banner.png" width="694" height="529" loading="lazy" alt="hero-banner" class="w-100 banner-animation" />
+                        <img src="https://raw.githubusercontent.com/codewithsadee/desinic/master/assets/images/hero-banner.png" width="95%" height="529" loading="lazy" alt="hero-banner" class="w-95 banner-animation" />
                     </figure>
                 </div>
             </section>
@@ -40,36 +41,35 @@
             <section class="section about" id="about">
                 <div class="container">
                     <figure class="about-banner">
-                        <img src="https://github.com/codewithsadee/desinic/blob/master/assets/images/about-banner.png?raw=true" width="700" height="532" loading="lazy" alt="about banner" class="w-100 banner-animation" />
+                        <img src="https://github.com/codewithsadee/desinic/blob/master/assets/images/about-banner.png?raw=true" width="95%" height="532" loading="lazy" alt="about banner" class="w-95 banner-animation" />
                     </figure>
 
                     <div class="about-content">
-                        <h2 class="h2 section-title underline">Why Our Agency</h2>
+                        <h2 class="h2 section-title underline">Why Choose IAM Digipro</h2>
 
                         <p class="about-text">
-                            In dictum aliquam turpis lacinia iaculis. Fusce vel malesuada magna. Nulla vel maximus risus. Donec volutpat metus lacinia risus accumsan, ac bibendum libero efficitur. Pellentesque nec nisi sit amet magna tempus
-                            hendrerit ut a odio.
+                           <b>Comprehensive Training:</b> Gain hands-on experience with the latest <b>digital marketing</b> tools and techniques, including <b>SEO, social media management,email marketing,</b> and more.
                         </p>
 
                         <p class="about-text">
-                            Praesent rhoncus commodo tortor, id pulvinar nisl blandit at. Nulla facilisi. Quisque turpis ante, vehicula condimentum arcu.
+                          <b>Mentorship from Industry Experts:</b> Learn from seasoned professionals who will guide you through real-world projects and offer valuable insights into the <b>digital marketing</b> landscape.
                         </p>
 
                         <ul class="stats-list">
                             <li class="stats-card">
-                                <p class="h3 stats-title">987</p>
+                                <p class="h3 stats-title">487</p>
 
                                 <p class="stats-text">Satisfied Interns</p>
                             </li>
 
                             <li class="stats-card">
-                                <p class="h3 stats-title">784</p>
+                                <p class="h3 stats-title">354</p>
 
                                 <p class="stats-text">Live Projects</p>
                             </li>
 
                             <li class="stats-card">
-                                <p class="h3 stats-title">2</p>
+                                <p class="h3 stats-title">1</p>
 
                                 <p class="stats-text">Years Completed</p>
                             </li>
@@ -84,60 +84,67 @@
 
             <section class="section service" id="services">
                 <div class="container">
-                    <h2 class="h2 section-title underline">Our Speciallization</h2>
+                    <h2 class="h2 section-title underline">What you'll learn</h2>
 
                     <ul class="service-list">
                         <li>
                             <div class="service-card">
-                                <div class="card-icon">
+                                <!-- <div class="card-icon">
                                     <ion-icon name="telescope-outline"></ion-icon>
-                                </div>
-
-                                <h3 class="h3 title">3D Designe</h3>
+                                </div> -->
+                                <img src="https://5.imimg.com/data5/TE/UD/QM/SELLER-40199849/advanced-digital-marketing-course-1000x1000.jpg">
+                                <h3 class="h3 title">Digital Marketing</h3>
 
                                 <p class="text-int">
-                                    Mauris ut felis malesuada eros varius tristique a at orci. Nulla vulputate, leo sit amet rhoncus suscipit, enim ex venenatis ipsum, et porttitor.
-                                </p>
+                                    Gain hands-on experience in <b>SEO, SEM ,</b> and <b>social media marketing</b> . Learn to develop data-driven strategies that enhance <b>online visibility, drive targeted traffic</b> , and boost conversion rates.
 
-                                <button class="card-btn" aria-label="Show More">
+                                </p>
+                                <button class="btn" (click)="openModal()">Apply Now</button>
+                                <app-contact-form-popup *ngIf="showModal" (close)="closeModal()"></app-contact-form-popup>
+                                <!-- <button class="card-btn" aria-label="Show More">
                                     <ion-icon name="chevron-forward-outline"></ion-icon>
-                                </button>
+                                </button> -->
                             </div>
                         </li>
 
                         <li>
                             <div class="service-card">
-                                <div class="card-icon">
+                                <!-- <div class="card-icon">
                                     <ion-icon name="desktop-outline"></ion-icon>
-                                </div>
+                                </div> -->
+                                <img src="assets\images\carrersPage\Graphic Design.jpeg">
+                               
+                                <h3 class="h3 title">Graphic Design</h3>
 
+                                <p class="text-int">
+                                    Create impactful visual content and <b>user-friendly interfaces </b>. Enhance your skills in <b>branding, logo design</b> , and <b>UI/UX design </b>to elevate brand identity and user experience.
+                                </p>
+                                <!-- <br> -->
+                                <button class="btn" (click)="openModal()">Apply Now</button>
+                        <app-contact-form-popup *ngIf="showModal" (close)="closeModal()"></app-contact-form-popup>
+                                <!-- <button class="card-btn" aria-label="Show More">
+                                    <ion-icon name="chevron-forward-outline"></ion-icon>
+                                </button> -->
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="service-card">
+                                <!-- <div class="card-icon">
+                                    <ion-icon name="globe-outline"></ion-icon>
+                                </div> -->
+                                <img src="assets\images\carrersPage\WEB.jpg">
                                 <h3 class="h3 title">Web Development</h3>
 
                                 <p class="text-int">
-                                    Mauris ut felis malesuada eros varius tristique a at orci. Nulla vulputate, leo sit amet rhoncus suscipit, enim ex venenatis ipsum, et porttitor.
+                                    Web Development: Build and optimize <b> responsive websites</b> and <b>mobile apps </b>. Focus on <b>front-end</b> and <b>back-end development</b> to ensure seamless, high-performance user experiences.
                                 </p>
-
-                                <button class="card-btn" aria-label="Show More">
+                                <!-- <br> -->
+                                <button class="btn" (click)="openModal()">Apply Now</button>
+                        <app-contact-form-popup *ngIf="showModal" (close)="closeModal()"></app-contact-form-popup>
+                                <!-- <button class="card-btn" aria-label="Show More">
                                     <ion-icon name="chevron-forward-outline"></ion-icon>
-                                </button>
-                            </div>
-                        </li>
-
-                        <li>
-                            <div class="service-card">
-                                <div class="card-icon">
-                                    <ion-icon name="globe-outline"></ion-icon>
-                                </div>
-
-                                <h3 class="h3 title">Grafical Designer</h3>
-
-                                <p class="text-int">
-                                    Mauris ut felis malesuada eros varius tristique a at orci. Nulla vulputate, leo sit amet rhoncus suscipit, enim ex venenatis ipsum, et porttitor.
-                                </p>
-
-                                <button class="card-btn" aria-label="Show More">
-                                    <ion-icon name="chevron-forward-outline"></ion-icon>
-                                </button>
+                                </button> -->
                             </div>
                         </li>
                     </ul>
@@ -163,7 +170,7 @@
                                     <h3 class="h3 title">Idea & Analysis</h3>
 
                                     <p class="text-int">
-                                        Praesent tincidunt congue est ut hendrerit. Pellentesque et eros sit amet ipsum venenatis.
+                                        Transform your concepts into actionable insights. We delve deep into your ideas, analyzing every aspect to ensure a solid foundation for your project’s success.
                                     </p>
                                 </div>
                             </div>
@@ -176,10 +183,10 @@
                                 </div>
 
                                 <div class="content-int">
-                                    <h3 class="h3 title">Maketing Strategies</h3>
+                                    <h3 class="h3 title">Marketing Strategies</h3>
 
                                     <p class="text-int">
-                                        Praesent tincidunt congue est ut hendrerit. Pellentesque et eros sit amet ipsum venenatis.
+                                        Develop and implement powerful marketing strategies that resonate with your audience. We craft tailored approaches that drive engagement and growth.
                                     </p>
                                 </div>
                             </div>
@@ -201,7 +208,7 @@
                                     <h3 class="h3 title">Animation</h3>
 
                                     <p class="text-int">
-                                        Praesent tincidunt congue est ut hendrerit. Pellentesque et eros sit amet ipsum venenatis.
+                                        Bring your brand to life with captivating animations. Our creative animations are designed to capture attention and enhance user experience.
                                     </p>
                                 </div>
                             </div>
@@ -214,10 +221,10 @@
                                 </div>
 
                                 <div class="content-int">
-                                    <h3 class="h3 title">3D Designing & Lunching</h3>
+                                    <h3 class="h3 title">3D Designing & Launching</h3>
 
                                     <p class="text-int">
-                                        Praesent tincidunt congue est ut hendrerit. Pellentesque et eros sit amet ipsum venenatis.
+                                        Create stunning 3D designs that stand out. From concept to launch, we provide end-to-end 3D design solutions that elevate your brand's visual appeal.
                                     </p>
                                 </div>
                             </div>
@@ -230,7 +237,7 @@
           - #BLOG
         -->
 
-        <section class="section service" id="services">
+        <!-- <section class="section service" id="services">
             <div class="container">
                 <h2 class="h2 section-title underline">Our Courses</h2>
 
@@ -246,7 +253,7 @@
                             <p class="text-int">
                                 Mauris ut felis malesuada eros varius tristique a at orci. Nulla vulputate, leo sit amet rhoncus suscipit, enim ex venenatis ipsum, et porttitor.
                             </p>
-
+                            <button class="btn">Book Now</button>
                             <button class="card-btn" aria-label="Show More">
                                 <ion-icon name="chevron-forward-outline"></ion-icon>
                             </button>
@@ -264,7 +271,7 @@
                             <p class="text-int">
                                 Mauris ut felis malesuada eros varius tristique a at orci. Nulla vulputate, leo sit amet rhoncus suscipit, enim ex venenatis ipsum, et porttitor.
                             </p>
-
+                            <button class="btn">Book Now</button>
                             <button class="card-btn" aria-label="Show More">
                                 <ion-icon name="chevron-forward-outline"></ion-icon>
                             </button>
@@ -282,7 +289,7 @@
                             <p class="text-int">
                                 Mauris ut felis malesuada eros varius tristique a at orci. Nulla vulputate, leo sit amet rhoncus suscipit, enim ex venenatis ipsum, et porttitor.
                             </p>
-
+                            <button class="btn">Book Now</button>
                             <button class="card-btn" aria-label="Show More">
                                 <ion-icon name="chevron-forward-outline"></ion-icon>
                             </button>
@@ -290,7 +297,7 @@
                     </li>
                 </ul>
             </div>
-        </section>
+        </section> -->
 
     </article>
     </main>

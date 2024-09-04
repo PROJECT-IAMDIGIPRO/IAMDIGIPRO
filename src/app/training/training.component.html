@@ -1,414 +1,282 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
-        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,1,0" />
-        <!-- <link rel="stylesheet" href="../../styles.css"> -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-        <script src="https://kit.fontawesome.com/6cfb21434c.js" crossorigin="anonymous"></script>
-        <script src="https://kit.fontawesome.com/a199c68c5e.js" crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
-        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+        <!-- Required meta tags -->
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+        <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet" />
+        <title>Job opportunity</title>
     </head>
-    <body>
-        <!--front page-->
-        <div>
-            <img src="assets\images\carrersPage\training.jpg" class="home-content" />
-        </div>
+<body id="top">
+    <main class="internship-cl">
+        <article>
+        
+               <!-- HERO-->
+               <section class="hero" id="home">
+                <div class="container">
+                    <div class="hero-content">
+                        <p class="hero-subtitle">We are Digital Marketing Company from HYDERABAD</p>
 
-    <div style="padding: 3vw;">
-        <!-- <div style="position: sticky;z-index: 2;"> -->
-            <div class="careers-top-container">
-                <div class="about-left-content">
-                    <div class="knowmore-bottom-contaner">
-                        <div class="arrow">
-                            <img src="../assets/images/hand icon.png"  class="arr-right"/>
-                            
-                        </div>
-                        <div class="services-ser22">
-                            <h1>About Course</h1>
-                        </div>
+                        <h2 class="h2 hero-title">Build Expertise with Our Professional Training Program</h2>
+
+                        <p class="hero-text">Gain hands-on experience and industry-relevant skills through our expertly designed training sessions. Elevate your career with personalized guidance and real-world projects.</p>
+
+                        <button class="btn" (click)="openModal()" style="padding:12px 35px; font-size: 1.5rem;">Apply Now</button>
+                        <app-contact-form-popup *ngIf="showModal" (close)="closeModal()"></app-contact-form-popup>
                     </div>
-                    <div class="course-info">
-                        <p>
-                            Welcome to IAM Digipro Digital Marketing Course - a unique blend of classroom learning and real-time project experience designed to transform you into a digital marketing expert. Our course is perfect for anyone
-                            looking to gain in-depth knowledge, practical skills, and valuable industry experience in digital marketing.
+
+                    <figure class="hero-banner">
+                        <img src="assets\images\carrersPage\training.png" width="95%" height="529" loading="lazy" alt="hero-banner" class="w-95 banner-animation" />
+                    </figure>
+                </div>
+            </section>
+
+            <!--ABOUT-->
+
+            <section class="section about" id="about">
+                <div class="container">
+                    <figure class="about-banner">
+                        <img src="https://github.com/codewithsadee/desinic/blob/master/assets/images/about-banner.png?raw=true" width="95%" height="532" loading="lazy" alt="about banner" class="w-95 banner-animation" />
+                    </figure>
+
+                    <div class="about-content">
+                        <h2 class="h2 section-title underline">About the Course</h2>
+
+                        <p class="about-text">
+                            Explore the intersection of <b>Digital Marketing</b> and <b>Graphic Designing</b> in this comprehensive course. Gain the skills to create <b>compelling visuals</b> and <b>drive successful online campaigns</b>, all while mastering the latest industry <b>tools and techniques</b>. <b>Benefit from personalized feedback and support</b> as you work on real-world projects. <b>Network with industry professionals</b> and enhance your career prospects. Perfect for those looking to excel in these <b>creative and dynamic fields</b>.                        
                         </p>
-                    </div>
-                    <div class="course-details">
-                        <div class="detail">
-                            <h3>Course Format</h3>
-                            <br />
-                            <p><b>Online</b></p>
-                        </div>
-                        <div class="detail">
-                            <h3>Course Duration</h3>
-                            <br />
-                            <p><b>3 Months</b></p>
-                        </div>
-                        <div class="detail">
-                            <h3>Certification</h3>
-                            <br />
-                            <p><b>Yes</b></p>
-                        </div>
-                        <div class="detail">
-                            <h3>Installment Payment</h3>
-                            <br />
-                            <p><b>20999/-</b></p>
-                        </div>
-                    </div>
-                    <div class="buttons">
-                        <!-- <button class="download-btn"><b>Download Pdf</b></button> -->
-                        <button class="download-btn" (click)="openModal()">Download Pdf</button>
-                        <!-- <app-contact-form-popup *ngIf="showModal" (close)="closeModal()"></app-contact-form-popup> -->
-                        <button class="apply-btn" (click)="openModal()">Apply now</button>
-                        <app-contact-form-popup *ngIf="showModal" (close)="closeModal()"></app-contact-form-popup> 
-                        
-                    </div>
-                    <div class="knowmore-bottom-contaner">
-                        <div class="arrow">
-                            <img src="../assets/images/hand icon.png"  class="arr-right"/>
-                            
-                        </div>
-                        <div class="services-ser">
-                            <h1>What You'll Learn in Digital Marketing</h1>
-                        </div>
-                    </div>
-                    <div>
-                        <ul>
-                            <li style="color: black;">Fundamental Principles of Digital Marketing</li>
-                            <li style="color: black;">Innovative Strategies for Online Environments</li>
-                            <li style="color: black;">Wide Range of Digital Marketing Tools</li>
-                            <li style="color: black;">Practical Application of Digital Marketing Strategies</li>
+
+                        <ul class="stats-list">
+                            <li class="stats-card">
+                                <p class="h3 stats-title">487</p>
+
+                                <p class="stats-text">Satisfied Interns</p>
+                            </li>
+
+                            <li class="stats-card">
+                                <p class="h3 stats-title">354</p>
+
+                                <p class="stats-text">Live Projects</p>
+                            </li>
+
+                            <li class="stats-card">
+                                <p class="h3 stats-title">1</p>
+
+                                <p class="stats-text">Years Completed</p>
+                            </li>
                         </ul>
                     </div>
-    
-                    <!-- Faculty Section -->
-                    <div class="faculty-main">
-                        <div class="faculty" style="padding: 10px;">
-                            <div class="arrow">
-                                <img src="../assets/images/hand icon.png" class="arr-right-about" />
-                                
-                            </div>
-                            <div class="services-ser22">
-                                <h1>Faculty</h1>
-                            </div>
-                            <div class="faculty-container mb-2">
-                                <h1><b>Industry Experts with 11+ Year of Real-Time<br> Experience in Digital Marketing</b></h1>
-                                <p>Our faculty is composed of highly skilled professionals who have dedicated their careers to mastering the art and science of digital marketing</p>
-                            </div>
-                            <div class="faculty-img">
-                                <img src="../assets/images/facultyName.jpg" />
-                                <div class="faculty-name">
-                                    <h3><b>Tharak Beela</b></h3>
-                                    <p>Digital Marketing Expert</p>
-                                    <div class="faculty-items">
-                                        <div class="faculty-item">
-                                            <p>Extensive Industry Experience</p>
-                                            <p>Real-World Knowledge</p>
-                                        </div>
-                                        <div class="faculty-item">
-                                            <p>Up-to-Date with Industry Trends</p>
-                                            <p>Personalized Mentorship</p>
-                                        </div>
-                                        <div class="faculty-item">
-                                            <p>Proven Track Record of Success</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                </div>
+            </section>
 
-                    <div class="right-container d-block d-md-none">
-                        <div class="course-box">
-                            <div class="course-header">
-                                <p>Starts from: 10 July</p>
+            <!-- 
+          - #SERVICE
+        -->
+
+            <section class="section service" id="services">
+                <div class="container">
+                    <h2 class="h2 section-title underline">Unlock Your Potential with Our Expert-Led Courses</h2>
+
+                    <ul class="service-list">
+                        <li>
+                            <div class="service-card">
+                                <img src="https://5.imimg.com/data5/TE/UD/QM/SELLER-40199849/advanced-digital-marketing-course-1000x1000.jpg">
+                                <h3 class="h3 title">Digital Marketing</h3>
+
+                                <p class="text-int">
+                                    Gain hands-on experience in SEO, SEM, and social media marketing. Learn to develop strategies that enhance online visibility, drive traffic, and increase conversions.
+                                </p>
+                                <div >
+                                    <div class="btn-group">
+                                        <button class="btn" (click)="openModal()" style="border-top-right-radius:25px ;">Apply Now</button>
+                                        <app-contact-form-popup *ngIf="showModal" (close)="closeModal()"></app-contact-form-popup>
+                                        <button class="btn-icon" (mouseenter)="showTooltip()" (mouseleave)="hideTooltip()">
+                                            <fa-icon [icon]="faDownload"></fa-icon>
+                                            <span class="tooltip" *ngIf="tooltipVisible">Download course details</span>
+                                          </button>
+                                          <a routerLink="/training/digitalmarketingcourse"> <button class="btn-1">Read More</button></a>
+                                    </div>
                             </div>
-                            <div class="course-content">
-                                <h1 class="course-title"><b>Digital Marketing</b></h1>
-                                <div class="course-details">
-                                    <button>Online</button>
-                                    <button>3 Months</button>
-                                    <button style="background-color: #f66136; color: #fff; border: none;" (click)="openModal()">Apply now</button>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="service-card">
+                                <img src="assets\images\carrersPage\Graphic Design.jpeg">
+                               
+                                <h3 class="h3 title">Graphic Design</h3>
+
+                                <p class="text-int">
+                                    Create impactful visual content and user-friendly interfaces. Enhance your skills in branding, logo design, and UI/UX.
+                                </p>
+                                <br>
+                                <div class="btn-group">
+                                    <button class="btn" (click)="openModal()" style="border-top-right-radius:25px ;">Apply Now</button>
                                     <app-contact-form-popup *ngIf="showModal" (close)="closeModal()"></app-contact-form-popup>
-                                </div>
-                                <p class="course-description">Master Digital Marketing, Transform Your Future</p>
-                            </div>
-                            <div class="faculty-info">
-                                <h1 class="faculty-header">Faculty:</h1>
-                                <div class="faculty-details">
-                                    <img src="../assets/images/facultyName.jpg" />
-                                    <div class="faculty-name-details">
-                                        <h3 class="faculty-name">Tharak Beela</h3>
-                                        <p class="faculty-role">Digital Marketing Expert</p>
-                                    </div>
+                                    <button class="btn-icon" (mouseenter)="showTooltip()" (mouseleave)="hideTooltip()">
+                                        <fa-icon [icon]="faDownload"></fa-icon>
+                                        <span class="tooltip" *ngIf="tooltipVisible">Download course details</span>
+                                      </button>
+                                   <a routerLink="/training/graphicdesignCourse"> <button class="btn-1">Read More</button></a>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                    <!-- Curriculum Section -->
-    
-                    <div class="knowmore-bottom-contaner">
-                        <div class="arrow">
-                            <img src="../assets/images/hand icon.png"  class="arr-right"/>
-                            
-                        </div>
-                        <div class="services-ser22">
-                            <h1>Curriculum</h1>
-                        </div>
-                    </div>
-    
-                    <div class="curriculum-container">
-                        
-                        <div class="module-list">
-                            <ul class="modules">
-                                <li>Module 1: Digital Marketing overview</li>
-                                <br />
-                                <li>Module 2: WordPress</li>
-                                <br />
-                                <li>Module 3: Search Engine OPtimization(SEO)</li>
-                                <br />
-                                <li>Module 4: PPC ads - Display Ads</li>
-                                <br />
-                                <li>Module 5: Keyword Research</li>
-                                <br />
-                                <li>Module 6: Social Media Marketing(SMM)</li>
-                                <br />
-                                <li>Module 7: ChatGPT</li>
-                                <br />
-                                <li>Module 8: Social Media Fundamentals</li>
-                                <br />
-                                <li>Module 9: Slideshare</li>
-                                <br />
-                                <li>Module 10: Quara Marketing</li>
-                                <br />
-                                <li>Module 11: Email Marketing</li>
-                                <br />
-                                <li>Module 12: Online Reputation Management</li>
-                                <br />
-                                <li>Module 13: Inbound Marketing</li>
-                                <br />
-                                <li>Module 14: Google AdSense</li>
-                                <br />
-                                <li>Module 15: Affiliate Marketing</li>
-                                <br />
-                                <li>Module 16: Freelance Business</li>
-                                <br />
-                                <li>Module 17: YouTube Monetization</li>
-                                <br />
-                                <li>Module 18: Google Analytics</li>
-                            </ul>
-                        </div>
-                        <!-- <div class="view-more">
-                            <p>View more</p>
-                        </div> -->
-                    </div>
+                        </li>
+                    </ul>
                 </div>
-    
-           
-                <div class="right-container d-none d-md-block">
-                    <div class="course-box">
-                        <div class="course-header">
-                            <p>Starts from: 10 July</p>
-                        </div>
-                        <div class="course-content">
-                            <h1 class="course-title"><b>Digital Marketing</b></h1>
-                            <div class="course-details">
-                                <button>Online</button>
-                                <button>3 Months</button>
-                                <button style="background-color: #f66136; color: #fff; border: none;" (click)="openModal()">Apply now</button>
-                                <app-contact-form-popup *ngIf="showModal" (close)="closeModal()"></app-contact-form-popup>
-                            </div>
-                            <p class="course-description">Master Digital Marketing, Transform Your Future</p>
-                        </div>
-                        <div class="faculty-info">
-                            <h1 class="faculty-header">Faculty:</h1>
-                            <div class="faculty-details">
-                                <img src="../assets/images/facultyName.jpg" />
-                                <div class="faculty-name-details">
-                                    <h3 class="faculty-name">Tharak Beela</h3>
-                                    <p class="faculty-role">Digital Marketing Expert</p>
+            </section>
+
+            <!-- 
+          - #FEATURES
+        -->
+
+            <section class="section features" id="features">
+                <div class="container">
+                    <h2 class="h2 section-title underline">Our Features</h2>
+
+                    <ul class="features-list">
+                        <li>
+                            <div class="features-card">
+                                <div class="icon">
+                                    <ion-icon name="bulb-outline"></ion-icon>
+                                </div>
+
+                                <div class="content-int">
+                                    <h3 class="h3 title">Expert-Led Instruction</h3>
+
+                                    <p class="text-int">
+                                        Learn from industry leaders who bring real-world experience and insights.
+                                    </p>
+                                </div>
+                            </div>  
+                        </li>
+
+                        <li>
+                            <div class="features-card">
+                                <div class="icon">
+                                    <ion-icon name="color-palette-outline"></ion-icon>
+                                </div>
+
+                                <div class="content-int">
+                                    <h3 class="h3 title">Hands-On Projects</h3>
+
+                                    <p class="text-int">
+                                        Engage in practical exercises and real-world assignments to apply your knowledge.
+                                    </p>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-    
+                        </li>
+                    </ul>
 
+                    <figure class="features-banner">
+                        <img src="https://raw.githubusercontent.com/codewithsadee/desinic/master/assets/images/feautres-banner.png" width="369" height="318" loading="lazy" alt="Features Banner" class="w-100 banner-animation" />
+                    </figure>
 
-            <!--benefits section-->
-            <div class="benefits-cont" id="benefitsSection">
-                <div class="arrow">
-                    <img src="../assets/images/hand icon.png" class="arr-right" />
-                    
-                </div>
-                <div class="services-ser">
-                    <h1>Benefits</h1>
-                </div>
-                <div class="benef-con">
-                    <div class="orange-cir" id="org-cir1">
-                        <h1 class="pra-head">Practical Experience</h1>
-                        <p class="rev-par">Apply your knowledge to real projects, preparing you for the challenges of the digital marketing industry.</p>
-                    </div>
-                    <div class="orange-cir" id="org-cir2">
-                        <h1 class="pra-head">Flexible Payment Options</h1>
-                        <p class="rev-par">Affordable fee structure with installment payments available.</p>
-                    </div>
-                    <div class="orange-cir" id="org-cir3">
-                        <h1 class="pra-head">Career Advancement</h1>
-                        <p class="rev-par">Gain the skills and certifications needed to stand out in the competitve job market.</p>
-                    </div>
-                    <div class="orange-cir" id="org-cir4">
-                        <h1 class="pra-head">Experienced Faculty</h1>
-                        <p class="rev-par">Learn from industry professionals with over 11years of experience in digital marketing.</p>
-                    </div>
-                    <div class="orange-cir" id="org-cir5">
-                        <h1 class="pra-head">Access to Recording</h1>
-                        <p class="rev-par">All live class recordings are available on google drive for review and study at your convenience.</p>
-                    </div>
-                </div>
-            </div>
+                    <ul class="features-list">
+                        <li>
+                            <div class="features-card">
+                                <div class="icon">
+                                    <ion-icon name="code-slash-outline"></ion-icon>
+                                </div>
 
-            <!--certification and support section-->
-            <div class="certification-support-container" id="certificationSection">
-                <div class="certification-support-content pb-2">
-                    <div class="arrow">
-                        <img src="../assets/images/hand icon.png" class="arr-right-about" />
-                       
-                    </div>
-                    <div class="services-ser">
-                        <h1>Certification and Support</h1>
-                    </div>
-                    <div class="ser-supp-description">
-                        <p>
-                            <b>
-                                Receive an official Course Completion Certificate upon successfully finishing our Digital Marketing Course. This certificate validates your expertise in SEO, SEM, social media, content marketing, email
-                                marketing, and web analytics. Recognized in the industry, it demonstrates your ability to develop strategies, manage campaigns, and analyze metrics, enhancing your resume and opening new career opportunities.
-                            </b>
-                        </p>
-                        <!-- <button>Download Certificate</button> -->
-                        <button class="download-btn" id="downloadPdfButton" (click)="downloadImage()"><b>Download Pdf</b></button>
-                    </div>
-                </div>
-                <div class="certification-support-image">
-                    <img src="../assets/images\carrersPage\image_carrerPage3.jpg" class="cer-supp-image" alt="certificationAndSupportimage" />
-                </div>
-            </div>
+                                <div class="content-int">
+                                    <h3 class="h3 title">Flexible Learning</h3>
 
-            <!--reviews section-->
-            <div id="reviewsSection" class="enquiry-form">
-                <div class="arrow">
-                    <img src="../assets/images/hand icon.png" class="arr-right" />
-                    
+                                    <p class="text-int">
+                                        Access course materials anytime, anywhere, and learn at your own pace.
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="features-card">
+                                <div class="icon">
+                                    <ion-icon name="rocket-outline"></ion-icon>
+                                </div>
+
+                                <div class="content-int">
+                                    <h3 class="h3 title">Personalized Feedback</h3>
+
+                                    <p class="text-int">
+                                        Receive tailored guidance and support to enhance your learning journey.    
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
                 </div>
-                <div class="services-ser">
-                    <h1>Reviews</h1>
-                </div>
-                <div class="reviews-container">
-                    <div class="testimonial-card">
-                        <div class="d-flex flex-row">
-                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQG4Tb6DSXJjYigEtTo4GhgmFtUNl5sxVJs2A&s" alt="reviewStudentimage1" />
-                            <p>
-                                <b>Name</b> <br />
-                                Rithika
+            </section>
+
+            <!-- 
+          - #BLOG
+        -->
+
+        <!-- <section class="section service" id="services">
+            <div class="container">
+                <h2 class="h2 section-title underline">Our Courses</h2>
+
+                <ul class="service-list">
+                    <li>
+                        <div class="service-card">
+                            <div class="card-icon">
+                                <ion-icon name="telescope-outline"></ion-icon>
+                            </div>
+
+                            <h3 class="h3 title">Digital Marketing</h3>
+
+                            <p class="text-int">
+                                Mauris ut felis malesuada eros varius tristique a at orci. Nulla vulputate, leo sit amet rhoncus suscipit, enim ex venenatis ipsum, et porttitor.
                             </p>
+                            <button class="btn">Book Now</button>
+                            <button class="card-btn" aria-label="Show More">
+                                <ion-icon name="chevron-forward-outline"></ion-icon>
+                            </button>
                         </div>
-                        <p class="testimonial">
-                            "IAM DIGIPRO's Digital Marketing Course has completely changed my career trajectory. The practical, hands-on approach helped me gain real-world skills that I use daily in my job."
-                        </p>
-                    </div>
-                    <div class="testimonial-card">
-                        <div class="d-flex flex-row">
-                            <img src="https://achieveracademy.co.in/wp-content/uploads/2022/03/studen.jpeg" alt="reviewStudentimage2" />
-                            <p>
-                                <b>Name</b> <br />
-                                Jaya Sree
+                    </li>
+
+                    <li>
+                        <div class="service-card">
+                            <div class="card-icon">
+                                <ion-icon name="desktop-outline"></ion-icon>
+                            </div>
+
+                            <h3 class="h3 title">Web Development</h3>
+
+                            <p class="text-int">
+                                Mauris ut felis malesuada eros varius tristique a at orci. Nulla vulputate, leo sit amet rhoncus suscipit, enim ex venenatis ipsum, et porttitor.
                             </p>
+                            <button class="btn">Book Now</button>
+                            <button class="card-btn" aria-label="Show More">
+                                <ion-icon name="chevron-forward-outline"></ion-icon>
+                            </button>
                         </div>
-                        <p class="testimonial">
-                            "IAM DIGIPRO's assistance in preparing for global certifications made the process so much easier. I now hold several certifications that have boosted my career."
-                        </p>
-                    </div>
-                    <div class="testimonial-card">
-                        <div class="d-flex flex-row">
-                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTV-8qnDYmH8ITB-k18JcdHGbjMnj5Tm7xnWA&s" alt="reviewStudentimage3" />
-                            <p>
-                                <b>Name</b> <br />
-                                Revanth
+                    </li>
+
+                    <li>
+                        <div class="service-card">
+                            <div class="card-icon">
+                                <ion-icon name="globe-outline"></ion-icon>
+                            </div>
+
+                            <h3 class="h3 title">Grafical Designer</h3>
+
+                            <p class="text-int">
+                                Mauris ut felis malesuada eros varius tristique a at orci. Nulla vulputate, leo sit amet rhoncus suscipit, enim ex venenatis ipsum, et porttitor.
                             </p>
+                            <button class="btn">Book Now</button>
+                            <button class="card-btn" aria-label="Show More">
+                                <ion-icon name="chevron-forward-outline"></ion-icon>
+                            </button>
                         </div>
-                        <p class="testimonial">
-                            "The faculty at IAM DIGIPRO are industry experts who provide invaluable insights and guidance. I learned so much and felt supported throughout the course."
-                        </p>
-                    </div>
-                    <div class="testimonial-card">
-                        <div class="d-flex flex-row">
-                            <img src="../assets/images\carrersPage\image_carrerPage4.jpg" alt="reviewStudentimage4" />
-                            <p>
-                                <b>Name</b> <br />
-                                Pavan
-                            </p>
-                        </div>
-                        <p class="testimonial">
-                            "I appreciated the comprehensive certification program. It gave me a competitive edge in the job market and validated my skills."
-                        </p>
-                    </div>
-                </div>
+                    </li>
+                </ul>
             </div>
-
-            <!--fee section-->
-            <div id="feesSection">
-                <div class="enquiry-form">
-                    <div class="arrow">
-                        <img src="../assets/images/hand icon.png" class="arr-right" />
-                        
-                    </div>
-                    <div class="services-ser">
-                        <h1>Course Fee</h1>
-                    </div>
-                </div>
-                <div class="date">
-                    <p class="para">Course Fee: <b>₹20,999</b></p>
-                    <button class="apply-btn2" (click)="openModal()">Apply now</button>
-                     <app-contact-form-popup *ngIf="showModal" (close)="closeModal()"></app-contact-form-popup>
-                </div>
-                <div class="content">
-                    <!-- added styling to p tag -->
-                    <p style="color: black;">
-                        Our Digital Marketing Course is offered at a competitive fee of 20,999 Rs/-. To make this investment in your future more accessible, we provide flexible installment payment options. This allows you to focus on your
-                        learning and career advancement without the stress of a large upfront cost.
-                    </p>
-                </div>
-                <div class="fee-covers">
-                    <p>This fee covers</p>
-                </div>
-                <div class="fee-card-container">
-                    <div class="fee-card">
-                        <p class="fee-msg">3 Months of Intensive Learning</p>
-                    </div>
-                    <div class="fee-card">
-                        <p class="fee-msg">Expert Faculty</p>
-                    </div>
-                    <div class="fee-card">
-                        <p class="fee-msg">Certification</p>
-                    </div>
-                    <div class="fee-card">
-                        <p class="fee-msg">Internship Support</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
+        </section> -->
+    </article>
+    </main>
 </body>
 </html>
-
