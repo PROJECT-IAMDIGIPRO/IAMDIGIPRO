@@ -238,9 +238,18 @@ header {
 .banner h1 {
   font-size: 50px;
   font-weight: 600;
-  text-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+  padding-top: 65px;
+  /* text-shadow: 0 0 30px rgba(0, 0, 0, 0.5); */
+  color: orangered;
 }
-
+@media screen and (max-width: 768px) {
+  .banner h1 {
+    font-size: 40px; 
+    font-weight: 500;
+    padding-top: 15px; 
+    text-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+  }
+}
 .banner p {
   padding-top: 15px;
   line-height: 150%;
@@ -280,7 +289,7 @@ header {
   padding-left: 30px;
 }
 
-.search-job .btn-primary {
+.search-job .btn-primary-1 {
   width: 150px;
   border-radius: 25px;
   box-shadow: none !important;
@@ -293,7 +302,7 @@ header {
   background-color: orangered;
 }
 
-.search-job .btn-primary:hover {
+.search-job .btn-primary-1:hover {
   border: 1px solid white;
 }
 /* top recuruiters */
@@ -407,7 +416,7 @@ h5 {
   font-size: 20px;
   cursor: pointer;
 
-  color: rgb(33, 33, 226) !important;
+  /* color: rgb(33, 33, 226) !important; */
 }
 
 .fa-heart:before {
@@ -415,7 +424,7 @@ h5 {
   margin-right: 8px;
   font-size: 20px;
   cursor: pointer;
-  color: rgb(33, 33, 226) !important;
+  /* color: rgb(33, 33, 226) !important; */
 }
 
 .job-update small {
@@ -445,7 +454,7 @@ h5 {
 
 .job-update a:hover {
   text-decoration: none !important;
-  color: rgb(0, 95, 238);
+  /* color: rgb(0, 95, 238); */
   float: right;
 }
 
