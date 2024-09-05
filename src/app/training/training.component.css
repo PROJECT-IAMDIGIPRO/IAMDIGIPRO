@@ -872,6 +872,8 @@
   
     .service-list {
       grid-template-columns: repeat(2, 1fr);
+      padding: 0px 110px;
+      gap: 40px;
     }
   
     /**

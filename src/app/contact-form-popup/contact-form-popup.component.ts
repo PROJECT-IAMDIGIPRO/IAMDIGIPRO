@@ -16,9 +16,7 @@ export class ContactFormPopupComponent {
   contactForm: any = {
     username: '',
     phonenumber: '',
-    email: '',
-    description: '',
-    interested: ''
+    email: ''
   };
   private apiUrl = 'http://3.208.6.7/contact/contactus';
 
@@ -30,8 +28,8 @@ export class ContactFormPopupComponent {
 
   onSubmit() {
 
-    if (!this.contactForm.email || !this.contactForm.phonenumber || !this.contactForm.description || !this.contactForm.interested || !this.contactForm.username) {
-      alert('Please fill in all required details.');
+    if (!this.contactForm.phonenumber) {
+      alert('Please fill in all required details.!!');
       return; 
     }
     this.http.post<{ status: string }>(this.apiUrl, this.contactForm).subscribe(
@@ -54,19 +52,19 @@ export class ContactFormPopupComponent {
   }
   
   // Update selected services
-  onServiceChange(event: any) {
-    const value = event.target.value;
-    const isChecked = event.target.checked;
+  // onServiceChange(event: any) {
+  //   const value = event.target.value;
+  //   const isChecked = event.target.checked;
 
-    if (isChecked) {
-      this.contactForm.interested += (this.contactForm.interested ? ', ' : '') + value;
-    } else {
-      this.contactForm.interested = this.contactForm.interested
-        .split(', ')
-        .filter((service: string) => service !== value)
-        .join(', ');
-    }
-  }
+  //   if (isChecked) {
+  //     this.contactForm.interested += (this.contactForm.interested ? ', ' : '') + value;
+  //   } else {
+  //     this.contactForm.interested = this.contactForm.interested
+  //       .split(', ')
+  //       .filter((service: string) => service !== value)
+  //       .join(', ');
+  //   }
+  // }
 
   ngAfterViewInit() {
     this.addHorizontalScrollListener();

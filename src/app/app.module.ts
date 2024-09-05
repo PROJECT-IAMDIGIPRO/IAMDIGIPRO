@@ -38,6 +38,7 @@ import { CookiesPopupComponent } from './cookies-popup/cookies-popup.component';
 import { IonicModule } from '@ionic/angular';
 import { DigitalMarketingCourseComponent } from './digital-marketing-course/digital-marketing-course.component';
 import { GraphicDesignCourseComponent } from './graphic-design-course/graphic-design-course.component';
+import { BookSlotPopupComponent } from './book-slot-popup/book-slot-popup.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -69,6 +70,7 @@ import { GraphicDesignCourseComponent } from './graphic-design-course/graphic-de
     CookiesPopupComponent,
     DigitalMarketingCourseComponent,
     GraphicDesignCourseComponent,
+    BookSlotPopupComponent,
     ],
   imports: [
     BrowserModule,

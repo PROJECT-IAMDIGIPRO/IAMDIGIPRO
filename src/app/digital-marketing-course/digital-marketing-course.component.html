@@ -22,14 +22,17 @@
         <div class="store-items">
             <article>
                 <div>
-                    <i class="fa fa-camera"></i>
+                    <img  style="width: 80px; height: 80px;" src="https://cdn-icons-png.freepik.com/256/2857/2857465.png?ga=GA1.1.1260795034.1725091760&semt=ais_hybrid"/>
+                    <!-- <i class="fa fa-camera"></i> -->
                 </div>
                 <h3>Comprehensive Skill Development</h3>
                 <p>Gain expertise in SEO, PPC, social media marketing, and content strategy to excel in the digital landscape.</p>
             </article>
             <article>
                 <div>
-                    <i class="fa-rocket fa"></i>
+                    <img  style="width: 80px; height: 80px;" src="https://cdn-icons-png.freepik.com/256/4701/4701534.png?ga=GA1.1.1260795034.1725091760&semt=ais_hybrid"/>
+                    <!-- <i class="fa fa-camera"></i> -->
+                    <!-- <i class="fa-rocket fa"></i> -->
                 </div>
                 <h3>Hands-On Experience</h3>
                 <p>Work on real-world projects and case studies to apply theoretical knowledge in practical scenarios.
@@ -37,7 +40,9 @@
             </article>
             <article>
                 <div>
-                    <i class="fab fa-twitter"></i>
+                    <img style="width: 80px; height: 80px;" src="https://cdn-icons-png.freepik.com/256/7480/7480092.png?ga=GA1.1.1260795034.1725091760&semt=ais_hybrid"/>
+                    <!-- <i class="fa fa-camera"></i> -->
+                    <!-- <i class="fab fa-twitter"></i> -->
                 </div>
                 <h3>Up-to-Date Industry Insights</h3>
                 <p>It is very good, if in the kitchen there will always be several bottles with different oils.
@@ -45,7 +50,9 @@
             </article>
             <article>
                 <div>
-                    <i class="fab fa-weixin"></i>
+                    <img  style="width: 80px; height: 80px;" src="https://cdn-icons-png.freepik.com/256/13614/13614425.png?ga=GA1.1.1260795034.1725091760&semt=ais_hybrid"/>
+                    <!-- <i class="fa fa-camera"></i> -->
+                    <!-- <i class="fab fa-weixin"></i> -->
                 </div>
                 <h3>Career Advancement Opportunities</h3>
                 <p>Enhance your resume with recognized certifications and gain the skills to advance in your career or start a new one in digital marketing.
@@ -65,27 +72,27 @@
 
         <div class="comments-items">
             <article>
-                <img src="https://iamdigipro.com/assets/images/facultyName.jpg" alt="Veronica King">
+                <img src="https://iamdigipro.com/assets/images/facultyName.jpg" alt="Tharak Beela">
                 <p>Sales consultants are very polite. Many of the products have tried and are ready to prompt and recommend to customers. The staff shows that they completely share the philosophy of proper nutrition, if you can say so.</p>
                 <h3>Tharak Beela</h3>
                 <p>Digital Marketing Expert</p>
-                <div class="icons">
-                    <i class="fa-brands fa-linkedin"></i>
-                    <i class="fa-brands fa-github"></i>
-                    <i class="fa-brands fa-youtube"></i>
-                    <i class="fa-brands fa-twitter"></i>
-                </div>
+                <div class="faculty-icons">
+                    <a class="icons-ic"> <i class="fa-brands fa-linkedin"></i></a>
+                    <a class="icons-ic"> <i class="fa-brands fa-github"></i></a>
+                    <a class="icons-ic"> <i class="fa-brands fa-youtube"></i></a>
+                    <a class="icons-ic"> <i class="fa-brands fa-twitter"></i></a>
+                 </div>
             </article>
             <article>
-                <img src="https://mobirise.com/extensions/organicamp/assets/images/face6.jpg" alt="Jim Cash">
+                <img src="assets\images\carrersPage\Nagarjuna.jpg" alt="Nagarjuna">
                 <p>The assortment is very wide. From useful organic oils, cereals and teas to specific products for vegetarians, such as sausages and pies without meat.</p>
-                <h3>Jamlesh</h3>
+                <h3>Nagarjuna</h3>
                 <p>Digital Marketing Advisor</p>
-                <div class="icons">
-                    <i class="fa-brands fa-linkedin"></i>
-                    <i class="fa-brands fa-github"></i>
-                    <i class="fa-brands fa-youtube"></i>
-                    <i class="fa-brands fa-twitter"></i>
+                <div class="faculty-icons">
+                   <a class="icons-ic"> <i class="fa-brands fa-linkedin"></i></a>
+                   <a class="icons-ic"> <i class="fa-brands fa-github"></i></a>
+                   <a class="icons-ic"> <i class="fa-brands fa-youtube"></i></a>
+                   <a class="icons-ic"> <i class="fa-brands fa-twitter"></i></a>
                 </div>
             </article>
         </div>
@@ -100,7 +107,7 @@
         </div>
         <div class="rates-block">
             <h3>83</h3>
-            <p>Happy Customers</p>
+            <p>Happy Students</p>
         </div>
         <div class="rates-block">
             <h3>74</h3>
@@ -140,7 +147,8 @@
                     <input type="checkbox" id="offline1" name="courseMode1" value="Offline">
                     <label for="offline1">Offline</label>
                 </td>
-                <td data-label="Payment"><button class="btn-bs">Book Slot</button></td>
+                <td data-label="Payment"><button class="btn-bs" (click)="openModal()">Book Slot</button>
+                    <app-book-slot-popup *ngIf="showModal" (close)="closeModal()"></app-book-slot-popup></td>
             </tr>
             <tr>
                 <td data-label="Invoice">Graphic Designing</td>
@@ -153,7 +161,8 @@
                     <input type="checkbox" id="offline2" name="courseMode2" value="Offline">
                     <label for="offline2">Offline</label>
                 </td>
-                <td data-label="Payment"><button class="btn-bs">Book Slot</button></td>
+                <td data-label="Payment"><button class="btn-bs" (click)="openModal()">Book Slot</button>
+                    <app-book-slot-popup *ngIf="showModal" (close)="closeModal()"></app-book-slot-popup></td>
             </tr>
             <tr>
                 <td data-label="Invoice">Digital Marketing</td>
@@ -166,7 +175,8 @@
                     <input type="checkbox" id="offline3" name="courseMode3" value="Offline">
                     <label for="offline3">Offline</label>
                 </td>
-                <td data-label="Payment"><button class="btn-bs">Book Slot</button></td>
+                <td data-label="Payment"><button class="btn-bs" (click)="openModal()">Book Slot</button>
+                    <app-book-slot-popup *ngIf="showModal" (close)="closeModal()"></app-book-slot-popup></td>
             </tr>
             <tr>
                 <td data-label="Invoice">Graphic Designing</td>
@@ -179,7 +189,8 @@
                     <input type="checkbox" id="offline4" name="courseMode4" value="Offline">
                     <label for="offline4">Offline</label>
                 </td>
-                <td data-label="Payment"><button class="btn-bs">Book Slot</button></td>
+                <td data-label="Payment"><button class="btn-bs" (click)="openModal()">Book Slot</button>
+                    <app-book-slot-popup *ngIf="showModal" (close)="closeModal()"></app-book-slot-popup></td>
             </tr>
         </tbody>
     </table>
@@ -197,9 +208,9 @@
         <article>
             <div class="cr-si">3 Months of Intensive Learning</div>
          </article>
-        <article>
+        <!-- <article>
             <div class="cr-si">Expert Faculty</div>
-        </article>
+        </article> -->
         <article>
             <div class="cr-si">Certification</div>
         </article>
@@ -232,7 +243,7 @@
                     HUDA COLONY, Chandanagar, Hyderabad <br>
                     Flat NO.302, D2/17/19<br>
                     Mon – Fri: 9:30 AM – 6:00 PM<br>
-                    *****.mail.com
+                    info&#64;iamdigipro.in
                 </p>
             </div>
 
