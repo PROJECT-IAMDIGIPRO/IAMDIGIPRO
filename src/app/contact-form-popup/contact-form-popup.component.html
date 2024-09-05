@@ -1,16 +1,16 @@
 <div class="modal">
     <div class="modal-content">
         <form class="enquiry-contact-form" (ngSubmit)="onSubmit()">
-          <section class="register" id="register"  [(ngModel)]="contactForm.username">
+          <section class="register" id="register">
             <div class="form">
                 <span class="close-btn" (click)="closeModal()">&times;</span>
                 <div class="formimg">
                     <img src="https://png.pngtree.com/png-vector/20221224/ourmid/pngtree-register-now-banner-design-transparent-background-png-image_6535781.png" alt="" />
                 </div>
                 <div class="formcontent">
-                    <input type="text" placeholder="Name" />
-                    <input type="email" placeholder="Email" />
-                    <input type="text" placeholder="Mobile" />
+                    <input type="text" placeholder="Name"  [(ngModel)]="contactForm.username"/>
+                    <input type="email" placeholder="Email" [(ngModel)]="contactForm.email"/>
+                    <input type="text" placeholder="Mobile"  [(ngModel)]="contactForm.phonenumber"/>
                     <button class="btn">Submit</button>
                 </div>
             </div>

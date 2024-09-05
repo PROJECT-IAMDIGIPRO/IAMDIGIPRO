@@ -59,7 +59,7 @@ h1 {
 	color: orangered;
 	font-size: 45px;
 	/* font-family: 'Caveat', cursive; */
-	margin: 0;
+	padding-top: 20px;
 	margin-bottom: 10px;
 }
 
@@ -99,7 +99,7 @@ table td {
 	text-align: center;
 	color: #272727;
 	font-size: 16px;
-	font-family: cursive;
+	/* font-family: cursive; */
 }
 
 td[data-label="Course Mode"] {
@@ -113,12 +113,23 @@ input[type="checkbox"] {
 }
 
 input[type="checkbox"] + label {
+	position: relative;
+	padding-left: 35px;
+	cursor: pointer;
+	font-size: 16px;
+	color: #333;
+	user-select: none;
+  }
+
+@media screen and (max-width:768px) {
+input[type="checkbox"] + label {
   position: relative;
-  padding-left: 25px;
+  padding-left: 60px;
   cursor: pointer;
   font-size: 16px;
   color: #333;
   user-select: none;
+}
 }
 
 input[type="checkbox"] + label::before {
@@ -166,7 +177,7 @@ table td:nth-child(4) {
 }
 
 table th {
-	font-size: .85em;
+	font-size: 1em;
 	letter-spacing: .1em;
 	text-transform: uppercase;
 	background: orangered;
@@ -179,7 +190,7 @@ table tbody tr td .btn-bs {
 	font-size: 13px;
 	padding: 10px 20px;
 	border: 0;
-	font-family: cursive;
+ 	/* font-family: cursive; */
   cursor: pointer;
 }
 
@@ -257,14 +268,20 @@ tbody tr:nth-child(odd) {
 }
 .store-items .cr-si {
 	display: block;
-	background-color: rgb(158, 148, 145);
-	border-radius: 10px; 
-	padding: 35px;
-	transition: all 0.3s;
-	text-align: center;
+	background-color: rgb(220 209 205);
+	padding: 30px;
+	border-radius: 10px;
+	margin: 20px 0;
+	/* box-shadow: 0 2px 40px 0 rgba(110, 130, 208, 0.18); */
+  }
+  .store-items .cr-si:hover {
+	transition: all 0.2s ease-out;
+	/* box-shadow: 0px 4px 8px rgba(38, 38, 38, 0.2); */
+	border: 1px solid #cccccc;
+	background-color: rgb(255, 111, 58);
+	transform: scale(1.1);
 	color: white;
   }
-
 .store-items article {
 	text-align: center;
 	padding: 24px;
@@ -274,7 +291,7 @@ tbody tr:nth-child(odd) {
 	display: inline-block;
 	background-color: orangered;
 	border-radius: 50%;
-	padding: 40px;
+	padding: 15px;
 	transition: all 0.3s;
 }
 
@@ -291,6 +308,7 @@ tbody tr:nth-child(odd) {
 .store-items h3 {
 	font-size: 24px;
 	font-weight: 600;
+	padding-top: 15px;
 }
 
 .store-items p {
@@ -316,13 +334,14 @@ tbody tr:nth-child(odd) {
 
 .comments article {
 	text-align: center;
-	background-color: #f5f6fb;
+	background-color: #413f3f;
 	padding: 40px 30px;
 	margin: 16px;
 	border-top-left-radius: 45px;
 	border-bottom-left-radius: 45px;
 	border-bottom-right-radius: 45px;
 	transition: box-shadow 0.3s;
+	color: white;
 }
 
 .comments article:hover {
@@ -336,18 +355,19 @@ tbody tr:nth-child(odd) {
 
 .comments article p:first-of-type {
 	font-size: 15px;
-	color: #5d5d66;
 	letter-spacing: 0.5px;
 	font-style: italic;
 	margin: 0;
+	color: white;
+	padding-top: 10px;
 }
 
 .comments article p:last-of-type {
-	color: #5d5d66;
+	color: white;
 	font-size: 15px;
 	font-style: italic;
 	letter-spacing: 0.5px;
-	margin: 0;
+	margin-top: 10px;
 }
 
 .comments h3 {
@@ -357,7 +377,25 @@ tbody tr:nth-child(odd) {
 	margin-top: 24px;
 	margin-bottom: 0px;
 }
-
+.faculty-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+	font-size: 20px;
+}
+.icons-ic{
+	font-size: 30px;
+	color: white;
+   padding: 0px 5px;
+}
+.icons-ic:hover{
+	color: orangered;
+	border-radius: 50%;
+	transition: all 0.2s ease-out;	
+	transform: scale(1.1);
+}
 .email {
 	width: 100%;
 	box-sizing: border-box;
