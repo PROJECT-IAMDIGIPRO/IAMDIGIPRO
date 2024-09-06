@@ -1,31 +1,60 @@
 <div class="modal">
     <div class="modal-content">
-      <div class="right-section" style="background-color: black;">
+      <div class="right-section">
         <form class="enquiry-contact-form" (ngSubmit)="onSubmit()">
-            <span class="close-btn" (click)="closeModal()">&times;</span>
-          <label for="name">IAM</label>
-          <input type="text" id="name" name="name" placeholder="John" [(ngModel)]="contactForm.username" required>
+          <span class="close-btn" (click)="closeModal()">&times;</span>
   
-          <label for="phone">Phone number</label>
-          <input type="text" id="phone" name="phone" placeholder="+91 9999900000" [(ngModel)]="contactForm.phonenumber" required>
-  
-          <label for="email">Email</label>
-          <input type="email" id="email" name="email" placeholder="iam@gmail.com" [(ngModel)]="contactForm.email" required>
-  
-          <!-- <label for="description">Tell us a little about the project...</label>
-          <textarea id="description" name="description" [(ngModel)]="contactForm.description"></textarea> -->
-  
-          <label for="services">Select Course</label>
-          <div class="enquiry-checkbox-group">
-            <label><input type="checkbox" name="services" value="Digital Marketing" (change)="onServiceChange($event)"> Digital Marketing</label>
-            <!-- <label><input type="checkbox" name="services" value="Web Development" (change)="onServiceChange($event)"> Web Development</label> -->
-            <label><input type="checkbox" name="services" value="Graphic Design" (change)="onServiceChange($event)"> Graphic Design</label>
-            <!-- <label><input type="checkbox" name="services" value="Consulting" (change)="onServiceChange($event)"> Consulting</label>
-            <label><input type="checkbox" name="services" value="Influencer Marketing" (change)="onServiceChange($event)"> Influencer Marketing</label>
-            <label><input type="checkbox" name="services" value="Other" (change)="onServiceChange($event)"> Other</label> -->
+          <!-- First row: Name and Phone number -->
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">IAM</label>
+              <input type="text" id="name" name="name" placeholder="John" [(ngModel)]="contactForm.username" required>
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone number</label>
+              <input type="text" id="phone" name="phone" placeholder="+91 9999900000" [(ngModel)]="contactForm.phonenumber" required>
+            </div>
           </div>
-          <button class="cnt-btn">Book your Slot</button>
+  
+          <!-- Second row: Email and Course -->
+          <div class="form-row">
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="iam@gmail.com" [(ngModel)]="contactForm.email" required>
+            </div>
+            <div class="form-group">
+              <label for="course">Select Course</label>
+              <select id="coursePicklist" name="coursePicklist" [(ngModel)]="contactForm.course" (change)="onCourseChange($event)" required>
+                <option value="" disabled selected>Select a Course</option>
+                <option value="Graphic Design">Graphic Design</option>
+                <option value="Digital Marketing">Digital Marketing</option>
+              </select>
+            </div>
+          </div>
+  
+          <!-- Third row: Mode and Batch -->
+          <div *ngIf="contactForm.course" class="form-row">
+            <div class="form-group">
+              <label for="mode">Select Mode</label>
+              <select id="modePicklist" name="modePicklist" [(ngModel)]="contactForm.mode" (change)="onModeChange($event)" required>
+                <option value="" disabled selected>Select Mode</option>
+                <option value="Online">Online</option>
+                <option value="Offline">Offline</option>
+              </select>
+            </div>
+            <div *ngIf="contactForm.mode" class="form-group">
+              <label for="batch">Select Batch</label>
+              <select id="batchPicklist" name="batchPicklist" [(ngModel)]="contactForm.batch" required>
+                <option value="" disabled selected>Select Batch</option>
+                <option value="Morning Batch">Morning Batch</option>
+                <option value="Afternoon Batch">Afternoon Batch</option>
+              </select>
+            </div>
+          </div>
+  
+          <button class="shiny-cta">Book your Slot</button>
         </form>
       </div>
     </div>
   </div>
+  

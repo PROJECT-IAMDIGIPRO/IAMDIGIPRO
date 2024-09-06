@@ -39,6 +39,7 @@ import { IonicModule } from '@ionic/angular';
 import { DigitalMarketingCourseComponent } from './digital-marketing-course/digital-marketing-course.component';
 import { GraphicDesignCourseComponent } from './graphic-design-course/graphic-design-course.component';
 import { BookSlotPopupComponent } from './book-slot-popup/book-slot-popup.component';
+import { RegisterFormPopupComponent } from './register-form-popup/register-form-popup.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -71,6 +72,7 @@ import { BookSlotPopupComponent } from './book-slot-popup/book-slot-popup.compon
     DigitalMarketingCourseComponent,
     GraphicDesignCourseComponent,
     BookSlotPopupComponent,
+    RegisterFormPopupComponent,
     ],
   imports: [
     BrowserModule,
