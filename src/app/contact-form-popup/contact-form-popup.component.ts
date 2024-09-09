@@ -28,7 +28,7 @@ export class ContactFormPopupComponent {
 
   onSubmit() {
 
-    if (!this.contactForm.phonenumber) {
+    if (!this.contactForm.username || !this.contactForm.phonenumber || !this.contactForm.email) {
       alert('Please fill in all required details.!!');
       return; 
     }

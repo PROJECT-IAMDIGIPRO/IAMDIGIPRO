@@ -1,201 +1,302 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Design and Development Card</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
-        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
-        crossorigin="anonymous"></script>
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,1,0" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="https://kit.fontawesome.com/6cfb21434c.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="../../styles.css">
-    <script src="blogspage.js" defer></script>
-    <script src="index.js" defer></script>
-</head>
-
-<body>
-
-    <!--front-page-->
-
-    <div class="blogs-frontpage-card">
-        <h1>Essential Insights on<br><span>Design</span> and <span>Development</span></h1>
-        <p>Unleashing Creativity and Innovation in the Digital World</p>
+<header class="site-header">
+    <div class="header-wrap">
+        <a class="logo" href="#0">
+            <img alt="iam logo" src="https://iamdigipro.com/assets/images/logo2.png" width="179" height="41" />
+        </a>
     </div>
-
-    <!--blogs list-->
-
-    <div class="blogsPage-blog-100">
-        <div class="blogsPage-dflex-con">
-           <div class="blogsPage-container-blog">
-                <button class="featured-blog">Featured Blog Post</button>
-                <button class="featured" routerLink="/searchengineoptimization">Search Engine Optimization</button>
-                <button class="featured" routerLink="/searchenginemarketing">Search Engine Marketing</button>
-                <button class="featured" routerLink="/socialmediaoptimization">Social Media Optimization</button>
-                <button class="featured" routerLink="/graphicuidesign">Graphic ui design</button>
-                <button class="featured" routerLink="/influencermarketing">Influencer Marketing</button>
-                <button class="featured" routerLink="/webappdevelopment">Web/App Development</button>
-                <button class="featured" routerLink="/contentdevelopmenmMarketing">Content Development & Marketing</button>
-                <button class="featured" routerLink="/leadgeneration">Lead generation - B2B & B2C</button>
-                <button class="featured" routerLink="/consulting">Consulting</button>
-                <button class="featured" routerLink="/emailmarketing">Email Marketing</button>
+    <h1 class="site-title">We are Digital Marketing Company from HYDERABAD</h1>
+</header>
+<div class="content-wrap">
+    <main class="main-posts-list">
+        <article class="article">
+            <div class="article-img-column">
+                <img class="article-img" src="https://netology-code.github.io/html-2-diploma/sources/images/last-post1.jpg" alt="Человек, идущий по берегу" />
             </div>
-
-            <div class="blog-container1" id="blog" *ngIf="!isBlogCardOpen">
-                <div class="blogPage-header mt-5">
-                    <h1 style="font-size: 27px; font-weight: 600;">Featured Blog Post</h1>
-                    <hr />
-                </div>
-                <div class="blogsPage-cards-container">
-                    <div class="blogsPage-post-box" (click)="blogcardOpen(0)">
-                        <div class="blogsPage-post-image">
-                            <img src="../assets/images/blogs/image_blogPage1.avif" alt="FeaturedBlogPostimage1">
-                        </div>
-                        <div class="blogsPage-post-content">
-                            <h2>How to Maximize Your Digital Marketing Efforts</h2>
-                            <div class="blogsPage-post-details">
-                                <span class="blogsPage-category"><b>Marketing</b></span>
-                                <span class="blocgsPage-date">24 June 2024</span>
-                            </div>
-                            <p>Learn the top strategies for enhancing your digital presence and driving engagement...
-                            </p>
-                            <div class="blogsPage-card-button">
-                                <p>Read More</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="blogsPage-post-box" (click)="blogcardOpen(1)">
-                        <div class="blogsPage-post-image">
-                            <img src="../assets/images/blogs/image_blogPage2.avif" alt="FeaturedBlogPostimage2">
-                        </div>
-                        <div class="blogsPage-post-content">
-                            <h2>Create a User-Centric Website with IAM Digipro</h2>
-                            <div class="blogsPage-post-details">
-                                <span class="blogsPage-category"><b>Design</b></span>
-                                <span class="blocgsPage-date">24 June 2024</span>
-                            </div>
-                            <p>Discover the best practices for designing websites that captivate and convert visitors...
-                            </p>
-                            <div class="blogsPage-card-button">
-                                <p>Read More</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="blogsPage-post-box" (click)="blogcardOpen(2)">
-                        <div class="blogsPage-post-image">
-                            <img src="../assets/images/blogs/image_blogPage3.avif" alt="FeaturedBlogPostimage3">
-                        </div>
-                        <div class="blogsPage-post-content">
-                            <h2>Top Web Development Trends in 2024</h2>
-                            <div class="blogsPage-post-details">
-                                <span class="blogsPage-category"><b>Development</b></span>
-                                <span class="blogsPage-date">24 June 2024</span>
-                            </div>
-                            <p>Story ahead of the curve with the latest techniques and tools shaping the future of web
-                                development...</p>
-                            <div class="blogsPage-card-button">
-                                <p>Read More</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="blogsPage-post-box" (click)="blogcardOpen(3)">
-                        <div class="blogsPage-post-image">
-                            <img src="../assets/images/blogs/image_blogPage4.avif" alt="FeaturedBlogPostimage4">
-                        </div>
-                        <div class="blogsPage-post-content">
-                            <h2>Enhancing User Experience with Intuitive UI</h2>
-                            <div class="blogsPage-post-details">
-                                <span class="blogsPage-category"><b>Design</b></span>
-                                <span class="blogsPage-date">24 June 2024</span>
-                            </div>
-                            <p>Explore design principles that make a difference in creating intuitive and engaging user
-                                interfaces...</p>
-                            <div class="blogsPage-card-button">
-                                <p>Read More</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="blogsPage-post-box" (click)="blogcardOpen(4)">
-                        <div class="blogsPage-post-image">
-                            <img src="../assets/images/blogs/image_blogPage5.avif" alt="FeaturedBlogPostimage5">
-                        </div>
-                        <div class="blogsPage-post-content">
-                            <h2>How to Dominate Search Engines with Effective SEO Techniques</h2>
-                            <div class="blogsPage-post-details">
-                                <span class="blogsPage-category"><b>Marketing</b></span>
-                                <span class="blogsPage-date">24 June 2024</span>
-                            </div>
-                            <p>Learn the top strategies for enhancing your digital presence and driving engagement...
-                            </p>
-                            <div class="blogsPage-card-button">
-                                <p>Read More</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="blogsPage-post-box" (click)="blogcardOpen(5)">
-                        <div class="blogsPage-post-image">
-                            <img src="../assets/images/blogs/image_blogPage6.avif" alt="FeaturedBlogPostimage6">
-                        </div>
-                        <div class="blogsPage-post-content">
-                            <h2>How to Measure and Improve Your Digital Marketing ROI</h2>
-                            <div class="blogsPage-post-details">
-                                <span class="blogsPage-category"><b>Marketing</b></span>
-                                <span class="blogsPage-date">24 June 2024</span>
-                            </div>
-                            <p>Learn the top strategies for enhancing your digital presence and driving engagement...
-                            </p>
-                            <div class="blogsPage-card-button">
-                                <p>Read More</p>
-                            </div>
-                        </div>
-                    </div>
+            <div class="article-text-column">
+                <ul class="tab-list">
+                    <li class="tab-item">
+                        <a class="tab-link" href="#0">Travel</a>
+                    </li>
+                    <li class="tab-item">
+                        <a class="tab-link" href="#0">Health</a>
+                    </li>
+                </ul>
+                <h2 class="article-title">
+                    <a class="article-title-link" href="#0">Technical SEO: What Is It And Why Should You Care?</a>
+                </h2>
+                <time class="article-datetime" datetime="2024-06-10">10 August 2024</time>
+                <cite class="article-author">IAM DIGIPRO</cite>
+                <div class="article-content">
+                    <p>Technical SEO is the process of optimizing a website for search engines. It involves improving the site’s architecture, code, and structure so that ...</p>
                 </div>
             </div>
-
-            <div id="blogsPage-card1" *ngIf="isBlogCardOpen">
-                <div class="blogsPage-header1 mt-5">
-                    <button (click)="blogcardClose()">
-                        <fa-icon [icon]="faArrowLeft"></fa-icon>   Back To Blogs
-                    </button>
-                        <!-- <span
-                                style="font-size: 24px; font-weight: 600; color: black;"><span
-                                    style="font-weight: 300;">></span></span> -->
-                                    <p> <span
-                                    id="blog-title">{{selectedPost.title}}</span></p>
-                    
-                </div>
-                <hr style="border-top: solid 1px gray; width: 100%;" />
-                <div class="blogsPage-blog1">
-                    <div class="blogsPage-blog-card">
-                        <div class="blogsPage-image-container">
-                            <img id="blog-image" [src]="selectedPost.image" alt="FeaturedBlogPostimage1">
-                            <div class="blogsPage-card-content">
-                                <h2 id="blog-card-title">{{selectedPost.title}}</h2>
-                                <p id="blog-content">{{selectedPost.content}}</p>
-                                <div class="blogsPage-footer">
-                                    <span class="blogsPage-tag"><b id="blog-category">{{selectedPost.category}}</b></span>
-                                    <span class="blogsPage-date1" id="blog-date">{{selectedPost.date}}</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+        </article>
+        <article class="article">
+            <div class="article-img-column">
+                <img class="article-img" src="https://netology-code.github.io/html-2-diploma/sources/images/last-post2.jpg" alt="Йога" />
+            </div>
+            <div class="article-text-column">
+                <ul class="tab-list">
+                    <li class="tab-item">
+                        <a class="tab-link" href="#0">Health</a>
+                    </li>
+                    <li class="tab-item">
+                        <a class="tab-link" href="#0">Lifestyle</a>
+                    </li>
+                </ul>
+                <h2 class="article-title">
+                    <a class="article-title-link" href="#0">Technical SEO: What Is It And Why Should You Care?</a>
+                </h2>
+                <time class="article-datetime" datetime="2024-06-10">10 August 2024</time>
+                <cite class="article-author">IAM DIGIPRO</cite>
+                <div class="article-content">
+                    <p>Technical SEO is the process of optimizing a website for search engines. It involves improving the site’s architecture, code, and structure so that ...</p>
                 </div>
             </div>
-        </div>
-    </div>
-</body>
+        </article>
+        <article class="article">
+            <div class="article-img-column">
+                <img class="article-img" src="https://netology-code.github.io/html-2-diploma/sources/images/last-post3.jpg" alt="Музыкальный фестиваль" />
+            </div>
+            <div class="article-text-column">
+                <ul class="tab-list">
+                    <li class="tab-item">
+                        <a class="tab-link" href="#">Music</a>
+                    </li>
+                </ul>
+                <h2 class="article-title">
+                    <a class="article-title-link" href="#0">Technical SEO: What Is It And Why Should You Care?</a>
+                </h2>
+                <time class="article-datetime" datetime="2024-06-10">10 August 2024</time>
+                <cite class="article-author">IAM DIGIPRO</cite>
+                <div class="article-content">
+                    <p>Technical SEO is the process of optimizing a website for search engines. It involves improving the site’s architecture, code, and structure so that ...</p>
+                </div>
+            </div>
+        </article>
+        <article class="article">
+            <div class="article-img-column">
+                <img class="article-img" src="https://netology-code.github.io/html-2-diploma/sources/images/last-post4.jpg" alt="Стол с едой" />
+            </div>
+            <div class="article-text-column">
+                <ul class="tab-list">
+                    <li class="tab-item">
+                        <a class="tab-link" href="#0">Lifestyle</a>
+                    </li>
+                    <li class="tab-item">
+                        <a class="tab-link" href="#0">Food</a>
+                    </li>
+                </ul>
+                <h2 class="article-title">
+                    <a class="article-title-link" href="#0">Technical SEO: What Is It And Why Should You Care?</a>
+                </h2>
+                <time class="article-datetime" datetime="2024-06-10">10 August 2024</time>
+                <cite class="article-author">IAM DIGIPRO</cite>
+                <div class="article-content">
+                    <p>Technical SEO is the process of optimizing a website for search engines. It involves improving the site’s architecture, code, and structure so that ...</p>
+                </div>
+            </div>
+        </article>
+        <article class="article">
+            <div class="article-img-column">
+                <img class="article-img" src="https://netology-code.github.io/html-2-diploma/sources/images/last-post5.jpg" alt="Подушка с надписью 'Hang out spot'" />
+            </div>
+            <div class="article-text-column">
+                <ul class="tab-list">
+                    <li class="tab-item">
+                        <a class="tab-link" href="#0">Lifestyle</a>
+                    </li>
+                    <li class="tab-item">
+                        <a class="tab-link" href="#0">Interior</a>
+                    </li>
+                    <li class="tab-item">
+                        <a class="tab-link" href="#0">Art</a>
+                    </li>
+                </ul>
+                <h2 class="article-title">
+                    <a class="article-title-link" href="#0">Technical SEO: What Is It And Why Should You Care?</a>
+                </h2>
+                <time class="article-datetime" datetime="2024-06-10">10 August 2024</time>
+                <cite class="article-author">IAM DIGIPRO</cite>
+                <div class="article-content">
+                    <p>Technical SEO is the process of optimizing a website for search engines. It involves improving the site’s architecture, code, and structure so that ...</p>
+                </div>
+            </div>
+        </article>
+        <article class="article">
+            <div class="article-img-column">
+                <img class="article-img" src="https://netology-code.github.io/html-2-diploma/sources/images/last-post6.jpg" alt="Люди на вершине горы" />
+            </div>
+            <div class="article-text-column">
+                <ul class="tab-list">
+                    <li class="tab-item">
+                        <a class="tab-link" href="#0">Travel</a>
+                    </li>
+                    <li class="tab-item">
+                        <a class="tab-link" href="#0">Lifestyle</a>
+                    </li>
+                </ul>
+                <h2 class="article-title">
+                    <a class="article-title-link" href="#">Technical SEO: What Is It And Why Should You Care?</a>
+                </h2>
+                <time class="article-datetime" datetime="2024-06-10">10 August 2024</time>
+                <cite class="article-author">IAM DIGIPRO</cite>
+                <div class="article-content">
+                    <p>Technical SEO is the process of optimizing a website for search engines. It involves improving the site’s architecture, code, and structure so that ...</p>
+                </div>
+            </div>
+        </article>
+        <article class="article">
+            <div class="article-img-column">
+                <img class="article-img" src="https://netology-code.github.io/html-2-diploma/sources/images/last-post4.jpg" alt="Стол с едой" />
+            </div>
+            <div class="article-text-column">
+                <ul class="tab-list">
+                    <li class="tab-item">
+                        <a class="tab-link" href="#0">Lifestyle</a>
+                    </li>
+                    <li class="tab-item">
+                        <a class="tab-link" href="#0">Food</a>
+                    </li>
+                </ul>
+                <h2 class="article-title">
+                    <a class="article-title-link" href="#0">Technical SEO: What Is It And Why Should You Care?</a>
+                </h2>
+                <time class="article-datetime" datetime="2024-06-10">10 August 2024</time>
+                <cite class="article-author">IAM DIGIPRO</cite>
+                <div class="article-content">
+                    <p>Technical SEO is the process of optimizing a website for search engines. It involves improving the site’s architecture, code, and structure so that ...</p>
+                </div>
+            </div>
+        </article>
+    </main>
+    <aside class="sidebar">
+        <section class="new-posts">
+			<form class="search">
+				<input id="search" type="search" class="search-field1" name="search" placeholder="search blogs..." required />
+                <button class="search-button1"><span class="visually-hidden"></span></button>
+            </form>
+            <h2 class="sidebar-title">TOP VISITS</h2>
+            <div class="new-posts-list">
+                <article class="new-posts-article">
+                    <div class="post-img-column">
+                        <img class="new-posts-image" src="https://netology-code.github.io/html-2-diploma/sources/images/2.jpg" alt="Человек, идущий по берегу" />
+                    </div>
+                    <div class="post-text-column">
+                        <time class="new-posts-datetime" datetime="2024-06-14">14 August 2024</time>
+                        <h3 class="new-posts-title">
+                            <a class="new-posts-link" href="#0">Technical SEO: What Is It And Why Should You Care?</a>
+                        </h3>
+                    </div>
+                </article>
+                <article class="new-posts-article">
+                    <div class="post-img-column">
+                        <img class="new-posts-image" src="https://netology-code.github.io/html-2-diploma/sources/images/151.jpg" alt="Йога" />
+                    </div>
+                    <div class="post-text-column">
+                        <time class="new-posts-datetime" datetime="2024-06-14">14 August 2024</time>
+                        <h3 class="new-posts-title">
+                            <a class="new-posts-link" href="#0">Technical SEO: What Is It And Why Should You Care?</a>
+                        </h3>
+                    </div>
+                </article>
+                <article class="new-posts-article">
+                    <div class="post-img-column">
+                        <img class="new-posts-image" src="https://netology-code.github.io/html-2-diploma/sources/images/45.jpg" alt="Балкон" />
+                    </div>
+                    <div class="post-text-column">
+                        <time class="new-posts-datetime" datetime="2024-06-14">14 August 2024</time>
+                        <h3 class="new-posts-title">
+                            <a class="new-posts-link" href="#0">Technical SEO: What Is It And Why Should You Care?</a>
+                        </h3>
+                    </div>
+                </article>
+                <article class="new-posts-article">
+                    <div class="post-img-column">
+                        <img class="new-posts-image" src="https://netology-code.github.io/html-2-diploma/sources/images/501.jpg" alt="Стол с едой" />
+                    </div>
+                    <div class="post-text-column">
+                        <time class="new-posts-datetime" datetime="2024-06-14">14 August 2024</time>
+                        <h3 class="new-posts-title">
+                            <a class="new-posts-link" href="#0">Technical SEO: What Is It And Why Should You Care?</a>
+                        </h3>
+                    </div>
+                </article>
 
-</html>
+                <article class="new-posts-article">
+                    <div class="post-img-column">
+                        <img class="new-posts-image" src="https://netology-code.github.io/html-2-diploma/sources/images/7.jpg" alt="Прически" />
+                    </div>
+                    <div class="post-text-column">
+                        <time class="new-posts-datetime" datetime="2024-06-14">14 August 2024</time>
+                        <h3 class="new-posts-title">
+                            <a class="new-posts-link" href="#0">Technical SEO: What Is It And Why Should You Care?</a>
+                        </h3>
+                    </div>
+                </article>
+            </div>
+        </section>
+		<section class="categories">
+            <h2 class="sidebar-title">categories</h2>
+            <ul class="category-list">
+                <li class="category-item">
+                    <a class="category-link" href="#0">Artificial Intelligence<sup class="number">[ 12 ]</sup></a>
+                </li>
+                <li class="category-item">
+                    <a class="category-link" href="#0">Blogging<sup class="number">[ 4 ]</sup></a>
+                </li>
+                <li class="category-item">
+                    <a class="category-link" href="#0">Case Studies<sup class="number">[ 145 ]</sup></a>
+                </li>
+                <li class="category-item">
+                    <a class="category-link" href="#0">content marketing<sup class="number">[ 28 ]</sup></a>
+                </li>
+                <li class="category-item">
+                    <a class="category-link" href="#0">Digital Marketing<sup class="number">[ 62 ]</sup></a>
+                </li>
+                <li class="category-item">
+                    <a class="category-link" href="#0">Email Marketing<sup class="number">[ 8 ]</sup></a>
+                </li>
+            </ul>
+        </section>
+		<section class="tags1">
+            <h2 class="sidebar-title">TOP BLOGS</h2>
+            <ul class="tags-list">
+                <li class="tags-item">
+                    <a class="tags-link" href="#0">Digital Marketing</a>
+                </li>
+                <li class="tags-item">
+                    <a class="tags-link" href="#0">SEO</a>
+                </li>
+                <li class="tags-item">
+                    <a class="tags-link" href="#0">SOCIAL MEDIA</a>
+                </li>
+                <li class="tags-item">
+                    <a class="tags-link" href="#0">ANIMATION</a>
+                </li>
+                <li class="tags-item">
+                    <a class="tags-link" href="#0">Email Marketing</a>
+                </li>
+                <li class="tags-item">
+                    <a class="tags-link" href="#0">SEM</a>
+                </li>
+                <li class="tags-item">
+                    <a class="tags-link" href="#0">WEB DEVELOPMENT</a>
+                </li>
+                <li class="tags-item">
+                    <a class="tags-link" href="#0">OTHERS</a>
+                </li>
+            </ul>
+        </section>
+        <section class="subscription">
+            <h2 class="sidebar-title">INQUIRY</h2>
+            <form class="subscription-form">
+                <input id="email" type="email" class="subscription-field" name="email" placeholder="Enter email..." required />
+				<input id="mobileNumber" type="number" class="subscription-field" name="mobileNumber" placeholder="Mobile number..." required />
+				<button class="subscription-button">SUBMIT</button>
+            </form>
+        </section>
+    </aside>
+</div>
+ 
+

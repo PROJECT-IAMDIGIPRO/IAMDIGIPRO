@@ -36,6 +36,7 @@
               "src/sitemap.xml",
               "src/sitemap.xsl",
               "src/assets/sitemap.xml",
+              "src/robots.txt",
               {
                 "glob": "**/*",
                 "input": "src/images",
