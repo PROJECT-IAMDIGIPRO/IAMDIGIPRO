@@ -1,21 +1,27 @@
-<div class="modal">
-    <div class="modal-content">
-        <form class="enquiry-contact-form" (ngSubmit)="onSubmit()">
-          <section class="register" id="register">
-            <div class="form">
-                <span class="close-btn" (click)="closeModal()">&times;</span>
-                <div class="formimg">
-                    <img src="https://png.pngtree.com/png-vector/20221224/ourmid/pngtree-register-now-banner-design-transparent-background-png-image_6535781.png" alt="" />
-                </div>
-                <div class="formcontent">
-                    <input type="text" placeholder="Name"  [(ngModel)]="contactForm.username"/>
-                    <input type="email" placeholder="Email" [(ngModel)]="contactForm.email"/>
-                    <input type="text" placeholder="Mobile"  [(ngModel)]="contactForm.phonenumber"/>
-                    <button class="btn">Submit</button>
-                </div>
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Training Form</title>
+    <link rel="stylesheet" href="contact-form-popup.component.css" />
+  </head>
+  <body>
+      <div class="modal">
+    <div class="modal-content animated-popup">
+        <form class="internship-form" (ngSubmit)="onSubmit()">
+            <span class="close-btn" (click)="closeModal()">&times;</span>
+            <!-- <div class="form-img">
+                <img src="https://img.freepik.com/free-vector/join-our-team-concept-illustration_114360-4681.jpg" alt="Join Our Team">
+            </div> -->
+            <div class="form-fields">
+                <h2>Apply for Training</h2>
+                <input type="text" placeholder="Name" [(ngModel)]="contactForm.username" class="input-field">
+                <input type="text" placeholder="Mobile" [(ngModel)]="contactForm.phonenumber" class="input-field">
+                <input type="email" placeholder="Email" [(ngModel)]="contactForm.email" class="input-field"><!-- <input type="text" placeholder="Qualification" [(ngModel)]="contactForm.qualification" class="input-field"> -->
+                <button class="submit-btn">Submit</button>
             </div>
-        </section>
         </form>
-      </div>
-  </div>
-  
+    </div>
+</div>
+
+  </body>
+</html>
